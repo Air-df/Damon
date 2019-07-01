@@ -1,0 +1,737 @@
+.robotList{
+    height: calc(100% - 60px);
+    background: #ffffff;
+    overflow: auto;
+}
+/*æœç´¢*/
+
+.robotList .robotSearch{
+    height: 62px;
+    background: #F8F8F9;
+    min-width: 1160px;
+}
+.robotList .robotSearch .selectWrapper {
+    float: left;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 14px;
+    position: relative;
+}
+
+.robotList .robotSearch .selectWrapper input:focus{
+  border: 1px solid #b5bdc6;
+  outline: none;
+}
+
+.robotList .robotSearch .selectWrapper:nth-child(1) {
+    margin-left: 33px;
+}
+
+.robotList .robotSearch .selectLabel {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 6px;
+    float: left;
+}
+
+.robotList .robotSearch .selectBox {
+    float: left;
+    width: 210px;
+    height: 30px;
+    position: relative;
+}
+
+.robotList .robotSearch .selectBox .selectOption {
+    border-radius: 2px;
+    background: #FFFFFF;
+    width: 208px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.robotList .robotSearch .selectBox em {
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    color: #B5BDC6;
+    text-indent: 12px;
+}
+
+.robotList .robotSearch .selectBox .selectTip {
+    color: #485767;
+}
+
+.robotList .robotSearch .selectBox .optionUl {
+    width: 210px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    max-height: 165px;
+    overflow: auto;
+    z-index: 2;
+}
+
+.robotList .robotSearch .selectWrapper .titleInput {
+    border: 1px solid transparent;
+    height: 28px;
+    color: #485767;
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    line-height: 28px;
+    text-indent: 12px;
+    background: #FFFFFF;
+    width: 208px;
+    float: left;
+    border-radius: 2px;
+}
+
+.robotList .robotSearch .selectWrapper .titleInput:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url('../images/icon/iconography.png')no-repeat;
+    background-size: 600px 700px;
+    background-position: -183px -645px;
+    position: absolute;
+    top: 4px;
+    right: 6px;
+}
+
+.robotList .robotSearch .selectWrapper .selectTip {
+    color: #485767;
+}
+
+.robotList .robotSearch .selectWrapper .dateRangeBox {
+    width: 560px;
+    position: absolute;
+    left: 28px;
+    top: -5px;
+    z-index: 10;
+    transform: scale(.8);
+    background: #fff;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+}
+.robotList .robotSearch .searchButton{
+    float: right;
+    background: #58A7F8;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    height: 28px;
+    width: 148px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 14px;
+    margin-right: 38px;
+}
+.robotList .robotSearch .searchButton:hover{
+    background: #288BF2;
+    border:1px solid #288BF2; ;
+}
+/*æœºå™¨äººåˆ—è¡¨*/
+.robotList .robotTableList{
+    font-size: 12px;
+    font-family: PingFangSC-Regular;
+    letter-spacing: 0;
+    background: #ffffff;
+    padding: 40px 38px 50px 32px;
+    min-width: 1160px;
+}
+.robotList .robotTableList .operation a{
+    display: inline-block;
+}
+.robotList .robotTableList .operation a{
+    height: 28px;
+    width: 104px;
+    background: #6AD298;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 28px;
+    font-family: PingFangSC-Medium;
+    color: #ffffff;
+    margin-right: 15px;
+}
+.robotList .robotTableList .operation a:hover{
+    background: #5DC189;
+}
+.robotList .robotTableList .operation .refreshAll{
+    float: right;
+    color: #B5BDC6;
+    cursor: pointer;
+}
+.robotList .robotTableList .operation .refreshAll>em{
+    float: left;
+    height: 20px;
+    width: 20px;
+    background-position: -161px -565px;
+}
+
+.robotList .robotTableList .operation .refreshAll:hover{
+    color: #5D90C5;
+}
+.robotList .robotTableList .operation .refreshAll:hover >em{
+    background-position: -161px -585px;
+    transform: rotateZ(360deg);
+    transition: transform 2s;
+}
+.robotList .robotTableList .operation:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.robotList .robotTableList .operation p{
+    float: left;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #344658;
+    letter-spacing: 0;
+}
+.robotList .robotTableList .operation .importGroupNum{
+    margin-left: 40px;
+}
+.robotList .robotTableList .robotTable table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+.robotList .robotTableList .robotTable table td,.robotList .robotTableList .robotTable table tr{
+    text-align: center;
+    line-height: 48px;
+}
+.robotList .robotTableList .robotTable table tr{
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #E9EBEE;
+    color: #344658;
+    cursor: pointer;
+}
+.robotList .robotTableList .robotTable table thead tr{
+    border-top: 1px solid #E9EBEE;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+}
+.robotList .robotTableList .robotTable table tbody tr:hover{
+    background: #F8F8F9;
+}
+.robotList .robotTableList .robotTable table tbody tr:hover td:nth-child(5){
+    font-family: PingFangSC-Medium;
+    color: #288BF2;
+}
+
+/*.robotList .robotTableList .robotTable table tbody tr td:nth-child(5):hover{*/
+    /*font-family: PingFangSC-Medium;*/
+    /*color: #288BF2;*/
+/*}*/
+.robotList .robotTableList .robotTable table tbody tr td:last-child:hover{
+    font-family: PingFangSC-Medium;
+    color: #288BF2;
+}
+.robotList .robotTableList .robotTable table .robotStatus em{
+    display: inline-block;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-position: -161px -625px;
+    top:50%;
+    left: -20px;
+    transform: translateY(-50%);
+}
+.robotList .robotTableList .robotTable table .robotStatus .describetion{
+    position: absolute;
+    width: 144px;
+    height: 52px;
+    font-size: 12px;
+    color: #344658;
+    line-height: normal;
+    background: #E9EBEE;
+    box-shadow: 0 1px 4px 0 rgba(36,36,36,0.24);
+    border-radius: 4px;
+    padding: 5px 6px;
+    z-index: 99;
+    left: 17px;
+    top: 44px;
+    display: none;
+}
+.robotList .robotTableList .robotTable table .robotStatus:hover .describetion{
+    display: block;
+}
+.robotList .robotTableList .robotTable table .robotStatus .describetion i{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #E9EBEE;
+    transform: rotate(45deg);
+    left: 30px;
+    top: -6px;
+    z-index: -1;
+}
+
+/*ç”³è¯·åŽ†å²*/
+.robotApplyHistory{
+    background: #F8F8F9;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    padding: 40px;
+    color: #344658;
+    overflow: scroll;
+}
+.robotApplyHistory>p{
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #344658;
+    letter-spacing: 0;
+}
+.robotApplyHistory .applyTable{
+    background: #ffffff;
+    padding: 0 27px 35px 27px;
+    margin-top: 23px;
+}
+.robotApplyHistory .applyTable table tbody tr:hover{
+    background: #F8F8F9;
+}
+.robotApplyHistory .applyTable table tbody tr:hover td:last-child{
+    color:#288BF2;
+}
+.robotApplyHistory .applyTable table tbody tr .applyDetail .detail{
+    color: #344658;
+}
+.robotApplyHistory .applyTable table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.robotApplyHistory .applyTable table th,.robotApplyHistory .applyTable table td{
+    text-align: center;
+    height: 47px;
+    line-height: 47px;
+    cursor: pointer;
+}
+.robotApplyHistory .applyTable table th{
+    font-size: 13px;
+    color: #B5BDC6;
+}
+.robotApplyHistory .applyTable table td{
+    border-top: 1px solid #E9EBEE;;
+}
+.robotApplyHistory .applyTable table td:last-child:hover em{
+    font-family: PingFangSC-Medium;
+    color: #288BF2;
+}
+.robotApplyHistory .applyTable .applyDetail{
+    position: relative;
+}
+
+.robotApplyHistory .applyTable .applyDetail .detail{
+    position: absolute;
+    background: #E9EBEE;
+    box-shadow: 0 1px 4px 0 rgba(36,36,36,0.24);
+    border-radius: 4px;
+    width: 144px;
+    padding: 12px 5px;
+    line-height: normal;
+    text-align: left;
+    left: -21px;
+    top: 44px;
+    display: none;
+    z-index: 2;
+    text-align: center;
+}
+.robotApplyHistory .applyTable table td:last-child:hover .detail{
+    display: block;
+}
+.robotApplyHistory .applyTable .applyDetail .detail i{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: #E9EBEE;
+    transform: rotate(45deg);
+    left: 70px;
+    top:-8px;
+
+}
+.robotApplyHistory>.back{
+    float: right;
+    background: #58A7F8;
+    border-radius: 2px;
+    height: 30px;
+    width: 99px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-top: 13px;
+}
+.robotApplyHistory>.back:hover{
+    background: #288BF2;
+}
+/*ç”³è¯·æ–°æœºå™¨äºº*/
+.apply{
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    letter-spacing: 0;
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 876px;
+    padding: 24px;
+    margin-top: 58px;
+    margin-left: 70px;
+}
+.apply input{
+    height: 16px;
+    width: 184px;
+    padding: 6px 12px;
+    background: #ffffff;
+    border-radius: 2px;
+    font-size: 13px;
+    color: #344658;
+    border: 1px solid #F0F1F3;
+}
+.apply .aduit{
+    background: #F0F1F3;
+    border-radius: 2px;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #B5BDC6;
+}
+.apply input:focus{
+    border: 1px solid #b5bdc6;
+}
+.apply>div{
+    margin-top: 20px;
+}
+.apply>div:first-child{
+    margin-top: 0px;
+}
+.apply>div>span{
+    display: inline-block;
+    margin-right: 10px;
+}
+.apply .useDesc textarea{
+    border: 1px solid #F0F1F3;
+    height: 90px;
+    width: 546px;
+    padding: 6px 12px;
+    resize: none;
+    border-radius: 2px;
+}
+.apply .useDesc span{
+    float: left;
+}
+.apply .useDesc textarea:focus{
+    border: 1px solid #b5bdc6;
+}
+.apply .useDesc .numManage{
+    display: block;
+    width: 637px;
+    text-align: right;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+    letter-spacing: 0;
+}
+.apply .startTime .selectWrapper{
+    width: 320px;
+    position: relative;
+    line-height: 32px;
+}
+.apply .startTime .selectWrapper:after{
+    content: "020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.apply .startTime .selectWrapper .selectLabel{
+    float: left;
+    margin-right: 10px;
+}
+.apply .startTime .selectWrapper .selectBox .selectOption{
+    height: 16px;
+    width: 184px;
+    padding: 6px 12px;
+    float: left;
+    border: 1px solid #F0F1F3;
+    line-height: 19px;
+    position: relative;
+    border-radius: 2px;
+}
+
+.apply .startTime .selectWrapper .selectBox .selectOption .icon-date{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-position: -183px -645px;
+    top: 5px;
+    right: 3px;
+}
+.apply .startTime .selectWrapper .selectBox .selectOption .select{
+    color: #B5BDC6;
+}
+.apply .startTime .selectWrapper .datePickerBox{
+    top: 30px;
+    left: 64px;
+}
+.applyBottom .applySure a{
+    float: right;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+}
+.applyBottom .applySure{
+    width: 994px;
+    overflow: hidden;
+    margin-top: 14px;
+}
+.applyBottom .applySure a:nth-child(1){
+    background: #58A7F8;
+    border-radius: 4px;
+    color: #ffffff;
+}
+.applyBottom .applySure a:nth-child(1):hover{
+    background: #288BF2;
+}
+
+.applyBottom .applySure a:nth-child(2){
+    color: #B5BDC6;
+}
+.applyBottom .applySure a:nth-child(2):hover{
+    color: #288bf2;
+    text-decoration: underline #288bf2;
+}
+.applyBottom>p{
+    margin-top: 8px;
+    height: 20px;
+    padding-left: 166px;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #6AD398;
+    letter-spacing: 0;
+}
+.applyBottom .applySure #goBack{
+    background: #58A7F8;
+    border-radius: 4px;
+    color: #ffffff;
+}
+.applyBottom .applySure #goBack:hover{
+    background: #288BF2;
+    text-decoration: none;
+}
+/*ç¾¤åˆ—è¡¨*/
+.groupStatusList{
+    background: #ffffff;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+    height: calc(100% - 60px);
+    overflow: scroll;
+}
+.groupStatusList .robotMsg{
+    height: 62px;
+    background: #F8F8F9;
+    line-height: 62px;
+    padding-left: 40px;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+}
+.groupStatusList .robotMsg span{
+    display: inline-block;
+    margin-right: 60px;
+}
+.groupStatusList .robotMsg span a{
+    text-decoration: underline;
+    color: #5D90C5;
+}
+.groupStatusList .robotMsg span a:hover{
+    color: #288BF2;
+}
+.groupStatusList .groupListTable{
+    padding: 0px 32px;
+}
+.groupStatusList .groupListTable>span{
+    float: right;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.groupStatusList .groupListTable>span em{
+    float: left;
+    height: 20px;
+    width: 20px;
+    background-position: -161px -565px;
+}
+.groupStatusList .groupListTable>span:hover{
+    color: #5D90C5;
+    text-decoration: underline;
+}
+.groupStatusList .groupListTable>span:hover em{
+    background-position: -161px -585px;
+}
+.groupStatusList .groupListTable table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+.groupStatusList .groupListTable table  tr{
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    border-bottom: 1px solid #E9EBEE;
+    cursor: pointer;
+}
+.groupStatusList .groupListTable thead tr{
+    border-top: 1px solid #E9EBEE;
+}
+.groupStatusList .groupListTable table tbody tr:hover{
+    background: #F8F8F9;
+}
+.groupStatusList .groupListTable table tbody tr:hover :last-child{
+    color: #F75A5A;
+}
+.groupStatusList .groupListTable table thead{
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+}
+.groupStatusList .groupListTable table tbody td:last-child:hover{
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #F75A5A;
+    letter-spacing: 0;
+}
+.groupStatusList .backRobot{
+    background: #58A7F8;
+    border-radius: 2px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    float: right;
+    margin-top: 23px;
+    margin-right: 32px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.groupStatusList .backRobot:hover{
+    background: #288BF2;
+}
+.logOffMask {
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logOffMask .logOffRobot {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 288px;
+    height: 110px;
+    position: absolute;
+    background: #ffffff;
+    padding-top: 50px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.logOffMask .logOffRobot>p {
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #344658;
+}
+
+.logOffMask .logOffRobot>a {
+    display: inline-block;
+    height: 36px;
+    width: 90px;
+    text-align: center;
+    line-height: 36px;
+    background: #6AD298;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.logOffMask .logOffRobot>a:hover {
+    background: #5DC189;
+}
+
+.logOffMask .logOffRobot>.close-delete {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-position: -262px -43px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+.qr-mask .operating-steps>.close-qrcode{
+    top: -5px;
+}
+ .groupStatusList .qr-mask .operating-steps .VRCode,
+ .robotList .qr-mask .operating-steps .VRCode{
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #344658;
+    margin-top: 12px;
+    position: absolute;
+    top: 219px;
+    left: -146px;
+}
+ .groupStatusList .qr-mask .operating-steps,
+.robotList .qr-mask .operating-steps{
+    width: 526px;
+}
+ .groupStatusList .qr-mask .operating-steps>.close-qrcode,
+.robotList .qr-mask .operating-steps>.close-qrcode{
+    left: 580px;
+}
+@media only screen and (min-width: 1440px) and (max-width: 1920px){
+    .apply{
+        width: 942px
+    }
+    .apply>div{
+        margin-top: 40px;
+    }
+    .robotApplyHistory .applyTable .applyDetail .detail {
+        left: -15px;
+    }
+}
+@media only screen and (min-width: 1920px){
+    .apply{
+        width: 1118px
+    }
+    .apply>div{
+        margin-top: 50px;
+    }
+    .robotApplyHistory .applyTable .applyDetail .detail {
+        left: 11px;
+    }
+}

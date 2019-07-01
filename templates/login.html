@@ -1,0 +1,130 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<script src="/static/tj.js"></script>-->
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/static/css/index_1.css">
+    <link rel="stylesheet" href="/static/css/cwIndex_2.css">
+    <link rel="stylesheet" href="/static/css/gcIndex_3.css">
+    <link rel="stylesheet" href="/static/css/mtIndex_4.css">
+    <link rel="stylesheet" href="/static/css/jmIndex_5.css">
+    <link rel="stylesheet" href="/static/css/jmEnter_6.css">
+    <link rel="stylesheet" href="/static/css/jrIndex_7.css">
+    <link rel="stylesheet" href="/static/css/qrIndex_8.css">
+    <link rel="stylesheet" href="/static/css/bgIndex_9.css">
+    <link rel="stylesheet" href="/static/css/qrCode_9.css">
+    <link rel="stylesheet" href="/static/css/umIndex_10.css">
+    <link rel="stylesheet" href="/static/css/tmIndex_11.css">
+    <link rel="stylesheet" href="/static/css/ucIndex_12.css">
+    <link rel="stylesheet" href="/static/css/pcIndex_13.css">
+    <link rel="stylesheet" href="/static/css/rmIndex_14.css">
+    <link rel="stylesheet" href="/static/css/giIndex_15.css">
+    <link rel="stylesheet" href="/static/css/qqFace_16.css">
+    <link rel="stylesheet" href="/static/css/emojj_17.css">
+    <link rel="stylesheet" href="/static/css/animate_18.css">
+    <link rel="stylesheet" href="/static/css/register_19.css">
+    <link rel="stylesheet" href="/static/css/ghwIndex_20.css">
+    <link rel="stylesheet" href="/static/css/nrjmIndex_21.css">
+    <link rel="stylesheet" href="/static/css/sysIndex_22.css">
+    <link rel="stylesheet" href="/static/css/home_23.css">
+    <link rel="stylesheet" href="/static/css/kyIndex_24.css">
+    <link rel="stylesheet" href="/static/css/gamIndex_25.css">
+    <title>登录页 | 栗子云</title>
+    <link href="/static/static_inside/css/main.a2de503f.css" rel="stylesheet">
+    <style></style>
+</head>
+<body onload="key_enter()">
+<div class="app" id="root">
+    <div>
+        <div>
+            <div>
+                <div class="saas-loginContainer" style="width: 100%; height: 700px;">
+                    <div class="wallImageWrapper">
+                        <div class="headNav">
+                            <div class="cell-innerBox">
+                                <div class="logoHead"></div>
+                            </div>
+                        </div>
+                        <div class="modal"></div>
+                        <div class="cell-innerBox">
+                            <div class="textBox">
+                                <div class="h-font">更高效智能的社群管理 SaaS 平台</div>
+                                <div class="l-font">社群管理，从栗子云开始</div>
+                            </div>
+                            <div class="formBox">
+                                <div class="innerBox">
+                                    <div class="checkBar" style="opacity: 0;"></div>
+                                    <div class="userName"><input type="text" placeholder="用户名" id="user_name"
+                                                                 style="background-color: rgb(250, 255, 189) !important; box-shadow: none; color: rgb(0, 0, 0);"><em
+                                            class="icon-invisible"></em></div>
+                                    <div class="password"><input type="password" placeholder="密码" id="pwd"
+                                                                 style="background-color: rgb(250, 255, 189) !important; box-shadow: none; color: rgb(0, 0, 0);"><em
+                                            class="invisible"></em></div>
+                                    <div class="handleBar"><span class="font-selected icon-background3"></span>
+                                        <lable style="color: rgb(72, 87, 103);">记住我</lable>
+                                        <div class="forgetButton">忘记密码?</div>
+                                    </div>
+                                    <button class="loginButton" onclick="login()">登录</button>
+                                    <div class="registerButton"><u><a href="http://{{server_host}}:{{server_port}}/register" style="color: #288BF2">注册账号</a></u></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerNav">
+                        <div class="cell-innerBox">
+                            <div class="innerItem">产品</div>
+                            <div class="innerItem">解决方案</div>
+                            <div class="innerItem">案例</div>
+                            <div class="innerItem">购买</div>
+                            <div class="innerItem">关于Gemii</div>
+                            <div class="rightItem">沪 ICP 备 16026551 号-1</div>
+                            <div class="copyrightBox">Copyright © 2018Gemii</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<script type="text/javascript" src="/static/static_inside/js/main.8e82a75b.js"></script>-->
+<div id="qb-sougou-search" style="display: none; opacity: 0;"><p>搜索</p>
+    <p class="last-btn">复制</p>
+</div>
+<script>
+    function login() {
+        var user_name = document.getElementById('user_name').value;
+        var pwd = document.getElementById('pwd').value;
+        console.log(user_name, pwd);
+        $.ajax({
+            url: '/login',
+            type: 'post',
+            dataType: 'json',
+            data: {
+                'user_name': user_name,
+                'pwd': pwd
+            },
+            success: function (data) {
+                console.log(data);
+                is_success = data['is_success'];
+                if (is_success){
+                    window.location.href = 'http://{{server_host}}:{{server_port}}/u/' + user_name;
+                }
+                else {
+                    window.alert(data['info']);
+                }
+            }
+        })
+    }
+
+    function key_enter() {
+        document.onkeydown = enter_login()
+    }
+
+    function enter_login(evt) {
+        if (evt.keyCode==13) {
+            login()
+        }
+    }
+</script>
+</body>
+</html>

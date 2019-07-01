@@ -1,0 +1,555 @@
+/*å…¥ç¾¤æ¨¡æ¿1*/
+
+.filterWrapper {
+    height: 60px;
+    min-width: 1110px;
+}
+
+.templateDatabox {
+  min-width: 1110px;
+}
+
+.filterWrapper .selectWrapper {
+    float: left;
+    margin-top: 10px;
+    margin-left: 51PX;
+}
+
+.filterWrapper .selectWrapper .selectLabel {
+    float: left;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    line-height: 30px;
+}
+
+.filterWrapper .selectWrapper .titleInput {
+    border: 1px solid transparent;
+    height: 28px;
+    color: #485767;
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    line-height: 28px;
+    text-indent: 12px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 267px;
+    margin-left: 5px;
+}
+
+.filterWrapper .selectWrapper .titleInput:focus {
+    border: 1px solid #B5BDC6;
+}
+
+.filterWrapper .selectBox {
+    position: relative;
+    width: 267px;
+    float: left;
+    margin-left: 5px;
+}
+
+.filterWrapper .selectBox .selectOption {
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 267px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.filterWrapper .selectBox .selectOption em {
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    color: #B5BDC6;
+    display: inline-block;
+    line-height: 30px;
+    font-style: normal;
+    padding-left: 12px;
+}
+
+.filterWrapper .selectBox .selectOption .selIcon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-position: -183px -479px;
+    float: right;
+}
+
+.filterWrapper .selectBox .optionUl {
+    width: 269px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    z-index: 2;
+    max-height: 160px;
+    overflow: auto;
+}
+
+.filterWrapper .selectBox .optionUl ul li {
+    height: 30px;
+    line-height: 30px;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    font-size: 12px;
+    color: #485767;
+    border-top: 1px solid transparent;
+}
+
+.filterWrapper .selectBox .optionUl ul li:hover {
+    background: #F8F8F9;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #288BF2;
+    cursor: pointer;
+    border-top: 1px solid #fff;
+}
+
+.filterWrapper .selectBox .optionUl ul li:first-child {
+    border-top: 1px solid transparent;
+}
+
+.filterWrapper .selectWrapper:nth-child(4),
+.filterWrapper .selectWrapper:nth-child(1) {
+    margin-left: 47px;
+}
+
+.filterWrapper .selectBox .selectOption .selectTip {
+    color: #485767;
+}
+
+.filterWrapper .searchBtn {
+    background: #58A7F8;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    height: 31px;
+    width: 110px;
+    text-align: center;
+    color: #fff!important;
+    cursor: pointer;
+}
+
+.filterWrapper .searchBtn:hover {
+    background: #288bf2;
+    border: 1px solid #288bf2;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+    /* .enterGroupWrap .filterWrapper .expand {
+        margin: 16px 0 6px 1000px;
+    } */
+    .filterWrapper {
+        padding-top: 6px;
+    }
+}
+
+
+.addBox .addTitle {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    text-align: center;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.addBox .addIcon {
+    width: 72px;
+    height: 72px;
+    margin: 19px auto;
+    background-position: -480px -553px;
+    cursor: pointer;
+}
+
+
+
+/*å…¥ç¾¤æ¨¡æ¿  */
+
+.groupTemplate {
+    width: 325px;
+    height: 575px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin: 25px 0;
+    float: left;
+    margin-left: 43px;
+    box-shadow: 0 2px 3px 0 #DADEE2;
+    transition:  box-shadow .2s;
+}
+
+.groupTemplate:last-child {
+    margin-left: 50px;
+}
+
+.groupTemplate .templateName {
+    height: 55px;
+    /* background: #6AD298; */
+    border-radius: 6px 6px 0 0;
+    background: #B5BDC6;
+}
+
+.groupTemplate .templateName p {
+    margin-left: 40px;
+    height: 55px;
+    line-height: 55px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 146px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.groupTemplate .memeberCard {
+    position: relative;
+    width: 290px;
+    height: 152px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+
+.groupTemplate .cardBox {
+    position: absolute;
+    width: 290px;
+    height: 132px;
+    padding-top: 22px;
+    background: linear-gradient(to bottom, rgba(181, 189, 198, .7) 0%, rgba(181, 189, 198, 0.7) 30%, rgba(181, 189, 198, 0.05) 100%);
+    border-radius: 10px;
+    font-family: PingFangSC-Regular;
+    color: #FFFFFF;
+}
+
+.groupTemplate .cardBox .logoBox {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    background: #FFFFFF;
+    line-height: 38px;
+    font-family: PingFangSC-Medium;
+    background-size: cover;
+    background-position: center;
+    font-size: 12px;
+    color: #B5BDC6;
+    float: left;
+    margin-left: 22px;
+}
+
+.groupTemplate .cardBox .shopName {
+    text-indent: 10px;
+    font-size: 16px;
+}
+
+.groupTemplate .cardBox .cardName {
+    font-size: 13px;
+    text-indent: 10px;
+}
+
+.groupTemplate .editBox {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    /* color: #6AD298; */
+    height: 18px;
+}
+
+.groupTemplate .editBox .edit {
+    float: right;
+    margin-right: 40px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.groupTemplate .breakLine {
+    width: 248px;
+    border-top: 1px dashed #E9EBEE;
+    margin: 19px auto;
+    position: relative;
+}
+
+.groupTemplate .breakLine::before,
+.groupTemplate .breakLine::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: #f8f8f9;
+    border-radius: 50%;
+    position: absolute;
+        box-shadow: inset 0px 0px 3px 1px #DADEE2;
+    top: -9px;
+}
+
+.groupTemplate .breakLine::before {
+    left: -48px;
+}
+
+.groupTemplate .breakLine::after {
+    right: -48px;
+}
+
+.groupTemplate .breakLine .leftMask,
+.groupTemplate .breakLine .rightMask {
+    width: 20px;
+    height: 20px;
+    background: #f8f8f9;
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.groupTemplate .breakLine .leftMask {
+    left: -56px;
+}
+
+.groupTemplate .breakLine .rightMask {
+    right: -56px;
+}
+
+.groupTemplate .templateItem {
+    margin: 0 40px 6px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+}
+
+.groupTemplate .templateItem .itemContent {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    margin-left: 8px;
+}
+
+.groupTemplate .templateItem .edit {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    /* color: #5D90C5; */
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+
+.groupTemplate .templateItem .edit:after {
+    width: 20px;
+    height: 20px;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    cursor: pointer;
+    background: url('../images/icon/iconography.png') no-repeat -183px -599px;
+    background-size: 600px 700px;
+}
+
+.groupTemplate .oprateBox {
+    margin-top: 32px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    text-align: center;
+}
+
+.groupTemplate .oprateBox .editBtn,
+.groupTemplate .oprateBox .moreBtn {
+    width: 82px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #B5BDC6;
+    border-radius: 4px;
+    float: left;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+.groupTemplate .oprateBox .moreBtn {
+    margin-left: 41px;
+    position: relative;
+}
+
+.groupTemplate .oprateBox .moreBtn .moreBox {
+    width: 82px;
+    padding: 4px 0;
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(36, 36, 36, 0.24);
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #485767;
+    line-height: 26px;
+    position: absolute;
+    top: -25px;
+    right: -88px;
+}
+
+
+
+
+.groupTemplate .oprateBox .moreBtn .stopBtn:hover,
+.groupTemplate .oprateBox .moreBtn .delBtn:hover {
+    background: #F0F1F3;
+    color: #F75A5A;
+    cursor: pointer;
+}
+
+.groupTemplate .oprateBox .moreBtn .copyBtn:hover,
+.groupTemplate .oprateBox .moreBtn .sentBtn:hover {
+    background: #F0F1F3;
+    color: #58a7f8;
+    cursor: pointer;
+}
+
+.groupTemplate:hover {
+    box-shadow: 0 4px 10px 0 #B5BDC6;
+    transition:  box-shadow .2s;
+    
+}
+
+.groupTemplate:hover .templateItem .edit:after {
+    background-position: -209px -585px;
+}
+
+.groupTemplate:hover .breakLine::before,
+.groupTemplate:hover .breakLine::after {
+    box-shadow: 0 0px 6px 0 #B5BDC6 inset;
+}
+
+.groupTemplate:hover .templateName {
+    background: #6AD298;
+}
+
+.groupTemplate:hover .editBox {
+    color: #6AD298;
+}
+
+.groupTemplate:hover .templateItem .edit {
+    color: #5D90C5;
+}
+
+.groupTemplate:hover .oprateBox .editBtn {
+    border: 1px solid #58A7F8;
+    color: #58A7F8;
+}
+
+.groupTemplate:hover .oprateBox .moreBtn {
+    border: 1px solid #6AD298;
+    color: #6AD298;
+}
+
+.groupTemplate .oprateBox .moreBtn:hover {
+    background: #6AD298;
+    border: 1px solid #6AD298;
+    color: #FFFFFF;
+}
+
+.groupTemplate .oprateBox .editBtn:hover {
+    background: #58A7F8;
+    color: #fff;
+}
+
+.groupTemplate .oprateBox .editBtn:active,
+.groupTemplate .oprateBox .moreBtn:active {
+    opacity: .8;
+}
+
+.jmRuleWrap .buttonBox {
+    float: left;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    text-align: center;
+    margin: 5px 45px 0px 813px;
+    line-height: 30px;
+    padding-left: 130px;
+}
+
+.jmRuleWrap .buttonBox .backBtn {
+    float: right;
+    width: 42px;
+    height: 30px;
+    color: #B5BDC6;
+    cursor: pointer;
+}
+
+.jmRuleWrap .buttonBox .backBtn:hover {
+    color: #5D90C5;
+    text-decoration: underline;
+}
+
+.jmRuleWrap .buttonBox .confirmBtn {
+    float: right;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    background: #58A7F8;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.jmRuleWrap .buttonBox .confirmBtn:hover {
+    background: #288bf2;
+}
+
+.addBox {
+    float: left;
+    width: 217px;
+    height: 348px;
+    border: 1px dashed #B5BDC6;
+    border-radius: 6px;
+    margin: 100px 0 0 100px;
+}
+@media screen and (max-width: 1279px){
+    .jmRuleWrap .buttonBox{
+        margin: 5px 45px 0px 580px;
+    }
+}
+@media screen and (max-width: 1243px){
+/* .enterGroupWrap .filterWrapper .expand{
+            margin: 16px 0 6px 1000px;
+    } */
+}
+@media screen and (min-width: 1244px) and (max-width: 1279px){
+/* .enterGroupWrap .filterWrapper .expand{
+            margin: 16px 0 6px 1000px;
+    } */
+}
+
+@media screen and (min-width: 1440px) and (max-height: 1919px) {
+    .jmRuleWrap .buttonBox {
+        margin: 30px 82px 0px 936px;
+    }
+    .filterWrapper {
+        padding-top: 16px;
+        height: 60px;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .addBox {
+        margin-left: 106px;
+        /*margin-top: 30px;*/
+    }
+    .filterWrapper {
+        height: 100px;
+    }
+    .filterWrapper .selectWrapper {
+        margin-top: 46px;
+    }
+
+    .filterWrapper .jm-templateBox {
+        margin-top: 50px;
+    }
+    .jmRuleWrap .buttonBox {
+        margin: 30px 0 0 1280px;
+    }
+    .filterWrapper .selectWrapper:last-child{
+        margin-left: 51px;
+    }
+}

@@ -1,0 +1,253 @@
+.ghw-container{
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+}
+
+.ghw-container .ghw-headBox {
+    height: 57px;
+    border-bottom: 1px solid #DEE2E6;
+}
+.ghw-bodyBox,
+.ghw-wordVector-container{
+  height: 100%;
+  overflow-y: auto;
+  background: #FFF;
+  position: relative;
+}
+.ghw-wordVector-container text{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ghw-svgContainer{
+  float: left;
+  position: absolute;
+  left: 269px;
+  right: 0;
+  text-align: center;
+}
+#word-cloud{
+  text-align: center;
+}
+#cloud-time rect:hover,
+#word-cloud text:hover{
+  cursor: pointer;
+}
+#cloud-time{
+  height: 60px;
+}
+#cloud-set{
+  float: left;
+  width: 208px;
+  height: 100%;
+  border-right: 1px solid #E9EBEE;
+  margin-right: 10px;
+  padding: 0 30px;
+}
+#cloud-tip,
+#wordVector-tip{
+  background: #000;
+  opacity: .8;
+  border: 0;
+  border-radius: 3px;
+  padding: 10px;
+  position: fixed;
+  min-width: 70px;
+  min-height: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+.ghw-timeRect rect:hover{
+  opacity: 0.8
+}
+.ghw-time-axis path,
+.ghw-time-axis line{
+	fill: 'none';
+	shape-rendering: crispEdges;
+  /*display: none;*/
+}
+.ghw-setItem{
+  padding: 0;
+  font-family: PingFangSC-Medium;
+  font-size: 13px;
+  color: #485767;
+  line-height: 30px;
+  margin-top: 20px;
+}
+.ghw-setItem .selectWrapper .selectLabel{
+  font-family: PingFangSC-Medium;
+  font-size: 13px;
+  color: #485767;
+  line-height: 30px;
+  display: inline-block;
+}
+.ghw-setItem .selectWrapper .selectBox {
+    position: relative;
+    width: 150px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.ghw-setItem .selectBox .selectOption {
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 138px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    border-radius: 2px;
+    border: 1px solid #DADEE2 !important;
+}
+.ghw-setItem .selectBox .optionUl {
+    width: 150px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 26px;
+    left: 0px;
+    z-index: 2;
+}
+.ghw-setItem .selectOption .selIcon {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    width: 20px;
+    height: 17px;
+    margin: 6px 4px;
+    background-position: -183px -479px;
+    float: right;
+}
+#cloud-time .left,
+#cloud-time .right{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: move;
+  fill-opacity: 1;
+}
+.ghw-searchInput{
+  height: 28px;
+  width: 167px;
+  border: 1px solid #DADEE2;
+  border-right-width: 0;
+  border-radius: 2px;
+  display: inline-block;
+  float: left;
+  background: #fff;
+}
+.ghw-filterGroup {
+  margin-bottom: 10px;
+}
+.ghw-filterGroup input{
+  font-family: PingFangSC-Light;
+  font-size: 13px;
+  line-height: 28px;
+  text-indent: 5px;
+  height: 28px;
+  width: 100%;
+  border: 0;
+}
+.ghw-searchBtn{
+  width: 40px;
+  height: 30px;
+  display: inline-block;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background: url(../images/icon/iconography.png)no-repeat;
+  background-size: 600px 700px;
+  background-position: -544px -151px;
+}
+.ghw-searchBtn:hover{
+  background-position: -544px -195px;
+}
+.ghw-filterGroup ul {
+  overflow: auto;
+  background: #F8F8F9;
+  padding-left: 12px;
+}
+.ghw-filterGroup li{
+  white-space: nowrap;
+}
+.ghw-buttonOk{
+    background: #58A7F8;
+    border-radius: 4px;
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+}
+.ghw-groups,
+.ghw-groupslabel{
+  position: relative;
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin-right: 8px;
+}
+.ghw-container .ghw-checked .ghw-groups,
+.ghw-container .ghw-checked .ghw-groupslabel{
+  background: #fff url(../images/icon/iconography.png)no-repeat;
+  background-position: -185px -185px;
+  background-size: 600px 700px;
+  position: relative;
+  top: 3px;
+}
+.ghw-text{
+  display: inline-block;
+  height: 17px;
+  line-height: 17px;
+}
+.ghw-loadingMoving{
+  margin: auto;
+  height: 300px;
+  width: 300px;
+}
+.ghw-timeTitle{
+  margin-top: 23px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #485767;
+}
+/*è¯å‘é‡*/
+#wordVector{
+  width: 100%;
+  height: 100%;
+}
+.ghw-grpArea{
+  box-sizing: border-box;
+  padding: 20px 100px;
+  height: 100%;
+  width: 100%;
+  /*background: url('../images/ghw/wordVector-bg.png') center no-repeat;*/
+}
+.ghw-wordVector-axis circle,
+.ghw-wordVector-axis line {
+  fill: none;
+  stroke: steelblue;
+  stroke-dasharray: 4;
+}
+.ghw-wordVector-axis:last-of-type circle {
+  stroke: steelblue;
+  stroke-dasharray: none;
+}
+.ghw-grpArea .point circle{
+  opacity: 0.8
+}
+.ghw-backBtn{
+  position: absolute;
+  bottom: 100px;
+  right: 80px;
+}

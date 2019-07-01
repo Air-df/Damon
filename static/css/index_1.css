@@ -1,0 +1,5446 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+a{
+  text-decoration: none;
+}
+
+html {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+@font-face {
+  font-family: 'PingFangSC-Regular';
+  src:url('/image/font/pingfangscregula.ttf');
+}
+
+body {
+    display: block;
+    font-size: 12px;
+    font-family: "PingFang SC";
+    /*overflow-x: auto;
+    overflow-y: scroll;*/
+}
+
+input::-webkit-input-placeholder {
+    color: #B5BDC6;
+}
+
+input::-moz-input-placeholder {
+    color: #B5BDC6;
+}
+
+input::-o-input-placeholder {
+    color: #B5BDC6;
+}
+
+textarea{
+    resize: none;
+}
+/**************登录页面**************/
+
+.saas-loginContainer {
+    position: static;
+    width: 100%;
+    height: 100%;
+    min-height: 562px;
+}
+.saas-loginContainer  .headNav{
+  width: 100%;
+  height: 64px;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+.saas-loginContainer  .headNav .cell-innerBox{
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+}
+.saas-loginContainer  .footerNav .cell-innerBox{
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+}
+.saas-loginContainer  .footerNav .cell-innerBox .innerItem{
+  float: left;
+  height: 80px;
+  margin-right: 60px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 16px;
+  color: #344658;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.saas-loginContainer  .footerNav .cell-innerBox .innerItem:hover{
+ color: #288BF2;
+}
+.saas-loginContainer  .footerNav .cell-innerBox .rightItem{
+  float: right;
+  width: 200px;
+  height: 80px;
+  line-height: 80px;
+  text-align: right;
+  font-size: 16px;
+  color: #344658;
+}
+.saas-loginContainer  .wallImageWrapper .cell-innerBox{
+  position: absolute;
+  z-index: 200;
+  left: calc(50% - 600px);
+  width: 1200px;
+  height: 100%;
+}
+.logoHead{
+  float: left;
+  margin-top: 15px;
+  width: 90px;
+  height: 30px;
+  background: url('../images/icon/logo.svg') no-repeat center;
+  background-size: 90px;
+}
+
+.saas-loginContainer .wallImageWrapper {
+    margin-top: 0px;
+    width: 100%;
+    min-width: 1200px;
+    height: 800px;
+    background:url('../images/bj/login4.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+@media screen and (min-height: 80px) {
+    .navBarWrapper .nav-logoBox {
+        bottom: 15%;
+    }
+}
+
+.saas-loginContainer .copyrightBox {
+    float: right;
+    width: 200px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 200;
+    color: #707D8B;
+}
+
+.saas-loginContainer .footerNav{
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  background: #FFFFFF;
+}
+
+.saas-loginContainer .wallImageWrapper .textBox {
+    position: relative;
+    float: left;
+    left: 0;
+    margin-top: 22%;
+    color: white
+}
+
+.saas-loginContainer .textBox .h-font {
+    width: 100%;
+    height: 67px;
+    font-size: 44px;
+    line-height: 67px;
+    font-weight: 200
+}
+
+.saas-loginContainer .textBox .l-font {
+    width: 396px;
+    height: 33px;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 100
+}
+
+.saas-loginContainer .wallImageWrapper .modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(46deg, #27ADFF 0%, #2656FF 100%);
+    opacity: 0.8
+/*     background: rgba(0, 0, 0, .15)
+ */}
+
+.saas-loginContainer .logoIcon {
+    width: 156px;
+    height: 44px;
+    margin-bottom: 21px;
+    background: url('../images/icon/iconography.png') no-repeat;
+    background-size: 600px 700px;
+    background-position: -417px -351px;
+}
+
+.saas-loginContainer .controlPlatform{
+  float: right;
+  width: 70px;
+  height: 26px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-top: 16px;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 26px;
+  cursor: pointer;
+}
+.saas-loginContainer .controlPlatform:hover{
+  transition: all .3s ease-in-out;
+  color: #6AD298;
+  border-color: #6AD298;
+}
+
+.saas-loginContainer .formBox {
+    position: relative;
+    margin-top: 12%;
+    float: right;
+    width: 420px;
+    min-height: 350px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.saas-loginContainer .formBox .innerBox {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 320px;
+    background-color: white;
+    font-weight: 200;
+}
+
+.saas-loginContainer .innerBox input {
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    width: 313px;
+    height: 50px;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 16px;
+    border: 1px solid #E9EBEE;
+    border-radius: 2px;
+    outline: none;
+    padding-left: 5px;
+    background-color: #FFFFFF;
+    font-family: "PingFangSC-Light";
+    -webkit-appearance: none;
+}
+.saas-loginContainer .innerBox input:-webkit-autofill {
+-webkit-box-shadow:   0px 1000px #fff inset!important;
+box-shadow:   0px 1000px #fff inset!important;
+}
+.saas-loginContainer .innerBox .password em.invisible{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin:-50px 0 0 287px;
+    background-position: -242px -343px;
+    cursor: pointer;
+}
+
+.saas-loginContainer .innerBox .password{
+  position: relative;
+}
+.saas-loginContainer .innerBox .password em.invisible:hover{
+    background-position: -242px -363px;
+}
+.saas-loginContainer .innerBox .password em.visible{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    background-position: -218px -158px;
+    cursor: pointer;
+}
+
+.saas-loginContainer .innerBox .password em.invisible{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.saas-loginContainer .innerBox .userName .icon-visible{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin:-50px 0 0 287px;
+    background-position: -198px -158px;
+    cursor: pointer;
+}
+.saas-loginContainer .innerBox .userName .icon-invisible{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    background-position: -198px -158px;
+    cursor: pointer;
+}
+
+
+
+.saas-loginContainer .innerBox .checkBar {
+    width: 300px;
+    height: 30px;
+    font-size: 13px;
+    text-indent: 20px;
+    line-height: 30px;
+    background: url('../images/icon/alert.png') no-repeat 1px;
+    background-size: 14px;
+    color: red
+}
+
+.saas-loginContainer .innerBox input:focus {
+    border: 1px solid #60ABF8;
+    box-shadow: 0 0 2px 0 #5EABF9;
+}
+
+.saas-loginContainer .innerBox .codeBox {
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 7px;
+    width: 320px;
+    height: 50px;
+    background-color: #FFFFFF;
+    font-family: "PingFangSC-Light";
+}
+
+.saas-loginContainer .codeBox input {
+    float: left;
+    margin-left: 0
+}
+
+.saas-loginContainer .codeBox img {
+    float: right;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #D1D1D1;
+}
+
+.saas-loginContainer .innerBox .handleBar {
+    margin: 10px auto;
+    width: 320px;
+    height: 35px;
+}
+
+.saas-loginContainer .handleBar .font-unselected {
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    /*border: 1px solid #58a7f8;*/
+    border-radius: 2px;
+    /*background-color: white;*/
+    background-position: -218px -178px;
+}
+.saas-loginContainer .handleBar .font-selected {
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    /*border: 1px solid #58a7f8;*/
+    border-radius: 2px;
+
+    background-position: -198px -178px;
+    /*background-color: white;*/
+}
+
+.saas-loginContainer .handleBar lable {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    color:  #B5BDC6;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.saas-loginContainer .handleBar .forgetButton {
+    float: right;
+    margin-right: 0px;
+    width: 80px;
+    height: 20px;
+    font-size: 16px;
+    text-align: right;
+    color: #B5BDC6;
+    cursor: pointer;
+}
+
+.saas-loginContainer .handleBar .forgetButton:hover {
+    color: #485767
+}
+
+.saas-loginContainer .loginButton {
+    margin: 20px auto;
+    margin-bottom: 10px;
+    width: 320px;
+    height: 50px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #0DA1FB 0%, #2656FF 51%, #0DA1FB 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.saas-loginContainer .loginButton:hover {
+    background-position: right center;
+}
+.saas-loginContainer .loginButton:hover rect{
+    fill:#58A7F8;
+}
+.saas-loginContainer .loginButton svg{
+  margin-top: 10px;
+}
+.saas-loginContainer .loginButton rect{
+  fill:#288BF2;
+}
+
+.saas-loginContainer circle{
+  fill:#FFFFFF
+}
+
+.loadingBox-butt{
+  margin: 0 auto;
+  width: 100px;
+  height: 100%;
+}
+.loadingBox-butt .desc{
+  float: left;
+  height: 100%;
+  line-height: 50px;
+}
+.loadingBox-butt .loader{
+    float: left;
+    height: 100%;
+}
+.loadingBox-butt .loader svg{
+  margin-top: 21px;
+  margin-left: 10px;
+}
+.saas-loginContainer .registerButton{
+  width: 100%;
+  height: 30px;
+  padding-bottom: 14px;
+  text-align: right;
+}
+.saas-loginContainer .registerButton u{
+    color: #288BF2;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.saas-loginContainer .registerButton u:hover{
+    color: #58A7F8;
+}
+/**************重新登录页面**************/
+
+
+.login-again{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    font-weight: normal;
+    /*width: 1160px;*/
+
+    position: relative;
+}
+.login-again .goBackLogin{
+    position: relative;
+    margin: 15% auto;
+    text-align: center;
+}
+.login-again-icon{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background: url('../images/bj/loginAgin.png')no-repeat;
+    background-size: cover;
+    margin-bottom: 2px;
+    margin-left: -20px;
+}
+.login-again .goBackLogin>p{
+    margin: 0 auto;
+    width: 262.8px;
+    height: 28px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: #58A7F8;
+    letter-spacing: 0;
+    line-height: 28px;
+    padding-left: 16px;
+    margin-bottom: 30px;
+}
+.login-again .goBackLogin .click-login{
+    display: inline-block;
+    height: 42px;
+    width: 278px;
+    background: #288BF2;
+    border-radius: 6px;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 42px;
+    cursor: pointer;
+}
+.login-again .goBackLogin .click-login:hover{
+  background-color: #58A7F8
+}
+
+
+
+/*导航条*/
+
+ul,
+li {
+    list-style: none;
+}
+
+.navBarBox ul{
+  width: 100%;
+  height: 100%;
+  /* overflow-y: auto; */
+}
+
+
+.navBarWrapper {
+    width: 134px;
+    height: 100%;
+    background: #344658;
+    position: relative;
+    float: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /*transition: width .4s;*/
+}
+
+.navBarWrapper::-webkit-scrollbar{
+  display: none;
+  background: transparent
+}
+.navBarWrapper::-webkit-scrollbar-thumb{
+  background-color: transparent
+}
+
+
+
+.navBarWrapper .nav-avtarBox {
+    height: 80px;
+    width: 85px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.navBarWrapper .nav-avtarBox .nav-avatar {
+    width: 80px;
+    height: 85px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 32px auto 0;
+    cursor: pointer;
+    background-position: -50px -8px;
+    position: relative;
+}
+
+.navBarWrapper .monitorStateWrapper .monitorStateBox:after{
+    display: none;
+}
+.navBarWrapper .nav-avtarBox .nav-avatar-off.nav-avatar:after{
+    background: #E9EBEE;
+}
+.navBarWrapper .nav-avtarBox .nav-avatar-off {
+    /*background-position: -21px -93px;*/
+        opacity: 0.8;
+}
+.navBarWrapper .navBarBox .nav-arrowBox {
+    margin-left: 25px;
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+}
+
+.navBarWrapper .navBarBox .nav-arrow {
+    width: 34px;
+    height: 34px;
+    background-position: -81px -77px;
+}
+
+.navBarWrapper .navBarBox-active .nav-arrow {
+    background-position: -81px -43px;
+}
+
+
+.navBarWrapper .nav-item {
+    position: relative;
+    height: 50px;
+    cursor: pointer;
+}
+
+.navBarWrapper .nav-item-active {
+    /* background: #58A7F8; */
+}
+
+.navBarWrapper .nav-item .nav-icon {
+    width: 28px;
+    height: 28px;
+    float: left;
+    transform: scale(.9, .9);
+    margin-left: 28px;
+    margin-top: 11px;
+}
+
+.navBarWrapper .nav-item .arrowUp{
+  position: absolute;
+  top: 13px;
+  right:4px;
+  width: 20px;
+  height: 20px;
+  background-position: -50px -93px;
+}
+.navBarWrapper .nav-item .arrowDown{
+  position: absolute;
+  top: 13px;
+  right:4px;
+  width: 20px;
+  height: 20px;
+  background-position: -70px -93px;
+}
+
+.navBarWrapper-extend .nav-item .arrowUp,.navBarWrapper-extend .nav-item .arrowDown{
+  display: none
+}
+
+
+/*.navBarWrapper .nav-item-active .nav-icon {
+    background: #288BF2;
+}*/
+
+
+/*
+    GMScope: 'gmScope',
+    WOScope: 'woScope',
+    GCScope: 'gcScope',
+    CWScope: 'cwScope',
+    GDScope: 'gdScope',
+    MTScope: 'mtScope'*/
+
+.navBarWrapper ul .gmScope .nav-icon {
+    background-position: -85px -181px;
+}
+
+.navBarWrapper ul .woScope .nav-icon {
+    background-position: -85px -589px;
+}
+
+.navBarWrapper ul .gcScope .nav-icon {
+    background-position: -85px -284px;
+}
+
+.navBarWrapper ul .gdScope .nav-icon {
+    background-position: -85px -490px;
+}
+
+.navBarWrapper ul .cwScope .nav-icon {
+    background-position: -85px -385px;
+}
+.navBarWrapper ul .mtScope .nav-icon {
+    background-position: -45px -387px;
+}
+.navBarWrapper ul .gaScope .nav-icon {
+    background-position: -45px -591px;
+}
+.navBarWrapper ul .aiScope .nav-icon {
+    background-position: -118px -593px;
+}
+.navBarWrapper ul .ecScope .nav-icon {
+    background-position: -12px -386px;
+}
+.navBarWrapper ul .qrScope .nav-icon {
+    background-position: -12px -556px;
+}
+.navBarWrapper ul .tmScope .nav-icon {
+    background-position: -119px -590px;
+}
+.navBarWrapper ul .rmScope .nav-icon {
+    background-position: -11px -488px;
+}
+.navBarWrapper ul .sysScope .nav-icon {
+    background-position: -45px -488px;
+}
+.navBarWrapper ul .home .nav-icon {
+    background-position: -85px -285px
+}
+
+.navBarWrapper ul .gmScope .nav-item-active .nav-icon {
+    background-position: -85px -113px
+}
+
+.navBarWrapper ul .woScope .nav-item-active .nav-icon {
+    background-position: -85px -521px;
+}
+.navBarWrapper ul .gaScope .nav-item-active .nav-icon {
+    background-position: -46px -523px;
+}
+.navBarWrapper ul .ecScope .nav-item-active .nav-icon {
+    background-position: -12px -318px;
+}
+.navBarWrapper ul .gcScope .nav-item-active .nav-icon {
+    background-position: -85px -216px;
+}
+.navBarWrapper ul .aiScope .nav-item-active .nav-icon {
+    background-position: -118px -559px;
+}
+.navBarWrapper ul .cwScope .nav-item-active .nav-icon {
+    background-position: -85px -317px;
+}
+.navBarWrapper ul .sysScope .nav-item-active .nav-icon {
+    background-position: -45px -420px;
+}
+.navBarWrapper ul .gdScope .nav-item-active .nav-icon {
+    background-position: -85px -422px;
+}
+.navBarWrapper ul .mtScope .nav-item-active .nav-icon {
+    background-position: -45px -319px;
+}
+.navBarWrapper ul .qrScope .nav-item-active .nav-icon {
+    background-position: -12px -522px;
+}
+.navBarWrapper ul .tmScope .nav-item-active .nav-icon {
+    background-position: -119px -522px;
+}
+.navBarWrapper ul .rmScope .nav-item-active .nav-icon {
+    background-position: -11px -420px;
+
+}
+
+.navBarWrapper ul .home .nav-item-active .nav-icon {
+    background-position: -85px -251px;
+}
+.navBarWrapper .nav-item .nav-textBox {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 50px;
+    color: #8D969F;
+    vertical-align: middle;
+    padding: 0 6px;
+    font-family: "PingFangSC-light";
+    text-indent: -4px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.navBarWrapper .nav-item-active .nav-textBox {
+    color: #fff;
+}
+
+
+.navBarWrapper ul .nav-item-unactive:hover .nav-textBox {
+    color: #58A7F8;
+}
+
+.navBarWrapper ul .gmScope .nav-item-unactive:hover .nav-icon {
+    background-position: -85px -147px;
+}
+
+.navBarWrapper ul .woScope .nav-item-unactive:hover .nav-icon {
+    background-position: -85px -555px;
+}
+
+.navBarWrapper ul .gcScope .nav-item-unactive:hover .nav-icon {
+    background-position: -85px -250px;
+}
+.navBarWrapper ul .aiScope .nav-item-unactive:hover .nav-icon {
+    background-position: -118px -525px;
+}
+.navBarWrapper ul .cwScope .nav-item-unactive:hover .nav-icon {
+    background-position: -85px -351px;
+}
+.navBarWrapper ul .sysScope .nav-item-unactive:hover .nav-icon {
+    background-position: -45px -454px;
+}
+
+.navBarWrapper ul .gdScope .nav-item-unactive:hover .nav-icon {
+    background-position: -85px -456px;
+}
+.navBarWrapper ul .mtScope .nav-item-unactive:hover .nav-icon {
+    background-position: -45px -353px;
+}
+.navBarWrapper ul .gaScope .nav-item-unactive:hover .nav-icon {
+    background-position: -45px -557px;
+}
+.navBarWrapper ul .ecScope .nav-item-unactive:hover .nav-icon {
+    background-position: -12px -352px;
+}
+.navBarWrapper ul .qrScope .nav-item-unactive:hover .nav-icon {
+    background-position: -12px -590px;
+}
+.navBarWrapper ul .tmScope .nav-item-unactive:hover .nav-icon {
+    background-position: -119px -556px;
+}
+.navBarWrapper ul .rmScope .nav-item-unactive:hover .nav-icon {
+    background-position: -11px -454px;
+}
+.navBarWrapper ul .home .nav-item-unactive:hover .nav-icon {
+    background-position: -85px -217px;
+}
+.navBarWrapper .navBarBox {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    background: transparent;
+}
+
+.navBarWrapper .navBarTunnelBox{
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  z-index: 2;
+  background: transparent;
+}
+
+.navBarWrapper .navBarTunnelBox .swiperBoard{
+  margin-top: 47px;
+  width: 100%;
+  height: 50px;
+  background: #152A3E;
+  transition: all 0.4s ease-in-out;
+}
+.navBarWrapper .navBarTunnelBox .swiperBoard .lightBar{
+  width: 6px;
+  height: 100%;
+  background: #288BF2;
+  box-shadow: 0 0 20px 2px #288BF2;
+}
+
+.navBarWrapper .nav-item-active .nav-textBox {
+    color: #fff;
+}
+
+.navBarWrapper .nav-logoBox {
+    height: 20px;
+    transform: scale(1.5, 1.5);
+    /*margin: 0 auto;*/
+    position: absolute;
+    bottom: 10%;
+    left: 31%;
+    background-position: -24px -183px;
+    width: 45px;
+    z-index: 1
+}
+
+
+.navBarWrapper .nav-logoBox-default {
+    transform: scale(1.3, 1.3);
+    background-position: -17px -140px;
+    height: 40px;
+    left: 25%;
+    height: 40px;
+}
+
+.navBarWrapper-extend {
+    width: 84px;
+    /*transition: width .4s;*/
+
+}
+
+.navBarWrapper-extend .nav-item .nav-textBox {
+    display: none;
+}
+
+
+/*二级菜单*/
+.navBarBox .tmScope {
+    position: relative;
+}
+
+.navBarBox .tmScope .secondNavBox {
+    display: none;
+}
+
+.navBarBox .tmScope:hover .secondNavBox {
+    display: block;
+}
+
+.navBarBox .tmScope .secondNavBox {
+    position: absolute;
+    right: -90px;
+    top: 0;
+    text-align: center;
+    width: 90px;
+}
+
+.navBarBox .gdScope {
+    position: relative;
+}
+.navBarBox .gdScope .secondNavBox {
+    display: none;
+}
+
+.navBarBox .gdScope:hover .secondNavBox {
+    display: block;
+}
+
+.navBarBox .gdScope .secondNavBox {
+    position: absolute;
+    right: -90px;
+    top: 0;
+    text-align: center;
+    width: 90px;
+}
+
+.navBarBox .gaScope {
+    position: relative;
+}
+
+.navBarBox .gaScope .secondNavBox {
+    display: none;
+}
+
+.navBarBox .gaScope:hover .secondNavBox {
+    display: block;
+}
+
+.navBarBox .gaScope .secondNavBox {
+    position: absolute;
+    right: -90px;
+    top: 0;
+    text-align: center;
+    width: 90px;
+}
+
+.navBarBox .secondNavBox .secondNav {
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    background: #344658;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+    cursor: pointer;
+}
+.navBarBox .secondNavBox .secondNav+ .secondNav{
+    border-top: 1px solid #282b2d;
+}
+.navBarBox .tmScope .secondNavBox .secondNav:last-child {
+    border-bottom: 1px solid transparent;
+}
+.navBarBox .tmScope .secondNavBox .secondNav:nth-child(1) {
+    border-radius: 0 4px 4px 0;
+}
+.navBarBox .gaScope .secondNavBox .secondNav:last-child {
+    border-bottom: 1px solid transparent;
+}
+.navBarBox .gaScope .secondNavBox .secondNav:nth-child(1) {
+    border-radius: 0 4px 0 0;
+}
+
+.navBarBox .gaScope .secondNavBox .secondNav:nth-child(4) {
+    border-radius: 0 0 4px 0;
+}
+
+.navBarBox .gaScope .secondNavBox .secondNav:nth-child(4):hover {
+    border-bottom: 1px solid #288bf2;
+}
+
+.navBarBox .gdScope .secondNavBox .secondNav:nth-child(1) {
+    border-radius: 0 4px 4px 0;
+}
+
+/* .navBarBox .gaScope .secondNavBox .secondNav:nth-child(1):hover {
+    border-bottom: 1px solid #288bf2;
+}
+ */
+.navBarBox .secondNavBox .secondNav:hover {
+    /*background: #288bf2;*/
+    color: #58a7f8;
+}
+.navBarWrapper .secondNavBox .secondNavActive{
+     background: #288bf2!important;
+    color: #fff!important;
+}
+.navBarWrapper .secondNavBox:last-child.secondNavActive{
+         border-bottom: 1px solid #288bf2!important;
+}
+/*********班长状态************/
+
+.monitorStateWrapper {
+    float: right;
+    position: relative;
+    margin-top: 17px;
+    margin-right: 36px;
+}
+
+.monitorStateWrapper .stateTitle {
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #485767;
+    line-height: 17px;
+    position: relative;
+    cursor: pointer;
+}
+
+.monitorStateWrapper .stateTitle:after {
+    content: '';
+    border-right: 5px solid transparent;
+    border-top: 6px solid #485767;
+    border-left: 5px solid transparent;
+    border-bottom: none;
+    position: absolute;
+    right: -16px;
+    top: 6px;
+}
+.monitorStateWrapper .stateTitle:hover:after {
+    border-top: 6px solid #58a7f8;
+}
+.monitorStateWrapper .stateTitle:active:after {
+    border-top: 6px solid #58a7f8;
+}
+.monitorStateWrapper .monitorStateBox {
+    float: left;
+    margin: 25px 10px 10px 10px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(36, 36, 36, 0.24);
+    border-radius: 4px;
+    width: 80px;
+    /*height: 140px;*/
+    padding:0 0 6px 0;
+    font-size: 12px;
+    color: #b5bdc6;
+    letter-spacing: 0;
+    text-align: center;
+    position: absolute;
+    left: -30px;
+    top: 10px;
+    z-index: 4;
+}
+.monitorStateWrapper .monitorStateBox:hover{
+    cursor: pointer;
+}
+.monitorStateWrapper .monitorStateBox:before {
+         content: "";
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    transform: rotate(-45deg) skew(10deg, 10deg);
+    position: absolute;
+    left: 44%;
+    top: -5px;
+    z-index: 1;
+    border-radius: 2px;
+    box-shadow: 0px 1px 17px 0 rgba(36, 36, 36, 0.24);
+
+}
+.monitorStateWrapper .monitorStateBox:after {
+    width: 32px;
+    height: 11px;
+    background: #fff;
+    position: absolute;
+    left: 33%;
+    top: 0px;
+    z-index: 1;
+    content: "";
+}
+.navBarWrapper .monitorStateWrapper .monitorStateBox:before {
+    display: none;
+}
+
+
+/*下班状态，小圆点为灰色*/
+
+.monitorStateWrapper .monitorStateBox .workStateBox .iconRing {
+    background: #B5BDC6;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+}
+
+
+/*上班状态，小圆点为绿色*/
+
+.monitorStateWrapper .monitorStateBox .working .iconRing {
+    background: #77D5A1;
+    display: none;
+}
+
+.monitorStateWrapper .monitorStateBox .workStateBox .work {
+    font-size: 12px;
+    /*color: #485767;*/
+    letter-spacing: 0;
+    /*margin-left: 14px;*/
+}
+
+.monitorStateWrapper .monitorStateBox .stateBox .monitorState {
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+    /* color: #485767; */
+}
+
+
+/*系统消息小红点提示*/
+
+.monitorStateWrapper .monitorStateBox .stateBox .systemBox {
+    width: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.monitorStateWrapper .monitorStateBox .stateBox .systemMsg:after {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    background: #f0f1f3;
+    position: absolute;
+    top: 3px;
+    right: -1px;
+    content: "";
+}
+
+
+/*选中项的背景为蓝色*/
+.monitorStateWrapper .monitorStateBox .stateBox .monitorState.active{
+    color: #485767;
+}
+.monitorStateWrapper .monitorStateBox .stateBox .monitorState.active:hover {
+    background: #F8F8F9;
+    color: #288BF2;
+}
+.monitorStateWrapper .monitorStateBox .workStateBox{
+      height: 22px;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+/*.monitorStateWrapper .monitorStateBox .workStateBox:hover {
+    background: #f0f1f3;
+    color: #288BF2;
+}*/
+/*.monitorStateWrapper .monitorStateBox .workStateBox:hover span{
+    color: #288BF2;
+}*/
+.navBarWrapper .monitorStateWrapper .monitorStateBox .exit{
+         border: 1px solid #B5BDC6;
+}
+.monitorStateWrapper .monitorStateBox .stateBox .monitorState:active {
+    color: #58A7F8;
+}
+
+.monitorStateWrapper .monitorStateBox .exit {
+    width: 48px;
+    height: 20px;
+    /*border: 1px solid #B5BDC6;*/
+        color: #485767;
+    border-radius: 4px;
+    text-align: center;
+    background: #fff;
+    line-height: 20px;
+    margin: 0 auto;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+
+/*按钮选中时状态为蓝色*/
+
+.monitorStateWrapper .monitorStateBox .exit:hover {
+    /*border: 1px solid #D8E7F9;*/
+    color: #288BF2;
+}
+.navBarWrapper .monitorStateWrapper  .exit:hover {
+    border: 1px solid #D8E7F9;
+}
+
+.navBarWrapper .monitorStateWrapper .monitorStateBox{
+      left: 29px;
+    top: -82px;
+}
+.navBarWrapper .monitorStateWrapper .monitorStateBox{
+    padding-bottom: 10px;
+}
+
+/*班长系统*/
+
+.saas-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.saas-container .itemBox {
+    cursor: pointer;
+}
+
+.saas-container .itemBox li {
+    width: 100%;
+    height: 100%
+}
+
+
+/*********群消息系统***************/
+
+.gm-container {
+    float: left;
+    height: 100%
+}
+
+.gm-container .groupList {
+    background-color: white
+}
+
+.gm-container .groupList::-webkit-scrollbar {
+    display: none;
+    width: 6px;
+    height: 6px;
+}
+
+.gm-container .groupList:hover::-webkit-scrollbar {
+    display: block
+}
+
+.gm-container .groupList::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    background-color: #B5BDC6;
+}
+
+.gm-box-groupSend .groupListBox::-webkit-scrollbar {
+    /*display: none;*/
+    width: 6px;
+    height: 6px;
+}
+.gm-box-groupSend .groupListBox:hover::-webkit-scrollbar {
+    display: block
+}
+
+.gm-box-groupSend .groupListBox::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    background-color: #dadee2;
+}
+.gm-box-groupSend .groupListBox::-webkit-scrollbar-track {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: white;
+}
+
+.gm-container .groupList::-webkit-scrollbar-track {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: white;
+}
+
+.gm-container .groupList::-moz-scrollbar-thumb {
+    background-color: #B5BDC6;
+}
+
+.gm-container .groupList::-o-scrollbar-thumb {
+    background-color: #B5BDC6;
+}
+
+.gm-container .memberList::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.gm-container .memberList::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    background-color: #B5BDC6;
+}
+
+.gm-container .memberList::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+.gm-container .memberList::-moz-scrollbar-thumb {
+    background-color: #B5BDC6;
+}
+
+.gm-container .memberList::-o-scrollbar-thumb {
+    background-color: #B5BDC6;
+}
+
+.gm-container .gm-goupWrapper {
+    float: left;
+    width: 299px;
+    height: 100%;
+    background-color: #DADEE2
+}
+
+.gm-container .gm-msgWrapper {
+    height: 100%;
+}
+
+.gm-goupWrapper .searchWrapper {
+    position: relative;
+    width: 100%;
+    height: 58px;
+    padding-top: 8px;
+}
+
+.gm-goupWrapper .searchWrapper input {
+    font-family: 'PingFangSC-Regular';
+    font-size: 13px;
+    display: block;
+    width: 270px;
+    height: 42px;
+    line-height: 32px;
+    margin: 0 auto;
+    color:#485767;
+    padding-top: 1px;
+    border: none;
+    border-radius: 4px;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fff;
+}
+
+.gm-goupWrapper .searchWrapper .searchInIcon,
+.gm-memberWrapper .searchWrapper .searchInIcon{
+    position: absolute;
+    top: 20.5px;
+    left: 40.5%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /*content: '';*/
+    transition: all .3s;
+    background: url('../images/icon/iconography.png')no-repeat;
+    background-position: -183px -83px;
+    background-size: 600px 700px;
+}
+
+.gm-goupWrapper .searchingIcon .searchInIcon,
+.gm-memberWrapper .searchingIcon .searchInIcon {
+    /*top: 22px;*/
+    left: 20.5px;
+}
+
+.gm-goupWrapper .focusInput {
+    transition: all .3s;
+    line-height: 32px;
+    text-indent: 28px;
+    border: solid 1px #b5bdc6;
+}
+
+.gm-goupWrapper .blurInput {
+    transition: all .3s;
+    text-indent: 48%;
+    border: none;
+}
+
+.gm-goupWrapper .searchWrapper input::-webkit-input-placeholder {
+    color: #B5BDC6;
+    /*font-weight: 200;*/
+}
+
+.gm-container .groupList {
+    margin: 0 auto;
+    width: 318px;
+    height: calc(100vh - 75px);
+    border-radius: 4px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.gm-container .groupList .itemBox {
+    position: relative;
+    margin: 0 auto;
+    width: 318px;
+    height: 78px;
+    list-style: none;
+    border-bottom: solid 1px #F0F1F3;
+    background-color: #FFFFFF;
+}
+
+.gm-container .groupList .itemBox .keywordNumber {
+    position: absolute;
+    left: 45px;
+    top: 10px;
+    width: 35px;
+    height: 17px;
+}
+
+.gm-container .groupList .keywordNumber span {
+    display: block;
+    margin: 0 auto;
+    height: 18px;
+    background-color: #F75A5A;
+    border-radius: 9px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 18px;
+}
+
+.gm-container .groupList img {
+    margin-top: 15px;
+    margin-left: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+}
+
+.gm-container .groupList .profile {
+    float: left;
+    width: 72px;
+    height: 100%
+}
+
+.gm-container .groupList .name {
+    float: left;
+    width: 149px;
+    height: 100%;
+    margin-left: 6px;
+}
+
+.gm-container .groupList .name span {
+    display: inline-block;
+    height: 17px;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #344658;
+    font-size: 13px;
+}
+
+.gm-container .groupList .handle {
+    float: left;
+    width: 46px;
+    height: 100%
+}
+
+.gm-container .groupList .handle .time {
+    margin-top: 22px;
+    margin-right: 20px;
+    margin-left: 1px;
+    font-family: "PingFangSC-Light";
+    width: 35px;
+    height: 20px;
+    color: #B5BDC6;
+    font-size: 13px;
+    text-align: right;
+}
+
+.gm-container .groupList .handle .control {
+    margin-top: 5px;
+    margin-left: 16px;
+    background-position: -183px -203px;
+    width: 20px;
+    height: 20px;
+}
+
+
+/*yc*/
+
+.gm-container .groupList .handle .control:hover {
+    background-position: -183px -223px;
+}
+
+.gm-container .groupList .handle .control:active {
+    background-position: -183px -243px;
+}
+
+.gm-container .gm-crumbsBox {
+    width: 100%;
+    height: 59px;
+    background-color: #FFFFFF;
+    /*border-bottom: solid 1px #DEE2E6;*/
+}
+
+.gm-crumbsBox .groupCrumb {
+    float: left;
+    width: 240px;
+    height: 59px;
+    background-color: #F8F8F9;
+    cursor: pointer;
+}
+
+.gm-crumbsBox .memberCrumb {
+    float: left;
+    width: 120px;
+    height: 59px;
+    background-color: #F8F8F9;
+    cursor: pointer;
+}
+
+.gm-crumbsBox .memberCrumb span,
+.gm-crumbsBox .groupCrumb span {
+    display: inline-block;
+    max-width: 160px;
+    height: 13px;
+    line-height: 13px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 22px 3px;
+    font-size: 14px
+}
+.gm-crumbsBox .memberCrumb span{
+    max-width: 90px;
+    height: 100%;
+    line-height: 100%;
+}
+.gm-crumbsBox .monitorPattern {
+    float: right;
+    width: 190px;
+    height: 74px;
+}
+
+.gm-msgWrapper .msgFlowWrapper {
+    width: 100%;
+    /*height: 100%;*/
+    background: white
+}
+
+.gm-msgWrapper .msgFlowWrapper .innerContainer {
+    position: absolute;
+    left: 20%;
+    width: 100%;
+    height: 93%;
+    border-top: solid 1px #DEE2E6;
+}
+
+.gm-msgWrapper .msgFlowWrapper .msgFlowInner {
+    position: relative;
+    float: left;
+    width: 77%;
+    height: 100%;
+    background: #F8F9F9
+}
+
+.gm-msgWrapper .msgFlowBox {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 240px);
+    background: #F8F9F9;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.gm-msgWrapper .msgFlowBox::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.gm-msgWrapper .msgFlowBox::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    background-color: #B5BDC6;
+}
+
+.gm-msgWrapper .msgFlowBox::-webkit-scrollbar-track {
+    background-color: #F8F9F9;
+}
+
+.gm-msgWrapper .msgFlowBox::-moz-scrollbar-thumb {
+    background-color: #B5BDC6;
+}
+
+.gm-msgWrapper .msgFlowBox::-o-scrollbar-thumb {
+    background-color: #B5BDC6;
+}
+.gm-msgPickerWrapper .formWrapper{
+  position: fixed;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  cursor: auto;
+}
+.gm-msgPickerWrapper .formWrapper .formBox{
+  margin: 10% auto;
+  width: 670px;
+  height: 388px;
+  background: #F8F8F9;
+}
+.gm-msgPickerWrapper .formBox .formTitle{
+  display: inline-block;
+  margin: 20px auto;
+  width: 100%;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #485767;
+  letter-spacing: 0;
+}
+.gm-msgPickerWrapper .innerBox{
+  width: 99%;
+  height: 172px;
+  background: #FFFFFF;
+}
+.gm-msgPickerWrapper .fontMonitor{
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 592px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  font-family: PingFangSC-Medium;
+  text-align: right;
+  color: #B5BDC6;
+}
+.gm-msgPickerWrapper .innerBox .confirmButton{
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 180px;
+  height: 34px;
+  background: #288BF2;
+  border: 1px solid #288BF2;
+  border-radius: 4px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
+}
+.gm-msgPickerWrapper .innerBox .confirmButton:hover{
+  background-color: #58A7F8;
+}
+.gm-msgPickerWrapper .innerBox .cancelButton{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 180px;
+  height: 34px;
+  border: 1px solid #58A7F8;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 34px;
+  font-family: PingFangSC-Regular;
+  font-size: 12px;
+  color: #288BF2;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.gm-msgPickerWrapper .innerBox .cancelButton:hover{
+
+}
+
+/* msgPicker css */
+.gm-msgPickerWrapper .contentTitle{
+
+
+}
+.gm-msgPickerWrapper .contentTitle label{
+  margin: 10px auto;
+  display: block;
+  width: 590px;
+  font-family: PingFangSC-Medium;
+  font-size: 13px;
+  color: #485767;
+}
+.gm-msgPickerWrapper .contentTitle textarea{
+  display: block;
+  margin: 0 auto;
+  padding: 13px 13px;
+  resize: none;
+  width: 564px;
+  height: 74px;
+  font-size: 13px;
+  background-color: #FFFFFF;
+}
+
+/* msgPicker - selectBox css */
+
+.gm-msgPickerWrapper .controlBox{
+  margin: 20px auto;
+  width: 595px;
+  height: 60px;
+}
+.gm-msgPickerWrapper .controlBox .selectBox{
+  position: relative;
+}
+.gm-msgPickerWrapper .controlBox .selectWrapper{
+  float: left;
+}
+.gm-msgPickerWrapper .controlBox .selectWrapper:nth-child(1),
+.gm-msgPickerWrapper .controlBox .selectWrapper:nth-child(2){
+  margin-right: 30px;
+}
+.gm-msgPickerWrapper .controlBox .selectBox .selectOption .selIcon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-position: -183px -479px;
+    float: right;
+}
+.gm-msgPickerWrapper .controlBox .selectBox .selectOption .selectArrow {
+    transform: rotate(180deg)
+}
+.gm-msgPickerWrapper .controlBox .selectWrapper .selectLabel {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    margin-right: 6px;
+    line-height: 30px;
+    height: 30px;
+}
+.gm-msgPickerWrapper .controlBox .selectWrapper input:focus {
+    border: 1px solid #b5bdc6;
+    outline: none;
+}
+.gm-msgPickerWrapper .controlBox .selectWrapper .selectBox .selectOption em {
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    display: inline-block;
+    line-height: 30px;
+    font-style: normal;
+    padding-left: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.gm-msgPickerWrapper .controlBox .selectBox .selectOption .unselecedTip {
+    color: #B5BDC6;
+}
+.gm-msgPickerWrapper .controlBox .selectBox .selectOption .selectTip {
+    color: #485767;
+}
+.gm-msgPickerWrapper .behaviorType {
+    border: 1px solid transparent;
+    height: 30px;
+    color: #485767;
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    line-height: 30px;
+    text-indent: 12px;
+}
+
+.gm-msgPickerWrapper .selectBox .selectOption,
+.gm-msgPickerWrapper .behaviorType {
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 180px;
+    height: 30px;
+    line-height: 28px;
+}
+
+.gm-msgPickerWrapper .selectBox .optionUl {
+    width: 212px;
+    max-height: 90px;
+    overflow-y: scroll;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    z-index: 2;
+}
+
+.gm-msgPickerWrapper .selectBox .optionUl ul li {
+    height: 30px;
+    line-height: 31px;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    font-size: 12px;
+    color: #485767;
+}
+
+
+
+.gm-msgPickerWrapper .selectBox .optionUl .selected,
+.gm-msgPickerWrapper .selectBox .optionUl ul li:hover {
+    background: #F8F8F9;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #288BF2;
+    cursor: pointer;
+}
+
+
+.gm-msgPickerWrapper .formWrapper .buttonBox{
+  margin: 0 auto;
+  width: 590px;
+  height: 30px;
+}
+.gm-msgPickerWrapper .formWrapper .buttonBox .cancelButton{
+  float: right;
+  width: 100px;
+  height: 30px;
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #B5BDC6;
+  letter-spacing: 0;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.gm-msgPickerWrapper .formWrapper .buttonBox .cancelButton:hover{
+  text-decoration: underline;
+  color: #5D90C5;
+}
+.gm-msgPickerWrapper .formWrapper .buttonBox .submitButton{
+  float: right;
+  width: 100px;
+  height: 30px;
+  background: #58A7F8;
+  border-radius: 4px;
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+.gm-msgPickerWrapper .formWrapper .buttonBox .submitButton:hover{
+  background: #288BF2
+}
+
+
+
+
+
+
+
+
+
+.gm-msgWrapper .sendMsBox {
+    width: 99%;
+    height: 220px;
+    background: #FFFFFF;
+}
+.gm-msgWrapper .sendMsBox .moveDrag{
+  width: 99%;
+  height: 13px;
+  cursor: row-resize;
+}
+
+.gm-container .handleInner {
+    float: left;
+    width: 265px;
+    height: 100%;
+    background: #E9EBEE
+}
+
+.gm-container .handleInner .drawerBar {
+    width: 100%;
+    height: 30px;
+    background-color: #E9EBEE
+}
+
+.gm-container .handleInner .gm-memberWrapper {
+    margin: 9px auto;
+    width: 100%;
+    height: calc(100% - 130px);
+    overflow: hidden;
+    background-color: #FFFFFF
+}
+
+.gm-container .memberList {
+    /*margin: 0 auto;*/
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+.gm-container .memberList .itemBox .keywordNumber {
+    position: absolute;
+    left: 45px;
+    top: 10px;
+    width: 35px;
+    height: 17px;
+}
+
+.gm-container .memberList .keywordNumber span {
+    display: block;
+    margin: 0 auto;
+    height: 18px;
+    background-color: #F75A5A;
+    border-radius: 9px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 18px;
+}
+
+.gm-memberWrapper .searchWrapper #searchInput::-webkit-input-placeholder {
+    color: #B5BDC6;
+    /*font-weight: 200;*/
+}
+
+
+/*******消息编辑框********/
+
+.gm-msgSendBox {
+    width: 100%;
+    height: 240px;
+    position: relative;
+}
+
+.gm-msgSendBox .toolBar {
+    padding-top: 14px;
+    height: 36px;
+}
+
+.gm-msgSendBox .toolBar .toolBtn {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.gm-msgSendBox .toolBar .emojiBtn {
+    background-position: -134px -329px;
+}
+
+.gm-msgSendBox .toolBar .emojiBtn:hover {
+    background-position: -134px -365px;
+}
+
+.gm-msgSendBox .toolBar .uploadBtn {
+    position: relative;
+    background-position: -134px -114px;
+}
+
+.gm-msgSendBox .toolBar .uploadBtn:hover {
+    background-position: -134px -149px;
+}
+
+.gm-msgSendBox .toolBar .altBtn {
+    position: relative;
+    background-position: -134px -185px;
+}
+
+.gm-msgSendBox .toolBar .altBtn:hover {
+    background-position: -134px -221px;
+}
+
+.gm-msgSendBox .toolBar .groupSendbtn {
+    background-position: -134px -257px;
+}
+
+.gm-msgSendBox .toolBar .groupSendbtn:hover {
+    background-position: -134px -293px;
+}
+
+.gm-msgSendBox .toolBar .pickMsgBtn {
+    background-position: -134px -42px;
+}
+
+.gm-msgSendBox .toolBar .pickMsgBtn:hover {
+    background-position: -134px -78px;
+}
+
+.gm-msgSendBox .toolBar .keywordFlow {
+    background-position: -370px -286px;
+}
+
+.gm-msgSendBox .toolBar .keywordFlow:hover {
+    background-position: -370px -322px;
+}
+
+.gm-msgSendBox .gm-editBox {
+    margin-top: 14px;
+    padding: 0 26px;
+    height: 80px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #344658;
+    line-height: 20px;
+    -webkit-appearance: none;
+    border: none;
+    outline: medium;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    word-break: normal;
+    white-space: normal;
+}
+
+.gm-msgSendBox .msgSendBox {
+    position: absolute;
+    right: 26px;
+    bottom: 34px;
+}
+
+.gm-msgSendBox .msgSendBox .sendBtn {
+    background: #58A7F8;
+    border-radius: 4px;
+    width: 90px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.gm-msgSendBox .msgSendBox .sendBtn:hover,
+.gm-msgSendBox .msgSendBox .sendBtn:active {
+    background: #288Bf2;
+    cursor: pointer;
+}
+
+
+/*******群组对话浮层********/
+
+.gm-box-groupSend {
+    position: absolute;
+    display: none;
+    z-index: 2;
+    bottom: 60px;
+    /* margin-top: 50px; */
+    margin-bottom: -50px;
+    width: 250px;
+    /*height: 185px;*/
+    box-sizing: border-box;
+    padding: 16px 14px 16px 14px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .24);
+    border-radius: 2px;
+    font-family: PingFangSC-Light;
+    color: #485767;
+    letter-spacing: 0;
+    transition: all .4s;
+}
+
+.gm-box-groupSend .searchWrapper input {
+    width: 222px;
+    height: 26px;
+    box-sizing: border-box;
+    border: 1px solid #B5BDC6;
+    border-radius: 2px;
+    color: #344658;
+    text-indent: 10px;
+    font-family: PingFangSC-Light;
+}
+
+.gm-box-groupSend .searchWrapper input:focus {
+    border: 1px solid #83b9f0;
+    box-shadow: 0 0px 3px 0 #58A7F8;
+}
+
+.gm-box-groupSend .groupListBox {
+    margin: 14px 0;
+    width: 100%;
+        max-height: 122px;
+    overflow: auto;
+}
+
+.gm-box-groupSend .groupListBox ul {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.gm-box-groupSend .allGroup,
+.gm-box-groupSend .member {
+    position: relative;
+}
+
+.gm-box-groupSend .member {
+    margin-top: 4px;
+}
+
+.gm-box-groupSend .groupListBox .selected {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #B5BDC6;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.gm-box-groupSend .allGroup span,
+.gm-box-groupSend .member span {
+    margin-left: 24px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    width: 180px;
+}
+
+
+/*******用户对话浮层********/
+
+.gm-box-altMember {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    bottom: 60px;
+    margin-bottom: -50px;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 16px 0px 21px 16px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .24);
+    border-radius: 2px;
+    font-family: PingFangSC-Light;
+    color: #485767;
+    letter-spacing: 0;
+    transition: all .4s;
+}
+
+.gm-box-altMember .memberBox {
+    max-height: 143px;
+    overflow-y: auto;
+}
+
+.gm-box-altMember .altAll,
+.gm-box-altMember .member {
+    position: relative;
+}
+
+.gm-box-altMember .member {
+    margin-top: 4px;
+}
+
+.gm-box-altMember .altAll .selected,
+.gm-box-groupSend .groupListBox .selected,
+.gm-box-altMember .member .selected {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #B5BDC6;
+    border-radius: 2px;
+    position: absolute;
+    background-position: -186px -186px;
+}
+
+.gm-box-altMember .altAll .unselected,
+.gm-box-altMember .member .unselected {
+    background: #FFFFFF;
+}
+
+.gm-box-altMember .altAll span,
+.gm-box-altMember .member span {
+    margin-left: 24px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    width: 90px;
+}
+
+.gm-box-altMember .searchWrapper {
+    position: relative;
+}
+
+.gm-box-altMember .searchWrapper input {
+    width: 170px;
+    height: 26px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #B5BDC6;
+    border-radius: 2px;
+    margin-top: 10px;
+    text-indent: 7px;
+    font-size: 12px;
+}
+
+.gm-box-altMember .searchWrapper .focused {
+    border: 1px solid #60ABF8;
+    box-shadow: 0 0 2px 0 #5EABF9;
+}
+
+.gm-box-altMember .searchWrapper .userListBox {
+    width: 170px;
+    max-height: 86px;
+    box-sizing: border-box;
+    padding: 6px 0 8px 0px;
+    background: #FFFFFF;
+    border: 1px solid #B5BDC6;
+    border-radius: 1px 1px 2px 2px;
+    position: absolute;
+    top: 100%;
+    overflow-y: auto;
+}
+
+.gm-box-altMember .searchWrapper ul {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.gm-box-altMember .searchWrapper li {
+    font-size: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-indent: 20px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.gm-box-altMember .searchWrapper li:hover {
+    background-color: #DADEE2 !important;
+    color: #288bf2!important;
+}
+
+
+/**********消息气泡组件**********/
+
+.countinfoBox {
+    position: absolute;
+    z-index: 2;
+    width: inherit;
+    height: 25px;
+}
+
+.unreadMsg {
+    /*display: none;*/
+    float: right;
+    margin-right: 10px;
+    width: 180px;
+    height: 24px;
+    background: #D8E7F9;
+    border-radius: 100px 100px 100px 100px;
+    cursor: pointer;
+}
+
+.unreadMsg .upArrow {
+    background-position: -183px -403px;
+    margin-top: 2px;
+}
+.unreadMsg:hover .upArrow {
+    background-position: -183px -443px;
+}
+
+.upArrow {
+    float: left;
+    margin-left: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.unreadMsgContent {
+    float: left;
+    margin-left: 5px;
+    width: 130px;
+    height: 24px;
+    text-align: left;
+    line-height: 24px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #58A7F8;
+    letter-spacing: 0;
+}
+.unreadMsg:hover .unreadMsgContent {
+    color: #288BF2;
+}
+.newMsgTipBox{
+    position: absolute;
+    z-index: 2;
+    width: inherit;
+    height: 24px;
+    left: 0;
+    bottom: 240px;
+}
+.newMsgTipBox .newMsgTip{
+    width: 140px;
+    height: 24px;
+    border-radius: 24px;
+    background: rgba(48,57,67,.3);
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.newMsgTipBox .downArrow{
+    width: 20px;
+    height: 20px;
+    background-position: -183px -579px;
+    float: left;
+    margin-left: 14px;
+    margin-right: 6px;
+    margin-top: 2px;
+}
+.newMsgTipBox .newMsgContent{
+    float: left;
+    height: 24px;
+    text-align: left;
+    line-height: 24px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.friendMsgBubble {
+    float: left;
+    width: 100%;
+    margin-left: 26px;
+    margin-bottom: 20px;
+}
+.friendMsgBubble .pickBox{
+  width: 20px;
+  height: 20px;
+  float: left;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-right: 24px;
+  background-position: -304px -243px;
+  cursor: pointer;
+}
+.friendMsgBubble .pickedBox{
+  width: 20px;
+  height: 20px;
+  float: left;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-right: 24px;
+  background-position: -304px -187px;
+  cursor: pointer;
+}
+
+
+.friendMsgBubble .avatarBox {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 4px;
+    margin-top: 3px;
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+.friendMsgBubble .avatarBox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.friendMsgBubble .msgInfoBox,
+.monitorMsgBubble .msgInfoBox{
+    margin-left: 56px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #999DA6;
+    letter-spacing: 0;
+}
+
+.friendMsgBubble .msgInfoBox .nickName,
+.friendMsgBubble .msgInfoBox .date {
+    margin-right: 12px;
+}
+
+.monitorMsgBubble .msgInfoBox{
+    text-align: right;
+    margin-right: 56px;
+    margin-left: 0px;
+}
+
+.monitorMsgBubble .msgInfoBox .nickName,
+.monitorMsgBubble .msgInfoBox .date{
+    margin-left: 12px;
+}
+
+.friendMsgBubble .friendMsgBox {
+    display: inline-block;
+    padding: 10px 5px 0px 5px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    max-width: 460px;
+    min-height: 40px;
+    position: relative;
+    margin-left: 16px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    z-index: 1
+}
+
+.friendMsgBubble .friendMsgBox:before,
+.friendMsgBubble .audioMsgBox:before,
+.friendMsgBubble .microMsgBox:before,
+.friendMsgBubble .fileMsgBox:before,
+.friendMsgBubble .programMsgBox:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-45deg) skew(10deg, 10deg);
+    left: -5px;
+    top: 5px;
+    border-radius: 2px;
+}
+
+.friendMsgBubble .friendMsgBox .msgBox {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #344658;
+    letter-spacing: 0;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+
+/*班长消息*/
+.monitorMsgBubble {
+    width: 100%;
+    float: right;
+    margin-right: 26px;
+    margin-bottom: 20px;
+}
+.monitorMsgBubble .pickBox{
+  width: 20px;
+  height: 20px;
+  float: left;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: 51px;
+  background-position: -304px -243px;
+  cursor: pointer;
+}
+.monitorMsgBubble .pickedBox{
+  width: 20px;
+  height: 20px;
+  float: left;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-left: 51px;
+  background-position: -304px -187px;
+}
+
+.monitorMsgBubble .avatarBox {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: skyblue;
+    float: right;
+    margin-top: 3px;
+}
+.monitorMsgBubble .avatarBox img{
+    width: 100%;
+    height: 100%;
+        border-radius: 4px;
+}
+.monitorMsgBubble .monitorMsgBox {
+    padding: 10px 15px 0px 20px;
+    background: #D8E7F9;
+    border-radius: 4px;
+    max-width: 320px;
+    min-height: 20px;
+    float: right;
+    margin-right: 16px;
+    margin-top: 6px;
+    position: relative;
+    z-index: 1
+}
+
+.monitorMsgBubble .monitorMsgBox:after,
+.monitorMsgBubble .audioMsgBox:after,
+.monitorMsgBubble .microMsgBox:after,
+.monitorMsgBubble .fileMsgBox:after,
+.monitorMsgBubble .programMsgBox:after  {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #D8E7F9;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-45deg) skew(14deg, 14deg);
+    right: -4px;
+    top: 7px;
+    border-radius: 2px;
+}
+.monitorMsgBubble .microMsgBox:after{
+    background-color: #FFFFFF;
+    z-index: 0;
+}
+
+.monitorMsgBubble .monitorMsgBox .msgBox {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #344658;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.msgBox pre{
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'PingFangSC-Regular'
+}
+
+b {
+    font-weight: 200;
+}
+
+
+/*******用户图片消息*******/
+
+.friendMsgBubble .imgMsgBox {
+    border-radius: 4px;
+    position: relative;
+    /*margin-left: 56px;*/
+    margin-top: 6px;
+}
+
+.friendMsgBubble .imgMsgBox img {
+    height: 126px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.friendMsgBubble .imgMsgBox .fakeView{
+  position: relative;
+  overflow: hidden;
+  height: 126px;
+  width: 231px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #58A7F8;
+}
+
+.friendMsgBubble .imgMsgBox .fakeView .fakeViewbutt{
+  margin: 0 auto;
+  margin-top: 27px;
+  width: 60px;
+  height: 60px;
+  background-position: -383px -7px;
+}
+
+
+.friendMsgBubble .imgMsgBox .loadingBox {
+    height: 71px;
+    width: 120px;
+    margin: 0;
+    text-align: center;
+    padding-top: 49px;
+    background: #FFFFFF;
+}
+
+.friendMsgBubble .imgMsgBox .alertBox {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 80px;
+    top: 24px;
+    background: url(../images/icon/alert.png) no-repeat;
+    cursor: pointer
+}
+
+
+/******班长图片消息*******/
+
+.monitorMsgBubble .imgMsgBox {
+    border-radius: 4px;
+    float: right;
+    margin-right: 16px;
+    margin-top: 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+.monitorMsgBubble .imgMsgBox img {
+    height: 126px;
+    border-radius: 5px;
+}
+
+.monitorMsgBubble .imgMsgBox .alertBox {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -34px;
+    top: 24px;
+    background: url(../images/icon/alert.png) no-repeat;
+    cursor: pointer
+}
+
+
+/******用户音频消息******/
+
+.friendMsgBubble .audioMsgBox {
+    padding: 10px 15px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 56px;
+    margin-top: 6px;
+    height: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+    max-width: 300px;
+    min-width: 80px;
+}
+
+.friendMsgBubble .audioMsgBox .playIcon {
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon/iconography.png) no-repeat;
+    background-size: 600px 700px;
+    background-position: -70px -642.8px;
+    float: left;
+    margin-right: 17px;
+}
+
+.friendMsgBubble .audioMsgBox .played {
+    background-position: -96px -642.8px;
+}
+
+.friendMsgBubble .audioMsgBox .playing {
+    animation: audioPlaying 1.5s steps(3) infinite;
+}
+
+.friendMsgBubble .audioMsgBox .audioPeriod {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #58A7F8;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+}
+
+
+/*******班长音频消息******/
+
+.monitorMsgBubble .audioMsgBox {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background: #D8E7F9;
+    border-radius: 4px;
+    float: right;
+    margin-right: 16px;
+    margin-top: 6px;
+    position: relative;
+    cursor: pointer;
+}
+
+.monitorMsgBubble .audioMsgBox .playIcon {
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon/iconography.png) no-repeat;
+    background-size: 600px 700px;
+    background-position: -70px -642.8px;
+    float: right;
+    margin-left: 17px;
+    transform: rotate(180deg);
+}
+
+.monitorMsgBubble .audioMsgBox .played {
+    background-position: -96px -642.8px;
+}
+
+.monitorMsgBubble .audioMsgBox .playing {
+    animation: audioPlaying 1.5s steps(3) infinite;
+}
+
+.monitorMsgBubble .audioMsgBox .audioPeriod {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #58A7F8;
+    height: 20px;
+    line-height: 20px;
+    float: right;
+}
+
+
+/*******音频播放动画******/
+
+@keyframes audioPlaying {
+    0% {
+        background-position: -30px -642.8px;
+    }
+    100% {
+        background-position: -90px -642.8px;
+    }
+}
+
+
+/******用户微任务消息******/
+
+.friendMsgBubble .microMsgBox {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-left: 56px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.friendMsgBubble .microMsgBox,
+.monitorMsgBubble .microMsgBox {
+    width: 220px;
+    height: 100px;
+    display: block;
+}
+
+.friendMsgBubble .microMsgBox .microTitle,
+.monitorMsgBubble .microMsgBox .microTitle {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+    width: 140px;
+    margin-right: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
+        height: 20px;
+}
+
+.friendMsgBubble .microMsgBox .microContent,
+.monitorMsgBubble .microMsgBox .microContent {
+    margin-top: 6px;
+}
+
+.friendMsgBubble .microMsgBox .microContent .textBox,
+.monitorMsgBubble .microMsgBox .microContent .textBox {
+    font-family: PingFangSC-Light;
+    font-size: 10px;
+    color: #485767;
+    width: 140px;
+    margin-right: 18px;
+    overflow: hidden;
+    height: 51px;
+    float: left;
+    line-height: 16px;
+}
+
+.friendMsgBubble .microMsgBox .microContent .imgBox,
+.monitorMsgBubble .microMsgBox .microContent .imgBox {
+    float: left;
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 2px;
+    margin-top: 3px;
+}
+
+.friendMsgBubble .microMsgBox .microContent .imgBox img,
+.monitorMsgBubble .microMsgBox .microContent .imgBox img {
+    width: 36px;
+}
+
+
+/******班长微任务消息******/
+
+.monitorMsgBubble .microMsgBox {
+    float: right;
+    margin-right: 26px;
+    margin-top: 6px;
+    padding: 10px;
+    background: #D8E7F9;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+/* 用户文件消息 */
+.friendMsgBubble .fileMsgBox {
+    width: 230px;
+    height: 80px;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 56px;
+    margin-top: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+    display: block;
+}
+
+.friendMsgBubble .fileMsgBox img,
+.monitorMsgBubble .fileMsgBox img{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+
+.friendMsgBubble .fileMsgBox .fileName,
+.monitorMsgBubble .fileMsgBox .fileName{
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.friendMsgBubble .fileMsgBox .fileSize,
+.monitorMsgBubble .fileMsgBox .fileSize{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+    margin-top: 25px;
+}
+
+/* 班长文件消息 */
+.monitorMsgBubble .fileMsgBox {
+    float: right;
+    margin-right: 26px;
+    margin-top: 6px;
+    padding: 10px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: relative;
+    width: 230px;
+    height: 80px;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 1;
+    display: block;
+}
+
+/* 用户小程序消息 */
+.friendMsgBubble .programMsgBox{
+    width: 230px;
+    height: 268px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: relative;
+    display: block;
+    margin-left: 56px;
+    margin-top: 6px;
+    margin-bottom: 28px;
+}
+
+.friendMsgBubble .programMsgBox .tip{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+    width: 230px;
+    margin-top: 10px;
+}
+
+.friendMsgBubble .programMsgBox:before {
+    z-index: 0;
+}
+
+.friendMsgBubble .programMsgBox .programTitle,
+.monitorMsgBubble .programMsgBox .programTitle{
+    padding-top: 10px;
+    padding-left: 14px;
+}
+
+.friendMsgBubble .programMsgBox .programTitle img,
+.monitorMsgBubble .programMsgBox .programTitle img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+}
+
+.friendMsgBubble .programMsgBox .programTitle span,
+.monitorMsgBubble .programMsgBox .programTitle span{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #8E8E93;
+    line-height: 30px;
+    margin-left: 4px;
+}
+
+.friendMsgBubble .programMsgBox .title,
+.monitorMsgBubble .programMsgBox .title{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #344658;
+    margin-top: 6px;
+    margin-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.friendMsgBubble .programMsgBox .programImg,
+.monitorMsgBubble .programMsgBox .programImg{
+    width: 214px;
+    height: 163px;
+    margin: 6px auto 0;
+    background-size: cover;
+}
+
+.friendMsgBubble .programMsgBox .line,
+.monitorMsgBubble .programMsgBox .line{
+    width: 220px;
+    border-top: 1px solid #D5D5D5;
+    margin: 10px auto 0;
+}
+
+.friendMsgBubble .programMsgBox .programLogo,
+.monitorMsgBubble .programMsgBox .programLogo{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #8E8E93;
+    line-height: 19px;
+}
+
+.friendMsgBubble .programMsgBox .programLogo .img,
+.monitorMsgBubble .programMsgBox .programLogo .img{
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    margin-left: 8px;
+    margin-right: 2px;
+    float: left;
+    background-position: -226px -425px;
+}
+
+/* 班长小程序消息 */
+.monitorMsgBubble .programMsgBox{
+    width: 230px;
+    height: 268px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    position: relative;
+    float: right;
+    margin-right: 26px;
+    margin-bottom: 28px;
+    margin-top: 6px;
+}
+
+.monitorMsgBubble .programMsgBox .tip{
+    margin-top: 10px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+}
+
+.monitorMsgBubble .programMsgBox:after{
+    background: #FFFFFF;
+    z-index: 0;
+}
+
+.friendMsgBubble .friendMsgBox .msgBox .icon-alert,
+.monitorMsgBubble .monitorMsgBox .msgBox .icon-alert{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon/alert.png) no-repeat;
+    background-size: 20px 20px;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 5px;
+}
+
+/*右边栏样式*/
+
+
+/******右边导航栏*******/
+
+.gm-container .handleInner {
+    float: left;
+    width: 265px;
+    height: 100%;
+    background: #E9EBEE
+}
+
+.gm-container .handleInner-expand {
+    width: 110px;
+    background: white;
+}
+
+.gm-container .handleInner .naviHandle {
+    width: 100%;
+    height: 76px;
+    background: white;
+}
+
+.gm-container .handleInner-expand .naviHandle {
+    height: auto;
+}
+
+.gm-container .handleInner .drawerBar {
+    width: 100%;
+    height: 30px;
+    background-color: #E9EBEE
+}
+
+.gm-container .drawerBar .arrow-o {
+    float: right;
+    width: 20px;
+    height: 20px;
+    /*background-color: black;*/
+    display: block;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 13px;
+    background-position: -183px -43px;
+}
+
+.gm-container .handleInner-expand .drawerBar .arrow-o {
+    /*background-color: skyblue;*/
+    background-position: -183px -63px;
+}
+
+
+/*菜单栏*/
+
+.gm-container .navWrapper {
+    height: 76px;
+    background: #fff;
+}
+
+.gm-container .handleInner-expand .navWrapper {
+    height: 100%;
+}
+
+.gm-container .menuWrapper {
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    color: #092949;
+    width: 33%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.gm-container .handleInner-expand .menuWrapper {
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+
+.gm-container .menuWrapper+.menuWrapper {
+    border-left: 1px solid #DEE2E6;
+}
+
+.gm-container .menuWrapper .menuIcon {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    /*  background: url('../images/icon.png') no-repeat;
+    background-size: 80px 82px;
+    border: 1px solid #000;*/
+}
+
+.gm-container .handleInner-expand .menuTitle {
+    display: none;
+}
+
+.gm-container .handleInner-expand .menuWrapper {
+    border-left: 0;
+    border-bottom: 1px solid #DEE2E6;
+    height: 41px;
+    padding-top: 9px;
+    cursor: pointer;
+}
+
+.gm-container .menuWrapper:nth-child(1):hover .unactiveMenu,
+.gm-container .menuWrapper:nth-child(1) .menuIcon {
+    background-position: -410px -74px;
+}
+
+.gm-container .menuWrapper:nth-child(3):hover .unactiveMenu,
+.gm-container .menuWrapper:nth-child(3) .menuIcon {
+    background-position: -410px -268px;
+}
+
+.gm-container .menuWrapper:nth-child(2):hover .unactiveMenu,
+.gm-container .menuWrapper:nth-child(2) .menuIcon {
+    background-position: -410px -172px
+}
+
+.gm-container .menuWrapper:nth-child(1) .menuIcons {
+    background-position: -410px -42px;
+}
+
+.gm-container .menuWrapper:nth-child(3) .menuIcons {
+    background-position: -410px -236px;
+}
+
+.gm-container .menuWrapper:nth-child(2) .menuIcons {
+    background-position: -410px -140px;
+}
+
+.gm-container .menuWrapper:nth-child(1):active .menuIcon {
+    background-position: -410px -106px;
+}
+
+.gm-container .menuWrapper:nth-child(3):active .menuIcon {
+    background-position: -410px -300px;
+}
+
+.gm-container .menuWrapper:nth-child(2):active .menuIcon {
+    background-position: -410px -204px
+}
+
+.gm-container .menuTitle {
+    margin-top: 3px;
+}
+
+.gm-container .menuWrapper .menuTitle-active,
+.gm-container .menuWrapper:hover {
+    color: #58a7f8;
+}
+
+
+/******微任务*******/
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    clear: both;
+    content: '.';
+    display: block;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+em {
+    display: inline-block;
+    font-style: normal;
+}
+
+.gm-memberWrapper .rightBox {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    font-size: 13px;
+    box-sizing: border-box;
+    height: calc(100% - 60px);
+    overflow: auto;
+}
+.gm-memberWrapper .emptyTask{
+    text-align: center;
+    margin-top: 100px;
+}
+.gm-memberWrapper .emptyTask img{
+    width: 80px;
+    height: 88px;
+    display: block;
+    margin: 12px auto;
+}
+.gm-memberWrapper .emptyTask p{
+    color: #DADEE2;
+    font-size: 12px;
+    font-family: PingFangSC-Regular;
+}
+.gm-memberWrapper .rightBox .titleBox .icon {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.gm-memberWrapper .rightBox .titleBox .iconPosition {
+    background-position: -183px -424px;
+}
+
+
+.gm-memberWrapper .rightBox .pushArticle .pushBox {
+    color: #B5BDC6;
+    /*padding: 8px 0px 20px 0px;*/
+    font-family: PingFangSC-Light;
+    cursor: pointer;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .pushBox em {
+    float: left;
+    margin-right: 5px;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .pushTime {
+    float: left;
+    margin-right: 5px;
+}
+
+
+/*未推送样式pushNo*/
+
+.gm-memberWrapper .rightBox .pushArticle .pushNo {
+    border: 1px solid #B5BDC6;
+    border-radius: 140px;
+    padding: 0px 4px;
+    float: left;
+    font-size: 10px;
+}
+
+
+/*未推送class是pushNo，已推送加上pushed*/
+
+.gm-memberWrapper .rightBox .pushArticle .pushed {
+    border: 1px solid #78D6A2;
+    color: #78D6A2;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .arrowBtn {
+    width: 6px;
+    height: 6px;
+    float: left;
+    border-left: 2px solid #B5BDC6;
+    border-bottom: 2px solid #B5BDC6;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    margin: 4px 0px 0 9px;
+}
+
+
+/* 无下拉内容时箭头向上，加样式upArrow */
+
+.gm-memberWrapper .rightBox .pushArticle .upArrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    margin: 7px 0px 0 9px;
+}
+
+
+.gm-memberWrapper .rightBox .pushArticle .article {
+    color: #485767;
+    line-height: 20px;
+    /*width: 217px;*/
+    overflow: hidden;
+    font-family: PingFangSC-Light;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .articlePic {
+    margin: 8px 0 16px 0;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .articlePic .innerPic {
+    width: 80px;
+    /*height: 80px;*/
+}
+
+
+/*.gm-memberWrapper .rightBox .pushArticle .nextBox {
+    border-top: 1px solid #DEE2E6;
+}*/
+
+.gm-memberWrapper .rightBox .pushArticle .nextBox .article {
+    width: 193px;
+    float: left;
+    color: #485767;
+}
+
+.gm-memberWrapper .rightBox .nextBox .articlePic .innerPic {
+    width: 36px;
+    height: 36px;
+    /*float: left;*/
+    margin-left: 15px;
+}
+
+
+/***群成员列表***/
+
+.gm-container .handleInner .gm-memberWrapper {
+    margin: 9px auto;
+    width: 100%;
+    height: calc(100% - 135px);
+    overflow: hidden;
+    background-color: #FFFFFF
+}
+
+.gm-container .handleInner-expand .gm-memberWrapper {
+    display: none;
+}
+
+.gm-container .memberList {
+    /*margin: 0 auto;*/
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: -13px;
+}
+
+.gm-container .memberList .itemBox {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 78px;
+    list-style: none;
+    border-bottom: solid 1px #F0F1F3;
+    background-color: #FFFFFF;
+}
+
+.gm-container .memberList .itemBox .keywordNumber {
+    position: absolute;
+    left: 45px;
+    top: 10px;
+    width: 35px;
+    height: 17px;
+}
+
+.gm-container .memberList .keywordNumber span {
+    display: block;
+    margin: 0 auto;
+    height: 18px;
+    background-color: #F75A5A;
+    border-radius: 9px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 18px;
+}
+
+.gm-container .memberList img {
+    margin-top: 15px;
+    margin-left: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 6px;
+}
+
+.gm-container .memberList .profile {
+    float: left;
+    width: 80px;
+    height: 100%
+}
+
+.gm-container .memberList .name {
+    float: left;
+    width: 128px;
+    height: 100%;
+}
+
+.gm-container .memberList .name span {
+    display: inline-block;
+    height: 22px;
+    width: 100%;
+    margin-top: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #092949;
+    font-size: 13px;
+}
+
+.gm-container .memberList .name .identity{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #58A7F8;
+    margin-top: 0px;
+}
+
+.gm-container .memberList .name .identity span {
+    margin-top: 0;
+    vertical-align: middle;
+}
+
+.gm-container .memberList .name .icon-master{
+    width: 20px;
+    height: 20px;
+    background-position: -242px -426px;
+}
+
+.gm-container .memberList .name .master{
+    margin: 0 6px 0 4px;
+    line-height: 22px;
+    display: inline;
+}
+
+.gm-container .memberList .name .icon-robot{
+    width: 20px;
+    height: 20px;
+    background-position: -242px -446px;
+}
+
+.gm-container .memberList .handle {
+    float: left;
+    /* width: 65px; */
+    height: 100%;
+    margin-right: 10px;
+}
+
+.gm-container .memberList .handle .time {
+    font-family: 'PingFangSC-Light';
+    font-size: 13px;
+    width: 35px;
+    height: 20px;
+    margin-top: 19px;
+    /* margin-right: 20px; */
+    margin-left: 5px;
+    color: #b5bdc6;
+}
+
+.gm-container .memberList .handle .control {
+    /* float: right; */
+    width: 38px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'PingFangSC-thin';
+    margin: 3px 0px 0 0px;
+    color: #b5bdc6;
+    border: 1px solid #b5bdc6;
+    border-radius: 4px;
+}
+
+.gm-container .gm-memberWrapper .memberList .handle .control:before {
+    content: "\64CD\4F5C";
+    display: block;
+    width: 38px;
+    height: 18px;
+    color: #b5bdc6;
+    outline: none;
+}
+
+.gm-container .gm-memberWrapper .memberList .handle .control:hover {
+    color: #58a7f8;
+    border: 1px solid #58a7f8;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.gm-container .gm-memberWrapper .memberList .handle .control:hover:before {
+    color: #58a7f8;
+}
+
+.gm-container .gm-memberWrapper .memberList .handle .control:active {
+    color: #288BF2;
+    border: 1px solid #288BF2;
+}
+
+.gm-memberWrapper .searchWrapper {
+    width: 100%;
+    height: 48px;
+    padding-top: 14px;
+    position: relative;
+}
+
+.gm-memberWrapper .searchWrapper:before {
+    top: 21px;
+    left: 40.5%;
+    transform: scale(.9, .9);
+}
+
+.gm-memberWrapper .searchingIcon:before {
+    left: 24px;
+}
+
+.gm-memberWrapper .searchWrapper input {
+    font-family: 'PingFangSC-Light';
+    font-size: 13px;
+    font-weight: 100;
+    display: block;
+    box-sizing: border-box;
+    width: 233px;
+    height: 32px;
+    margin: 0 auto;
+    outline: none;
+    font-size: 12px;
+    padding-top: 1px;
+    border-radius: 4px;
+    border-radius: 4px;
+    color: #485767;
+    background-color: #e9ebee;
+}
+
+.gm-memberWrapper .focusInput {
+    transition: text-indent .3s;
+    text-indent: 25.5px;
+    border: solid 1px #b5bdc6;
+}
+
+.gm-memberWrapper .blurInput {
+    transition: all .3s;
+    text-indent: 47%;
+    border: none;
+}
+
+.gm-memberWrapper .searchWrapper #searchInput::-webkit-input-placeholder {
+    color: #B5BDC6;
+}
+
+
+/***加载动画***/
+
+.loadingBox {
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+    height: 126px;
+    margin-top: 20px;
+    text-align: center;
+    color: #ddd;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.loadingBox .loadingGif {
+    position: relative;
+    width: 51px;
+    height: 43px;
+    opacity: .7;
+    margin: 0 auto;
+    -webkit-animation: samllLoading .8s infinite;
+    animation: samllLoading .8s infinite;
+    background-position: -472px -194px;
+}
+
+.loadingBox .loadingCircle{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.gm-memberWrapper .rightBox .loadingBox{
+    margin-top: 0px;
+}
+
+
+.bigloadingBox .loadingGif {
+    -webkit-animation: loading .8s infinite;
+    animation: loading .8s infinite;
+}
+.loadingShadow{
+    width: 26px;
+    height: 7px;
+    margin: 1px auto 0;
+    display: block;
+     background: url('../images/icon/iconography.png')no-repeat;
+    background-size: 600px 700px;
+    background-position: -472px -247px;
+    animation: loadingShadow .8s infinite;
+    -webkit-animation: loadingShadow .8s infinite;
+}
+.cw-libraryWrapper .loadingShadow{
+    margin: 12px auto 0;
+}
+@keyframes loading {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(0, -12px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes loadingShadow {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform:scale(.6, .6);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+@keyframes samllLoading {
+    0% {
+        transform: translate(0, 0) scale(.7, .7);
+    }
+    50% {
+        transform: translate(0, -12px) scale(.7, .7);
+    }
+    100% {
+        transform: translate(0, 0) scale(.7, .7);
+    }
+}
+/********知识库*******/
+
+.gm-kmBaseWrapper {
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.gm-kmBaseWrapper .emptyBase{
+    text-align: center;
+    margin-top: 100px;
+}
+.gm-kmBaseWrapper .emptyBase img{
+    width: 94px;
+    height: 94px;
+    display: block;
+    margin: 0 auto;
+}
+.gm-kmBaseWrapper .emptyBase .book{
+    width: 94px;
+    height: 94px;
+    display: block;
+    margin: 0 auto;
+    background-position: -213px -187px;
+}
+.gm-kmBaseWrapper .emptyBase p{
+    color: #DADEE2;
+    font-size: 12px;
+    font-family: PingFangSC-Regular;
+}
+.gm-kmBaseWrapper .baseTitle {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.gm-kmBaseWrapper .baseTitle .iconBox {
+    float: left;
+    width: 20px;
+    height: 20px;
+    /*  margin-right: 7px;
+    margin-left: 15px;*/
+    margin: -1px 5px 0 15px;
+    background-position: -183px -383px;
+}
+.gm-kmBaseWrapper .baseTitle .searchEnd{
+    background-position: -183px -263px;
+}
+.gm-kmBaseWrapper .kwBaseBox {
+    height: calc(100% - 30px);
+    padding: 0px 16px;
+}
+
+.gm-kmBaseWrapper .QAcardBox {
+    padding: 9px 10px 17px;
+    font-size: 13px;
+    color: #485767;
+    margin-bottom: 10px;
+    background: #F8F8F9;
+    border-radius: 2px;
+    position: relative;
+    min-height: 58px;
+}
+
+.gm-kmBaseWrapper .QAcardBox .questionBox {
+    font-family: PingFangSC-Medium;
+    width: 100%;
+}
+
+.gm-kmBaseWrapper .QAcardBox .unExpand {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.gm-kmBaseWrapper .QAcardBox .answerBox {
+    font-family: PingFangSC-Light;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.gm-kmBaseWrapper .QAcardBox .libLabel{
+    display: inline-block;
+    vertical-align: middle;
+    width: 78px;
+    height: 13px;
+    line-height: 13px;
+    font-family: PingFangSC-Regular;
+    font-size: 10px;
+    color: #58A7F8;
+    border: 1px solid #58A7F8;
+    border-radius: 100px;
+    text-align: center;
+    transform: translateY(-1px);
+    margin-right: 10px;
+}
+
+.gm-kmBaseWrapper .QAcardBox .cardImgBox{
+    width: 90px;
+    float: left;
+    margin-right: 8px;
+}
+
+.gm-kmBaseWrapper .QAcardBox .cardImgBox img{
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+.gm-kmBaseWrapper .QAcardBox .kwCardBox{
+    margin-top: 4px;
+}
+
+.gm-kmBaseWrapper .QAcardBox .expandBtn {
+    position: absolute;
+    bottom: 6px;
+    right: 15px;
+    font-family: PingFangSC-Regular;
+    font-size: 10px;
+    color: #5D90C5;
+    cursor: pointer;
+}
+
+.gm-kmBaseWrapper .QAcardBox .improper{
+    width: 16px;
+    height: 16px;
+    vertical-align: bottom;
+    background-position: -226px -402px;
+    margin-left: 10px;
+    transform: translateY(-1px);
+    display: none;
+    cursor: pointer;
+}
+
+.gm-kmBaseWrapper .QAcardBox .improper:hover{
+    background-position: -226px -386px;
+}
+
+.gm-kmBaseWrapper .QAcardBox .answerBox:hover .improper{
+    display: inline-block;
+}
+
+.gm-kmBaseWrapper .KWcardBox {
+    min-height: 90px;
+    margin-bottom: 10px;
+}
+
+.gm-kmBaseWrapper .KWcardBox .cardImgBox {
+    width: 90px;
+    height: 90px;
+    float: left;
+}
+
+.gm-kmBaseWrapper .KWcardBox .cardTextBox {
+    padding: 6px 10px 8px;
+    margin-left: 96px;
+    background: #F8F8F9;
+    border-radius: 2px;
+    color: #485767;
+    /*min-height: 90px;*/
+    position: relative;
+}
+
+.gm-kmBaseWrapper .cardTextBox .cardTitle {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+}
+
+.gm-kmBaseWrapper .cardTextBox .cardText {
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.gm-kmBaseWrapper .cardTextBox .expandBtn {
+    position: absolute;
+    bottom: 9px;
+    right: 15px;
+    font-family: PingFangSC-Regular;
+    font-size: 10px;
+    color: #5D90C5;
+    cursor: pointer;
+}
+
+.gm-kmBaseWrapper .card-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.40);
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+.gm-kmBaseWrapper .card-mask-hide {
+    display: none;
+}
+
+.gm-kmBaseWrapper .card-mask .card-imgBox {
+    width: 360px;
+    height: 75%;
+    margin: 72px auto 0;
+    overflow: auto;
+    background-color: skyblue;
+}
+
+.gm-kmBaseWrapper .card-mask .card-img {
+    width: 100%;
+}
+
+.gm-kmBaseWrapper .card-mask .closeBtn {
+    width: 19px;
+    height: 19px;
+    background-color: yellowgreen;
+    position: absolute;
+    left: calc(50% + 190px);
+    top: 58px;
+    cursor: pointer;
+}
+
+.gm-kmBaseWrapper .card-mask .sendBtn {
+    background: #58A7F8;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 110px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    position: absolute;
+    left: calc(50% - 55px);
+    top: calc(75% + 98px);
+    margin-bottom: 20px;
+}
+
+
+/*********图片消息查看蒙板********/
+
+.gm-imgModal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background: rgba(3, 3, 3, 0.45);
+    overflow-y: auto;
+    border: 1px solid #ccc
+}
+
+.gm-imgModal .insideBox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    height: 60%;
+}
+.rightBox .gm-imgModal .insideBox {
+    margin:90px auto;
+}
+.gm-imgModal .imgBox {
+    width: 280px;
+    max-height: 470px;
+    overflow-y: auto;
+    margin: 0 auto 0;
+        /*margin-top: -60px;*/
+}
+
+.gm-imgModal .imgBox img {
+    width: 100%;
+    display: block;
+}
+
+.gm-imgModal .buttonBox {
+    width: 300px;
+    height: 48px;
+    margin: 40px auto;
+    transform: translate(5%, 0);
+}
+
+.gm-imgModal .buttonBox .rotateBtn-box,
+.gm-imgModal .buttonBox .downloadBtn-box,
+.gm-imgModal .buttonBox .closeBtn-box {
+    height: 100%;
+    width: 96px;
+    float: left;
+    text-align: center;
+}
+
+.gm-imgModal .buttonBox .rotateBtn-box {
+    background: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.gm-imgModal .buttonBox .downloadBtn-box {
+    height: 100%;
+    width: 96px;
+    float: left;
+    background: rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.gm-imgModal .buttonBox input {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.gm-imgModal .buttonBox .rotateBtn {
+    background: url('../images/icon/rotate-imgModal.png') no-repeat center;
+    background-size: 60% 60%;
+}
+
+.gm-imgModal .buttonBox .downloadBtn {
+    background: url('../images/icon/download-imgModal.png') no-repeat center;
+    background-size: 60% 60%;
+}
+
+.gm-imgModal .buttonBox .closeBtn {
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .5) url('../images/icon/close-imgModal.png') no-repeat center;
+    background-size: 60% 60%;
+}
+
+.gm-bubble-container {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    width: 200px;
+    /*display: inline-block;*/
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+}
+
+.gm-bubble-container .TagWrapper .tagList {
+    padding: 14px 14px 14px 14px;
+}
+
+.gm-bubble-container .TagWrapper .tagList .tagBox {
+    display: inline-block;
+}
+
+.gm-bubble-container .TagWrapper .tagList .tagBox .tagBox-field-name {
+    color: #288BF2;
+    letter-spacing: 0;
+    border: 1px solid #D8E7F9;
+    border-radius: 100px;
+    display: inline-block;
+    padding: 1px 7.6px;
+    margin: 4px 2px 4px 2px;
+}
+
+.gm-bubble-container .TagWrapper .tagList .tagBox .tagBox-field-close {
+    margin-top: 2px;
+    margin-left: -10px;
+    position: absolute;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    background-position: -262px -151px;
+}
+
+.gm-bubble-container .TagWrapper .tagInput {
+    margin-bottom: 32px;
+}
+
+.gm-bubble-container .TagWrapper .tagInput .tagInput-field-button {
+    display: inline-block;
+}
+
+.gm-bubble-container .TagWrapper .tagInput .tagInput-field-button button {
+    border: 1px solid #B5BDC6;
+    border-radius: 100px;
+    color: #B5BDC6;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.gm-bubble-container .TagWrapper .tagInput .tagInput-field-input {
+    display: inline-block;
+    border-bottom: 1px solid #D8E7F9;
+    margin-left: 14px;
+        margin-right: 4px;
+}
+
+.gm-bubble-container .TagWrapper .tagInput .tagInput-field-input input {
+    width: 130px;
+    text-indent: 10px;
+}
+
+.gm-bubble-container .TagWrapper .tagList .list-field-button {
+    display: inline-block;
+}
+
+.gm-bubble-container .TagWrapper .tagList .list-field-button button {
+    width: 40px;
+    height: 20px;
+    line-height: 10px;
+    border: 1px solid #D8E7F9;
+    border-radius: 100px;
+    color: #288BF2;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.gm-bubble-container .TagWrapper .checkWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.gm-bubble-container .TagWrapper .checkWrapper .checkBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -40px 0 0 -70px;
+    width: 140px;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+}
+
+.gm-bubble-container .TagWrapper .checkWrapper .checkBox .check-field-state {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #485767;
+}
+
+.gm-bubble-container .TagWrapper .checkWrapper .checkBox .check-field-leftButton {
+    display: inline-block;
+    text-align: center;
+    border-top: 1px solid #dae2eb;
+    border-right: 1px solid #dae2eb;
+}
+
+.gm-bubble-container .TagWrapper .checkWrapper .checkBox .check-field-rightButton {
+    display: inline-block;
+    text-align: center;
+    border-top: 1px solid #dae2eb;
+}
+
+.gm-bubble-container .TagWrapper .checkWrapper .checkBox .check-field-leftButton .button,
+.gm-bubble-container .TagWrapper .checkWrapper .checkBox .check-field-rightButton .button {
+    width: 69.5px;
+    line-height: 29px;
+    cursor: pointer;
+}
+
+.gm-bubble-container .bubbleGroupItem .bubbleGroupItem-field-leftButton {
+    display: inline-block;
+    text-align: center;
+    border-top: 1px solid #dae2eb;
+    border-right: 1px solid #dae2eb;
+}
+
+.gm-bubble-container .bubbleGroupItem .bubbleGroupItem-field-leftButton .button,
+.gm-bubble-container .bubbleGroupItem .bubbleGroupItem-field-rightButton .button {
+    width: 99.5px;
+    line-height: 32px;
+    color: #b5bdc5;
+    cursor: pointer;
+}
+.gm-bubble-container .bubbleGroupItem div:nth-child(3) .button,.gm-bubble-container .bubbleGroupItem div:nth-child(4) .button{
+  color: #485767;
+}
+/*.gm-bubble-container .bubbleGroupItem button:hover{
+color: #288bf2;
+}
+.gm-bubble-container .bubbleGroupItem button:active {
+color: #288bf2;
+}*/
+
+.gm-bubble-container .bubbleGroupItem .bubbleGroupItem-field-rightButton {
+    display: inline-block;
+    text-align: center;
+    border-top: 1px solid #dae2eb;
+}
+
+.gm-bubble-container .bubbleGroupItem .warningBox,
+.gm-userOperate .warningBox{
+    position: absolute;
+    margin-left: 82px;
+    margin-top: -24px;
+    background: #F8F8F9;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    width: 140px;
+}
+
+.gm-bubble-container .bubbleGroupItem .warningBox .innerTip,
+.gm-userOperate .warningBox .innerTip{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #485767;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+    text-indent: 12px;
+    padding-right: 10px;
+}
+
+.gm-bubble-container .bubbleGroupItem .warningBox .innerTip:hover,
+.gm-userOperate .warningBox .innerTip:hover{
+    background: #E9EBEE;
+    color: #344658;
+    border-radius: 2px;
+}
+
+.gm-bubble-container .bubbleGroupItem .warningBox .innerTip:before,
+.gm-userOperate .warningBox .innerTip:before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    left: 8px;
+    top: 15px;
+}
+
+.gm-bubble-container .bubbleGroupItem .warningBox .innerTip+.innerTip,
+.gm-userOperate .warningBox .innerTip+.innerTip{
+    border-top: 1px solid #E9EBEE;
+}
+
+
+/*************icon背景图**************/
+
+.icon-background,
+.iconBackground {
+    background: url('../images/icon/iconography.png')no-repeat;
+    background-size: 600px 700px;
+}
+.icon-background2{
+     background: url('../images/icon/iconography2.png')no-repeat;
+    background-size: 600px 700px;
+}
+.icon-background3{
+     background: url('../images/icon/iconography3.png')no-repeat;
+    background-size: 600px 2000px;
+}
+.icon-background4{
+    background: url('../images/icon/iconography4.png')no-repeat;
+    background-size: 600px 2000px;
+}
+.gm-crumbsBox .groupMsgCrumb {
+    float: left;
+    width: 120px;
+    height: 59px;
+    margin-left: 26px;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #383E46;
+    line-height: 59px;
+}
+
+.gm-box-groupSend .confirmBtn {
+    width: 80px;
+    height: 20px;
+    color: #FFFFFF;
+    line-height: 20px;
+    font-size: 12px;
+    background: #58A7F8;
+    border-radius: 2px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gm-box-groupSend .confirmBtn:hover {
+    background: #288BF2;
+}
+
+
+/*群消息气泡组件*/
+
+.groupMsgBubble {
+    float: left;
+    width: 100%;
+    margin-left: 26px;
+    margin-bottom: 20px;
+}
+
+.groupMsgBubble .avatarBox {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+    border-radius: 6px;
+    background-color: yellowgreen;
+}
+
+.groupMsgBubble .avatarBox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.groupMsgBubble .monitorInfoBox {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    margin-left: 56px;
+    letter-spacing: 0;
+    color: #999da6;
+    line-height: 25px;
+}
+
+.groupMsgBubble .monitorInfoBox span {
+    margin-right: 12px;
+}
+
+.groupMsgBubble .groupInfoBox {
+    margin-left: 56px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #485767;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.groupMsgBubble .groupInfoBox .groupName {
+    float: left;
+}
+
+.groupMsgBubble .groupInfoBox .msgStatus {
+    float: left;
+    padding: 0px 5px;
+    margin-left: 8px;
+    font-size: 11px;
+    border-radius: 100px;
+}
+
+.groupMsgBubble .groupInfoBox .success {
+    border: 1px solid #6AD398;
+    color: #6AD398;
+}
+
+.groupMsgBubble .groupInfoBox .failed {
+    border: 1px solid #F75A5A;
+    color: #F75A5A;
+}
+
+.groupMsgBubble .msgBox {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    box-sizing: border-box;
+    max-width: 460px;
+    min-height: 30px;
+    margin-top: 6px;
+    margin-left: 56px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #344658;
+}
+
+.groupMsgBubble .imgMsgBox {
+    position: relative;
+    margin-top: 8px;
+    margin-left: 56px;
+    border-radius: 4px;
+}
+
+.groupMsgBubble .imgMsgBox img {
+    height: 126px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/*用户气泡*/
+
+.gm-msgSendBox .toolBar .userBubble {
+    background: #6AD398;
+    padding: 2px 9px;
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: -28px;
+    left: 14px;
+    max-width: 120px;
+    border-radius: 4px;
+    text-align: center;
+    z-index: 1;
+    transform: translateX(-50%);
+    /*display: none;*/
+}
+
+.gm-msgSendBox .toolBar .userBubble div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.gm-msgSendBox .toolBar .userBubble:after {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 45%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    content: '';
+    transform: rotate(-135deg) skew(18deg, 18deg) translateX(-50%);
+    background-color: #6AD398;
+}
+
+
+/***新增样式*****/
+
+.gm-memberWrapper .rightBox {
+    font-size: 13px;
+    overflow: auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(100% - 60px);
+    padding: 0px 10px;
+    background: #fff;
+}
+
+.gm-memberWrapper .rightBox .titleBox {
+    margin-top: 0px;
+    font-family: PingFangSC-Medium;
+}
+
+.gm-memberWrapper .rightBox .titleBox .icon {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+}
+
+.gm-memberWrapper .rightBox .titleBox .iconPosition {
+    background-position: -183px -424px;
+}
+
+.gm-memberWrapper .rightBox .titleBox .title {
+    float: left;
+    margin-left:5px;
+    letter-spacing: 0;
+    color: #485767;
+    font-size: 13px;
+    font-family: PingFangSC-Regular;
+}
+
+.gm-memberWrapper .rightBox .pushArticle {
+    background: #f8f8f9;
+    margin-top: 9px;
+    margin-bottom: 12px;
+    padding: 3px 14px 10px 14px;
+    border-radius: 2px;
+    width: 233px;
+    margin-left: 6px;
+    box-sizing: border-box;
+}
+.gm-memberWrapper .rightBox .pushArticle .pushTitle{
+    line-height: 18px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.gm-memberWrapper .rightBox .pushArticle .slideBox {
+    overflow: hidden;
+    transition: all .3s ease-in;
+    height: 0;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .slideDown {
+    height: 144px;
+    transition: all .3s ease-in;
+}
+
+.gm-memberWrapper .rightBox .slideBox .articleBtn {
+    padding-bottom: 16px;
+}
+
+.gm-memberWrapper .rightBox .slideBox .wrapBox .articleBtn {
+    padding-bottom: 0px;
+    padding-top: 16px;
+}
+
+.gm-memberWrapper .rightBox .slideBox .programLogo{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #8E8E93;
+    margin-bottom: 15px;
+}
+
+.gm-memberWrapper .rightBox .slideBox .programLogo .img{
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    float: left;
+    background-position: -226px -425px;
+}
+
+.gm-memberWrapper .rightBox .slideBox .articleBtn button {
+    width: 50px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #5ba7f8;
+    border: 1px solid #5ba7f8;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+}
+
+.gm-memberWrapper .rightBox .slideBox .articleBtn button:hover {
+    background: #5ba7f8;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gm-memberWrapper .rightBox .slideBox .articleBtn button:active {
+    background: #288bf2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gm-memberWrapper .rightBox .slideBox .articleBtnSent button {
+    background: #dadee2;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    display: disabled;
+    border: 1px solid #dadee2;
+}
+
+.gm-memberWrapper .rightBox .slideBox .articleBtnSent button:hover,
+.gm-memberWrapper .rightBox .slideBox .articleBtnSent button:active {
+    border: 1px solid #dadee2;
+    background: #dadee2;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .pushBox {
+    font-family: PingFangSC-Light;
+    height: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+    color: #b5bdc6;
+    position: relative;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .pushBox em {
+    float: left;
+    margin-right: 5px;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .pushTime:nth-child(1) {
+    float: left;
+    width: 76px;
+    /* margin-right: 5px; */
+}
+.gm-memberWrapper .rightBox .pushArticle .pushTime:nth-child(2) {
+    float: left;
+    width: 36px;
+    /* margin-right: 5px; */
+}
+
+
+/*未推送样式pushNo*/
+
+.gm-memberWrapper .rightBox .pushArticle .pushNo {
+    float: left;
+    margin-left: 20px;
+    padding: 0 4px;
+    border: 1px solid #b5bdc6;
+    font-size: 10px;
+    border-radius: 140px;
+}
+
+
+/*未推送class是pushNo，已推送加上pushed*/
+
+.gm-memberWrapper .rightBox .pushArticle .pushed {
+    color: #78d6a2;
+    border: 1px solid #78d6a2;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .pushFail {
+    float: left;
+    padding: 0 4px;
+    font-size: 10px;
+    color: #f75a5a;
+    border-radius: 140px;
+    margin-left: 10px;
+    border: 1px solid #f75a5a;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .arrowBtn {
+    float: right;
+    width: 8px;
+    height: 8px;
+    margin: 6px 0 0 0px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    transform: rotate(135deg);
+    border-bottom: 2px solid #b5bdc6;
+    border-left: 2px solid #b5bdc6;
+}
+
+.gm-memberWrapper .rightBox .wrapBox {
+    position: relative;
+    /* padding-bottom: 16px; */
+    padding-top: 10px;
+    border-top: 1px solid #DEE2E6;
+}
+
+.gm-memberWrapper .rightBox .wrapBox .innerBox {
+    border-bottom: 1px solid #DEE2E6;
+    margin-bottom: 14px;
+}
+
+.gm-memberWrapper .rightBox .wrapBox .innerBox:last-child {
+    border-bottom: 0 none;
+}
+
+.gm-memberWrapper .rightBox .wrapBox .innerBox .title {
+    margin-bottom: 5px;
+}
+
+/* 无下拉内容时箭头向上，加样式upArrow */
+
+.gm-memberWrapper .rightBox .pushArticle .upArrow {
+    margin: 2px 0 0 0px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+
+.gm-memberWrapper .rightBox .pushArticle .article {
+    font-family: PingFangSC-Light;
+    line-height: 20px;
+    overflow: hidden;
+    color: #485767;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .articlePic {
+    position: relative;
+    margin: 8px 0 0px 0;
+    width: 380px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 84px;
+}
+
+.gm-memberWrapper .rightBox .articleArrow {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 180px;
+    top: 20px;
+    background-position: -262px -91px;
+    cursor: pointer;
+    /*display: none;*/
+    opacity: 0;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .wrapBox:hover .articleArrow {
+    /*display: block;*/
+    opacity: 1;
+}
+
+.gm-memberWrapper .rightBox .carousel .innerPic:nth-child(1) {
+    margin-left: -56px;
+    transition: all .5s;
+}
+
+.gm-memberWrapper .rightBox .innerPic:nth-child(1) {
+    transition: all .5s;
+}
+
+.gm-memberWrapper .rightBox .leftArrow {
+    background-position: -262px -115px;
+    left: 2px;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .articlePic .innerPic {
+    width: 80px;
+    height: 70px;
+    border-radius: 2px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .nextBox .innerPic {
+    width: 50px;
+    height: 50px;
+    overflow-y: hidden;
+    display: inline-block;
+    margin-top: 6px;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .nextBox .programImg{
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gm-memberWrapper .rightBox .nextBox .innerPic .innerImg {
+    width: 50px;
+}
+
+.gm-memberWrapper .rightBox .pushArticle .nextBox .article {
+    display: inline-block;
+    width: 150px;
+    margin-top: 3px;
+    color: #485767;
+    min-height: 57px;
+}
+
+.gm-memberWrapper .rightBox .shrinkBox {
+    position: relative;
+    overflow: hidden;
+    transition: all .3s ease-in;
+}
+
+.gm-memberWrapper .rightBox .expandBtn {
+    font-family: PingFangSC-Regular;
+    font-size: 10px;
+    background: transparent;
+    padding: 0px 0 0 2px;
+    cursor: pointer;
+    color: #5d90c5;
+    text-align: right;
+}
+.gm-memberWrapper .rightBox .expandBtn:hover,.cw-container .ListWrapper  .item-field-right .item-field-bottom .itemButton:hover {
+    cursor: pointer;
+    color: #288bf2;
+}
+.gm-memberWrapper .rightBox .buttonBox .rotateBtn-box,
+.gm-memberWrapper .rightBox .buttonBox .downloadBtn-box {
+    display: none;
+}
+
+.gm-memberWrapper .rightBox .buttonBox {
+    position: absolute;
+     top: -28%;
+    right: -65%;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    .gm-memberWrapper .rightBox .buttonBox {
+       top: -28%;
+       right: -66%;
+    }
+}
+@media screen and (min-width: 1280px) and (max-width: 1440px){
+    .gm-memberWrapper .rightBox .buttonBox {
+         top: -28%;
+        right: -66%;
+    }
+}
+@media screen and (min-width: 1920px){
+     .gm-memberWrapper .rightBox .buttonBox {
+             top: -21%;
+             right: -59%;
+    }
+}
+/*新增聊天室默认背景图*/
+.bgFlowBox{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 240px);
+}
+.bgFlowBox .innerBox{
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    transform: translate(-50%,-50%);
+}
+.bgFlowBox .innerBox img{
+      transform: scale(.5,.5);
+    margin-bottom: -33px;
+}
+.bgFlowBox .innerBox p{
+    text-align: center;
+    color: #DADEE2;
+    font-size: 13px;
+    font-family: PingFangSC-light;
+}
+
+
+
+
+
+
+/*加载动画*/
+.LoadingAnimation{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color:rgba(0,0,0,0.3)
+}
+.LoadingAnimation .loadBox{
+    width: 80px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+
+.LoadingAnimation  .loadText{
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*快速搜索内容库  */
+.quickSearch{
+    position: fixed;
+    width: 70px;
+    height: 50px;
+    z-index: 20;
+    transform: translate(-50%,-132%);
+    cursor: pointer;
+    background-position: -332px -163px;
+    border-radius: 8px;
+    text-indent: 40px;
+}
+
+/*快速回复  */
+.quickAnswer {
+    position: fixed;
+    width: 330px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 6px;
+    transform: scale(0);
+    transform-origin: center center;
+    z-index: 999;
+    transition: transform .2s ease-in-out;
+}
+
+.quickAnswer.show {
+    transform: scale(1);
+}
+
+.quickAnswer::before{
+    content: '';
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,0.24);
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.quickAnswer.up::before{
+    top: -3px;
+}
+
+.quickAnswer.down::before{
+    bottom: -15px;
+}
+
+.quickAnswer .inner{
+    position: relative;
+    padding: 0 18px 18px;
+    background: #FFFFFF;
+}
+
+.quickAnswer .inner p {
+    padding: 10px 0;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+    text-align: center;
+    border-bottom: 1px dashed #DADEE2;
+}
+
+.quickAnswer .inner .qaBox{
+    padding: 8px 0;
+     border-bottom: 1px dashed #DADEE2;
+}
+
+.quickAnswer .inner .qaBox .question {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+}
+
+.quickAnswer .inner .qaBox .answer {
+    margin-top: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #485767;
+    cursor: pointer;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.quickAnswer .inner .qaBox .answerBox{
+    position: relative;
+    padding-right: 18px;
+}
+
+.quickAnswer .inner .qaBox .answerBox .improper{
+    width: 16px;
+    height: 16px;
+    background-position: -226px -402px;
+    position: absolute;
+    right: -10px;
+    top: -2px;
+    cursor: pointer;
+    display: none;
+}
+
+.quickAnswer .inner .qaBox:hover .answerBox .improper{
+    display: block;
+}
+
+.quickAnswer .inner .qaBox .answerBox .improper:hover{
+    background-position: -226px -386px;
+}
+
+.quickAnswer .answerBox .improper div{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+    width: 92px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #F8F8F9;
+    box-shadow: 0 1px 4px 0 rgba(36,36,36,0.24);
+    border-radius: 4px;
+    position: absolute;
+    left: -34px;
+    top: 30px;
+    display: none;
+}
+
+.quickAnswer .answerBox .improper div span {
+    position: relative;
+    z-index: 2;
+}
+
+.quickAnswer .answerBox .improper div::before,
+.quickAnswer .answerBox .improper div::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: #F8F8F9;
+}
+
+.quickAnswer .answerBox .improper div::before{
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px 0 rgba(36,36,36,0.24);
+    transform: rotate(45deg) translateX(-50%);
+    left: 49%;
+    top: -1px;
+}
+.quickAnswer .answerBox .improper div::after{
+    width: 100%;
+    height: 10px;
+    left: 0;
+    top: 0;
+    border-radius: 4px;
+}
+
+.quickAnswer .answerBox .improper:hover div{
+    display: block;
+}
+
+.quickAnswer .inner .moreBtn {
+    width: 76px;
+    height: 28px;
+    border: 1px solid #58A7F8;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #58A7F8;
+    text-align: center;
+    line-height: 28px;
+    margin: 18px auto 0;
+    cursor: pointer;
+}
+
+.noWrap{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 用户操作弹窗 */
+.gm-userOperate{
+    width: 300px;
+    height: 220px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.24);
+    border-radius: 4px;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: center center;
+    z-index: 999;
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+    position: fixed;
+}
+
+.gm-userOperate.show{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.gm-userOperate .baseInfo {
+    margin: 20px 0 0 20px;
+    height: 60px;
+}
+
+.gm-userOperate .baseInfo .avatar {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 16px;
+}
+
+.gm-userOperate .baseInfo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.gm-userOperate .baseInfo .nickName{
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    float: left;
+    margin-bottom: 22px;
+}
+
+.gm-userOperate .baseInfo .authorization{
+    float: left;
+    width: 200px;
+}
+
+.gm-userOperate .baseInfo .authorization span{
+    border: 1px solid #D8E7F9;
+    border-radius: 100px;
+    padding:0px 8px;
+    line-height: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #288BF2;
+    margin-right: 8px;
+}
+
+.gm-userOperate .alertBox,
+.gm-userOperate .removeUser{
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    float: left;
+    margin: 30px 0 0 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.gm-userOperate .alertBox .alert::after,
+.gm-userOperate .removeUser::after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: url('../images/icon/iconography.png') no-repeat;
+    background-size: 600px 700px;
+    background-position: -203px -183px;
+    left: -24px;
+    top: 0px;
+}
+
+.gm-userOperate .alert:hover,
+.gm-userOperate .removeUser:hover{
+    color: #58A7F8;
+}
+
+.gm-userOperate .alertBox .alert:hover::after{
+    background-position: -203px -203px;
+}
+
+.gm-userOperate .removeUser{
+    margin: 30px 0 0 90px;
+}
+
+.gm-userOperate .removeUser::after{
+    background-position: -203px -223px;
+    top: -1px;
+}
+
+.gm-userOperate .removeUser:hover::after{
+    background-position: -203px -243px;
+}
+
+.gm-userOperate .moreBox{
+    float: left;
+    margin-top: 20px;
+    border-top: 1px solid #E9EBEE;
+    width: 100%;
+}
+
+.gm-userOperate .moreBox .altUser,
+.gm-userOperate .moreBox .history,
+.gm-userOperate .moreBox .modifyAuth{
+    width: 36px;
+    height: 36px;
+    float: left;
+    margin: 12px 0 0 150px;
+    background-position: -134px -185px;
+    position: relative;
+    cursor: pointer;
+}
+
+.gm-userOperate .moreBox .altUser:after{
+    content: '@该用户';
+    display: none;
+    width: 63px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #F8F8F9;
+    box-shadow: 0 1px 4px 0 rgba(36,36,36,0.24);
+    border-radius: 4px;
+    position: absolute;
+    bottom: -24px;
+    left: -12px;
+}
+
+.gm-userOperate .moreBox .altUser:hover{
+    background-position: -134px -221px;
+}
+
+.gm-userOperate .moreBox .altUser:hover:after,
+.gm-userOperate .moreBox .history:hover::after,
+.gm-userOperate .moreBox .modifyAuth:hover::after{
+    display: block;
+}
+
+.gm-userOperate .moreBox .history{
+    margin: 12px 0 0 14px;
+    background-position: -226px -267px;
+}
+
+.gm-userOperate .moreBox .history::after{
+    content: '查看用户历史消息';
+    display: none;
+    width: 108px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #F8F8F9;
+    box-shadow: 0 1px 4px 0 rgba(36,36,36,0.24);
+    border-radius: 4px;
+    position: absolute;
+    bottom: -24px;
+    left: -34px;
+}
+
+.gm-userOperate .moreBox .history:hover{
+    background-position: -226px -231px;
+}
+
+.gm-userOperate .moreBox .modifyAuth{
+    margin: 12px 0 0 14px;
+    background-position: -206px -303px;
+}
+
+.gm-userOperate .moreBox .modifyAuth:hover{
+    background-position: -206px -339px;
+}
+
+.gm-userOperate .moreBox .modifyAuth::after{
+    content: '\64CD\4F5C';
+    display: none;
+    width: 36px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #F8F8F9;
+    box-shadow: 0 1px 4px 0 rgba(36,36,36,0.24);
+    border-radius: 4px;
+    position: absolute;
+    bottom: -24px;
+    left: 0px;
+}
+
+.gm-userOperate .modifyAuth .authList{
+    width: 100px;
+    height: 110px;
+    padding-top: 8px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(36,36,36,0.24);
+    border-radius: 4px;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    left: -31px;
+    top: 38px;
+}
+
+.gm-userOperate .modifyAuth .authList li{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+    height: 26px;
+    line-height: 26px;
+}
+
+.gm-userOperate .modifyAuth .authList li:hover{
+    background: #F8F8F9;
+    color: #58A7F8;
+}
+
+.gm-userOperate .modifyAuth .authList::before,
+.gm-userOperate .modifyAuth .authList::after{
+    content: '';
+    display: block;
+    position: absolute;
+}
+.gm-userOperate .modifyAuth .authList::before{
+    width: 12px;
+    height: 12px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(36,36,36,0.24);
+    border-radius: 2px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    left: 50px;
+    top: 0;
+}
+
+.gm-userOperate .modifyAuth .authList::after{
+    background: #FFFFFF;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gm-userOperate .modifyAuth .authList ul{
+    position: relative;
+    z-index: 2;
+}
+
+.gm-userOperate .warningBox{
+    z-index: 2;
+    margin: 0;
+    left: 58px;
+    top: -70px;
+}
+
+.needownWrapper{
+  overflow: hidden;
+  height: calc(100% - 60px);
+  position: relative;
+}
+.needownWrapper .showBj{
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 259px;
+  height: 161px;
+  background: url('../images/needOwn.png') no-repeat center;
+  background-size: 259px 161px;
+}
+.needownWrapper .desc{
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 400px;
+  height: 22px;
+  text-align: center;
+  font-weight: 400px;
+  font-size: 16px;
+  color: #58A7F8;
+}
+.needownWrapper .butt{
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 278px;
+  height: 42px;
+  background: #288BF2;
+  border-radius: 6px;
+  line-height: 42px;
+  font-size: 13px;
+  font-weight: 400px;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+}
+.needownWrapper .butt:hover{
+  opacity: 0.6
+}
+.needownWrapper .butt:active{
+  opacity: 1
+}
+/*系统维护中。。。*/
+.SMContainer{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.maintain{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.maintain .maintainFix{
+    position: relative;
+    height: 286px;
+    width: 286px;
+    display: inline-block;
+}
+.maintain .bigFix{
+    display: inline-block;
+    height: 286px;
+    width: 286px;
+    background-position: -44px -513px;
+}
+.maintain .smallFix{
+    position: absolute;
+    height: 88px;
+    width: 88px;
+    background-position: -330px -711px;
+    bottom: 1px;
+    left: 7px;
+    animation: rotation 7s;
+    -moz-animation: rotation 7s;	/* Firefox */
+    -webkit-animation: rotation 7s;	/* Safari 和 Chrome */
+    -o-animation: rotation 7s;
+    /*animation-timing-function:linear;*/
+    animation-iteration-count:infinite
+}
+
+@keyframes rotation
+{
+    from {transform: rotateZ(0deg)}
+    to {transform: rotateZ(360deg)}
+}
+
+@-moz-keyframes rotation /* Firefox */
+{
+    from {transform: rotateZ(0deg)}
+    to {transform: rotateZ(360deg)}
+}
+
+@-webkit-keyframes rotation /* Safari 和 Chrome */
+{
+    from {transform: rotateZ(0deg)}
+    to {transform: rotateZ(360deg)}
+}
+
+@-o-keyframes rotation /* Opera */
+{
+    from {transform: rotateZ(0deg)}
+    to {transform: rotateZ(360deg)}
+}
+.maintain .maintainTip{
+    margin-top: 24px;
+}
+.maintain .maintainTip p{
+    color: #485767;
+    letter-spacing: 0;
+}
+.maintain .maintainTip p:first-child{
+    font-family: PingFangSC-Medium;
+    font-size: 20px;
+}
+.maintain .maintainTip p:last-child{
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    margin-top: 12px;
+}
+.maintain .maintainTip p span{
+    font-family: PingFangSC-Medium;
+    color: #61a9f4;
+    margin:0 8px;
+    display: inline-block;
+    width: 24px;
+}
+
+/* 图片预览 */
+
+.preWrapper {
+    position: fixed;
+    background: rgba(68, 68, 68, 0.70);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.preWrapper .pre-filed-viewBox {
+    width: 520px;
+    height: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transfrom: translate(-50%, -50%);
+    background: #ffffff;
+}
+
+
+/* 用户协议 */
+.protocalWrapper{
+    background: rgba(0,0,0,0.50);
+}
+
+.protocalWrapper .protocalBox{
+    width: 70%;
+    height: 80%;
+    background: #FFFFFF;
+    padding: 40px 63px;
+    overflow: auto;
+}
+
+.protocalWrapper .protocalBox h4{
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 33px;
+}
+
+.protocalWrapper .protocalBox p{
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #666666;
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+
+.protocalWrapper .protocalBox p span{
+    font-family: PingFangSC-Medium;
+}
+
+.protocalWrapper .protocalBox  .closeBtn {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-position: -262px -43px;
+    cursor: pointer;
+}
+
+/* 注册图形验证码 */
+.saas-registerContainer .formBox .innerBox .verification-mask {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; }
+  
+  .saas-registerContainer .formBox .innerBox .verification-modal {
+    width: 440px;
+    height: 285px;
+    position: fixed;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 7px 0px #DADEE2;
+    border-radius: 2px;
+    padding: 50px 54px 24px 50px; }
+    .saas-registerContainer .formBox .innerBox .verification-modal em {
+      width: 28px;
+      height: 28px;
+      top: 14px;
+      right: 14px;
+      background-position: -262px -43px;
+      position: absolute;
+      cursor: pointer; }
+    .saas-registerContainer .formBox .innerBox .verification-modal .verification-modal-title {
+      color: #344658;
+      font-family: "PingFang SC";
+      font-weight: 400;
+      font-size: 20px;
+      cursor: default; }
+    .saas-registerContainer .formBox .innerBox .verification-modal .verification-box {
+      display: flex;
+      margin-top: 42px;
+      height: 50px; }
+      .saas-registerContainer .formBox .innerBox .verification-modal .verification-box input {
+        width: 200px;
+        height: 50px;
+        margin-right: 16px; }
+      .saas-registerContainer .formBox .innerBox .verification-modal .verification-box img {
+        width: 120px;
+        height: 50px; }
+    .saas-registerContainer .formBox .innerBox .verification-modal .verification-status {
+      color: red;
+      text-align: start;
+      height: 18px;
+      margin-bottom: 24px; }
+    .saas-registerContainer .formBox .innerBox .verification-modal .verification-btn {
+      width: 100px;
+      height: 50px;
+      color: #fff;
+      cursor: pointer;
+      font-family: "PingFang SC";
+      font-weight: 400;
+      font-size: 16px;
+      background-image: linear-gradient(46deg, #0DA1FB 0%, #2656FF 100%);
+      border-radius: 2px; }

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <link rel="icon" href="/static/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/common_0.css">
+    <link rel="stylesheet" href="/static/css/index_1.css">
+    <link rel="stylesheet" href="/static/css/tmIndex_11.css">
+    <link rel="stylesheet" href="/static/css/ucIndex_12.css">
+    <link rel="stylesheet" href="/static/css/pcIndex_13.css">
+    <script src="/static/tj.js"></script>
+    <title>入群欢迎 | 栗子云</title>
+    <link href="/static/static_inside/css/bundle.e9f3923a.css" rel="stylesheet">
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <link rel='stylesheet' href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href="/static/bootstrap-3.3.7-dist/css/bootstrap-select.min.css">
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap-select.min.js"></script>
+</head>
+<body style="position: absolute">
+<div class="form-group hide" id="form-group"
+     style="margin-left: 0px; position: fixed; z-index: 1; left: 11.7%; top: 17.5%;">
+    <div class="col-sm-4">
+        <select id="group_name" name="group_name"
+                class="selectpicker show-tick form-control"
+                multiple
+                data-live-search="true" multiple title="选择目标微信群"
+                data-width="200px" data-height="200px"
+                data-actions-box="true" data-selected-text-format="count > 2">
+            {% for group_info in groups %}
+            <option value="{{group_info['group_id']}}">{{group_info['group_name']}}</option>
+            {% end %}
+        </select>
+    </div>
+</div>
+<div class="app" id="root">
+    <div class="mainLayout">
+        <div class="layoutHeader">
+            <div class="left">
+                <div class="icon-logo"
+                     style="background-image: url('/static/images/icon/beats-logo2.png'); margin: -15px 0px 10px 10px; width: 60px; height: 60px"></div>
+            </div>
+            <div class="center" style="float: left;"><a href="/v2/gmscope"><span class="menu active">微信群</span></a><a
+                    href="/v2/mtscope"><span class="menu">群发</span></a><a href="/v2/gbscope"><span
+                    class="menu">拉新</span></a><a href="/v2/dashboard"><span class="menu">统计</span></a><a
+                    href="/v2/mlscope"><span class="menu">素材</span></a><a href="/v2/system"><span class="menu">设置</span></a>
+            </div>
+            <div class="monitorStateWrapper">
+                <div class="stateTitle" tabindex="1">
+                    <div class="monitorStateBox" style="display: none;">
+                        <div class="exit">退出登录</div>
+                    </div>
+                </div>
+                <div class="newsBox" tabindex="1"></div>
+                <div class="helpBox"><span class="icon-home help"></span></div>
+                <div class="modalWrapper" style="display: none;">
+                    <div class="modalBox newsList">
+                        <div class="item-title">消息通知<span class="closeBtn"></span></div>
+                        <div style="overflow: auto; height: calc(100% - 66px);">
+                            <ul style="margin: 0px;">
+                                <li class="item"><p class="title"><span>还有4天的免费试用期</span><span class="time">2019-06-05 06:00:01</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有4天的免费试用期</span><span class="time">2019-06-04 06:00:01</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有4天的免费试用期</span><span class="time">2019-06-03 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有5天的免费试用期</span><span class="time">2019-06-02 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有6天的免费试用期</span><span class="time">2019-05-30 06:00:01</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有7天的免费试用期</span><span class="time">2019-05-29 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>导入群成功</span><span class="time">2019-05-28 17:42:57</span>
+                                </p>
+                                    <p class="content">群【未命名(待修改)】于"2019-05-28 17:42:56"导入系统成功！</p></li>
+                                <li class="item"><p class="title"><span>绑定栗子云用户成功</span><span class="time">2019-05-28 17:40:46</span>
+                                </p>
+                                    <p class="content">微信用户【个儿】于"2019-05-28 17:40:45"绑定栗子云账号成功！</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layoutSideNavi">
+            <div class="menuHeader"></div>
+            <div class="menuList"><a href="/u/{{user_name}}/control"><span class="menu"><span
+                    class="icon-menu gmscope"></span>群消息</span></a><a href="/u/{{user_name}}/manage_group"><span
+                    class="menu"><span class="icon-menu giscope"></span>群管理</span></a><a
+                    href="/u/{{user_name}}/welcome"><span class="menu active"><span class="icon-menu welcome"></span>入群欢迎</span></a><a
+                    href="/u/{{user_name}}/auto_response"><span class="menu"><span class="icon-menu arscope"></span>自动回复</span></a><a
+                    href="/u/{{user_name}}/protect"><span class="menu"><span
+                    class="icon-menu protect"></span>违规监测</span></a>
+            </div>
+        </div>
+        <div class="layoutContent">
+            {% if not welcome_words %}
+            <div class="lzc-nodata-share giNoDataBox">
+                <div class="ButtonBox green buildBtn" onclick="create_show()">创建欢迎语</div>
+
+                <div class="lzc-prompt-box giTableNoData">
+                    <div class="lzc-flex-box"><em></em>
+                        <div class="txtBox"><p class="contentTxt">你可以在这里创建入群欢迎语，用户进群后，小助手会@他并自动发送欢迎语。</p></div>
+                    </div>
+                    <p class="guide" onclick="create_show()">立即创建&gt;</p></div>
+                <div class="nodata-bg"></div>
+            </div>
+            {% else %}
+            <!--欢迎语展示-->
+            <div class="lzc-nodata-share giNoDataBox">
+                <div class="ButtonBox green buildBtn" onclick="create_show()">创建欢迎语</div>
+                <div class="gw-table">
+                    <div class="lzc-table">
+                        <div class="ant-table-wrapper">
+                            <div class="ant-spin-nested-loading tableLoading">
+                                <div class="ant-spin-container" style="left: 2%; top: 10px;">
+                                    <div class="ant-table ant-table-default ant-table-scroll-position-left">
+                                        <div class="ant-table-content">
+                                            <div class="ant-table-body">
+                                                <table class="">
+                                                    <colgroup>
+                                                        <col>
+                                                        <col>
+                                                        <col>
+                                                    </colgroup>
+                                                    <thead class="ant-table-thead">
+                                                    <tr>
+                                                        <th class=""><span>入群欢迎语</span></th>
+                                                        <th class=""><span><span>群名称<span
+                                                                style="color: rgb(185, 188, 197);"></span></span></span>
+                                                        </th>
+                                                        <th class=""><span>操作</span></th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody class="ant-table-tbody">
+                                                    {% for data in welcome_words %}
+                                                    <tr class="ant-table-row  ant-table-row-level-0"
+                                                        data-row-key="c9221dd7-e09a-46e8-8839-ee7351ef8317">
+                                                        <td class=""><span class="ant-table-row-indent indent-level-0"
+                                                                           style="padding-left: 0px;"></span>
+                                                            <div class="welcomeName">
+                                                                <div style="display: inline-block;">
+                                                                    <div class="content-txt">{{data['welcome_words']}}</div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="">{{data['group_name']}}</td>
+                                                        <td class=""><span class="operate"><span
+                                                                class="operateItem operate-edit"></span><span
+                                                                class="operateItem operate-delete"></span><div
+                                                                class="switch-box active  switch"><em></em><p>开</p></div></span>
+                                                        </td>
+                                                    </tr>
+                                                    {% end %}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--欢迎语展示-->
+            {% end %}
+
+        </div>
+    </div>
+</div>
+<div class="app" id="modal-root"></div>
+<div class="app" id="msg-root">
+    <div class="msg-modal">
+        <div class="msg-list"></div>
+    </div>
+</div>
+<div id="qb-sougou-search" style="display: none; opacity: 0;"><p>搜索</p>
+    <p class="last-btn">复制</p>
+    <iframe src=""></iframe>
+</div>
+
+
+<script>
+    var create_html = '<div class="gw_build_wrapper"><div class="gw-stepTitle"><span class="back" onclick="cancel_create()"><em></em>返回</span><span class="bread"><span class="bread-back">入群欢迎 </span> / <span> 创建欢迎语</span></span></div><div class="gw-build-main"><div class="MtEdit"><div class="mtstep-box"><div class="step-title-box"><p class="step-num">1</p><p class="step-title" onclick="group_choice_show()">选择目标群</p></div><div class="line-box"><div class="ButtonBox" style="width: 136px;">&gt;</div><div class="group-list" style="width: 677px;"></div></div></div><div class="mtstep-box"><div class="step-title-box"><p class="step-num">2</p><p class="step-title">编辑入群欢迎语</p></div><div class="line-box"><div class="select-box"><ul class="select-title-box"><li class="text"><em></em>文字</li><li class="img"><em></em>图片</li></ul></div><div class="mt-activeContent"><pre id="pre-container" contenteditable="true" style="display: none;"></pre><div><pre contenteditable="true" placeholder="请输入回复的信息..." id="activeContent"></pre></div></div></div></div><div class="mtstep-box"><div class="step-title-box"><p class="step-num">3</p><p class="step-title">设置欢迎频率</p></div><div class="line-box" style="border-left: none;"><div class="numberBox"><div class="time"><input id="frequence" type="number" value="5"><div class="iconArea"><div class="icon-add"></div><div class="icon-dec"></div></div></div>分钟内不再重复投送</div></div></div></div><div class="gw-edit-edit-btn"><div class="ButtonBox green" style="margin-right: 20px;" onclick="confirm_create()">创建</div><div class="ButtonBox cancel" onclick="cancel_create()">取消</div></div></div></div>';
+    var create_home_html = '<div class="lzc-nodata-share giNoDataBox"><div class="ButtonBox green buildBtn" onclick="create_show()">创建欢迎语</div><div class="lzc-prompt-box giTableNoData"><div class="lzc-flex-box"><em></em><div class="txtBox"><p class="contentTxt">你可以在这里创建入群欢迎语，用户进群后，小助手会@他并自动发送欢迎语。</p></div></div><p class="guide" onclick="create_show()">立即创建&gt;</p></div><div class="nodata-bg"></div></div>';
+    var group_choice_html = '<div class="MtGroup-box MtGroup-enter-done"><div class="TreeBox"><div class="selectDes"><div class="left"><div class="allBox"><label class="ant-checkbox-wrapper"><span class="ant-checkbox"><input id="allSelcet" type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span></label><span class="allSelect">全选</span></div><span style="font-size: 13px; color: rgb(185, 188, 197);">已选 <span style="color: rgb(94, 101, 118);">0</span> 个</span></div></div><div class="selectHospital-content" style="height: calc(100% - 60px);"><div class="searchBox"><div class="serachArea"><input class="searchIpt" type="text" placeholder="搜索微信群" value="" style="text-indent: 21px;"><div class="searchIcon"></div></div></div><ul class="ant-tree ant-tree-icon-hide" role="tree" unselectable="on"><li class="ant-tree-treenode-switcher-close" role="treeitem"><span class="ant-tree-switcher ant-tree-switcher_close"></span><span class="ant-tree-checkbox"><span class="ant-tree-checkbox-inner"></span></span><span title="" class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-close"><span class="ant-tree-title"><span>未分组</span></span></span></li><li class="ant-tree-treenode-switcher-close" role="treeitem"><span class="ant-tree-switcher ant-tree-switcher-noop"></span><span class="ant-tree-checkbox"><span class="ant-tree-checkbox-inner"></span></span><span title="" class="ant-tree-node-content-wrapper ant-tree-node-content-wrapper-normal"><span class="ant-tree-title"><span>1</span></span></span></li></ul></div></div></div>';
+
+    //添加欢迎语 更改页面显示
+    function create_show() {
+        $('.layoutContent').text('');
+        $('.layoutContent').html(create_html);
+        $('#form-group').removeClass('hide')
+    }
+
+    //取消创建
+    function cancel_create() {
+        // $('.layoutContent').text('');
+        // $('.layoutContent').html(create_home_html);
+        // $('#form-group').addClass('hide')
+        window.refresh()
+    }
+
+    // 创建欢迎语
+    function confirm_create() {
+        var groups = $('#group_name').selectpicker('val');
+        var welcome_words = $('#activeContent').html();
+        var user_name = window.location.href.split('/')[4];
+        var frequence = $('#frequence').val();
+        console.log(frequence);
+        if (groups.length == 0) {
+            window.alert('请选择微信群');
+            return
+        }
+        $.ajax({
+            url: '/u/' + user_name + '/welcome',
+            type: 'post',
+            dataType: 'json',
+            data: {
+                'groups': groups.join(','),
+                'welcome_words': welcome_words,
+                'frequence': frequence
+            },
+            success: function (data) {
+                if (data['msg'] == 'success') {
+                    window.alert('创建成功')
+                }
+                else {
+                    window.alert('创建失败')
+                }
+                window.location.href = 'http://{{server_host}}:{{server_port}}/u/' + user_name + '/welcome'
+            }
+        })
+    }
+</script>
+</body>
+</html>

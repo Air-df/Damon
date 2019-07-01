@@ -1,0 +1,1384 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <link rel="icon" href="../static/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/common_0.css">
+    <link rel="stylesheet" href="/static/css/index_1.css">
+    <link rel="stylesheet" href="/static/css/tmIndex_11.css">
+    <link rel="stylesheet" href="/static/css/ucIndex_12.css">
+    <link rel="stylesheet" href="/static/css/pcIndex_13.css">
+    <link href="/static/static_inside/css/bundle.e9f3923a.css" rel="stylesheet">
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <link rel='stylesheet' href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href="/static/bootstrap-3.3.7-dist/css/bootstrap-select.min.css">
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap-select.min.js"></script>
+    <!--<script src="/static/tj.js"></script>-->
+    <title>群消息 | 栗子云</title>
+</head>
+<body onload="init()">
+<div class="app" id="root" style="user-select: auto;">
+    <div class="mainLayout">
+        <div class="layoutHeader">
+            <div class="left">
+                <div class="icon-logo" style="background-image: url('/static/images/icon/beats-logo2.png'); margin: -15px 0px 10px 10px; width: 60px; height: 60px"></div>
+            </div>
+            <div class="center" style="float: left;"><a href="/v2/gmscope"><span class="menu active">微信群</span></a><a
+                    href="/v2/mtscope"><span class="menu">群发</span></a><a href="/v2/gbscope"><span
+                    class="menu">拉新</span></a><a href="/v2/dashboard"><span class="menu">统计</span></a><a
+                    href="/v2/mlscope"><span class="menu">素材</span></a><a href="/v2/system"><span class="menu">设置</span></a>
+            </div>
+            <div class="monitorStateWrapper">
+                <div class="stateTitle" tabindex="1">
+                    <div class="monitorStateBox" style="display: none;">
+                        <div class="exit">退出登录</div>
+                    </div>
+                </div>
+                <div class="newsBox" tabindex="1"></div>
+                <div class="helpBox"><span class="icon-home help"></span></div>
+                <div class="modalWrapper" style="display: none;">
+                    <div class="modalBox newsList">
+                        <div class="item-title">消息通知<span class="closeBtn"></span></div>
+                        <div style="overflow: auto; height: calc(100% - 66px);">
+                            <ul style="margin: 0px;">
+                                <li class="item"><p class="title"><span>还有4天的免费试用期</span><span class="time">2019-06-04 06:00:01</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有4天的免费试用期</span><span class="time">2019-06-03 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有5天的免费试用期</span><span class="time">2019-06-02 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有6天的免费试用期</span><span class="time">2019-05-30 06:00:01</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有7天的免费试用期</span><span class="time">2019-05-29 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>导入群成功</span><span class="time">2019-05-28 17:42:57</span>
+                                </p>
+                                    <p class="content">群【未命名(待修改)】于"2019-05-28 17:42:56"导入系统成功！</p></li>
+                                <li class="item"><p class="title"><span>绑定栗子云用户成功</span><span class="time">2019-05-28 17:40:46</span>
+                                </p>
+                                    <p class="content">微信用户【个儿】于"2019-05-28 17:40:45"绑定栗子云账号成功！</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layoutSideNavi">
+            <div class="menuHeader"></div>
+            <div class="menuList"><a href="/u/{{user_name}}/control"><span class="menu active"><span
+                    class="icon-menu gmscope"></span>群消息</span></a><a href="/u/{{user_name}}/manage_group"><span
+                    class="menu"><span class="icon-menu giscope"></span>群管理</span></a><a
+                    href="/u/{{user_name}}/welcome"><span class="menu"><span class="icon-menu welcome"></span>入群欢迎</span></a><a
+                    href="/u/{{user_name}}/auto_response"><span class="menu"><span class="icon-menu arscope"></span>自动回复</span></a><a
+                    href="/u/{{user_name}}/protect"><span class="menu"><span class="icon-menu protect"></span>违规监测</span></a>
+            </div>
+        </div>
+        <div class="layoutContent" style="height: 94%; overflow: hidden">
+            <div class="gm-container" style="width: calc(100%);">
+                <div class="gm-goupWrapper" style="width: 320px;">
+                    <div class="gm-goupWrapper-content">
+                        <div class="searchWrapper "><em class="searchInIcon"></em><input autocomplete="off"
+                                                                                         id="searchInput" type="text"
+                                                                                         placeholder="搜索"
+                                                                                         class="blurInput" value="">
+                        </div>
+                        <div id="gm-groupList" class="groupList">
+                            {% for group in group_list%}
+                            <!--<div class="itemBox" id="{{group['group_id']}}" style="background: rgb(240, 241, 243);" onclick="group_click(this)">-->
+                            <div class="itemBox" id="{{group['group_id']}}" style="background: white;"
+                                 name="{{group['group_name']}}"
+                                 onclick="group_click(this)">
+                                <div class="profile"><span class="keywordNumber" style="display: none;">0</span><img
+                                        src="/static/images/group.png"></div>
+                                <div class="name"><span title="测试">{{group['group_name']}}</span></div>
+                                <div class="handle">
+                                    <div class="time">05/28<span class="actDegree high"></span></div>
+                                    <div class="icon-gm-v3 control"></div>
+                                </div>
+                            </div>
+                            {% end %}
+
+                        </div>
+                    </div>
+                    <div class="group-moveDrag"></div>
+                </div>
+                <div class="gm-msgWrapper">
+                    <div class="gm-crumbsBox" style="width: 100%;">
+                        <div class="groupCrumb" style="display: block; background-color: white;"><span title="测试"
+                                                                                                       style="padding-left: 23px; font-size: 16px;"
+                                                                                                       id="chatting_group_name"></span>
+                        </div>
+                        <div class="memberCrumb" style="display: none; background-color: white;"><span
+                                style="padding-left: 23px;">undefined的聊天记录</span></div>
+                        <div class="memberCrumb" style="display: none; background-color: white;"><span
+                                style="padding-left: 23px;">关键词</span><span title="测试"
+                                                                            style="padding-left: 23px; color: rgb(181, 189, 198);">测试</span><span
+                                style="color: rgb(181, 189, 198);">(2)</span></div>
+                        <div class="groupMsgCrumb" style="display: none;">群发消息</div>
+                    </div>
+                    <div class="msgFlowWrapper">
+                        <div class="innerContainer" style="left: 18.45%; width: 82%">
+                            <div class="msgFlowInner" style="width: 78%; height: 100%">
+                                <div class="bgFlowBox" style="display: none; height: calc(100% - 240px); opacity: 1;">
+                                    <div class="innerBox"><img
+                                            src="../static/images/icon/gm_nogroup.png" alt="">
+                                        <p>你的账号还没有绑定群，<br>请联系管理员帮你绑定需要管理的群吧。</p></div>
+                                </div>
+                                <div class="newMsgTipBox" style="display: none;">
+                                    <div class="newMsgTip">
+                                        <div class="downArrow icon-gm"></div>
+                                        <div class="newMsgContent">点击查看新消息</div>
+                                    </div>
+                                </div>
+                                <div id="groupRoom" class="msgFlowBox"
+                                     style="display: block; height: calc(100% - 240px);"  onscroll="get_more(this)">
+                                    <!--<div style="display: none; padding: 10px 0px 0px; text-align: center; font-size: 26px;">-->
+                                    <!--<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"-->
+                                    <!--xmlns="http://www.w3.org/2000/svg">-->
+                                    <!--<g id="Page-1" stroke="none" stroke-width="1" fill="none"-->
+                                    <!--fill-rule="evenodd">-->
+                                    <!--<g id="icon" transform="translate(-58.000000, -421.000000)"-->
+                                    <!--fill="#58A7F8">-->
+                                    <!--<g id="Group-15-Copy" transform="translate(58.000000, 421.000000)">-->
+                                    <!--<g id="Page-1-Copy-3">-->
+                                    <!--<path d="M14,2 C14,3.104 13.104,4 12,4 C10.896,4 10,3.104 10,2 C10,0.896 10.896,0 12,0 C13.104,0 14,0.896 14,2"-->
+                                    <!--id="Fill-1" opacity="0.9">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.875s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M14,22 C14,23.104 13.104,24 12,24 C10.896,24 10,23.104 10,22 C10,20.896 10.896,20 12,20 C13.104,20 14,20.896 14,22"-->
+                                    <!--id="Fill-3" opacity="0.5">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.375s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M20.4854,6.3433 C19.7044,7.1243 18.4374,7.1243 17.6574,6.3433 C16.8764,5.5623 16.8764,4.2963 17.6574,3.5143 C18.4374,2.7343 19.7044,2.7343 20.4854,3.5143 C21.2664,4.2963 21.2664,5.5623 20.4854,6.3433"-->
+                                    <!--id="Fill-5" opacity="0.2">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M6.3428,20.4854 C5.5628,21.2664 4.2958,21.2664 3.5148,20.4854 C2.7338,19.7044 2.7338,18.4384 3.5148,17.6564 C4.2958,16.8764 5.5628,16.8764 6.3428,17.6564 C7.1238,18.4384 7.1238,19.7044 6.3428,20.4854"-->
+                                    <!--id="Fill-7" opacity="0.6">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.5s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M22,14 C20.896,14 20,13.104 20,12 C20,10.896 20.896,10 22,10 C23.104,10 24,10.896 24,12 C24,13.104 23.104,14 22,14"-->
+                                    <!--id="Fill-9" opacity="0.3">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.125s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M2,14 C0.896,14 0,13.104 0,12 C0,10.896 0.896,10 2,10 C3.104,10 4,10.896 4,12 C4,13.104 3.104,14 2,14"-->
+                                    <!--id="Fill-11" opacity="0.7">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.625s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M17.6572,20.4854 C16.8762,19.7044 16.8762,18.4384 17.6572,17.6564 C18.4372,16.8764 19.7042,16.8764 20.4852,17.6564 C21.2662,18.4384 21.2662,19.7044 20.4852,20.4854 C19.7042,21.2664 18.4372,21.2664 17.6572,20.4854"-->
+                                    <!--id="Fill-13" opacity="0.4">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.25s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M3.5146,6.3433 C2.7336,5.5623 2.7336,4.2963 3.5146,3.5143 C4.2956,2.7343 5.5626,2.7343 6.3426,3.5143 C7.1236,4.2963 7.1236,5.5623 6.3426,6.3433 C5.5626,7.1243 4.2956,7.1243 3.5146,6.3433"-->
+                                    <!--id="Fill-15" opacity="0.8">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.75s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--</g>-->
+                                    <!--</g>-->
+                                    <!--</g>-->
+                                    <!--</g>-->
+                                    <!--</svg>-->
+                                    <!--<p style="display: none; font-size: 12px;">没有更早的消息啦！</p></div>-->
+                                    <!--<div style="width: 100%; height: 20px;"></div>-->
+                                    <!--<div class="friendMsgBubble" id="213544893">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/ver_1/wdYVqMTLkZHqjEZOm436BiaANsWkQ6SialyXwVGyut6kZhosfjB0wCEuMia2kzfosEK8mgiaKUia5AV8bNiaJPF29KyQ/132"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName"-->
+                                    <!--style="margin-left: 0px;">个儿</span><span-->
+                                    <!--class="date">2019.05.28 17:45</span><span class="alt">@Ta</span></div>-->
+                                    <!--<div class="friendMsgBox">-->
+                                    <!--<div class="msgBox">-->
+                                    <!--<pre>哈哈</pre>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="friendMsgBubble" id="213544897">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/ver_1/wdYVqMTLkZHqjEZOm436BiaANsWkQ6SialyXwVGyut6kZhosfjB0wCEuMia2kzfosEK8mgiaKUia5AV8bNiaJPF29KyQ/132"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName"-->
+                                    <!--style="margin-left: 0px;">个儿</span><span-->
+                                    <!--class="date">2019.05.28 17:45</span><span class="alt">@Ta</span></div>-->
+                                    <!--<div class="friendMsgBox">-->
+                                    <!--<div class="msgBox">-->
+                                    <!--<pre>嘿嘿嘿</pre>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="friendMsgBubble" id="213544899">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/ver_1/wdYVqMTLkZHqjEZOm436BiaANsWkQ6SialyXwVGyut6kZhosfjB0wCEuMia2kzfosEK8mgiaKUia5AV8bNiaJPF29KyQ/132"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName"-->
+                                    <!--style="margin-left: 0px;">个儿</span><span-->
+                                    <!--class="date">2019.05.28 17:45</span><span class="alt">@Ta</span></div>-->
+                                    <!--<div class="friendMsgBox">-->
+                                    <!--<div class="msgBox">-->
+                                    <!--<pre>哈哈哈哈</pre>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="monitorMsgBubble" id="213544975">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/fWJhv9xMFTv5gJFtBibfvib6RfRKZY0p3deicV0NnU2qhZFlHpvhvQXMw/96"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName" style="margin-left: 0px;">客服小助手164</span><span-->
+                                    <!--class="date">2019.05.28 17:46</span></div>-->
+                                    <!--<div class="monitorMsgBox">-->
+                                    <!--<div class="msgBox">-->
+                                    <!--<pre>速度好慢啊</pre>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="monitorMsgBubble" id="213544984">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/fWJhv9xMFTv5gJFtBibfvib6RfRKZY0p3deicV0NnU2qhZFlHpvhvQXMw/96"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName" style="margin-left: 0px;">客服小助手164</span><span-->
+                                    <!--class="date">2019.05.28 17:46</span></div>-->
+                                    <!--<div class="monitorMsgBox">-->
+                                    <!--<div class="msgBox">-->
+                                    <!--<pre>延迟</pre>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="friendMsgBubble" id="213545001">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/ver_1/wdYVqMTLkZHqjEZOm436BiaANsWkQ6SialyXwVGyut6kZhosfjB0wCEuMia2kzfosEK8mgiaKUia5AV8bNiaJPF29KyQ/132"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName"-->
+                                    <!--style="margin-left: 0px;">个儿</span><span-->
+                                    <!--class="date">2019.05.28 17:47</span><span class="alt">@Ta</span></div>-->
+                                    <!--<div class="friendMsgBox">-->
+                                    <!--<div class="msgBox">-->
+                                    <!--<pre>延迟</pre>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="monitorMsgBubble" id="213546034">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/fWJhv9xMFTv5gJFtBibfvib6RfRKZY0p3deicV0NnU2qhZFlHpvhvQXMw/96"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName" style="margin-left: 0px;">客服小助手164</span><span-->
+                                    <!--class="date">2019.05.28 18:01</span></div>-->
+                                    <!--<div class="monitorMsgBox">-->
+                                    <!--<div class="msgBox">-->
+                                    <!--<pre>这是谁发的</pre>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="friendMsgBubble" id="213546058">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/ver_1/wdYVqMTLkZHqjEZOm436BiaANsWkQ6SialyXwVGyut6kZhosfjB0wCEuMia2kzfosEK8mgiaKUia5AV8bNiaJPF29KyQ/132"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName"-->
+                                    <!--style="margin-left: 0px;">个儿</span><span-->
+                                    <!--class="date">2019.05.28 18:01</span><span class="alt">@Ta</span></div>-->
+                                    <!--<div class="friendMsgBox">-->
+                                    <!--<div class="msgBox">-->
+                                    <!--<pre>这是小助手发的</pre>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="friendMsgBubble" id="213546099">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/ver_1/wdYVqMTLkZHqjEZOm436BiaANsWkQ6SialyXwVGyut6kZhosfjB0wCEuMia2kzfosEK8mgiaKUia5AV8bNiaJPF29KyQ/132"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName"-->
+                                    <!--style="margin-left: 0px;">个儿</span><span-->
+                                    <!--class="date">2019.05.28 18:01</span><span class="alt">@Ta</span></div>-->
+                                    <!--<div class="friendMsgBox">-->
+                                    <!--<div class="msgBox">-->
+                                    <!--<pre>@keys.陈 你发个消息</pre>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="friendMsgBubble" id="213546674">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/ver_1/d9lKcsmgXUP5vTpofBVZ3599r1qVQE051kfJvsjSI9GMK1uTUiatzdiavwv8eEnWXwbUOEK8x5AGQMq2kiczOA8gykHm0cHicbCYKUsD3kbdI1s/132"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName"-->
+                                    <!--style="margin-left: 0px;">keys.陈</span><span-->
+                                    <!--class="date">2019.05.28 18:07</span><span class="alt">@Ta</span></div>-->
+                                    <!--<div class="friendMsgBox">-->
+                                    <!--<div class="msgBox">-->
+                                    <!--<pre>666</pre>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="monitorMsgBubble" id="213550626">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/fWJhv9xMFTv5gJFtBibfvib6RfRKZY0p3deicV0NnU2qhZFlHpvhvQXMw/96"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName" style="margin-left: 0px;">客服小助手164</span><span-->
+                                    <!--class="date">2019.05.28 18:40</span></div>-->
+                                    <!--<div class="monitorMsgBox">-->
+                                    <!--<div class="msgBox">-->
+                                    <!--<pre>123.</pre>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="monitorMsgBubble" id="213578923">-->
+                                    <!--<div class="avatarBox"><img-->
+                                    <!--src="http://wx.qlogo.cn/mmhead/fWJhv9xMFTv5gJFtBibfvib6RfRKZY0p3deicV0NnU2qhZFlHpvhvQXMw/96"-->
+                                    <!--alt=""></div>-->
+                                    <!--<div class="msgInfoBox"><span class="nickName" style="margin-left: 0px;">客服小助手164</span><span-->
+                                    <!--class="date">2019.05.28 22:50</span></div>-->
+                                    <!--<div class="imgMsgBox">-->
+                                    <!--<div class="loadingBox" style="display: none;">-->
+                                    <!--<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"-->
+                                    <!--xmlns="http://www.w3.org/2000/svg">-->
+                                    <!--<g id="Page-1" stroke="none" stroke-width="1" fill="none"-->
+                                    <!--fill-rule="evenodd">-->
+                                    <!--<g id="icon" transform="translate(-58.000000, -421.000000)"-->
+                                    <!--fill="#58A7F8">-->
+                                    <!--<g id="Group-15-Copy"-->
+                                    <!--transform="translate(58.000000, 421.000000)">-->
+                                    <!--<g id="Page-1-Copy-3">-->
+                                    <!--<path d="M14,2 C14,3.104 13.104,4 12,4 C10.896,4 10,3.104 10,2 C10,0.896 10.896,0 12,0 C13.104,0 14,0.896 14,2"-->
+                                    <!--id="Fill-1" opacity="0.9">-->
+                                    <!--<animate attributeName="opacity"-->
+                                    <!--values="0.2;1;0.2" dur="1s"-->
+                                    <!--begin="0.875s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M14,22 C14,23.104 13.104,24 12,24 C10.896,24 10,23.104 10,22 C10,20.896 10.896,20 12,20 C13.104,20 14,20.896 14,22"-->
+                                    <!--id="Fill-3" opacity="0.5">-->
+                                    <!--<animate attributeName="opacity"-->
+                                    <!--values="0.2;1;0.2" dur="1s"-->
+                                    <!--begin="0.375s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M20.4854,6.3433 C19.7044,7.1243 18.4374,7.1243 17.6574,6.3433 C16.8764,5.5623 16.8764,4.2963 17.6574,3.5143 C18.4374,2.7343 19.7044,2.7343 20.4854,3.5143 C21.2664,4.2963 21.2664,5.5623 20.4854,6.3433"-->
+                                    <!--id="Fill-5" opacity="0.2">-->
+                                    <!--<animate attributeName="opacity"-->
+                                    <!--values="0.2;1;0.2" dur="1s" begin="0s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M6.3428,20.4854 C5.5628,21.2664 4.2958,21.2664 3.5148,20.4854 C2.7338,19.7044 2.7338,18.4384 3.5148,17.6564 C4.2958,16.8764 5.5628,16.8764 6.3428,17.6564 C7.1238,18.4384 7.1238,19.7044 6.3428,20.4854"-->
+                                    <!--id="Fill-7" opacity="0.6">-->
+                                    <!--<animate attributeName="opacity"-->
+                                    <!--values="0.2;1;0.2" dur="1s"-->
+                                    <!--begin="0.5s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M22,14 C20.896,14 20,13.104 20,12 C20,10.896 20.896,10 22,10 C23.104,10 24,10.896 24,12 C24,13.104 23.104,14 22,14"-->
+                                    <!--id="Fill-9" opacity="0.3">-->
+                                    <!--<animate attributeName="opacity"-->
+                                    <!--values="0.2;1;0.2" dur="1s"-->
+                                    <!--begin="0.125s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M2,14 C0.896,14 0,13.104 0,12 C0,10.896 0.896,10 2,10 C3.104,10 4,10.896 4,12 C4,13.104 3.104,14 2,14"-->
+                                    <!--id="Fill-11" opacity="0.7">-->
+                                    <!--<animate attributeName="opacity"-->
+                                    <!--values="0.2;1;0.2" dur="1s"-->
+                                    <!--begin="0.625s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M17.6572,20.4854 C16.8762,19.7044 16.8762,18.4384 17.6572,17.6564 C18.4372,16.8764 19.7042,16.8764 20.4852,17.6564 C21.2662,18.4384 21.2662,19.7044 20.4852,20.4854 C19.7042,21.2664 18.4372,21.2664 17.6572,20.4854"-->
+                                    <!--id="Fill-13" opacity="0.4">-->
+                                    <!--<animate attributeName="opacity"-->
+                                    <!--values="0.2;1;0.2" dur="1s"-->
+                                    <!--begin="0.25s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M3.5146,6.3433 C2.7336,5.5623 2.7336,4.2963 3.5146,3.5143 C4.2956,2.7343 5.5626,2.7343 6.3426,3.5143 C7.1236,4.2963 7.1236,5.5623 6.3426,6.3433 C5.5626,7.1243 4.2956,7.1243 3.5146,6.3433"-->
+                                    <!--id="Fill-15" opacity="0.8">-->
+                                    <!--<animate attributeName="opacity"-->
+                                    <!--values="0.2;1;0.2" dur="1s"-->
+                                    <!--begin="0.75s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--</g>-->
+                                    <!--</g>-->
+                                    <!--</g>-->
+                                    <!--</g>-->
+                                    <!--</svg>-->
+                                    <!--</div>-->
+                                    <!--<img src="https://cloud.gemii.cc/lizcloud/fs/noauth/media/5ced4ab34dabee001c289f47"-->
+                                    <!--alt="" style="display: block; max-height: 126px;">-->
+                                    <!--<div class="alertBox" style="display: none;"></div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div style="display: none; padding: 10px 0px; text-align: center; font-size: 26px;">-->
+                                    <!--<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"-->
+                                    <!--xmlns="http://www.w3.org/2000/svg">-->
+                                    <!--<g id="Page-1" stroke="none" stroke-width="1" fill="none"-->
+                                    <!--fill-rule="evenodd">-->
+                                    <!--<g id="icon" transform="translate(-58.000000, -421.000000)"-->
+                                    <!--fill="#58A7F8">-->
+                                    <!--<g id="Group-15-Copy" transform="translate(58.000000, 421.000000)">-->
+                                    <!--<g id="Page-1-Copy-3">-->
+                                    <!--<path d="M14,2 C14,3.104 13.104,4 12,4 C10.896,4 10,3.104 10,2 C10,0.896 10.896,0 12,0 C13.104,0 14,0.896 14,2"-->
+                                    <!--id="Fill-1" opacity="0.9">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.875s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M14,22 C14,23.104 13.104,24 12,24 C10.896,24 10,23.104 10,22 C10,20.896 10.896,20 12,20 C13.104,20 14,20.896 14,22"-->
+                                    <!--id="Fill-3" opacity="0.5">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.375s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M20.4854,6.3433 C19.7044,7.1243 18.4374,7.1243 17.6574,6.3433 C16.8764,5.5623 16.8764,4.2963 17.6574,3.5143 C18.4374,2.7343 19.7044,2.7343 20.4854,3.5143 C21.2664,4.2963 21.2664,5.5623 20.4854,6.3433"-->
+                                    <!--id="Fill-5" opacity="0.2">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M6.3428,20.4854 C5.5628,21.2664 4.2958,21.2664 3.5148,20.4854 C2.7338,19.7044 2.7338,18.4384 3.5148,17.6564 C4.2958,16.8764 5.5628,16.8764 6.3428,17.6564 C7.1238,18.4384 7.1238,19.7044 6.3428,20.4854"-->
+                                    <!--id="Fill-7" opacity="0.6">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.5s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M22,14 C20.896,14 20,13.104 20,12 C20,10.896 20.896,10 22,10 C23.104,10 24,10.896 24,12 C24,13.104 23.104,14 22,14"-->
+                                    <!--id="Fill-9" opacity="0.3">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.125s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M2,14 C0.896,14 0,13.104 0,12 C0,10.896 0.896,10 2,10 C3.104,10 4,10.896 4,12 C4,13.104 3.104,14 2,14"-->
+                                    <!--id="Fill-11" opacity="0.7">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.625s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M17.6572,20.4854 C16.8762,19.7044 16.8762,18.4384 17.6572,17.6564 C18.4372,16.8764 19.7042,16.8764 20.4852,17.6564 C21.2662,18.4384 21.2662,19.7044 20.4852,20.4854 C19.7042,21.2664 18.4372,21.2664 17.6572,20.4854"-->
+                                    <!--id="Fill-13" opacity="0.4">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.25s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--<path d="M3.5146,6.3433 C2.7336,5.5623 2.7336,4.2963 3.5146,3.5143 C4.2956,2.7343 5.5626,2.7343 6.3426,3.5143 C7.1236,4.2963 7.1236,5.5623 6.3426,6.3433 C5.5626,7.1243 4.2956,7.1243 3.5146,6.3433"-->
+                                    <!--id="Fill-15" opacity="0.8">-->
+                                    <!--<animate attributeName="opacity" values="0.2;1;0.2"-->
+                                    <!--dur="1s" begin="0.75s"-->
+                                    <!--repeatCount="indefinite"></animate>-->
+                                    <!--</path>-->
+                                    <!--</g>-->
+                                    <!--</g>-->
+                                    <!--</g>-->
+                                    <!--</g>-->
+                                    <!--</svg>-->
+                                    <!--<p style="display: none; font-size: 12px;">已经到达最新的消息啦！</p></div>-->
+                                    <!--<div class="quickSearch icon-gm" tabindex="2"-->
+                                    <!--style="display: none; left: 0px; top: 0px;"></div>-->
+                                    <!--<div class="quickAnswer" style="left: 0px; bottom: 0px;">-->
+                                    <!--<div class="inner"><p>快速回复</p>-->
+                                    <!--<div class="content"></div>-->
+                                    <!--<div class="moreBtn">搜索更多</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="gm-userOperateNew">-->
+                                    <!--<div class="baseInfo"><img src=""><span class="nickName"></span><span-->
+                                    <!--class="icon-gm icon-level"></span><span class="num">0</span></div>-->
+                                    <!--<div class="backname">-->
+                                    <!--<div class="label">备注名：</div>-->
+                                    <!--<div class="IptLimit">-->
+                                    <!--<div class="content" style="width: 280px;"><input class="input"-->
+                                    <!--type="text"-->
+                                    <!--maxlength="16"-->
+                                    <!--placeholder="请输入"-->
+                                    <!--value=""><span-->
+                                    <!--class="num">0/16</span></div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="tagName">-->
+                                    <!--<div class="label">标签：</div>-->
+                                    <!--<div class="tagBox">-->
+                                    <!--<div>-->
+                                    <!--<div data-show="true" class="ant-tag"-->
+                                    <!--style="background: rgb(255, 255, 255); border-radius: 12px; border: 0px none; font-family: &quot;PingFang SC&quot;; font-size: 14px; color: rgb(181, 189, 198); line-height: 24px; height: 24px; margin-bottom: 8px;">-->
+                                    <!--<i class="anticon anticon-plus"></i>添加标签-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--</div>-->
+                                    <!--&lt;!&ndash;<div class="footer">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="alertBox">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="icon-gm icon alert"></div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="tipBox">警告</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="warningBox" style="display: none;">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<ul class="warnDisc">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li title="请勿在群内发送敏感语句，下次将会被移除出群哦～" class="innerTip">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;请勿在群内发送敏感语句，下次将会被移除出群哦～&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li title="请勿私拉其他用户入群，下次将会被移除入群哦～" class="innerTip">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;请勿私拉其他用户入群，下次将会被移除入群哦～&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li title="请勿在群内发送广告，下次将会被移除出群哦～" class="innerTip">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;请勿在群内发送广告，下次将会被移除出群哦～&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li title="为了避免网络风险，请不要在群内发送与本群无关的二维码及链接。我们交流、讨论的话可以发截图，有需要的群成员自己搜索下。"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;class="innerTip">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;为了避免网络风险，请不要在群内发送与本群无关的二维码及链接。我们交流、讨论的话可以发截图，有需要的群成员自己搜索下。<img&ndash;&gt;-->
+                                    <!--&lt;!&ndash;class="qqemoji qqemoji81" text="[Shake]"&ndash;&gt;-->
+                                    <!--&lt;!&ndash;src="../static/images/icon/spacer.png">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="historyBox">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="icon-gm icon history"></div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="tipBox">消息</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="modifyAuth">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="icon-gm icon more"></div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="tipBox">更多</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<div class="authList" style="display: block;">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<ul>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li></li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li>赋予拉人权限</li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li>赋予踢人权限</li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li>踢出该群</li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li>加入黑名单</li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                    <!--<div class="operate-loading" style="display: none;"><img-->
+                                    <!--src="../static/images/icon/loading.svg" alt=""></div>-->
+                                    <!--</div>-->
+                                    <div class="tipWrapper" style="display: none;">
+                                        <div class="tipBox"><p></p>
+                                            <div class="confirmBtn">删除</div>
+                                            <div class="closeBtn icon-set"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="memberRoom" class="msgFlowBox"
+                                     style="display: none; height: calc(100% - 240px);">
+                                    <div style="display: none; padding: 10px 0px 0px; text-align: center; font-size: 26px;">
+                                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                               fill-rule="evenodd">
+                                                <g id="icon" transform="translate(-58.000000, -421.000000)"
+                                                   fill="#58A7F8">
+                                                    <g id="Group-15-Copy" transform="translate(58.000000, 421.000000)">
+                                                        <g id="Page-1-Copy-3">
+                                                            <path d="M14,2 C14,3.104 13.104,4 12,4 C10.896,4 10,3.104 10,2 C10,0.896 10.896,0 12,0 C13.104,0 14,0.896 14,2"
+                                                                  id="Fill-1" opacity="0.9">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.875s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M14,22 C14,23.104 13.104,24 12,24 C10.896,24 10,23.104 10,22 C10,20.896 10.896,20 12,20 C13.104,20 14,20.896 14,22"
+                                                                  id="Fill-3" opacity="0.5">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.375s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M20.4854,6.3433 C19.7044,7.1243 18.4374,7.1243 17.6574,6.3433 C16.8764,5.5623 16.8764,4.2963 17.6574,3.5143 C18.4374,2.7343 19.7044,2.7343 20.4854,3.5143 C21.2664,4.2963 21.2664,5.5623 20.4854,6.3433"
+                                                                  id="Fill-5" opacity="0.2">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M6.3428,20.4854 C5.5628,21.2664 4.2958,21.2664 3.5148,20.4854 C2.7338,19.7044 2.7338,18.4384 3.5148,17.6564 C4.2958,16.8764 5.5628,16.8764 6.3428,17.6564 C7.1238,18.4384 7.1238,19.7044 6.3428,20.4854"
+                                                                  id="Fill-7" opacity="0.6">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.5s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M22,14 C20.896,14 20,13.104 20,12 C20,10.896 20.896,10 22,10 C23.104,10 24,10.896 24,12 C24,13.104 23.104,14 22,14"
+                                                                  id="Fill-9" opacity="0.3">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.125s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M2,14 C0.896,14 0,13.104 0,12 C0,10.896 0.896,10 2,10 C3.104,10 4,10.896 4,12 C4,13.104 3.104,14 2,14"
+                                                                  id="Fill-11" opacity="0.7">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.625s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M17.6572,20.4854 C16.8762,19.7044 16.8762,18.4384 17.6572,17.6564 C18.4372,16.8764 19.7042,16.8764 20.4852,17.6564 C21.2662,18.4384 21.2662,19.7044 20.4852,20.4854 C19.7042,21.2664 18.4372,21.2664 17.6572,20.4854"
+                                                                  id="Fill-13" opacity="0.4">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.25s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M3.5146,6.3433 C2.7336,5.5623 2.7336,4.2963 3.5146,3.5143 C4.2956,2.7343 5.5626,2.7343 6.3426,3.5143 C7.1236,4.2963 7.1236,5.5623 6.3426,6.3433 C5.5626,7.1243 4.2956,7.1243 3.5146,6.3433"
+                                                                  id="Fill-15" opacity="0.8">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.75s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <p style="display: none; font-size: 12px;">没有更早的消息啦！</p></div>
+                                    <div style="width: 100%; height: 20px;"></div>
+                                    <div style="display: none; padding: 10px 0px; text-align: center; font-size: 26px;">
+                                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                               fill-rule="evenodd">
+                                                <g id="icon" transform="translate(-58.000000, -421.000000)"
+                                                   fill="#58A7F8">
+                                                    <g id="Group-15-Copy" transform="translate(58.000000, 421.000000)">
+                                                        <g id="Page-1-Copy-3">
+                                                            <path d="M14,2 C14,3.104 13.104,4 12,4 C10.896,4 10,3.104 10,2 C10,0.896 10.896,0 12,0 C13.104,0 14,0.896 14,2"
+                                                                  id="Fill-1" opacity="0.9">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.875s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M14,22 C14,23.104 13.104,24 12,24 C10.896,24 10,23.104 10,22 C10,20.896 10.896,20 12,20 C13.104,20 14,20.896 14,22"
+                                                                  id="Fill-3" opacity="0.5">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.375s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M20.4854,6.3433 C19.7044,7.1243 18.4374,7.1243 17.6574,6.3433 C16.8764,5.5623 16.8764,4.2963 17.6574,3.5143 C18.4374,2.7343 19.7044,2.7343 20.4854,3.5143 C21.2664,4.2963 21.2664,5.5623 20.4854,6.3433"
+                                                                  id="Fill-5" opacity="0.2">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M6.3428,20.4854 C5.5628,21.2664 4.2958,21.2664 3.5148,20.4854 C2.7338,19.7044 2.7338,18.4384 3.5148,17.6564 C4.2958,16.8764 5.5628,16.8764 6.3428,17.6564 C7.1238,18.4384 7.1238,19.7044 6.3428,20.4854"
+                                                                  id="Fill-7" opacity="0.6">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.5s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M22,14 C20.896,14 20,13.104 20,12 C20,10.896 20.896,10 22,10 C23.104,10 24,10.896 24,12 C24,13.104 23.104,14 22,14"
+                                                                  id="Fill-9" opacity="0.3">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.125s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M2,14 C0.896,14 0,13.104 0,12 C0,10.896 0.896,10 2,10 C3.104,10 4,10.896 4,12 C4,13.104 3.104,14 2,14"
+                                                                  id="Fill-11" opacity="0.7">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.625s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M17.6572,20.4854 C16.8762,19.7044 16.8762,18.4384 17.6572,17.6564 C18.4372,16.8764 19.7042,16.8764 20.4852,17.6564 C21.2662,18.4384 21.2662,19.7044 20.4852,20.4854 C19.7042,21.2664 18.4372,21.2664 17.6572,20.4854"
+                                                                  id="Fill-13" opacity="0.4">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.25s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M3.5146,6.3433 C2.7336,5.5623 2.7336,4.2963 3.5146,3.5143 C4.2956,2.7343 5.5626,2.7343 6.3426,3.5143 C7.1236,4.2963 7.1236,5.5623 6.3426,6.3433 C5.5626,7.1243 4.2956,7.1243 3.5146,6.3433"
+                                                                  id="Fill-15" opacity="0.8">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.75s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <p style="display: none; font-size: 12px;">已经到达最新的消息啦！</p></div>
+                                </div>
+                                <div id="keywordsRoom" class="msgFlowBox"
+                                     style="display: none; height: calc(100% - 240px);">
+                                    <div style="display: none; padding: 10px 0px 0px; text-align: center; font-size: 26px;">
+                                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                               fill-rule="evenodd">
+                                                <g id="icon" transform="translate(-58.000000, -421.000000)"
+                                                   fill="#58A7F8">
+                                                    <g id="Group-15-Copy" transform="translate(58.000000, 421.000000)">
+                                                        <g id="Page-1-Copy-3">
+                                                            <path d="M14,2 C14,3.104 13.104,4 12,4 C10.896,4 10,3.104 10,2 C10,0.896 10.896,0 12,0 C13.104,0 14,0.896 14,2"
+                                                                  id="Fill-1" opacity="0.9">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.875s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M14,22 C14,23.104 13.104,24 12,24 C10.896,24 10,23.104 10,22 C10,20.896 10.896,20 12,20 C13.104,20 14,20.896 14,22"
+                                                                  id="Fill-3" opacity="0.5">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.375s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M20.4854,6.3433 C19.7044,7.1243 18.4374,7.1243 17.6574,6.3433 C16.8764,5.5623 16.8764,4.2963 17.6574,3.5143 C18.4374,2.7343 19.7044,2.7343 20.4854,3.5143 C21.2664,4.2963 21.2664,5.5623 20.4854,6.3433"
+                                                                  id="Fill-5" opacity="0.2">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M6.3428,20.4854 C5.5628,21.2664 4.2958,21.2664 3.5148,20.4854 C2.7338,19.7044 2.7338,18.4384 3.5148,17.6564 C4.2958,16.8764 5.5628,16.8764 6.3428,17.6564 C7.1238,18.4384 7.1238,19.7044 6.3428,20.4854"
+                                                                  id="Fill-7" opacity="0.6">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.5s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M22,14 C20.896,14 20,13.104 20,12 C20,10.896 20.896,10 22,10 C23.104,10 24,10.896 24,12 C24,13.104 23.104,14 22,14"
+                                                                  id="Fill-9" opacity="0.3">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.125s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M2,14 C0.896,14 0,13.104 0,12 C0,10.896 0.896,10 2,10 C3.104,10 4,10.896 4,12 C4,13.104 3.104,14 2,14"
+                                                                  id="Fill-11" opacity="0.7">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.625s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M17.6572,20.4854 C16.8762,19.7044 16.8762,18.4384 17.6572,17.6564 C18.4372,16.8764 19.7042,16.8764 20.4852,17.6564 C21.2662,18.4384 21.2662,19.7044 20.4852,20.4854 C19.7042,21.2664 18.4372,21.2664 17.6572,20.4854"
+                                                                  id="Fill-13" opacity="0.4">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.25s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M3.5146,6.3433 C2.7336,5.5623 2.7336,4.2963 3.5146,3.5143 C4.2956,2.7343 5.5626,2.7343 6.3426,3.5143 C7.1236,4.2963 7.1236,5.5623 6.3426,6.3433 C5.5626,7.1243 4.2956,7.1243 3.5146,6.3433"
+                                                                  id="Fill-15" opacity="0.8">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.75s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <p style="display: none; font-size: 12px;">没有更早的消息啦！</p></div>
+                                    <div class="bgFlowBox" style="height: 100%;">
+                                        <div class="innerBox"><img
+                                                src="../static/images/iconV3/noData.png" alt=""
+                                                style="transform: scale(1); width: 254px; margin: 4px; height: 111px;">
+                                            <p>未发现关键词哦～</p></div>
+                                    </div>
+                                    <div style="display: none; padding: 10px 0px; text-align: center; font-size: 26px;">
+                                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g id="Page-1" stroke="none" stroke-width="1" fill="none"
+                                               fill-rule="evenodd">
+                                                <g id="icon" transform="translate(-58.000000, -421.000000)"
+                                                   fill="#58A7F8">
+                                                    <g id="Group-15-Copy" transform="translate(58.000000, 421.000000)">
+                                                        <g id="Page-1-Copy-3">
+                                                            <path d="M14,2 C14,3.104 13.104,4 12,4 C10.896,4 10,3.104 10,2 C10,0.896 10.896,0 12,0 C13.104,0 14,0.896 14,2"
+                                                                  id="Fill-1" opacity="0.9">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.875s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M14,22 C14,23.104 13.104,24 12,24 C10.896,24 10,23.104 10,22 C10,20.896 10.896,20 12,20 C13.104,20 14,20.896 14,22"
+                                                                  id="Fill-3" opacity="0.5">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.375s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M20.4854,6.3433 C19.7044,7.1243 18.4374,7.1243 17.6574,6.3433 C16.8764,5.5623 16.8764,4.2963 17.6574,3.5143 C18.4374,2.7343 19.7044,2.7343 20.4854,3.5143 C21.2664,4.2963 21.2664,5.5623 20.4854,6.3433"
+                                                                  id="Fill-5" opacity="0.2">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M6.3428,20.4854 C5.5628,21.2664 4.2958,21.2664 3.5148,20.4854 C2.7338,19.7044 2.7338,18.4384 3.5148,17.6564 C4.2958,16.8764 5.5628,16.8764 6.3428,17.6564 C7.1238,18.4384 7.1238,19.7044 6.3428,20.4854"
+                                                                  id="Fill-7" opacity="0.6">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.5s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M22,14 C20.896,14 20,13.104 20,12 C20,10.896 20.896,10 22,10 C23.104,10 24,10.896 24,12 C24,13.104 23.104,14 22,14"
+                                                                  id="Fill-9" opacity="0.3">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.125s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M2,14 C0.896,14 0,13.104 0,12 C0,10.896 0.896,10 2,10 C3.104,10 4,10.896 4,12 C4,13.104 3.104,14 2,14"
+                                                                  id="Fill-11" opacity="0.7">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.625s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M17.6572,20.4854 C16.8762,19.7044 16.8762,18.4384 17.6572,17.6564 C18.4372,16.8764 19.7042,16.8764 20.4852,17.6564 C21.2662,18.4384 21.2662,19.7044 20.4852,20.4854 C19.7042,21.2664 18.4372,21.2664 17.6572,20.4854"
+                                                                  id="Fill-13" opacity="0.4">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.25s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                            <path d="M3.5146,6.3433 C2.7336,5.5623 2.7336,4.2963 3.5146,3.5143 C4.2956,2.7343 5.5626,2.7343 6.3426,3.5143 C7.1236,4.2963 7.1236,5.5623 6.3426,6.3433 C5.5626,7.1243 4.2956,7.1243 3.5146,6.3433"
+                                                                  id="Fill-15" opacity="0.8">
+                                                                <animate attributeName="opacity" values="0.2;1;0.2"
+                                                                         dur="1s" begin="0.75s"
+                                                                         repeatCount="indefinite"></animate>
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        <p style="display: none; font-size: 12px;">已经到达最新的消息啦！</p></div>
+                                </div>
+                                <div class="sendMsBox" style="height: 240px;">
+                                    <div class="moveDrag"></div>
+                                    <div class="gm-msgSendBox" style="height: 220px;">
+                                        <div class="toolBar">
+                                            <div class="animation gm-icon">
+                                                <div class="toolBtn emojiBtn icon-gm-v3">
+                                                    <div class="faceBox">
+                                                        <div class="exp_cont">
+                                                            <div class="qq_face"><a class="faceStle qqface0"><img
+                                                                    src="#"
+                                                                    style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface1"><img src="#"
+                                                                                                  style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface2"><img src="#"
+                                                                                                  style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface3"><img src="#"
+                                                                                                  style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface4"><img src="#"
+                                                                                                  style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface5"><img src="#"
+                                                                                                  style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface6"><img src="#"
+                                                                                                  style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface7"><img src="#"
+                                                                                                  style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface8"><img src="#"
+                                                                                                  style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface9"><img src="#"
+                                                                                                  style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface10"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface11"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface12"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface13"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface14"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface15"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface16"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface17"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface18"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface19"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface20"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface21"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface22"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface23"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface24"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface25"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface26"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface27"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface28"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface29"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface30"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface31"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface32"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface33"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface34"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface35"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface36"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface37"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface38"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface39"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface40"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface41"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface42"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface43"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface44"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface45"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface46"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface47"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface48"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface49"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface50"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface51"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface52"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface53"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface54"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface55"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface56"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface57"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface58"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface59"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface60"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface61"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface62"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface63"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface64"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface65"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface66"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface67"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface68"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface69"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface70"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface71"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface72"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface73"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface74"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface75"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface76"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface77"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface78"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface79"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface80"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface81"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface82"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface83"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface84"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface85"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface86"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface87"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface88"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface89"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface90"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface91"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface92"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface93"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface94"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface95"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface96"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface97"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface98"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface99"><img src="#"
+                                                                                                   style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface100"><img src="#"
+                                                                                                    style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface101"><img src="#"
+                                                                                                    style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface102"><img src="#"
+                                                                                                    style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface103"><img src="#"
+                                                                                                    style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                    class="faceStle qqface104"><img src="#"
+                                                                                                    style="opacity: 0; width: 28px; height: 28px;"></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icon-text">表情</div>
+                                                </div>
+                                            </div>
+                                            <div class="animation gm-icon">
+                                                <div class="toolBtn uploadBtn icon-gm-v3">
+                                                    <div class="icon-text">图片</div>
+                                                    <input id="imgFile" type="file"
+                                                           accept="image/gif, image/jpeg,image/jpg,image/png"
+                                                           style="width: 40px; height: 40px; overflow: hidden; opacity: 0; cursor: pointer;">
+                                                </div>
+                                            </div>
+                                            <div class="animation gm-icon">
+                                                <div class="toolBtn altBtn icon-gm-v3">
+                                                    <div class="userBubble" style="display: none;">
+                                                        <div></div>
+                                                    </div>
+                                                    <div class="gm-box-altMember ">
+                                                        <div class="searchWrapper"><input id="searchInput" class=""
+                                                                                          type="text"
+                                                                                          placeholder="搜索用户名"><em
+                                                                class="searchInIcon"></em></div>
+                                                        <ul class="memberBox">
+                                                            <li>
+                                                                <div class="member">
+                                                                    <div class="icon-gi unselected"
+                                                                         id="fcfa2778-7179-4d39-bfb3-777fc7431954"></div>
+                                                                    <span>@个儿</span></div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="member">
+                                                                    <div class="icon-gi unselected"
+                                                                         id="7d665906-9ab4-4e81-9a55-3b09a3f4329b"></div>
+                                                                    <span>@客服小助手164</span></div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="icon-text">@用户</div>
+                                                </div>
+                                            </div>
+                                            <div class="animation gm-icon">
+                                                <div class="toolBtn keywordFlow icon-gm-v3" style="background-image: url('/static/images/icon/icon-gm-v3.png')">
+                                                    <div class="icon-text">关键词信息</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="text" disabled="true" id="msg_context"
+                                                   class="gm-editBox"
+                                                   style="height: 80px; width: 100%; margin-top: 0px"></input>
+                                            <div class="msgSendBox">
+                                                <div class="sendBtn" onclick="send()">发送</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="float: right; width: 22%;">
+                                <ul class="list-group" style="margin-bottom: 0px">
+                                    <li class="list-group-item active text-center">群成员列表</li>
+                                </ul>
+                                <ul class="list-group" id="member_list" style="max-height: 575px; overflow: auto">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="handleInner handleInner-expand">
+                    <div class="naviHandle">
+                        <div class="navWrapper">
+                            <div class="menuWrapper" id="menuWrapper0">
+                                <div class="gm-rightIcon">
+                                    <div class="menuIcon icon-gm-v3"></div>
+                                </div>
+                                <div class="menuTitle icon-text">群用户</div>
+                            </div>
+                            <div class="menuWrapper" id="menuWrapper1">
+                                <div class="gm-rightIcon">
+                                    <div class="menuIcon icon-gm-v3"></div>
+                                </div>
+                                <div class="menuTitle icon-text">内容库</div>
+                            </div>
+                            <div class="menuWrapper" id="menuWrapper2">
+                                <div class="gm-rightIcon">
+                                    <div class="menuIcon icon-gm-v3"></div>
+                                </div>
+                                <div class="menuTitle icon-text">素材库</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gm-memberWrapper-outer"></div>
+                </div>
+                <audio id="voiceMsgPlayer" preload="metaData" src=""></audio>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="app" id="modal-root"></div>
+<div class="app" id="msg-root">
+    <div class="msg-modal">
+        <div class="msg-list"></div>
+    </div>
+</div>
+<!--<script type="text/javascript" src="/static/static_inside/js/vendor.797a0c89.js"></script>-->
+<!--<script type="text/javascript" src="/static/static_inside/js/main.64a22f20.js"></script>-->
+<div id="qb-sougou-search" style="display: none; opacity: 0;"><p>搜索</p>
+    <p class="last-btn">复制</p>
+    <iframe src=""></iframe>
+</div>
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Warnning</h4>
+            </div>
+            <div class="modal-body">
+                消息不能为空
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var scroll_height = 0;
+
+    function add() {
+        var now = new Date();
+        var div = document.getElementById('groupRoom');
+        div.scrollTop = div.scrollHeight;
+    }
+
+    add();
+
+    function get_more(ths) {
+        if (ths.scrollTop == 0) {
+            get_history_dialogue();
+        }
+    }
+
+    $('.menuList a').click(function () {
+        console.log('click');
+        $(this).css('color', 'red')
+    })
+</script>
+<script>
+    var page_num = 1;
+    var user_name = window.location.href.split('/')[4];
+    var ws = new WebSocket('{{websocket_host}}');
+    var info_dct = {'from_user': user_name, 'msg_type': 1};
+
+    ws.onmessage = function (event) {
+        var dct = JSON.parse(event.data);//序列化
+        var is_success = dct.is_success;
+        var msg = dct.msg;
+        var now = new Date();
+        var msg_type = dct.msg_type;
+        var sender_name = dct.sender_name;
+        var sender_id = dct.sender_id;
+
+        if (msg_type == 2) {
+            var group_id = dct.group_id;
+            var html_group_id = $('.itemBox.active').attr('id');
+            if (group_id == html_group_id) {
+                $('#groupRoom').append('<div class="friendMsgBubble" id="213544893" style="margin-top: 10px">\n' +
+                    '                                        <div class="avatarBox"><img\n' +
+                    '                                                src="/static/images/head_imgs/' + sender_id + '.jpg"' +
+                    '                                                alt=""></div>\n' +
+                    '                                        <div class="msgInfoBox"><span class="nickName"\n' +
+                    '                                                                      style="margin-left: 0px;">' + sender_name + '</span><span\n' +
+                    '                                                class="date">' + now.toLocaleDateString().split('/').join('.') + ' ' + now.toTimeString().split(' ')[0] + '</span><span class="alt">@Ta</span></div>\n' +
+                    '                                        <div class="friendMsgBox">\n' +
+                    '                                            <div class="msgBox">\n' +
+                    '                                                <pre>' + msg + '</pre>\n' +
+                    '                                            </div>\n' +
+                    '                                        </div>\n' +
+                    '                                    </div>');
+                add();
+            }
+        }
+
+        if (is_success == 1) {
+            window.alert(msg);
+            window.location.href = window.location.href + '/control'
+        }
+    };
+    ws.onopen = function () {
+        ws.send(JSON.stringify(info_dct));
+    };
+
+    function send() {
+        var msg_inner = $('#msg_context').val();
+        var target_group_id = $('.itemBox.active').attr('id');
+        console.log('msg_inner');
+        console.log(msg_inner);
+        if (msg_inner == '') {
+            console.log('return');
+            return $('#Modal').modal('show');
+        }
+        ws.send(JSON.stringify({
+            'from_user': user_name,
+            'to_user': 'robot1',
+            'msg': msg_inner,
+            'msg_type': 2,
+            'group_id': target_group_id
+        }));
+        var now = new Date();
+        $('#groupRoom').append('<div class="friendMsgBubble" id="213544893" style="margin-top: 10px">\n' +
+            '                                        <div class="avatarBox"><img\n' +
+            '                                                src="http://wx.qlogo.cn/mmhead/ver_1/wdYVqMTLkZHqjEZOm436BiaANsWkQ6SialyXwVGyut6kZhosfjB0wCEuMia2kzfosEK8mgiaKUia5AV8bNiaJPF29KyQ/132"\n' +
+            '                                                alt=""></div>\n' +
+            '                                        <div class="msgInfoBox"><span class="nickName"\n' +
+            '                                                                      style="margin-left: 0px;">小助手</span><span\n' +
+            '                                                class="date">' + now.toLocaleDateString().split('/').join('.') + ' ' + now.toTimeString().split(' ')[0] + '</span><span class="alt">@Ta</span></div>\n' +
+            '                                        <div class="friendMsgBox">\n' +
+            '                                            <div class="msgBox">\n' +
+            '                                                <pre>' + msg_inner + '</pre>\n' +
+            '                                            </div>\n' +
+            '                                        </div>\n' +
+            '                                    </div>');
+        add();
+        $('#msg_context').val('')
+    }
+
+    function init() {
+        document.onkeydown = enter
+    }
+
+    function enter(evt) {
+        if (evt.keyCode == 13) {
+            send();
+        }
+    }
+
+    function group_click(ths) {
+        page_num = 1;
+        var group_id = ths.id;
+        var group_name = document.getElementById(group_id).getAttribute('name');
+        var color_selected = 'rgb(240, 241, 243)';
+        if (ths.style.backgroundColor != color_selected) {
+            $('.itemBox').css('background-color', 'white');
+            $('.itemBox').removeClass('active');
+            ths.style.backgroundColor = color_selected;
+            ths.className = 'itemBox active';
+            $.ajax({
+                url: '/u/' + user_name + '/control',
+                type: 'post',
+                datatype: 'json',
+                data: {
+                    'user_name': user_name,
+                    'group_id': group_id
+                },
+                success: function (data) {
+                    var members = data['members'];
+                    var s1 = '<li class="list-group-item" style="border: none;background: rgb(240, 241, 243);"><img src="/static/images/head_imgs/';
+                    var s2 = '.jpg" style="width: 40px; height: 40px; border-radius: 4px; margin-right: 15px"><em>';
+                    var s3 = '</em>';
+                    var s = '';
+
+                    members.forEach(function (value, index) {
+                        var member_id = value['member_id'];
+                        var member_name = value['member_name'];
+                        s += s1 + member_id + s2 + member_name + s3;
+                    });
+                    $('#groupRoom').text('');
+                    $('#member_list').html(s);
+                    $('#chatting_group_name').title = group_name;
+                    $('#chatting_group_name').text(group_name);
+                    $('#msg_context').removeAttr('disabled');
+                }
+            });
+            get_history_dialogue();
+        }
+        console.log(group_id);
+    }
+
+    function get_history_dialogue() {
+        var height = document.getElementById('groupRoom').scrollHeight;
+        $.ajax({
+            url: '/history',
+            type: 'post',
+            dataType: 'json',
+            data: {
+                'page_num': page_num,
+                'group_id': $('.itemBox.active').attr('id'),
+                'user_name': user_name
+            },
+            success: function (data) {
+                contens = data.datas;
+                console.log('成功');
+                console.log(data.datas);
+                contens.forEach(function (value, index) {
+                    $('#groupRoom').prepend('<div class="friendMsgBubble" id="213544893" style="margin-top: 10px">\n' +
+                        '                                        <div class="avatarBox"><img\n' +
+                        '                                                src="/static/images/head_imgs/' + value.sender_id + '.jpg"' +
+                        '                                                alt=""></div>\n' +
+                        '                                        <div class="msgInfoBox"><span class="nickName"\n' +
+                        '                                                                      style="margin-left: 0px;">' + value.sender_name + '</span><span\n' +
+                        '                                                class="date">' + value.send_time + '</span><span class="alt">@Ta</span></div>\n' +
+                        '                                        <div class="friendMsgBox">\n' +
+                        '                                            <div class="msgBox">\n' +
+                        '                                                <pre>' + value.content + '</pre>\n' +
+                        '                                            </div>\n' +
+                        '                                        </div>\n' +
+                        '                                    </div>');
+                });
+                page_num += 1;
+                document.getElementById('groupRoom').scrollTop = document.getElementById('groupRoom').scrollHeight - height;
+            }
+
+        });
+    }
+</script>
+</html>

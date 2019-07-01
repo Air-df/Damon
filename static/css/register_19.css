@@ -1,0 +1,248 @@
+/***æ³¨å†Œè¡¨å•***/
+.saas-registerContainer{
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    letter-spacing: 0;
+}
+.saas-registerContainer .formBox{
+    width: 324px;
+    margin: 10% auto;
+    text-align: -webkit-center;
+    float: none;
+}
+
+.saas-registerContainer circle{
+  fill:#FFFFFF
+}
+
+.saas-registerContainer .headNav{
+  position: relative;
+  background: url('../images/bj/login4.png') no-repeat center;
+  background-size: cover;
+  background-position: 0 -765px;
+}
+.saas-registerContainer .headNav .modal{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(46deg, #27ADFF 0%, #2656FF 100%);
+  opacity: 0.8;
+}
+.saas-registerContainer .headNav  .logoHead{
+  position: absolute;
+}
+.saas-registerContainer .formBox .innerBox .formInput{
+    padding: 0;
+    width: 318px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #E9EBEE;
+    border-radius: 2px;
+    box-shadow: none;
+    text-indent: 12px;
+    font-size: 16px;
+    color: #485767;
+    position: relative;
+}
+.saas-registerContainer .formBox .innerBox .formInput:-webkit-autofill {
+-webkit-box-shadow:   0px 1000px #fff inset!important;
+box-shadow:   0px 1000px #fff inset!important;
+}
+.saas-registerContainer .formBox .innerBox .recommendDisabled{
+    width: 320px;
+    height: 50px;
+    background: #F8F8F9;
+    border-radius: 6px;
+    text-indent: 12px;
+}
+.saas-registerContainer .formBox .innerBox table tbody tr{
+    height: 66px;
+}
+.saas-registerContainer .formBox .innerBox table tbody tr td{
+    position: relative;
+}
+.saas-registerContainer .formBox .innerBox .formInput:focus{
+    border-color: #58A7F8!important;
+    box-shadow: 0 0 2px 0 #58A7F8;
+}
+
+.saas-registerContainer .formBox .innerBox .verifyBtn{
+    width: 111px;
+    height: 48px;
+    margin-left: 12px;
+    background: #fff;
+    border-radius: 6px;
+    color: #FFFFFF;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #B5BDC6;
+    position: absolute;
+    right: 5px;
+    top: 1px;
+}
+.saas-registerContainer .formBox .innerBox .verifyDisabled:after,
+.saas-registerContainer .formBox .innerBox .verifyBtn:after{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 26px;
+    background: #E9EBEE;
+    position: absolute;
+    left: -10px;
+    top: 12px;
+}
+.saas-registerContainer .formBox .innerBox .verifyBtn:hover{
+    color: #288BF2;
+}
+.saas-registerContainer .formBox .innerBox .verifyDisabled{
+    width: 111px;
+    height: 48px;
+    margin-left: 12px;
+    /*background: #DADEE2;*/
+    border-radius: 6px;
+    /*color: #FFFFFF;*/
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+        position: absolute;
+     right: 5px;
+    background: #fff;
+    color: #B5BDC6;
+    top: 1px;
+
+}
+.saas-registerContainer .formBox .innerBox .registerIcon{
+    width: 142px;
+    height: 42px;
+    background-position: -417px -351px;
+    margin-bottom: 40px;
+}
+.saas-registerContainer .formBox .innerBox .registeredBox{
+    margin-top: 10px;
+    text-align: right;
+    font-size: 16px;
+}
+.saas-registerContainer .formBox .innerBox .registeredBox:hover span{
+    color: #288bf2;
+}
+.saas-registerContainer .formBox .innerBox .registeredBox a,.saas-registerContainer .formBox .innerBox .registeredBox:hover{
+    color: #B5BDC6;
+}
+.saas-registerContainer .formBox .innerBox .registerBtn{
+    width: 320px;
+    height: 50px;
+    margin-top: 40px;
+    background-image: linear-gradient(to right, #0DA1FB 0%, #2656FF 51%, #0DA1FB 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 2px;
+    line-height: 50px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+}
+.saas-registerContainer .formBox .innerBox .registerBtn:hover{
+  background-position: right center;
+}
+
+.saas-registerContainer .formBox .innerBox .unchecked{
+    width: 320px;
+    height: 50px;
+    margin-top: 40px;
+    background: #DADEE2;
+    border-radius: 2px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.saas-registerContainer .formBox .innerBox u.backBtn{
+    color: #B5BDC6;
+    text-decoration: none;
+    cursor: pointer;
+}
+.saas-registerContainer .formBox .innerBox u.backBtn:hover{
+    color: #5D90C5;
+    text-decoration: underline;
+}
+.saas-registerContainer .formBox .innerBox .loginBtn{
+    color: #288BF2;â„¢
+    margin-left: 13px;
+    cursor: pointer;
+}
+
+.saas-registerContainer .formBox .innerBox table tbody tr span{
+    position: absolute;
+    display: inline-table;
+    margin-left: 10px;
+    padding: 15px 0;
+    color: #F75A5A;
+}
+.saas-registerContainer .formBox .innerBox table tbody tr span em{
+    width: 16px;
+    height: 16px;
+    background-position: -163px -627px;
+    float: left;
+    margin-right: 6px;
+    display: none;
+}
+.saas-registerContainer .formBox .innerBox #fail{
+    border-color: #F75A5A;
+}
+.saas-registerContainer .formBox .innerBox table tbody tr span em.success{
+    background-position: -164px -608px;
+}
+.saas-registerContainer .formBox .innerBox .protocolBox{
+    text-align: left;
+    text-indent: 6px;
+    color: #b5bdc6;
+}
+.saas-registerContainer .formBox .innerBox .protocolBox:hover{
+    color: #5D90C5;
+}
+.saas-registerContainer .formBox .innerBox .protocolBox em{
+    margin-left: 2px;
+    width: 20px;
+    height: 20px;
+    background-position: -304px -243px;
+    float: left;
+    cursor: pointer;
+}
+.saas-registerContainer .formBox .innerBox .protocolBox .checked{
+    background-position: -198px -178px;
+}
+
+.saas-registerContainer .formBox .innerBox .protocolBox  .unchecked-confirm{
+  background-position: -218px -178px;
+}
+.saas-registerContainer .formBox .innerBox{
+width: auto;
+}
+.saas-registerContainer .formBox .inputIcon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    top: 15px;
+    right: 10px;
+
+}
+
+.saas-registerContainer .formBox .innerBox table tbody tr:nth-child(1) .inputIcon{
+background-position: -198px -158px;
+}
+.saas-registerContainer .formBox .innerBox table tbody tr:nth-child(2) .inputIcon{
+background-position: -218px -158px;
+}
+.saas-registerContainer .formBox .innerBox table tbody tr:nth-child(3) .inputIcon{
+background-position: -218px -158px;
+}
+.saas-registerContainer .formBox .innerBox table tbody tr:nth-child(4) .inputIcon{
+background-position: -238px -158px;
+}
+.saas-registerContainer .formBox .innerBox table tbody tr:nth-child(5) .inputIcon{
+background-position: -258px -158px;
+}

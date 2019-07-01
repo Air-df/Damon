@@ -1,0 +1,68 @@
+.animated {
+  animation-duration: .5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate(-100%,0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-100%,0);
+  }
+}
+
+.fadeOutLeft {
+  animation-name: fadeOutLeft;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate(100%,-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0,-100%);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translate(0,-100%);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(100%,-100%);
+  }
+}
+
+.fadeOutRight {
+  animation-name: fadeOutRight;
+}

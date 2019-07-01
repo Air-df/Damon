@@ -1,0 +1,2595 @@
+.jm-container {
+    /*width: 100%;*/
+    height: 100%;
+    font-size: 13px;
+    box-sizing: border-box;
+    /*overflow: auto;*/
+}
+
+.jm-container .jm-headBox {
+    height: 59px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E9EBEE;
+}
+
+.jm-wallWrapper {
+    width: 100%;
+    height: 100%;
+    background: #F8F8F9
+}
+
+.jm-wallInner {
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+
+.jm-leftFormBox {
+    position: relative;
+    float: left;
+    width: 301px;
+    height: 100%;
+    padding-left: 54px;
+    padding-top: 54px;
+    background: #F8F8F9;
+    border-radius: 2px 0 0 2px;
+}
+
+.jm-rightFormBox {
+    position: relative;
+    float: left;
+    width: 550px;
+    height: 100%;
+    margin-left: 138px;
+    padding-top: 54px;
+    border-radius: 2px 0 0 2px;
+}
+
+.jm-leftFormBox .templateCanvas {
+    position: relative;
+    width: 350px;
+    height: 622px;
+    background: red;
+    border-radius: 2px;
+}
+
+.jm-leftFormBox .changeBj {
+    position: absolute;
+    z-index: 3;
+    left: 14px;
+    top: 14px;
+    width: 70px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #58A7F8;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #58A7F8;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.jm-leftFormBox .metaData-item {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #B5BDC6;
+    letter-spacing: 0;
+}
+
+.jm-leftFormBox .templateContent {
+    position: absolute;
+    width: 350px;
+    height: 622px;
+    border-radius: 2px;
+}
+.jm-leftFormBox .templateTitle {
+    margin: 0 auto;
+    margin-top: 38px;
+    width: 280px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.jm-leftFormBox .canvasModal {
+    position: absolute;
+    width: 350px;
+    height: 622px;
+    background: rgba(72, 87, 103, 0.25);
+    border-radius: 2px;
+}
+
+.jm-leftFormBox .ruleBox {
+    position: absolute;
+    z-index: 3;
+    top: 14px;
+    right: 14px;
+    /*width: 54px;*/
+    height: 14px;
+    text-align: center;
+    line-height: 14px;
+    font-family: PingFangSC-Regular;
+    font-size: 10px;
+    color: #58A7F8;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.jm-leftFormBox .ruleBox:hover {
+    text-decoration: underline #58A7F8
+}
+
+.jm-leftFormBox .licenseBar {
+    margin: 0 auto;
+    margin-top: 0px;
+    /*width: 200px;*/
+    text-align: center;
+    max-width: 280px;
+    height: 30px;
+}
+
+.jm-leftFormBox .licenseBar span {
+    display: inline-block;
+    /*margin-left: 25px;*/
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 30px;
+}
+
+.jm-leftFormBox .button {
+    margin: 10px auto;
+    width: 284px;
+    height: 44px;
+    border-radius: 4px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.jm-leftFormBox .arrow {
+    right: 20%;
+    top: 31%;
+    background-position: -183px -364px;
+}
+
+.jm-rightFormBox .nameItem,
+.jm-rightFormBox .typeItem {
+    position: relative;
+    float: left;
+    width: 251px;
+    height: 30px;
+}
+
+.jm-rightFormBox .templateSetBox span {
+    margin-left: 10px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #F75A5A;
+    letter-spacing: 0;
+}
+
+.jm-rightFormBox .nameItem .isNullName {
+    position: absolute;
+    top: -22px;
+    left: 60px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #F75A5A;
+    letter-spacing: 0;
+}
+
+.jm-rightFormBox .wellcomeIcon {
+    margin: 0px auto;
+    margin-top: 40px;
+    width: 64px;
+    height: 64px;
+    background-position: -7px -200px;
+}
+
+.jm-rightFormBox .wellcomeText {
+    margin: 10px auto;
+    width: 100%;
+    height: 64px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+}
+
+.jm-rightFormBox .nameItem #temName {
+    margin-left: 10px;
+    width: 180px;
+    height: 30px;
+    background: white;
+    outline: none;
+    border-radius: 2px;
+    text-indent: 10px;
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    letter-spacing: 0;
+    border:1px solid transparent;
+}
+.jm-rightFormBox .nameItem #temName:focus{
+    border-color: #b5bdc6;
+}
+.jm-rightFormBox .selectWrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 180px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.jm-rightFormBox .selectWrapper .selectBox {
+    margin-top: -10px;
+}
+
+.jm-rightFormBox .selectWrapper .selectBox .selectOption {
+    background: #FFFFFF;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    width: 100%;
+    overflow: hidden;
+}
+
+.jm-rightFormBox .selectWrapper .selectBox .selectOption .selectTip {
+    color: #485767;
+}
+
+.jm-rightFormBox .selectWrapper .selectBox .selectOption em {
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    color: #B5BDC6;
+    display: inline-block;
+    line-height: 30px;
+    font-style: normal;
+    padding-left: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.jm-rightFormBox .selectWrapper .selectBox .optionUl {
+    padding: 6px 0;
+    width: 182px;
+    max-height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+.jm-rightFormBox .templateSelect {
+    width: 502px;
+    height: 35px;
+}
+
+.jm-rightFormBox .templateSetBox {
+    width: 502px;
+    height: 130px;
+}
+
+.jm-rightFormBox .enterGroupSetBox {
+    width: 502px;
+    height: 95px;
+}
+
+.jm-rightFormBox .templateSetBox .innerContainer {
+    box-sizing: border-box;
+    border: 22px solid white;
+    width: 100%;
+    height: 118px;
+    background-color: white;
+}
+
+.jm-rightFormBox .enterGroupSetBox .innerContainer {
+    box-sizing: border-box;
+    border: 15px solid white;
+    padding-left: 6px;
+    width: 100%;
+    height: 47px;
+    background-color: white;
+}
+
+.jm-rightFormBox .selected {
+    width: 14px;
+    height: 14px;
+    background-position: -265px -326px
+}
+
+.jm-rightFormBox .unselected {
+    width: 14px;
+    height: 14px;
+    background-position: -265px -306px
+}
+
+.jm-rightFormBox .templateEdit {
+    margin-top: 30px;
+    width: 502px;
+    height: 237px;
+}
+
+.jm-rightFormBox .textSetWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 2px;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    margin: 0 auto;
+}
+
+.jm-rightFormBox .textSetWrapper .titleBox {
+    height: 18px;
+    line-height: 18px;
+}
+
+.jm-rightFormBox .textSetWrapper .titleBox p {
+    float: left;
+}
+
+.jm-rightFormBox .textSetWrapper .titleBox div,
+.jm-rightFormBox .textSetWrapper .textBox div,
+.jm-rightFormBox .textSetWrapper .sizeBox .sizeSelect,
+.jm-rightFormBox .textSetWrapper .protocolBox div {
+    float: left;
+    margin-left: 5px;
+    position: relative;
+}
+
+.jm-rightFormBox .textSetWrapper .contentBox {
+    margin-top: 20px;
+}
+
+.jm-rightFormBox .textSetWrapper .contentBox p {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.jm-rightFormBox .textSetWrapper .contentBox textarea {
+    margin-left: 5px;
+    width: 382px;
+    height: 100px;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    resize: none;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+}
+
+.jm-rightFormBox .textSetWrapper .textBox,
+.jm-rightFormBox .textSetWrapper .sizeBox {
+    height: 30px;
+    margin-top: 20px;
+}
+
+.jm-rightFormBox .textSetWrapper .textBox p,
+.jm-rightFormBox .textSetWrapper .sizeBox p,
+.jm-rightFormBox .textSetWrapper .colorBox p,
+.jm-rightFormBox .textSetWrapper .protocolBox p {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.jm-rightFormBox .textSetWrapper .textBox .titleText {
+    height: 28px;
+    width: 380px;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    text-indent: 10px;
+}
+.jm-rightFormBox .textSetWrapper .textBox .titleText:focus{
+border-color: #b5bdc6;
+}
+.jm-rightFormBox .checkBox {
+    position: relative;
+}
+
+.jm-rightFormBox .saveWrapper {
+    margin-top: 74px;
+    width: 502px;
+    height: 40px;
+}
+
+.jm-rightFormBox .saveWrapper .backButton {
+    float: right;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.jm-rightFormBox .saveWrapper .backButton:hover {
+    text-decoration: underline #5D90C5;
+    color: #5D90C5;
+}
+
+.jm-rightFormBox .saveWrapper .submitButton {
+    float: right;
+    width: 100px;
+    height: 30px;
+    background: #58A7F8;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    cursor: pointer;
+}
+
+.jm-rightFormBox .saveWrapper .submitButton:hover {
+    background: #288BF2;
+}
+
+.jm-rightFormBox .textSetWrapper .sizeBox .titleSize {
+    height: 28px;
+    width: 80px;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    text-indent: 10px;
+    margin-right: 12px;
+}
+
+.textSetWrapper .sizeSelect div {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    right: 13px;
+    background-color: #FFFFFF;
+}
+
+.jm-rightFormBox .textSetWrapper .sizeSelect .addSize {
+    top: 5px;
+    background-position: -212px -626px;
+}
+
+.jm-rightFormBox .textSetWrapper .sizeSelect .addSize:hover {
+    background-position: -212px -605px;
+}
+
+.jm-rightFormBox .textSetWrapper .sizeSelect .subtractSize {
+    bottom: 5px;
+    background-position: -212px -654px;
+}
+
+.jm-rightFormBox .textSetWrapper .sizeSelect .subtractSize:hover {
+    background-position: -212px -674px;
+}
+
+.jm-rightFormBox .enterGroupSetBox .number {
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    top: 0px;
+    right: 0px;
+    background-color: #FFFFFF;
+}
+
+.jm-rightFormBox .enterGroupSetBox .number .numberBox {
+    position: absolute;
+    left: 15px;
+    top: -4px;
+    width: 50px;
+    height: 24px;
+    border: 1px solid #B5BDC6;
+    border-radius: 2px;
+    text-align: left;
+    text-indent: 15px;
+    line-height: 24px;
+}
+
+.jm-rightFormBox .enterGroupSetBox .number div {
+    position: absolute;
+    width: 15px;
+    height: 10px;
+    right: 15px;
+    background-color: #FFFFFF;
+}
+
+.jm-rightFormBox .enterGroupSetBox .number .addSize {
+    top: -1px;
+    background-position: -212px -626px;
+}
+
+.jm-rightFormBox .enterGroupSetBox .number .addSize:hover {
+    background-position: -212px -606px;
+}
+
+.jm-rightFormBox .enterGroupSetBox .number .subtractSize {
+    bottom: 1px;
+    background-position: -212px -654px;
+}
+
+.jm-rightFormBox .enterGroupSetBox .number .subtractSize:hover {
+    background-position: -212px -674px;
+}
+
+.jm-rightFormBox .textSetWrapper .colorBox,
+.jm-rightFormBox .textSetWrapper .protocolBox,
+.jm-rightFormBox .textSetWrapper .dateRangeBox {
+    margin-top: 20px;
+}
+
+.jm-rightFormBox .textSetWrapper .dateRangeBox .startDateBox,
+.jm-rightFormBox .textSetWrapper .dateRangeBox .endDateBox {
+    float: left;
+    margin-top: 10px;
+}
+
+.jm-rightFormBox .textSetWrapper .dateRangeBox .endDateBox {
+    margin-left: 22px;
+}
+
+.jm-rightFormBox .textSetWrapper .dateRangeBox .dateTitle {
+    float: left;
+    line-height: 30px;
+}
+
+.jm-rightFormBox .textSetWrapper .dateRangeBox .startDate,
+.jm-rightFormBox .textSetWrapper .dateRangeBox .endDate {
+    float: left;
+    margin-left: 6px;
+    width: 144px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    box-sizing: border-box;
+    position: relative;
+    line-height: 28px;
+    padding-left: 10px;
+}
+
+.jm-rightFormBox .textSetWrapper .dateRangeBox .icon-date {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-position: -183px -645px;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+}
+
+.jm-rightFormBox .textSetWrapper .dateRangeBox .datePickerBox {
+    position: absolute;
+    left: -10px;
+    top: 28px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    /*display: none;*/
+}
+
+.jm-rightFormBox .textSetWrapper .dateRangeBox .datePickerBox .rdr-Days span:hover {
+    background: rgb(88, 167, 248)!important;
+    color: rgb(255, 255, 255)!important;
+}
+
+.jm-rightFormBox .textSetWrapper .colorBox .colorSelect {
+    margin-left: 5px;
+    width: 240px;
+    float: left;
+}
+
+
+
+/*.jm-rightFormBox .textSetWrapper .dateRangeBox .datePickerBox .rdr-Days span{
+  background: #288bf2!important;
+  color: #fff!important;
+}*/
+
+.jm-rightFormBox .textSetWrapper .colorBox .color {
+    width: 20px;
+    height: 20px;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.jm-rightFormBox .textSetWrapper .colorBox .selfColorBox {
+    float: left;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #B5BDC6;
+    margin-top: 31px;
+    cursor: default;
+    position: relative;
+}
+
+.jm-rightFormBox .textSetWrapper .colorBox .selfColor {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    display: none;
+}
+
+.jm-rightFormBox .textSetWrapper .protocolBox textarea {
+    width: 382px;
+    height: 46px;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.jm-rightFormBox .textSetWrapper .imgUploadBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.jm-rightFormBox .textSetWrapper .imgUploadBox p {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+}
+
+.jm-rightFormBox .textSetWrapper .imgUploadBox div {
+    font-family: PingFangSC-Regular;
+    font-size: 10px;
+    color: #5D90C5;
+    text-decoration: underline;
+    position: relative;
+    cursor: pointer;
+    width: 70px;
+    margin: 10px auto 0;
+}
+
+.jm-rightFormBox .textSetWrapper .imgUploadBox input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.jm-rightFormBox .textSetWrapper .statusBox {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: #344658;
+}
+
+.jm-rightFormBox .textSetWrapper .innerBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jm-rightFormBox .textSetWrapper .innerBox p {
+    font-size: 13px;
+    text-indent: 26px;
+    padding-bottom: 26px;
+}
+
+@media only screen and (min-width:1280px) {
+    .jm-rightFormBox .textSetWrapper {
+        width: 502px;
+        height: 237px;
+        padding: 30px 24px;
+    }
+}
+
+.jm-rightFormBox .store-box {
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+
+.jm-rightFormBox .store-box ul li {
+    list-style: none;
+}
+
+
+
+.jm-rightFormBox .store-box {
+    font-size: 13px;
+    font-family: PingFangSC-Medium;
+    color: #485767;
+    letter-spacing: 0;
+    height: 253px;
+    width: 478px;
+    padding: 30px 0 17px 24px;
+}
+
+.jm-rightFormBox .store-box>p {
+    margin-top: 20px;
+}
+
+.jm-rightFormBox .store-box>p:nth-child(1) {
+    margin-top: 0px;
+}
+
+.jm-rightFormBox .store-box>p>span {
+    display: inline-block;
+    height: 18px;
+    width: 66px;
+    line-height: 18px;
+    margin-right: 6px;
+}
+
+.jm-rightFormBox .store-box>p input {
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    height: 28px;
+    width: 186px;
+    font-size: 13px;
+    padding-left: 12px;
+    line-height: 18px;
+}
+
+.jm-rightFormBox .store-box>p:nth-child(3)>span {
+    float: left;
+}
+
+.jm-rightFormBox .store-box ul {
+    /*list-style-image: url("/public/images/load.gif");*/
+    list-style: square inside;
+}
+
+.jm-rightFormBox .store-box>p>ul {
+    padding: 12px 0 11px 0px;
+    width: 198px;
+    height: 80px;
+    overflow-y: auto;
+    background: #FFFFFF;
+    border: 1px solid #B5BDC6;
+    border-radius: 2px;
+}
+
+.jm-rightFormBox .store-box>p ul li {
+    margin-bottom: 2px;
+    cursor: pointer;
+    padding-left: 10px;
+    /*position: relative;*/
+    /*left: 20px;*/
+}
+
+.jm-rightFormBox .store-box>p>ul li a:hover {
+    background: #F8F8F9;
+    color: #288BF2;
+}
+
+.jm-rightFormBox .store-box>p>ul li a {
+    display: inline-block;
+    width: 87%;
+    height: 20px;
+    line-height: 20px;
+    color: #485767;
+}
+
+.jm-rightFormBox .store-box>p>ul li>ul li>ul li a {
+    width: 100%;
+}
+
+.jm-rightFormBox .store-box>p>ul li ul {
+    font-family: PingFangSC-Medium;
+}
+
+.jm-rightFormBox .store-box>p .open>span {
+    display: inline-block;
+    width: 12%;
+    height: 20px;
+    background: url(../images/icon/iconography.png)no-repeat;
+    background-size: 600px 700px;
+    background-position: -161px -665px;
+    position: relative;
+    vertical-align: text-bottom;
+    top: 2px;
+}
+
+.jm-rightFormBox .store-box>p .close>span {
+    display: inline-block;
+    width: 13%;
+    vertical-align: text-bottom;
+    height: 20px;
+    background: url(../images/icon/iconography.png)no-repeat;
+    background-size: 600px 700px;
+    background-position: -161px -645px;
+    position: relative;
+    top: 2px;
+}
+
+.jm-rightFormBox .store-box>p>ul li>ul {
+    margin-left: 10px;
+}
+
+.jm-rightFormBox .store-box>p:nth-child(3) {
+    position: relative;
+}
+
+.jm-rightFormBox .store-box>p:nth-child(3)>span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 18px;
+    line-height: 18px;
+    color: #344658;
+}
+
+.jm-rightFormBox .store-box>p:nth-child(3)>span:nth-child(3)>a {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    height: 12px;
+    width: 12px;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.jm-rightFormBox .store-box .mandatory {
+    background: #58A7F8;
+}
+
+.jm-rightFormBox .store-box .not-mandatory {
+    background: red;
+}
+
+
+
+.jm-rightFormBox .city-box {
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+
+.jm-rightFormBox .city-box .control{
+  margin-left: 10px;
+  float: left;
+  width: 44px;
+  height: 20px;
+}
+.jm-rightFormBox .city-box .line{
+  float: left;
+  width: 100%;
+  height: 20px;
+}
+.jm-rightFormBox .city-box .line:hover{
+  background-color: #F8F8F9;
+}
+
+.jm-rightFormBox .city-box .control .foldButt{
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-position: -161px -645px;
+}
+.jm-rightFormBox .city-box .control .unfoldButt{
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-position: -161px -665px;
+}
+.jm-rightFormBox .city-box .control .checkButt{
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-position: -242px -303px;
+}
+.jm-rightFormBox .city-box .control .selectedButt{
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-position: -242px -323px;
+}
+.jm-rightFormBox .city-box .control .partSelected{
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-position: -141px -665px;
+}
+.jm-rightFormBox .city-box .desc{
+  float: left;
+  width: 130px;
+  height: 20px;
+}
+
+.jm-rightFormBox .city-box,
+.jm-rightFormBox .store-box {
+    font-size: 13px;
+    font-family: PingFangSC-Medium;
+    color: #485767;
+    letter-spacing: 0;
+    height: 190px;
+    width: 478px;
+    padding: 30px 0 17px 24px;
+}
+
+.jm-rightFormBox .city-box>p {
+    margin-top: 20px;
+}
+
+.jm-rightFormBox .city-box>p:nth-child(1) {
+    margin-top: 0px;
+}
+
+.jm-rightFormBox .city-box>p>span {
+    display: inline-block;
+    height: 18px;
+    width: 66px;
+    line-height: 18px;
+    margin-right: 6px;
+}
+
+.jm-rightFormBox .city-box>p input {
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    font-size: 13px;
+    font-family: PingFangSC-Regular;
+    height: 28px;
+    width: 368px;
+    padding-left: 12px;
+    line-height: 18px;
+}
+.jm-rightFormBox .city-box>p input:focus,.jm-rightFormBox .store-box>p input{
+    border-color: #b5bdc6;
+}
+.jm-rightFormBox .city-box>p:nth-child(3)>span {
+    float: left;
+}
+
+.jm-rightFormBox .city-box>p>ul {
+    padding: 12px 0 11px 0px;
+    width: 320px;
+    height: 80px;
+    overflow-y: auto;
+    background: #FFFFFF;
+    border: 1px solid #B5BDC6;
+    border-radius: 2px;
+}
+
+.jm-rightFormBox .city-box>p>ul li {
+    margin-bottom: 2px;
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+    padding: 0 0 0 0px;
+}
+
+.jm-rightFormBox .city-box>p>ul li a:hover {
+    background: #F8F8F9;
+    color: #288BF2;
+}
+
+.jm-rightFormBox .city-box>p>ul li a {
+    display: inline-block;
+    width: 85%;
+    color: #485767;
+}
+
+.jm-rightFormBox .city-box>p>ul li>ul li a {
+    display: inline-block;
+    width: 100%;
+    /*width: 118px;*/
+    height: 20px;
+    line-height: 20px;
+    color: #485767;
+}
+
+.jm-rightFormBox .city-box>p>ul li ul {
+    font-family: PingFangSC-Medium;
+}
+
+.jm-rightFormBox .city-box>p .open>span {
+    display: inline-block;
+    /*width: 20px;*/
+    width: 13%;
+    height: 20px;
+    background: url(../images/icon/iconography.png)no-repeat;
+    background-size: 600px 700px;
+    background-position: -161px -665px;
+    position: relative;
+    vertical-align: text-bottom;
+    top: 2px;
+}
+
+.jm-rightFormBox .city-box>p .close>span {
+    /*list-style-image:url("/public/images/QRcode.jpeg");*/
+    display: inline-block;
+    width: 13%;
+    height: 20px;
+    vertical-align: text-bottom;
+    background: url(../images/icon/iconography.png)no-repeat;
+    background-size: 600px 700px;
+    background-position: -161px -645px;
+    position: relative;
+    top: 2px;
+}
+
+.jm-rightFormBox .city-box>p>ul li>ul {
+    /* margin-left: 10px; */
+}
+
+.jm-rightFormBox .city-box>p:nth-child(3) {
+    position: relative;
+}
+
+.jm-rightFormBox .city-box>p:nth-child(3)>span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 18px;
+    line-height: 18px;
+    color: #344658;
+}
+
+.jm-rightFormBox .city-box>p:nth-child(3)>span:nth-child(3)>a {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    height: 12px;
+    width: 12px;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.jm-rightFormBox .city-box .mandatory {
+    background: #58A7F8;
+}
+
+.jm-rightFormBox .city-box .not-mandatory {
+    background: red;
+}
+
+.filterWrapper .selectBox .optionUl {
+    width: 269px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    z-index: 2;
+}
+
+.filterWrapper .selectBox .selectOption .selectTip {
+    color: #485767;
+}
+
+.enterGroupWrap {
+    height: calc(100vh - 58px);
+    background-color: #F8F8F9;
+    overflow-y: auto;
+}
+
+.filterWrapper .selectBox .optionUl ul li {
+    height: 30px;
+    line-height: 30px;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    font-size: 12px;
+    color: #485767;
+    border-top: 1px solid transparent;
+}
+
+.filterWrapper .selectBox .optionUl ul li:hover {
+    background: #F8F8F9;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #288BF2;
+    cursor: pointer;
+    border-top: 1px solid #fff;
+}
+
+.filterWrapper .selectBox .optionUl ul li:first-child {
+    border-top: 1px solid transparent;
+}
+
+.jmRuleWrap .filterWrapper .selectBox .selectOption,
+.jmRuleWrap .filterWrapper .selectBox {
+    width: 230px;
+}
+
+.jmRuleWrap .filterWrapper .selectWrapper .titleInput {
+    width: 187px;
+}
+
+.jmRuleWrap .filterWrapper .selectBox .optionUl {
+    width: 232px;
+}
+
+.jmRuleWrap .filterWrapper .selectWrapper+.selectWrapper {
+    margin-left: 30px;
+}
+
+.jmRuleWrap .filterWrapper .selectWrapper:nth-child(1),
+.jmRuleWrap .groupTemplate:first-child {
+    margin-left: 42px;
+}
+
+.jmRuleWrap .groupTemplate {
+    width: 234px;
+    box-shadow: 0 2px 3px 0 #DADEE2;
+    height: 260px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin: 25px 0;
+    float: left;
+}
+
+.filterBox .searchBtn:hover {
+    background: #288bf2;
+}
+
+.jmRuleWrap .groupTemplate:last-child {
+    margin-left: 45px;
+}
+
+.jmRuleWrap .filterWrapper .searchBtn {
+    width: 110px;
+}
+
+.jmRuleWrap .addBox {
+    width: 233px;
+    height: 256px;
+    margin-top: 28px;
+    margin-left: 46px;
+    border: 1px dashed #B5BDC6;
+    border-radius: 6px;
+    float: left;
+}
+
+.jm-container .templateContent .templateItemBox {
+    width: 284px;
+    margin: 10px auto;
+}
+
+.templateItemList {
+    height: 44px;
+    line-height: 44px;
+}
+@media screen and (max-width: 1279px){
+.jm-rightFormBox{
+        width: 465px;
+            margin-left: 82px;
+}
+}
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    .jmRuleWrap .groupTemplate,
+    .jmRuleWrap .addBox {
+        width: 258px;
+        /*height: 314px;*/
+        height: 290px;
+    }
+    .jm-container .templateContent .templateItemBox {
+        width: 324px;
+        line-height: 50px;
+        margin: 48px auto;
+    }
+    .templateItemList {
+        height: 50px;
+        line-height: 50px;
+    }
+    .jm-leftFormBox .licenseBar {
+        margin-top: 0px;
+        max-width: 320px;
+    }
+    .jm-leftFormBox .button {
+        width: 324px;
+        height: 50px;
+        line-height: 50px;
+        margin: 20px auto;
+    }
+    .templateItemList .metaData-item {
+        line-height: 50px!important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .jm-container .templateContent .templateItemBox {
+        width: 388px;
+        line-height: 60px;
+        margin: 63px auto;
+    }
+    .templateItemList {
+        height: 60px;
+        line-height: 60px;
+    }
+    .templateItemList .metaData-item {
+        line-height: 60px!important;
+    }
+
+    .jm-leftFormBox .licenseBar {
+        margin-top: 0px;
+        max-width: 320px;
+    }
+    .jm-leftFormBox .button {
+        width: 388px;
+        height: 60px;
+        line-height: 60px;
+        margin: 29px auto;
+    }
+}
+
+.jmRuleWrap .groupTemplate .templateName,
+.jmRuleWrap .groupTemplate .templateName p {
+    height: 40px;
+    line-height: 40px;
+}
+
+.jmRuleWrap .templateList {
+    padding: 16px 0;
+    margin: 0 24px;
+    border-bottom: 1px dashed #DADEE2;
+}
+
+.jmRuleWrap .groupTemplate .templateItem {
+    position: relative;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    margin: 6px;
+}
+
+.jmRuleWrap .filterBox .selectWrapper {
+    float: left;
+}
+
+.jmRuleWrap .groupTemplate .templateItem span:nth-child(1) {
+    width: 66px;
+    display: inline-block;
+}
+
+.jmRuleWrap .groupTemplate .templateItem .itemContent {
+    position: relative;
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: sub;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    margin-left: 8px;
+}
+
+.jmRuleWrap .filterBox {
+    height: 70px;
+    padding-top: 6px;
+}
+
+.jmRuleWrap .groupTemplate .templateItem .itemContent:hover>.filterBox {
+    display: block;
+}
+
+.jmRuleWrap .filterWrapper .selectWrapper {
+    margin-top: 24px;
+}
+
+.jmRuleWrap .addBox .addTitle {
+    margin-top: 77px;
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    color: #B5BDC6;
+    text-align: center;
+    width: 100%;
+}
+
+.jmRuleWrap .field {
+    position: relative;
+    cursor: pointer;
+}
+
+.jmRuleWrap .fieldBox {
+    display: none;
+    width: 114px;
+    border: 1px solid #B5BDC6;
+    box-shadow: 0 3px 12px 0 #DADEE2;
+    border-radius: 4px;
+    position: absolute;
+    top: -39px;
+    left: 127px;
+    background: #fff;
+}
+
+.jmRuleWrap .field:hover .fieldBox {
+    display: block;
+}
+
+.jmRuleWrap .fieldBox .fieldTitle {
+    background: #B5BDC6;
+    color: #fff;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 10px;
+}
+
+.jmRuleWrap .fieldBox .fieldContent {
+    padding: 0 10px;
+    line-height: 18px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #485767;
+}
+
+.jmRuleWrap .btnWrap {
+    padding: 24px 32px 26px 32px;
+}
+
+.jmRuleWrap .btnWrap button {
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #B5BDC6;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+}
+
+.jmRuleWrap .groupTemplate:hover .edit {
+    border-color: #58A7F8;
+    color: #58A7F8;
+}
+
+.jmRuleWrap .groupTemplate:hover .startUse,
+.jmRuleWrap .groupTemplate:hover .sent {
+    border-color: #6AD298;
+    color: #6AD298;
+}
+
+.jmRuleWrap .btnWrap button:active {
+    opacity: .8;
+}
+
+.jmRuleWrap .btnWrap .edit {
+    margin-right: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.jmRuleWrap .btnWrap .sent {
+    float: left;
+    cursor: pointer;
+}
+
+.jmRuleWrap .btnWrap .use {
+    margin: 0 48px;
+    cursor: pointer;
+}
+
+.jmRuleWrap .groupTemplate:hover .edit {
+    border-color: #58A7F8;
+    color: #58A7F8;
+}
+
+.jmRuleWrap .groupTemplate:hover .startUse,
+.jmRuleWrap .groupTemplate:hover .sent {
+    border-color: #6AD298;
+    color: #6AD298;
+}
+
+.jmRuleWrap .btnWrap .edit:hover {
+    background: #58A7F8;
+    color: #fff;
+}
+
+.jmRuleWrap .btnWrap .sent:hover,
+.jmRuleWrap .btnWrap .startUse:hover {
+    background: #6AD298;
+    color: #fff;
+}
+
+.jmRuleWrap .groupTemplate:hover .stopUse {
+    border-color: #F75A5A;
+    color: #F75A5A;
+}
+
+.jmRuleWrap .groupTemplate .stopUse:hover {
+    background: #F75A5A;
+    color: #fff;
+}
+
+.jmEditBox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background: rgba(3, 3, 3, 0.45);
+}
+
+.jmRuleWrap .groupTemplate .templateName p {
+    margin: 0 auto;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 146px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.jmEditBox .jmInnerBox {
+    width: 640px;
+    height: 410px;
+    background: #F8F8F9;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.jmEditBox .jmInnerBox .InnerTitle {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #485767;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.jmEditBox .jmInnerBox .InnerList {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.jmEditBox .jmInnerBox .InnerList .label {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+}
+
+.jmEditBox .jmInnerBox .InnerList .typeName {
+    background: #FFFFFF;
+    border-radius: 2px;
+    text-indent: 12px;
+    color: #485767;
+    width: 467px;
+    line-height: 30px;
+    border:1px solid transparent;
+}
+.jmEditBox .jmInnerBox .InnerList .typeName:focus{
+    border-color: #b5bdc6;
+}
+.jmEditBox .jmInnerBox .selectListBox {
+    width: 560px;
+    /*height: 90px;*/
+    background: #FFFFFF;
+    border-radius: 2px;
+    padding: 14px 24px;
+    box-sizing: border-box;
+    margin-top: 7px;
+}
+
+.jmEditBox .jmInnerBox .selectList {
+    float: left;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    width: 130px;
+    margin-right: 30px;
+}
+
+.jmEditBox .jmInnerBox .selectList .checkBox {
+    margin-right: 5px;
+    width: 21px;
+    height: 21px;
+    position: relative;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+.jmEditBox .jmInnerBox .selectList input:before {
+    background: #fff url(../images/icon/iconography.png)no-repeat;
+    background-size: 600px 700px;
+    background-position: -262px -303px;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 21px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.jmEditBox .jmInnerBox .checked input:before {
+    background-position: -262px -323px;
+}
+
+.jmEditBox .selectWrapper {
+    float: left;
+}
+
+.jmEditBox .selectWrapper .selectLabel {
+    float: left;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    line-height: 30px;
+}
+
+.jmEditBox .InnerList .selectWrapper .selectBox .selectOption {
+    width: 198px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    position: relative;
+    border: 1px solid transparent;
+    color: #485767;
+}
+
+.jmEditBox .jmEditBoxOff {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -9px;
+    right: -38px;
+    background-position: -410px -521px;
+    cursor: pointer;
+}
+
+.jmRuleWrap .jmEditBox .InnerList .selectWrapper {
+    margin: 20px 0px 20px 0;
+    float: left;
+}
+
+.jmRuleWrap .jmEditBox .InnerList .selectWrapper:nth-child(2) {
+    margin-left: 22px;
+}
+
+.jmRuleWrap .jmEditBox .InnerList .selectBox {
+    width: 198px;
+    float: left;
+    margin-left: 5px;
+    position: relative;
+}
+
+.jmRuleWrap .jmEditBox .InnerList .selectBox .optionUl {
+    width: 200px;
+}
+
+.jmRuleWrap .jmEditBox .InnerList .selectWrapper:nth-child(1) .selectBox .optionUl {
+    max-height: 128px;
+    /*max-height: 142px;*/
+    overflow: auto;
+}
+
+.jmRuleWrap .jmEditBox .InnerList .newEdit {
+    background: #58A7F8;
+    border-radius: 4px;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+}
+
+.jmRuleWrap .jmEditBox .filterWrapper {
+    height: 40px;
+}
+
+.jmRuleWrap .jmEditBox .InnerList .cancel {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    float: right;
+    margin-right: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.jmRuleWrap .jmEditBox .InnerList .cancel:hover {
+    color: #5D90C5;
+    text-decoration: underline;
+}
+
+.jmRuleWrap .jmEditBox .InnerList .newEdit:hover {
+    background: #288BF2;
+}
+
+.jmRuleWrap .jmEditBox .maskBtn {
+    height: 40px;
+}
+
+.jmRuleWrap .ruleNameBox {
+    position: relative;
+}
+
+.jmRuleWrap .ruleNameBox .maskBox,
+.jmRuleWrap .ruleNameBox .ruleName {
+    position: absolute;
+    top: 0;
+    left: 103px;
+    background: #fff;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    width: 60%;
+}
+
+.jmRuleWrap .ruleNameBox .first {
+    color: #B5BDC6;
+}
+
+.jmRuleWrap .ruleNameBox .ruleName {
+    color: #485767;
+}
+
+.filterWrapper .selectBox {
+    position: relative;
+    float: left;
+    margin-left: 5px;
+}
+
+.filterBox .selectWrapper .selectLabel {
+    float: left;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    line-height: 30px;
+}
+
+.filterBox .selectWrapper .titleInput {
+    border: 1px solid transparent;
+    height: 28px;
+    color: #485767;
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    line-height: 28px;
+    text-indent: 12px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+
+.filterBox .searchBtn {
+    background: #58A7F8;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    height: 31px;
+    /*width: 82px;*/
+    text-align: center;
+    color: #fff!important;
+    cursor: pointer;
+}
+
+.jmRuleWrap .groupTemplate .templateName {
+    border-radius: 6px 6px 0 0;
+    background: #B5BDC6;
+}
+
+.filterBox .selectBox {
+    float: left;
+    position: relative;
+}
+
+.filterBox .selectBox .selectOption {
+    background: #FFFFFF;
+    border-radius: 2px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.addBox .addIcon {
+    width: 72px;
+    height: 72px;
+    margin: 19px auto;
+    background-position: -480px -553px;
+    cursor: pointer;
+}
+
+.filterWrapper .selectBox .selectOption em {
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    color: #B5BDC6;
+    display: inline-block;
+    line-height: 30px;
+    font-style: normal;
+    padding-left: 12px;
+}
+
+.filterWrapper .selectBox .selectOption .selIcon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-position: -183px -479px;
+    float: right;
+}
+
+.filterWrapper .selectBox .selectOption .selIcon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-position: -183px -479px;
+    float: right;
+}
+
+ .jmRuleWrap .jmEditBox .maskBtn {
+        margin-top: 52px;
+    }
+/*é€‚é…*/
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    .jmRuleWrap .filterWrapper .selectWrapper .titleInput {
+        width: 217px;
+    }
+    .jmRuleWrap .filterWrapper .selectBox .selectOption,
+    .jmRuleWrap .filterWrapper .selectBox {
+        width: 270px;
+    }
+    .jm-rightFormBox .wellcomeIcon {
+        margin-top: 58px;
+    }
+    .jmRuleWrap .groupTemplateBox+.groupTemplateBox .groupTemplate {
+        margin-left: 54px;
+    }
+    .jmRuleWrap .filterBox .selectBox {
+        margin-left: 10px;
+    }
+    .jmRuleWrap .filterBox .selectWrapper:nth-child(1) {
+        margin-left: 45px;
+    }
+    .jmRuleWrap .filterWrapper .selectBox .optionUl {
+        width: 272px;
+    }
+    .jmRuleWrap .btnWrap {
+        padding: 38px 32px 26px 44px;
+    }
+    .jm-leftFormBox .templateContent,
+    .jm-leftFormBox,
+    .jm-leftFormBox .templateCanvas,
+    .jm-leftFormBox .canvasModal {
+        width: 400px;
+        height: 710px;
+    }
+    .jm-rightFormBox .nameItem #temName,
+    .jm-rightFormBox .selectWrapper {
+        width: 262px;
+    }
+    .jm-rightFormBox .nameItem,
+    .jm-rightFormBox .typeItem {
+        width: 335px;
+    }
+    .jm-rightFormBox,
+    .jm-rightFormBox .textSetWrapper,
+    .jm-rightFormBox .templateEdit,
+    .jm-rightFormBox .templateSetBox,
+    .jm-rightFormBox .templateSelect,
+    .jm-rightFormBox .enterGroupSetBox,
+    .jm-rightFormBox .store-box,
+    .jm-rightFormBox .city-box {
+        width: 674px;
+    }
+    .jm-rightFormBox .templateSetBox .innerContainer {
+        height: 95px;
+    }
+    .jm-rightFormBox .textSetWrapper,
+    .jm-rightFormBox .store-box,
+    .jm-rightFormBox .city-box {
+        height: 310px;
+    }
+    .jm-rightFormBox .saveWrapper {
+        margin-top: 166px;
+        margin-left: 173px;
+    }
+    .jm-rightFormBox .selectWrapper .selectBox .optionUl {
+        width: 264px;
+    }
+    .jm-rightFormBox .textSetWrapper .textBox .titleText,
+    .jm-rightFormBox .store-box>p input,
+    .jm-rightFormBox .city-box>p input {
+        width: 516px;
+    }
+     .jmRuleWrap .jmEditBox .maskBtn {
+        margin-top: 52px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .jm-leftFormBox .templateContent,
+    .jm-leftFormBox,
+    .jm-leftFormBox .templateCanvas,
+    .jm-leftFormBox .canvasModal {
+        width: 480px;
+        height: 852px;
+    }
+    .jm-rightFormBox,
+    .jm-rightFormBox .textSetWrapper,
+    .jm-rightFormBox .templateEdit,
+    .jm-rightFormBox .templateSetBox,
+    .jm-rightFormBox .templateSelect,
+    .jm-rightFormBox .enterGroupSetBox,
+    .jm-rightFormBox .store-box,
+    .jm-rightFormBox .city-box {
+        width: 873px;
+    }
+    .jm-rightFormBox .wellcomeIcon {
+        margin-top: 132px;
+    }
+    .jm-rightFormBox .saveWrapper {
+        margin-left: 372px;
+        margin-top: 65px;
+    }
+    .jm-rightFormBox .selectWrapper .selectBox .optionUl {
+        width: 360px;
+    }
+    .jm-rightFormBox .textSetWrapper,
+    .jm-rightFormBox .store-box,
+    .jm-rightFormBox .city-box {
+        height: 408px;
+    }
+    .jm-rightFormBox .textSetWrapper .textBox .titleText,
+    .jm-rightFormBox .store-box>p input,
+    .jm-rightFormBox .city-box>p input {
+        width: 715px;
+    }
+    .jm-rightFormBox .nameItem #temName,
+    .jm-rightFormBox .selectWrapper {
+        width: 358px;
+    }
+    .jm-rightFormBox .templateEdit,
+    .jm-rightFormBox .textSetWrapper {
+        height: 474px;
+        /*overflow-x: hidden;*/
+    }
+    .jm-rightFormBox .templateSetBox .innerContainer {
+        height: 95px;
+    }
+    .jm-rightFormBox .nameItem,
+    .jm-rightFormBox .typeItem {
+        width: 435px;
+    }
+    .jmRuleWrap .filterWrapper .selectBox .optionUl {
+        width: 272px;
+    }
+    .jmRuleWrap .filterWrapper .selectWrapper .titleInput {
+        width: 270px;
+    }
+    .jmRuleWrap .filterWrapper .selectBox .selectOption,
+    .jmRuleWrap .filterWrapper .selectBox {
+        width: 270px;
+    }
+    .jmRuleWrap .filterBox .selectBox {
+        margin-left: 10px;
+    }
+    .jmRuleWrap .filterBox .selectWrapper:nth-child(1) {
+        margin-left: 82px;
+    }
+    .jmRuleWrap .filterWrapper .searchBtn {
+        width: 150px;
+    }
+    .jmRuleWrap .filterBox .selectWrapper+.selectWrapper {
+        margin-left: 90px;
+    }
+    .jmRuleWrap .filterBox .selectWrapper:last-child {
+        margin-left: 121px;
+    }
+    .jmEditBox .jmInnerBox {
+        width: 700px;
+        height: 448px;
+    }
+    .jmRuleWrap .groupTemplateBox .groupTemplate,
+    .jmRuleWrap .addBox {
+        margin-left: 82px;
+    }
+    .jmRuleWrap .addBox {
+        width: 230px;
+        height: 258px;
+    }
+    .jmEditBox .jmEditBoxOff {
+        top: -6px;
+        right: -48px;
+        transform: scale(1.3, 1.3);
+    }
+    .jmEditBox .jmInnerBox .selectListBox {
+        width: 620px;
+    }
+    .jmEditBox .jmInnerBox .InnerList .typeName {
+        width: 526px;
+    }
+    .jmEditBox .InnerList .selectWrapper .selectBox .selectOption {
+        width: 228px;
+    }
+    .jmRuleWrap .jmEditBox .maskBtn {
+        margin-top: 62px;
+    }
+    .jmRuleWrap .jmEditBox .InnerList .selectWrapper:nth-child(2) {
+        margin-left: 52px;
+    }
+    .jmRuleWrap .jmEditBox .InnerList .selectBox .optionUl {
+        width: 230px;
+    }
+}
+
+.groupTemplate:hover .templateName {
+    background: #6AD298;
+}
+
+.groupTemplate:hover {
+    box-shadow: 0 4px 10px 0 #B5BDC6;
+}
+
+
+
+/*å…¬ç”¨*/
+
+.jmRuleWrap .jmEditBox .InnerList .selectBox .optionUl::-webkit-scrollbar {
+    /*display: none;*/
+    opacity: 0;
+    width: 6px;
+    height: 6px;
+}
+
+.jmRuleWrap .jmEditBox .InnerList .selectBox .optionUl:hover::-webkit-scrollbar {
+    display: block;
+    opacity: 1;
+}
+
+.jmRuleWrap .jmEditBox .InnerList .selectBox .optionUl::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    background-color: #B5BDC6;
+}
+
+
+
+/*å…¥ç¾¤æ¨¡æ¿*/
+
+.buildGroupWrap {
+    background: #fff;
+    height: 100%;
+}
+
+.buildGroupWrap .courseBtnBox {
+    height: 32px;
+    padding-top: 26px;
+    padding-right: 42px;
+}
+
+.buildGroupWrap .downLoadBtn {
+    font-size: 13px;
+    color: #8D969F;
+    float: right;
+    line-height: 34px;
+    margin-right: 15px;
+}
+
+.buildGroupWrap .downLoadBtn:hover {
+    text-decoration: underline;
+    color: #5D90C5;
+    cursor: pointer;
+}
+
+.buildGroupWrap .downLoadBtn:active {
+    text-decoration: underline;
+    color: #288bf2;
+}
+
+.buildGroupWrap .courseBtnBox .courseBtn {
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #6AD298;
+    color: #6AD298;
+    float: right;
+    border-radius: 4px;
+}
+
+.buildGroupWrap .courseBtnBox .courseBtn:hover {
+    background: #6AD298;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buildGroupWrap .welcomeImg {
+    width: 329px;
+    height: 225px;
+    margin: 58px auto 10px;
+    transform: scale(.9, .9);
+    padding-right: 14px;
+}
+
+.membershipCard .membershipImg {
+    width: 160px;
+    height: 160px;
+    margin: 0px auto 30px;
+    padding-top: 88px;
+}
+
+.membershipCard .membershipImg img {
+    width: 160px;
+    height: 160px;
+}
+
+.membershipCard .editCard .newBuildBtn {
+    background: #6AD298;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.membershipCard .nextSeting {
+    font-size: 12px;
+    color: #485767;
+    text-align: center;
+    line-height: 30px;
+    margin: 31px auto 10px;
+    width: 278px;
+}
+
+.membershipCard .nextStepBtn {
+    width: 278px;
+    height: 42px;
+    border: 1px solid #B5BDC6;
+    border-radius: 6px;
+    text-align: center;
+    margin: 8px auto;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: PingFangSC-Medium;
+}
+
+.membershipCard .buildBtnBox {
+    position: relative;
+}
+
+.membershipCard .nextStepBtn button {
+    color: #B5BDC6;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.membershipCard .submitNext {
+    border: 1px solid #288BF2;
+    background: #fff;
+}
+
+.membershipCard .submitNext button {
+    color: #288bf2;
+
+}
+
+.membershipCard .nextStepBtn:hover {
+    opacity: .8;
+    background: rgba(88, 167, 248, 0.10);
+    cursor: pointer;
+    color: #fff;
+}
+
+.membershipCard .submitNext:hover {
+    opacity: 1;
+    background: #fff;
+}
+
+.membershipCard .remindTip {
+    position: absolute;
+    right: -191px;
+    top: 2px;
+    line-height: 42px;
+    height: 42px;
+    width: 180px;
+}
+
+.membershipCard .remindTip .remindIcon {
+    background-position: -161px -605px;
+    width: 20px;
+    height: 23px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.membershipCard .wrongTip .remindIcon {
+    background-position: -161px -625px;
+}
+
+.membershipCard .remindTip .complete {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #6AD298;
+    margin-left: 7px;
+}
+
+.membershipCard .wrongTip .complete {
+    color: #F75A5A;
+}
+
+.buildGroupWrap .welcomeTip {
+    font-size: 16px;
+    color: #58A7F8;
+    margin-left: 22px;
+    text-align: center;
+}
+
+.buildGroupWrap .welcomeImg img {
+    width: 329px;
+    height: 220px;
+}
+
+.firstBuild .welcomeImg img {
+    height: 185px;
+}
+
+.buildGroupWrap .buildBtnBox,
+.membershipCard .buildBtnBox {
+    height: 42px;
+    margin: 0px auto 6px;
+    width: 278px;
+}
+
+.buildSeting .buildBtnBox {
+    margin: 60px auto 6px;
+}
+
+.buildGroupWrap .buildBtnBox .newBuildBtn,
+.membershipCard .buildBtnBox .newBuildBtn {
+    text-align: center;
+    border-radius: 6px;
+    line-height: 42px;
+    border: 1px solid transparent;
+}
+
+.firstBuild .buildBtnBox .newBuildBtn {
+    background: #288bf2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.enterGroup .newBuildBtn {
+    background: #6AD298;
+    color: #fff;
+    cursor: pointer;
+}
+
+.buildSeting .enterGroup .newBuildBtn {
+    background: #288bf2;
+}
+
+.membershipCard .defaultBtn .newBuildBtn {
+    color: #fff;
+    background: #b5bdc6;
+    cursor: pointer;
+}
+
+.groupRule .buildBtnBox:last-child {
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+.firstBuild .buildBtnBox:last-child .newBuildBtn {
+    background: #fff;
+    color: #288BF2;
+    border: 1px solid #288BF2;
+}
+
+.buildGroupWrap .buildBtnBox .newBuildBtn:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.firstBuild .buildBtnBox {
+    transform: scale(.8, .8);
+}
+
+.firstBuild .welcomeTip {
+    margin-top: 22px;
+}
+
+.firstBuild .buildBtnBox:last-child .newBuildBtn:hover {
+    opacity: .8;
+    background: #eef6fe;
+    color: #288bf2;
+}
+
+.ChooseTypeWrap .chooseBox {
+    width: 690px;
+    margin: 0px auto;
+    padding-top: 150px;
+}
+
+.ChooseTypeWrap .chooseMainBox {
+    padding-left: 48px;
+}
+
+.ChooseTypeWrap .chooseBox .chooseTitle {
+    text-align: center;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #344658;
+    margin-bottom: 37px;
+}
+
+.ChooseTypeWrap .chooseBox .typeList {
+    float: left;
+    width: 162px;
+    height: 62px;
+    color: #6AD298;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    line-height: 62px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #6AD298;
+    border-radius: 6px;
+}
+
+.ChooseTypeWrap .chooseBox .typeList {
+    margin-right: 48px;
+    margin-bottom: 35px;
+}
+
+.ChooseTypeWrap .chooseBox .typeList:hover {
+    background: #6AD298;
+    color: #fff;
+    transition: all .4s;
+}
+
+.ChooseTypeWrap .chooseBox .typeList:active {
+    background: #5DC189;
+    color: #fff;
+    border-color: #5DC189;
+}
+
+.ChooseTypeWrap .hideChoose {
+    display: none!important;
+}
+
+.membershipCard .buildBtnBox .newBuildBtn:hover {
+    background: #5DC189;
+    color: #fff;
+    opacity: 1;
+    border-color: #5DC189;
+
+}
+
+.membershipCard .defaultBtn .newBuildBtn:hover {
+    background: #485767;
+    border-color: #485767;
+
+}
+
+.groupRule .welcomeImg {
+    margin: 58px auto 30px;
+    height: 240px;
+}
+
+.secondDone .welcomeImg {
+    padding: 0;
+}
+
+.secondDone .welcomeImg .secondPic {
+    height: 168px;
+    width: 168px;
+    background-position: -398px -35px;
+    margin: 0 auto;
+}
+
+.secondDone .welcomeImg .setDone {
+    background-position: -398px -203px;
+}
+
+.secondDone .buildBtnBox .newBuildBtn {
+    background: #6AD298;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.secondDone .welcomeImg {
+    margin: 147px auto 0px;
+}
+
+.secondDone .secondTip {
+    color: #6AD298;
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.enterGroupWrap .templateDatabox .addBox {
+    float: left;
+    width: 217px;
+    height: 348px;
+    margin: 100px 0px 0 104px;
+    border: 1px dashed #b5bdc6;
+    border-radius: 6px;
+}
+.enterGroupWrap .templateDatabox .addBox:hover,.jmRuleWrap .addBox:hover{
+        border-color: #88929d;
+        transition: all .3s;
+}
+.enterGroupWrap .templateDatabox .addBox:hover  .addTitle,.jmRuleWrap .addBox:hover .addTitle{
+    color: #88929d;
+}
+.enterGroupWrap .templateDatabox .addBox:hover  .addIcon,.jmRuleWrap .addBox:hover .addIcon{
+    background-position: -336px -553px;
+}
+.loadingMoving {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.loadingMoving .loadingBox .loadingGif {
+    background-position: -488px -395px;
+    width: 76px;
+    height: 67px;
+    opacity: 1;
+}
+
+.loadingMoving .loadBox {
+    transform: translate(-50%, -50%) scale(1, 1)!important;
+}
+
+.loadingMoving .loadingShadow {
+    animation: loadShadow .8s infinite;
+    -webkit-animation: loadShadow .8s infinite;
+    margin: 20px auto 0;
+}
+
+@keyframes loadShadow {
+    0% {
+        transform: scale(2, 2);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(2, 2);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .buildSeting .buildBtnBox {
+        margin: 40px auto 6px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+    .buildGroupWrap .welcomeImg {
+        margin: 148px auto 70px;
+        transform: scale(1, 1);
+    }
+    .firstBuild .welcomeImg {
+        margin: 148px auto 50px;
+    }
+    .groupRule .welcomeImg {
+        margin: 148px auto 60px;
+    }
+    .secondDone .welcomeImg {
+        margin: 147px auto 0px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .buildGroupWrap .welcomeImg {
+        margin: 148px auto 30px;
+    }
+    .secondDone .welcomeImg {
+        margin: 167px auto 0px;
+    }
+    .buildGroupWrap .welcomeImg {
+        transform: scale(1, 1);
+    }
+    .firstBuild .buildBtnBox {
+        transform: scale(1, 1);
+    }
+    .membershipCard .membershipImg {
+        margin: 0px auto 70px;
+        transform: scale(1.5, 1.5);
+    }
+    .groupRule .welcomeImg {
+        margin: 148px auto 70px;
+    }
+    .firstBuild .buildBtnBox:last-child {
+        margin-top: 20px;
+    }
+}
+
+.groupRule .welcomeImg img {
+    height: 218px;
+    margin-left: -11px;
+}
+
+.groupRule .buildBtnBox {
+    transform: scale(1, 1);
+}
+
+
+
+
+
+/*å¼¹çª—æ ·å¼*/
+
+.jm-container .sureModel {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.30);
+    z-index: 24;
+}
+
+.jm-container .sureWrapper {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: -80px;
+    font-size: 13px;
+    color: #344658;
+    letter-spacing: 0;
+    z-index: 30;
+    /*height: 160px;*/
+    height: 180px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+    padding: 10px 78px;
+}
+
+.jm-container .sureWrapper {
+    width: 250px;
+}
+
+.jm-container .checkWrapper .biggerBox {
+    width: 280px;
+}
+
+.jm-container .checkWrapper .check-field-state {
+    line-height: 30px;
+    margin: 38px 0px 15px 0px;
+}
+
+.jm-container .checkWrapper .check-field-move {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
+    background-position: -262px -43px;
+}
+
+.jm-container .checkWrapper .check-field-move:hover {
+    background-position: -262px -67px;
+}
+
+.jm-container .checkWrapper .check-field-button button {
+    color: #fff;
+    background: #6AD398;
+    border-radius: 4px;
+    padding: 9px 0px;
+    width: 90px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.jm-container .checkWrapper .check-field-button button:hover {
+    opacity: .8;
+}
+
+.jm-container .sureModel .sure-field-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 26px;
+}
+
+.jm-container .sureModel .sure-field-delete {
+    background-position: -472px -114px;
+}
+
+.jm-container .sureModel .sure-field-move {
+    background-position: -472px -44px;
+}
+
+.jm-container .sureModel .sure-field-state {
+    color: #344658;
+    margin-top: 10px;
+}
+
+.jm-container .sureModel .sure-field-deleteIcon {
+    background-position: -4px -72px;
+}
+.templateTabBox{
+  margin: 0 auto;
+  width: 200px;
+  text-align: center;
+}
+
+.templateTabBox li{
+  width: 100%;
+  height: 0px;
+  line-height: 38px;
+  text-align: center;
+  color: #B5BDC6;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+
+.templateTabBox li:hover{
+  transition: none;
+  background: #F8F8F9;
+  color: #288BF2;
+  cursor: pointer;
+}
+
+/* é€‰æ‹©æ¨¡æ¿ */
+.jm-templateBox{
+    float: left;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #344658;
+    height: 22px;
+    margin-left: 30px;
+    margin-top: 14px;
+}
+
+.jm-templateBox span{
+    padding: 0px 12px;
+    line-height: 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin-left: 20px;
+    display: inline-block;
+    height: 20px;
+}
+
+.jm-templateBox span:hover{
+    border: 1px solid #6ED19A;
+    border-radius: 2px;
+    color: #6AD298;
+}
+
+.jm-templateBox span.current{
+    background: #6AD298;
+    border-radius: 2px;
+    font-size: 13px;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+}

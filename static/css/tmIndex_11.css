@@ -1,0 +1,689 @@
+.tm-listContent {
+    letter-spacing: 0;
+
+    color: #344658;
+}
+
+
+/***æœç´¢åŒºåŸŸ***/
+
+.tm-listContent .searchBox {
+    height: 62px;
+    min-width: 1100px;
+    background: #f8f8f9;
+}
+
+.tm-listContent .searchBox .selectWrapper {
+    position: relative;
+
+    float: left;
+
+    height: 30px;
+    margin-top: 14px;
+    margin-right: 20px;
+}
+
+.tm-listContent .searchBox .selectWrapper:nth-child(1) {
+    margin-left: 40px;
+}
+
+
+
+.tm-listContent .searchBox .selectLabel{
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    line-height: 30px;
+
+    float: left;
+
+    height: 30px;
+    margin-right: 6px;
+
+    color: #485767;
+}
+.tm-resetPassword .resetBox .boxInside .selectLabel{
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    line-height: 42px;
+
+    float: left;
+
+    height: 42px;
+    margin-right: 6px;
+
+    color: #485767;
+}
+
+.tm-listContent .editInfoBox .selectLabel{
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 6px;
+    /*float: left;*/
+    margin-bottom: 10px;
+}
+.tm-listContent .editInfoBox .selectLabel .infoLabel{
+    width: 52px;
+}
+
+.tm-listContent .editInfoBox .selectLabel .tipLabel,
+.tm-listContent .manageGroupBox .title .tipLabel {
+    font-family: PingFangSC-Regular;
+
+    margin-left: 10px;
+
+    letter-spacing: 0;
+
+    color: #f75a5a;
+}
+
+.tm-listContent .searchBox .selectBox,
+.tm-listContent .editInfoBox .selectBox {
+    position: relative;
+    float: left;
+
+    width: 210px;
+    height: 30px;
+}
+
+.tm-listContent .searchBox .selectBox .selectOption,
+.tm-listContent .editInfoBox .selectBox .selectOption {
+    line-height: 28px;
+
+    width: 208px;
+    height: 28px;
+
+    border-radius: 2px;
+    background: #fff;
+}
+
+.tm-listContent .searchBox .selectBox em,
+.tm-listContent .editInfoBox .selectBox em {
+    font-size: 13px;
+
+    text-indent: 12px;
+
+    color: #b5bdc6;
+}
+
+.tm-listContent .searchBox .selectBox .selectTip,
+.tm-listContent .editInfoBox .selectBox .selectTip {
+    color: #485767;
+}
+
+.tm-listContent .searchBox .selectBox .optionUl,
+.tm-listContent .editInfoBox .selectBox .optionUl {
+    position: absolute;
+    z-index: 2;
+    top: 29px;
+    left: 0;
+
+    overflow-y: auto;
+
+    width: 210px;
+    max-height: 167px;
+
+    transition: all .3s;
+
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .24);
+}
+
+.tm-listContent .manageGroupBox .editGroupName .optionUl {
+    position: absolute;
+    z-index: 2;
+    top: 107px;
+    left: 0;
+
+    overflow-y: auto;
+
+    width: 210px;
+    max-height: 300px;
+
+    transition: all .3s;
+
+    border-radius: 2px;
+    background: #fff;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .24);
+}
+
+.tm-listContent .searchBox .selectWrapper .titleInput,
+.tm-listContent .editInfoBox .titleInput,
+.tm-listContent .manageGroupBox .titleInput{
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    line-height: 28px;
+
+    float: left;
+
+    width: 208px;
+    height: 28px;
+
+    text-indent: 12px;
+
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background: #fff;
+}
+.tm-resetPassword .resetBox .boxInside .titleInput {
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    line-height: 28px;
+
+    float: left;
+
+    width: 278px;
+    height: 40px;
+
+    text-indent: 12px;
+
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    background: #fff;
+}
+.tm-listContent .searchBox .selectWrapper .titleInput:focus,
+.tm-listContent .editInfoBox .titleInput:focus,
+.tm-listContent .manageGroupBox .titleInput:focus,
+.tm-resetPassword .resetBox .boxInside .titleInput:focus {
+    border-color: #b5bdc6!important;
+}
+
+.tm-listContent .searchBox .searchBtn {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    line-height: 28px;
+
+    float: left;
+
+    width: 148px;
+    height: 28px;
+    margin-top: 14px;
+    margin-left: 30px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: #fff;
+    border: 1px solid #58a7f8;
+    border-radius: 2px;
+    background: #58a7f8;
+}
+
+.tm-listContent .searchBox .searchBtn:hover {
+    border-color: #288bf2;
+    background: #288bf2;
+}
+
+
+/***è¡¨æ ¼åŒºåŸŸ***/
+
+.tm-listContent .tableContent .operateArea {
+    font-family: PingFangSC-Medium;
+    line-height: 20px;
+
+    height: 20px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.tm-listContent .tableContent .addAdmin {
+    font-size: 12px;
+    float: left;
+    line-height: 28px;
+    width: 90px;
+    height: 28px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    background: #6ad298;
+}
+
+.tm-listContent .tableContent .addAdmin:hover {
+    background: #5dc189;
+}
+
+.tm-listContent .tableContent .deleteAdmin {
+    float: right;
+
+    margin-right: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+
+    color: #b5bdc6;
+}
+
+.tm-listContent .tableContent .deleteAdmin:hover {
+    color: #f75a5a;
+}
+
+.tm-listContent .tableContent .deleteAdmin em {
+    float: left;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+
+    background-position: -262px -183px;
+}
+
+.tm-listContent .tableContent .deleteAdmin:hover em {
+    background-position: -262px -203px;
+}
+
+.tm-listContent .tableContent .tableArea {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+
+    margin: 25px 50px 50px 37px;
+}
+
+.tm-listContent .tableContent table {
+    width: 100%;
+    /*border-top: 1px solid #E9EBEE;*/
+    border-collapse: collapse;
+}
+.tm-listContent .tableContent table thead tr:first-child{
+    border-top: 1px solid #e9ebee;
+}
+.tm-listContent .tableContent .tableArea .checkBox .unchecked {
+    width: 20px;
+    height: 20px;
+
+    vertical-align: middle;
+
+    background-position: -262px -303px;
+}
+
+.tm-listContent .tableContent .tableArea .checkBox .checked {
+    width: 20px;
+    height: 20px;
+
+    vertical-align: middle;
+
+    background-position: -262px -323px;
+}
+
+.jm-listContent .tableContent table tr:hover {
+    cursor: pointer;
+
+    background: #f8f8f9;
+}
+
+.tm-listContent .tableContent table th {
+    font-family: PingFangSC-Regular;
+    font-weight: 500;
+    line-height: 48px;
+
+    height: 48px;
+
+    color: #b5bdc6;
+    border-bottom: 1px solid #e9ebee;
+}
+
+.tm-listContent .tableContent table td {
+    line-height: 48px;
+
+    height: 48px;
+
+    text-align: center;
+
+    color: #344658;
+}
+
+.tm-listContent .tableContent table td:last-child {
+    cursor: pointer;
+}
+.tm-listContent .tableContent table td:last-child:hover{
+    color: #288BF2;
+}
+
+.tm-listContent .tableContent tbody tr {
+    cursor: pointer;
+
+    border-bottom: 1px solid #e9ebee;
+}
+
+.tm-listContent .tableContent tbody tr:hover {
+    background: #f8f8f9;
+}
+
+
+/***åŸºæœ¬ä¿¡æ¯ç¼–è¾‘***/
+
+.tm-listContent .editInfoBox {
+    float: left;
+
+    width: 37%;
+    height: 100%;
+
+    text-align: -webkit-center;
+
+    border-radius: 2px 0 0 2px;
+    background: #f8f8f9;
+}
+
+.tm-listContent .manageGroupBox {
+    float: right;
+
+    width: 63%;
+    height: 100%;
+
+    transform: translate(15%);
+}
+
+.tm-listContent .editInfoBox table {
+    margin-top: 40px;
+}
+.tm-listContent .editInfoBox table tr {
+    height: 80px;
+}
+
+.tm-listContent .editInfoBox .resetPassword {
+    font-size: 12px;
+
+    float: left;
+
+    margin-top: 4px;
+    padding: 1px 15px;
+
+    color: #58a7f8;
+    border: 1px solid #58a7f8;
+    border-radius: 2px;
+    background: #f8f8f9;
+    cursor: pointer;
+}
+
+.tm-listContent .editInfoBox .resetPassword:hover {
+    border: 1px solid #288bf2;
+    background: rgba(88, 167, 248, .10);
+}
+
+
+/***verify***/
+
+.tm-listContent .editInfoBox #fail {
+    border: 1px solid #f75a5a;
+}
+
+.tm-listContent .editInfoBox .selectBox #fail {
+    border: 1px solid #f75a5a !important;
+}
+
+
+/***ç¾¤ç®¡ç†ç¼–è¾‘*/
+/***verify***/
+
+.tm-listContent .manageGroupBox .selectBox #fail {
+    border: 1px solid #f75a5a !important;
+}
+
+.tm-listContent .manageGroupBox .boxInside {
+    margin-top: 40px;
+}
+
+.tm-listContent .manageGroupBox .groupNameList {
+    overflow-y: auto;
+
+    width: 404px;
+    height: 362px;
+
+    border: 1px solid #dadee2;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.tm-listContent .manageGroupBox .groupNameList ul li {
+    height: 26px;
+
+    cursor: pointer;
+}
+
+.tm-listContent .manageGroupBox .groupNameList ul li:hover {
+    background: #f8f8f9;
+}
+
+.tm-listContent .manageGroupBox .groupNameList ul li:hover .removeGroup {
+    display: block;
+}
+
+.tm-listContent .manageGroupBox .title {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+}
+
+.tm-listContent .manageGroupBox .groupNameList .removeGroup {
+    font-size: 10px;
+
+    display: none;
+    float: right;
+
+    margin: 3px 8px;
+    padding: 2px 10px;
+
+    color: #f75a5a;
+    border: 1px solid #f75a5a;
+    border-radius: 4px;
+}
+
+.tm-listContent .manageGroupBox .groupNameList .groupName {
+    float: left;
+
+    margin: 4px 7px;
+}
+
+.tm-listContent .manageGroupBox .editGroupName {
+    width: 404px;
+    height: 30px;
+    margin: 20px 0 21px 0;
+}
+
+.tm-listContent .manageGroupBox .editBtn {
+    float: right;
+
+    padding: 6px 17px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border-radius: 2px;
+    background: #58a7f8;
+}
+
+.tm-listContent .manageGroupBox .editBtn:hover {
+    background: #288bf2;
+}
+
+.tm-listContent .manageGroupBox .operateArea {
+    line-height: 30px;
+
+    width: 404px;
+    height: 30px;
+    margin-top: 50px;
+
+    text-align: right;
+}
+
+.tm-listContent .manageGroupBox .keepBtn {
+    padding: 6px 27px;
+
+    cursor: pointer;
+
+    color: #fff;
+    border-radius: 4px;
+    background: #58a7f8;
+}
+
+.tm-listContent .manageGroupBox .keepBtn:hover {
+    background: #288bf2;
+}
+
+.tm-listContent .manageGroupBox .backBtn {
+    padding: 6px 27px;
+
+    cursor: pointer;
+}
+
+.tm-listContent .manageGroupBox .backBtn u {
+    text-decoration: none;
+
+    color: #b5bdc6;
+}
+
+.tm-listContent .manageGroupBox .backBtn u:hover {
+    text-decoration: underline;
+
+    color: #5d90c5;
+}
+
+
+
+/***é‡ç½®å¯†ç ***/
+.tm-resetPassword{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.45);
+    position: absolute;
+    z-index: 4;
+}
+
+.tm-resetPassword .resetBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #F8F8F9;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,0.24);
+    border-radius: 2px;
+    height: 390px;
+}
+
+.tm-resetPassword .resetBox .boxInside {
+    width: 600px;
+    height: 290px;
+    text-align: -webkit-center;
+    border-radius: 2px;
+}
+
+.tm-resetPassword .resetBox .boxInside .title {
+    font-size: 16px;
+    margin: 20px auto 0;
+    width: 360px;
+    letter-spacing: 0;
+height: 52px;
+    position: relative;
+    color: #485767;
+}
+
+.tm-resetPassword .resetBox .boxInside .systemTip {
+    font-size: 13px;
+position: absolute;
+    left: 78px;
+    top: 26px;
+    color: #f75a5a;
+    line-height: 20px;
+}
+
+.tm-resetPassword .resetBox .boxInside .systemTip em {
+    float: left;
+
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+
+    background-position: -161px -625px;
+}
+
+.tm-resetPassword .resetBox .boxInside table tr {
+    height: 62px;
+}
+
+.tm-resetPassword .resetBox .operateArea {
+    line-height: 30px;
+
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    text-align: right;
+}
+
+.tm-resetPassword .resetBox .operateArea .backBtn {
+    padding: 6px 27px;
+}
+
+.tm-resetPassword .resetBox .operateArea .backBtn u {
+    text-decoration: none;
+
+    color: #b5bdc6;
+    cursor: pointer;
+}
+.tm-resetPassword .resetBox .backIcon{
+    width: 20px;
+    height: 20px;
+    background-position: -225.1px -84.6px;
+    transform: translate(614px,4px);
+    cursor: pointer;
+}
+.tm-resetPassword .resetBox .operateArea .backBtn u:hover {
+    text-decoration: underline;
+
+    color: #5d90c5;
+}
+
+.tm-resetPassword .resetBox .operateArea .sureBtn {
+    padding: 6px 27px;
+    background: #58a7f8;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.tm-resetPassword .resetBox .operateArea .sureBtn:hover {
+    background: #288bf2;
+}
+
+@media screen and (min-width: 1440px) {
+    .tm-listContent .searchBox .selectWrapper .titleInput,
+    .tm-listContent .searchBox .selectBox .selectOption {
+        width: 248px;
+    }
+    .tm-listContent .searchBox .selectWrapper {
+        margin-right: 30px;
+    }
+    .tm-listContent .searchBox .selectBox,
+    .searchBox .selectBox .optionUl,
+    .tm-listContent .searchBox .selectBox .optionUl,
+    .tm-listContent .manageGroupBox .titleInput {
+        width: 250px;
+    }
+    .tm-listContent .editInfoBox .selectBox,
+    .tm-listContent .editInfoBox .selectBox,
+    .tm-listContent .editInfoBox .selectBox .optionUl {
+        width: 260px;
+    }
+    .tm-listContent .editInfoBox .titleInput,
+    .tm-listContent .editInfoBox .selectBox .selectOption {
+        width: 258px;
+    }
+    .tm-listContent .manageGroupBox .groupNameList,
+    .tm-listContent .manageGroupBox .editGroupName,
+    .tm-listContent .manageGroupBox .operateArea {
+        width: 460px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .tm-listContent .manageGroupBox .groupNameList,
+    .tm-listContent .manageGroupBox .editGroupName,
+    .tm-listContent .manageGroupBox .operateArea {
+        width: 510px;
+    }
+}

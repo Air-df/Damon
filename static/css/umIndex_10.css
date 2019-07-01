@@ -1,0 +1,1045 @@
+/*ç¾¤ç”¨æˆ·ç®¡ç†é»˜è®¤ç•Œé¢  */
+
+.um-tablePage {
+    height: 100%;
+    width: 100%;
+    background: #F8F8F9;
+    overflow-x: auto;
+}
+
+.um-tablePage .um-filterWrapper {
+    height: 100px;
+    width: 1079px;
+    float: left;
+    margin-right: 37px;
+    padding-left: 40px;
+    background: #F8F8F9;
+}
+
+.um-tablePage .selectWrapper,
+.um-userEditWrapper .selectWrapper {
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 12px;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .selectLabel,
+.um-batchOprate .selectWrapper .selectLabel,
+.um-userEditWrapper .selectWrapper .selectLabel {
+    float: left;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    line-height: 30px;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .titleInput,
+.um-batchOprate .selectWrapper .titleInput,
+.um-userEditWrapper .selectWrapper .titleInput {
+    border: 1px solid transparent;
+    height: 28px;
+    color: #485767;
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    line-height: 28px;
+    text-indent: 12px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 210px;
+    margin-left: 6px;
+    box-sizing: border-box;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .titleInput:focus,
+.um-batchOprate .selectWrapper .titleInput:focus,
+.um-userEditWrapper .selectWrapper .titleInput:focus {
+    border: 1px solid #B5BDC6;
+}
+
+.um-tablePage .um-filterWrapper .selectBox,
+.um-batchOprate .selectBox,
+.um-userEditWrapper .selectBox {
+    position: relative;
+    width: 210px;
+    float: left;
+    margin-left: 6px;
+}
+
+.um-tablePage .um-filterWrapper .selectBox .selectOption,
+.um-batchOprate .selectBox .selectOption,
+.um-userEditWrapper .selectBox .selectOption {
+    background: #FFFFFF;
+    border-radius: 2px;
+    height: 30px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+
+.um-tablePage .um-filterWrapper .selectBox .selectOption em,
+.um-batchOprate .selectBox .selectOption em,
+.um-userEditWrapper .selectBox .selectOption em {
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    color: #B5BDC6;
+    display: inline-block;
+    line-height: 30px;
+    font-style: normal;
+    padding-left: 12px;
+}
+
+.um-tablePage .um-filterWrapper .selectBox .selectOption .selIcon,
+.um-batchOprate .selectBox .selectOption .selIcon,
+.um-userEditWrapper .selectBox .selectOption .selIcon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-position: -183px -479px;
+    float: right;
+}
+
+.um-tablePage .um-filterWrapper .selectBox .optionUl,
+.um-batchOprate .selectBox .optionUl,
+.um-userEditWrapper .selectBox .optionUl {
+    width: 210px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    z-index: 2;
+    max-height: 186px;
+    overflow: auto;
+}
+
+.um-tablePage .um-filterWrapper .selectBox .optionUl ul li,
+.um-batchOprate .selectBox .optionUl ul li,
+.um-userEditWrapper .selectBox .optionUl ul li {
+    height: 30px;
+    line-height: 30px;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    font-size: 12px;
+    color: #485767;
+}
+
+.um-tablePage .um-filterWrapper .selectBox .optionUl ul .selected,
+.um-batchOprate .selectBox .optionUl ul .selected,
+.um-userEditWrapper .selectBox .optionUl ul .selected{
+    background: #F0F1F3;
+    font-size: 12px;
+    color: #288BF2;
+}
+
+.um-tablePage .um-filterWrapper .selectBox .optionUl ul li:hover,
+.um-batchOprate .selectBox .optionUl ul li:hover,
+.um-userEditWrapper .selectBox .optionUl ul li:hover {
+    background: #F8F8F9;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #288BF2;
+    cursor: pointer;
+}
+
+.um-tablePage .um-filterWrapper .selectBox .optionUl ul li:first-child,
+.um-batchOprate .selectBox .optionUl ul li:first-child,
+.um-userEditWrapper .selectBox .optionUl ul li:first-child {
+    border-top: 1px solid transparent;
+}
+
+.um-tablePage .um-filterWrapper .selectBox .selectOption .selectTip,
+.um-batchOprate .selectBox .selectOption .selectTip,
+.um-userEditWrapper .selectBox .selectOption .selectTip {
+    color: #485767;
+}
+
+.um-tablePage .um-filterWrapper .searchBtn {
+    background: #58A7F8;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    height: 31px;
+    width: 110px;
+    text-align: center;
+    color: #fff!important;
+    cursor: pointer;
+}
+
+.um-tablePage .um-filterWrapper .searchBtn:hover {
+    background: #288bf2;
+    border: 1px solid #288bf2;
+}
+
+.um-tablePage .groupLstBox {
+    width: 210px;
+    max-height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 28px;
+    left: 45px;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+.um-tablePage .groupLstBox ul li {
+    height: 30px;
+    text-align: left;
+    text-indent: 14px;
+    line-height: 31px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #485767;
+    cursor: pointer;
+}
+
+.um-tablePage .groupLstBox ul li:hover {
+    background: #F8F8F9;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #288BF2;
+    cursor: pointer;
+}
+
+.um-tablePage .um-filterWrapper .userType .selectBox,
+.um-tablePage .um-filterWrapper .userType .selectBox .optionUl {
+    width: 170px;
+}
+
+.um-tablePage .um-filterWrapper .userType .selectWrapper {
+    margin-right: 0;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .phoneBox {
+    width: 343px;
+    float: left;
+    height: 30px;
+    background: #FFFFFF;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    padding-left: 10px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    margin-left: 6px;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .phoneBox span {
+    background: #F0F1F3;
+    border-radius: 4px;
+    text-indent: 8px;
+    width: 100px;
+    height: 17px;
+    line-height: 17px;
+    float: left;
+    font-size: 12px;
+    margin-right: 6px;
+    position: relative;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .phoneBox span em {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    right: 0px;
+    background-position: -274px -139px;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .phoneBox input {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    width: 100px;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .phoneBox .innerBox {
+    padding-top: 6px;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .phoneBox::-webkit-scrollbar {
+    width: 6px;
+    height: 2px;
+    display: none;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .phoneBox:hover::-webkit-scrollbar {
+    display: block;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .phoneBox::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    background-color: #B5BDC6;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .phoneBox::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .phoneBox::-moz-scrollbar-thumb {
+    background-color: #B5BDC6;
+}
+
+.um-tablePage .um-filterWrapper .selectWrapper .phoneBox::-o-scrollbar-thumb {
+    background-color: #B5BDC6;
+}
+
+.um-tablePage .um-filterWrapper .searchBtn {
+    width: 150px;
+    height: 30px;
+    background: #58A7F8;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    text-align: center;
+    float: right;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 30px;
+    margin-top: 12px;
+}
+
+
+/*é»˜è®¤åˆ—è¡¨  */
+
+.um-tablePage .um-userList {
+    float: left;
+    background: #FFFFFF;
+    width: 100%;
+    min-width: 1159px;
+    box-sizing: border-box;
+    height: calc(100% - 100px);
+    overflow: auto;
+    padding:0 40px;
+}
+
+.um-tablePage .um-userList .tableArea {
+    width: 1079px;
+    float: left;
+    margin: 10px 37px 0 0px;
+}
+
+.um-tablePage .um-userList .operateArea {
+    margin-top: 20px;
+    height: 28px;
+    width: 1079px;
+}
+
+.um-tablePage .um-userList .operateArea .operate {
+    float: right;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    margin-right: 40px;
+    position: relative;
+    color: #58A7F8;
+}
+.um-tablePage .um-userList .operateArea .operate:before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/icon/iconography.png') no-repeat;
+    background-size: 600px 700px;
+    background-position: -300px -267px;
+    position: absolute;
+    left: -24px;
+    top: 4px;
+}
+.um-tablePage .um-userList .operateArea .operate:hover{
+    color: #288BF2;
+}
+.um-tablePage .um-userList .operateArea .operate:hover:before{
+    background-position: -320px -267px;
+}
+
+.um-tablePage .um-userList .tableArea table {
+    width: 100%;
+    border-top: 1px solid #E9EBEE;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.um-tablePage .um-userList .tableArea table tbody tr {
+    cursor: pointer;
+}
+
+.um-tablePage .um-userList .tableArea table tbody tr:hover {
+    background: #F8F8F9;
+}
+.um-tablePage .um-userList .tableArea table tbody tr:hover .itemWrap .itemEdit{
+    color: #288bf2;
+}
+.um-tablePage .um-userList .tableArea table td {
+    border-bottom: 1px solid #E9EBEE;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.um-tablePage .um-userList .tableArea table td:first-child {
+    width: 70px;
+}
+
+.um-tablePage .um-userList .tableArea table thead td {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+}
+
+.um-tablePage .um-userList .tableArea table td .number {
+    position: relative;
+    padding-left: 26px;
+}
+
+.um-tablePage .um-userList .tableArea .checkBox {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background-position: -265px -306px;
+    top: 1px;
+    left: 8px;
+    display: none;
+}
+
+.um-tablePage .um-userList .tableArea tr:hover .checkBox{
+    display: block;
+}
+
+.um-tablePage .um-userList .tableArea .checked {
+    background-position: -265px -326px;
+    display: block;
+}
+
+.um-tablePage .um-userList .tableArea .itemWrap .itemEdit,
+.um-tablePage .um-userList .tableArea .itemWrap .itemDel,
+.um-tablePage .um-userList .tableArea .itemWrap .itemMoreBox {
+    display: inline-block;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.um-tablePage .um-userList .tableArea .itemWrap .itemEdit {
+    /* color: #B5BDC6; */
+    margin-right: 15px;
+        font-family: PingFangSC-Regular;
+}
+
+.um-tablePage .um-userList .tableArea .itemWrap .itemDel {
+    /* color: #B5BDC6; */
+    margin-right: 15px;
+        font-family: PingFangSC-Regular;
+}
+
+.um-tablePage .um-userList .tableArea .itemWrap .itemDel:hover {
+    color: #F75A5A;
+}
+.um-tablePage .um-userList .tableArea .itemWrap .itemEdit:hover {
+    color: #288bf2;
+}
+.um-tablePage .um-userList .tableArea .itemWrap .itemMoreBox {
+    width: 20px;
+    height: 20px;
+    background-position: -262px -263px;
+    position: relative;
+}
+
+.um-tablePage .um-userList .tableArea .itemWrap .itemMoreBox:hover {
+    background-position: -262px -283px;
+}
+
+.um-tablePage .um-userList .tableArea .itemWrap .itemMore {
+    position: absolute;
+    width: 80px;
+    height: 84px;
+    padding-top: 6px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(36, 36, 36, 0.24);
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    z-index: 10;
+    display: none;
+}
+
+.um-tablePage .um-userList .tableArea .itemMoreBox:hover .itemMore {
+    display: block;
+}
+
+.um-tablePage .um-userList .tableArea .itemWrap .itemMore::before,
+.um-tablePage .um-userList .tableArea .itemWrap .itemMore::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #FFFFFF;
+}
+
+.um-tablePage .um-userList .tableArea .itemWrap .itemMore::before {
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+    top: -4px;
+    box-shadow: 0 1px 4px 0 rgba(36, 36, 36, 0.24);
+    border-radius: 2px;
+}
+
+.um-tablePage .um-userList .tableArea .itemWrap .itemMore::after {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+}
+
+.um-tablePage .um-userList .tableArea .itemWrap .itemMore div {
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+    z-index: 11;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+}
+
+.um-tablePage .um-userList .tableArea .itemWrap .itemMore div:hover {
+    background: #F8F8F9;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #58A7F8;
+}
+
+.um-tablePage .um-userList .tableArea table .userName,
+.um-tablePage .um-userList .tableArea table .groupName {
+    width: 120px;
+    margin: 0 auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.um-tablePage .um-userList .tableArea table .groupName {
+    width: 152px;
+}
+
+
+/*æ‰¹é‡æ“ä½œç¾¤ç”¨æˆ·åˆ—è¡¨  */
+
+.um-batchOprate {
+    height: 100%;
+    background: #FFFFFF;
+    overflow: auto;
+}
+
+.um-batchOprate .inner {
+    width: 1044px;
+    padding-right: 40px;
+}
+
+.um-batchOprate .title {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #344658;
+    padding: 30px 0 20px 64px;
+}
+
+.um-batchOprate .leftBox {
+    width: 460px;
+    height: 548px;
+    border: 1px solid #F0F1F3;
+    border-radius: 4px;
+    float: left;
+    margin-left: 64px;
+    box-sizing: border-box;
+}
+
+.um-batchOprate .leftBox .listTitle {
+    height: 48px;
+    background: #F8F8F9;
+    border-radius: 4px 4px 0 0;
+    padding: 0 26px;
+    text-align: center;
+}
+
+.um-batchOprate .leftBox .listBox {
+    height: calc(100% - 48px);
+    padding: 0 26px;
+    overflow-y: auto;
+}
+
+.um-batchOprate .leftBox .listTitle div,
+.um-batchOprate .leftBox .listBox div {
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    vertical-align: middle;
+}
+
+.um-batchOprate .leftBox .name {
+    padding: 0 13px;
+    width: 140px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.um-batchOprate .leftBox .status,
+.um-batchOprate .leftBox .blacklist,
+.um-batchOprate .leftBox .authority {
+    width: 80px;
+    text-align: center;
+}
+
+.um-batchOprate .leftBox .listBox li {
+    border-bottom: 1px dashed #DADEE2;
+}
+
+.um-batchOprate .rightBox {
+    width: 460px;
+    height: 548px;
+    background: #F8F8F9;
+    border-radius: 4px;
+    float: left;
+    margin-left: 60px;
+    padding-top: 55px;
+    box-sizing: border-box;
+}
+
+
+/*selectBox style æ”¹  */
+
+.um-batchOprate .selectWrapper {
+    margin: 0 auto 20px;
+    width: 210px;
+}
+
+.um-batchOprate .selectWrapper .selectLabel {
+    float: none;
+    color: #344658;
+    line-height: 18px;
+}
+
+.um-batchOprate .selectBox {
+    float: none;
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+.um-batchOprate .button {
+    width: 208px;
+    height: 32px;
+    border: 1px solid #288BF2;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #288BF2;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.um-batchOprate .button:hover {
+    background: rgba(88, 167, 248, 0.24);
+}
+
+.um-batchOprate .removeAll {
+    margin-top: 58px;
+}
+
+.um-batchOprate .confirmBtn,
+.um-userEditWrapper .confirmBtn {
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    float: right;
+    background: #58A7F8;
+    border-radius: 4px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.um-batchOprate .confirmBtn:hover,
+.um-userEditWrapper .confirmBtn:hover {
+    background: #288BF2;
+}
+
+.um-batchOprate .cancelBtn,
+.um-userEditWrapper .cancelBtn {
+    width: 42px;
+    height: 18px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    float: right;
+    margin-top: 46px;
+    margin-right: 30px;
+    text-align: center;
+    cursor: pointer
+}
+
+.um-batchOprate .cancelBtn:hover,
+.um-userEditWrapper .cancelBtn:hover {
+    color: #5D90C5;
+    text-decoration: underline;
+}
+
+
+/*å•ä¸ªç”¨æˆ·ç¼–è¾‘  */
+
+.um-userEditWrapper {
+    height: 100%;
+    background: #F8F8F9;
+    min-height: 550px;
+    overflow-x: auto;
+}
+
+.um-userEditWrapper .inner{
+    float: left;
+    padding-right: 40px;
+}
+
+.um-userEditWrapper .userEditBox {
+    width: 940px;
+    margin-top: 40px;
+    margin-left: 110px;
+    float: left;
+}
+
+.um-userEditWrapper .userInfo {
+    width: 100%;
+    height: 400px;
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+
+.um-userEditWrapper .userInfo .userName {
+    background: #E9EBEE;
+    border-radius: 4px 4px 0 0;
+    height: 42px;
+    position: relative;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #485767;
+    text-indent: 50px;
+    line-height: 42px;
+}
+
+.um-userEditWrapper .userInfo .removeUser {
+    width: 64px;
+    height: 20px;
+    border: 1px solid #F75A5A;
+    border-radius: 4px;
+    float: right;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #F75A5A;
+    text-indent: 0;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.um-userEditWrapper .userInfo .removeUser:hover {
+    color: #FFFFFF;
+    background: #F75A5A;
+}
+
+.um-userEditWrapper .detailBox {
+    padding: 25px 30px;
+}
+
+.um-userEditWrapper .detailBox>ul {
+    float: left;
+    height:305px;
+    overflow-y: auto;
+}
+
+.um-userEditWrapper .detailBox .item {
+    width: 400px;
+    padding-left: 20px;
+    height: 48px;
+    border-top: 1px dashed #F0F1F3;
+}
+
+.um-userEditWrapper .detailBox ul:nth-child(2n) {
+    margin-left: 40px;
+}
+
+.um-userEditWrapper .detailBox .item:nth-child(1) {
+    border: 0 none;
+}
+
+.um-userEditWrapper .detailBox .label {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #344658;
+    line-height: 48px;
+    min-width: 86px;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.um-userEditWrapper .detailBox .detail {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #344658;
+    width: 86px;
+}
+
+.um-userEditWrapper .detailBox .change {
+    margin-left: 38px;
+    line-height: 48px;
+    display: inline-block;
+}
+
+.um-userEditWrapper .detailBox .change .checkBox {
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-position: -262px -323px;
+    margin-top: 14px;
+    margin-right: 3px;
+}
+
+.um-userEditWrapper .detailBox .change .checkBox.unchecked {
+    background-position: -262px -303px;
+}
+
+
+/*selectBox style æ›´æ”¹  */
+
+.um-userEditWrapper .selectWrapper {
+    margin-top: 9px;
+}
+
+.um-userEditWrapper .selectWrapper .selectLabel {
+    width: 86px;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #344658;
+}
+
+.um-userEditWrapper .selectBox {
+    margin-left: 2px;
+}
+
+.um-userEditWrapper .selectBox .selectOption {
+    border: 1px solid #DADEE2 !important;
+}
+
+
+/*æç¤ºä¿¡æ¯  */
+
+.tipWrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.tipWrapper .tipBox {
+    padding: 0 40px;
+    height: 160px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tipWrapper .tipBox p {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #344658;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.tipWrapper .tipBox .confirmBtn {
+    width: 90px;
+    height: 36px;
+    background: #6AD298;
+    border-radius: 4px;
+    line-height: 36px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin: 18px auto 0;
+    cursor: pointer;
+}
+
+.tipWrapper .tipBox .confirmBtn:hover {
+    background: #5DC189;
+}
+
+.tipWrapper .tipBox .closeBtn {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-position: -262px -43px;
+    cursor: pointer;
+}
+
+.um-tablePage .pageSize {
+    height: 28px;
+    line-height: 28px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+}
+
+.um-tablePage .pageSize span {
+    cursor: pointer;
+    color: #E9EBEE;
+}
+
+.um-tablePage .pageSize .current {
+    color: #344658;
+}
+
+
+/*é€‚é…  */
+
+@media only screen and (min-width:1440px) and (max-width:1919px) {
+    .um-tablePage .um-filterWrapper {
+        width: 1119px;
+        padding-left: 60px;
+    }
+    .um-tablePage .um-filterWrapper .userType .selectBox,
+    .um-tablePage .um-filterWrapper .userType .selectBox .optionUl {
+        width: 210px;
+    }
+    .um-tablePage .um-filterWrapper .selectWrapper .phoneBox {
+        width: 370px;
+    }
+    .um-tablePage .um-userList {
+        padding-left: 60px;
+    }
+    .um-tablePage .um-userList .tableArea {
+        width: 1119px;
+    }
+    .um-tablePage .um-userList .operateArea {
+        width: 1119px;
+    }
+    .um-batchOprate .inner{
+        width: 1084px;
+    }
+    .um-batchOprate .title {
+        padding-left: 84px;
+    }
+    .um-batchOprate .leftBox {
+        margin-left: 84px;
+    }
+    .um-batchOprate .rightBox {
+        margin-left: 80px;
+    }
+    .um-userEditWrapper .userEditBox {
+        width: 1182px;
+    }
+    .um-userEditWrapper .userInfo .userName {
+        text-indent: 80px;
+    }
+    .um-userEditWrapper .detailBox {
+        padding: 25px 60px;
+    }
+    .um-userEditWrapper .detailBox ul:nth-child(2n) {
+        margin-left: 150px;
+    }
+    .um-userEditWrapper .userInfo .removeUser {
+        margin-right: 80px;
+    }
+}
+
+@media only screen and (min-width:1920px) {
+    .um-tablePage .um-filterWrapper {
+        width: 1573px;
+        padding-left: 80px;
+    }
+    .um-tablePage .selectWrapper {
+        margin-right: 40px;
+    }
+    .um-tablePage .um-filterWrapper .userType .selectWrapper {
+        margin-right: 40px;
+    }
+    .um-tablePage .um-filterWrapper>.selectWrapper:nth-child(6) {
+        margin-right: 0;
+    }
+    .um-tablePage .um-filterWrapper .userType .selectBox,
+    .um-tablePage .um-filterWrapper .userType .selectBox .optionUl {
+        width: 210px;
+    }
+    .um-tablePage .um-filterWrapper .selectWrapper .phoneBox {
+        width: 644px;
+    }
+    .um-tablePage .um-userList {
+        padding-left: 80px;
+    }
+    .um-tablePage .um-userList .tableArea {
+        width: 1573px;
+    }
+    .um-tablePage .um-userList .operateArea {
+        width: 1573px;
+    }
+    .um-batchOprate .inner{
+        width: 1384px;
+    }
+    .um-batchOprate .title {
+        padding-left: 104px;
+    }
+    .um-batchOprate .leftBox {
+        margin-left: 104px;
+        width: 580px;
+    }
+    .um-batchOprate .rightBox {
+        margin-left: 120px;
+        width: 580px;
+    }
+    .um-batchOprate .leftBox .name {
+        padding: 0 43px 0 13px;
+    }
+    .um-batchOprate .leftBox .status,
+    .um-batchOprate .leftBox .blacklist,
+    .um-batchOprate .leftBox .authority {
+        width: 110px;
+    }
+    .um-userEditWrapper .userEditBox {
+        width: 1442px;
+    }
+    .um-userEditWrapper .userInfo .userName {
+        text-indent: 100px;
+    }
+    .um-userEditWrapper .detailBox {
+        padding: 25px 80px;
+    }
+    .um-userEditWrapper .detailBox ul:nth-child(2n) {
+        margin-left: 270px;
+    }
+    .um-userEditWrapper .userInfo .removeUser {
+        margin-right: 140px;
+    }
+}

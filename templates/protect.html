@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <link rel="icon" href="/static/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/common_0.css">
+    <link rel="stylesheet" href="/static/css/index_1.css">
+    <link rel="stylesheet" href="/static/css/tmIndex_11.css">
+    <link rel="stylesheet" href="/static/css/ucIndex_12.css">
+    <link rel="stylesheet" href="/static/css/pcIndex_13.css">
+    <script src="/static/tj.js"></script>
+    <title>违规检测 | 栗子云</title>
+    <link href="/static/static_inside/css/bundle.e9f3923a.css" rel="stylesheet">
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <link rel='stylesheet' href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href="/static/bootstrap-3.3.7-dist/css/bootstrap-select.min.css">
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap-select.min.js"></script>
+</head>
+<body>
+<div class="app" id="root" style="user-select: auto;">
+    <div class="mainLayout">
+        <div class="layoutHeader">
+            <div class="left">
+                <div class="icon-logo" style="background-image: url('/static/images/icon/beats-logo2.png'); margin: -15px 0px 10px 10px; width: 60px; height: 60px"></div>
+                <div class="icon-logo"></div>
+            </div>
+            <div class="center" style="float: left;">
+                <a href="/v2/mtscope"><span class="menu">群发</span></a>
+                <a href="/v2/gbscope"><span class="menu">拉新</span></a>
+                <a href="/v2/dashboard"><span class="menu">统计</span></a>
+                <a href="/v2/mlscope"><span class="menu">素材</span></a>
+                <a href="/v2/system"><span class="menu">设置</span></a>
+            </div>
+            <div class="monitorStateWrapper">
+                <div class="stateTitle" tabindex="1">
+                    <div class="monitorStateBox" style="display: none;">
+                        <div class="exit">退出登录</div>
+                    </div>
+                </div>
+                <div class="newsBox" tabindex="1"></div>
+                <div class="helpBox"><span class="icon-home help"></span></div>
+                <div class="modalWrapper" style="display: none;">
+                    <div class="modalBox newsList">
+                        <div class="item-title">消息通知<span class="closeBtn"></span></div>
+                        <div style="overflow: auto; height: calc(100% - 66px);">
+                            <ul style="margin: 0px;">
+                                <li class="item"><p class="title"><span>还有4天的免费试用期</span><span class="time">2019-06-05 06:00:01</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有4天的免费试用期</span><span class="time">2019-06-04 06:00:01</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有4天的免费试用期</span><span class="time">2019-06-03 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有5天的免费试用期</span><span class="time">2019-06-02 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有6天的免费试用期</span><span class="time">2019-05-30 06:00:01</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有7天的免费试用期</span><span class="time">2019-05-29 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>导入群成功</span><span class="time">2019-05-28 17:42:57</span>
+                                </p>
+                                    <p class="content">群【未命名(待修改)】于"2019-05-28 17:42:56"导入系统成功！</p></li>
+                                <li class="item"><p class="title"><span>绑定栗子云用户成功</span><span class="time">2019-05-28 17:40:46</span>
+                                </p>
+                                    <p class="content">微信用户【个儿】于"2019-05-28 17:40:45"绑定栗子云账号成功！</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layoutSideNavi">
+            <div class="menuHeader"></div>
+            <div class="menuList"><a href="/u/{{user_name}}/control"><span class="menu"><span
+                    class="icon-menu gmscope"></span>群消息</span></a><a href="/u/{{user_name}}/manage_group"><span
+                    class="menu"><span class="icon-menu giscope"></span>群管理</span></a><a
+                    href="/u/{{user_name}}/welcome"><span class="menu" ><span class="icon-menu welcome" ></span>入群欢迎</span></a><a
+                    href="/u/{{user_name}}/auto_response"><span class="menu"><span class="icon-menu arscope"></span>自动回复</span></a><a
+                    href="/u/{{user_name}}/protect"><span class="menu active"><span class="icon-menu protect"></span>违规监测</span></a>
+            </div>
+        </div>
+        <div class="layoutContent">
+            <div class="gvd-wrapper">
+                <div class="gvd-table-wrapper">
+                    <div class="gw-btnBox">
+                        <div class="ButtonBox green" style="display: inline-block; margin-bottom: 20px;">设置白名单</div>
+                        <em class="des">*白名单内的人员不会触发相应的警告。</em></div>
+                    <div class="gvd-table">
+                        <div class="lzc-table">
+                            <div class="ant-table-wrapper">
+                                <div class="ant-spin-nested-loading tableLoading">
+                                    <div class="ant-spin-container">
+                                        <div class="ant-table ant-table-default ant-table-scroll-position-left">
+                                            <div class="ant-table-content">
+                                                <div class="ant-table-body">
+                                                    <table class="">
+                                                        <colgroup>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                        </colgroup>
+                                                        <thead class="ant-table-thead">
+                                                        <tr>
+                                                            <th class=""><span><span class="nameView">应用场景<em
+                                                                    class="nameIcon"></em><div class="dvDes">违规监测功能开启后，若用户触发相应的违规操作，小助手会@该用户，并立刻发出警告。功能在开启之后，等待3~5分钟即可生效。</div></span></span>
+                                                            </th>
+                                                            <th class=""><span>提示文案</span></th>
+                                                            <th class=""><span>状态</span></th>
+                                                            <th class=""><span>操作</span></th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody class="ant-table-tbody">
+                                                        <tr class="ant-table-row  ant-table-row-level-0"
+                                                            data-row-key="0">
+                                                            <td class=""><span
+                                                                    class="ant-table-row-indent indent-level-0"
+                                                                    style="padding-left: 0px;"></span><span>私拉</span>
+                                                            </td>
+                                                            <td class="">
+                                                                亲爱的用户，该群不允许用户私拉入群，抱歉我们将通知群管理员将您请出群，您可以通过扫描入群二维码，填写信息后重新入群。
+                                                            </td>
+                                                            <td class=""><span class="closeStatus">关闭</span></td>
+                                                            <td class=""><span class="operate">设置</span></td>
+                                                        </tr>
+                                                        <tr class="ant-table-row  ant-table-row-level-0"
+                                                            data-row-key="1">
+                                                            <td class=""><span
+                                                                    class="ant-table-row-indent indent-level-0"
+                                                                    style="padding-left: 0px;"></span><span>发链接</span>
+                                                            </td>
+                                                            <td class="">亲爱的用户，请不要在群内发送链接信息，若多次触发我们将通知群管理员将您请出群。</td>
+                                                            <td class=""><span class="closeStatus">关闭</span></td>
+                                                            <td class=""><span class="operate">设置</span></td>
+                                                        </tr>
+                                                        <tr class="ant-table-row  ant-table-row-level-0"
+                                                            data-row-key="2">
+                                                            <td class=""><span
+                                                                    class="ant-table-row-indent indent-level-0"
+                                                                    style="padding-left: 0px;"></span><span>发小程序</span>
+                                                            </td>
+                                                            <td class="">亲爱的用户，请不要在群内发送小程序信息，若多次触发我们将通知群管理员将您请出群。</td>
+                                                            <td class=""><span class="closeStatus">关闭</span></td>
+                                                            <td class=""><span class="operate">设置</span></td>
+                                                        </tr>
+                                                        <tr class="ant-table-row  ant-table-row-level-0"
+                                                            data-row-key="3">
+                                                            <td class=""><span
+                                                                    class="ant-table-row-indent indent-level-0"
+                                                                    style="padding-left: 0px;"></span><span
+                                                                    class="nameView">敏感词汇<em
+                                                                    class="sensitive-icon"></em><div class="dvDes"
+                                                                                                     style="left: 57px;">敏感词汇监测基于百度文本审核，可智能识别文本中夹杂的色情、推广、辱骂、违禁违法等垃圾内容并进行警告，维护安全的群聊天环境。</div></span>
+                                                            </td>
+                                                            <td class="">亲爱的用户，您发送的信息包含敏感违禁信息。若多次触发我们将通知群管理员将您请出群。</td>
+                                                            <td class=""><span class="closeStatus">关闭</span></td>
+                                                            <td class=""><span class="operate">设置</span></td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="app" id="modal-root"></div>
+<div class="app" id="msg-root">
+    <div class="msg-modal">
+        <div class="msg-list"></div>
+    </div>
+</div>
+<div id="qb-sougou-search" style="display: none; opacity: 0; left: 1799px; top: 177px;"><p>搜索</p>
+    <p class="last-btn">复制</p>
+    <iframe src=""></iframe>
+</div>
+</body>
+</html>

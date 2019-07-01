@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="layoutContent">
+    <div class="gw_build_wrapper">
+        <div class="gw-stepTitle"><span class="back" onclick="back_welcome()"><em></em>返回</span><span
+                class="bread"><span class="bread-back">自动回复 </span> / <span> 创建回复</span></span></div>
+        <div class="gw-build-main">
+            <div class="MtEdit garEdit">
+                <div class="mtstep-box">
+                    <div class="step-title-box"><p class="step-num">1</p>
+                        <p class="step-title">选择目标群</p></div>
+                    <div class="line-box">
+                        <div class="ButtonBox" style="width: 136px;">&gt;</div>
+                        <div class="group-list" style="width: 677px;"></div>
+                    </div>
+                </div>
+                <div class="mtstep-box">
+                    <div class="step-title-box"><p class="step-num">2</p>
+                        <p class="step-title">编辑关键词</p></div>
+                    <div class="line-box" id="edit_keyword">
+                        <div class="lzc-tagAdd-keyword"><span class="icon-add"></span><span class="add-text"
+                                                                                            onclick="edit_keyword()">添加关键词</span>
+                        </div>
+                    </div>
+                    <div class="keywords-tag" style="margin-left: 35px" id="keywords_left" style="height: 36px;">
+                        <div class="keword-left"></div>
+                    </div>
+                </div>
+                <div class="mtstep-box">
+                    <div class="step-title-box"><p class="step-num">3</p>
+                        <p class="step-title">编辑内容</p></div>
+                    <div class="line-box" id="edit_content" onclick="edit_content()">
+                        <div class="select-box">
+                            <ul class="select-title-box">
+                                <li class="text" onclick="content_input_show()"><em></em>文字</li>
+                                <li class="img"><em></em>图片</li>
+                                <li class="wxapp"><em></em>小程序</li>
+                            </ul>
+                            <div class="mt-activeContent">
+                                <pre id="pre-container" contenteditable="true" style="display: none;"></pre>
+                                <div>
+                                    <pre contenteditable="true" placeholder="请输入回复的信息..." id="activeContent"></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mtstep-box">
+                    <div class="step-title-box"><p class="step-num">4</p>
+                        <p class="step-title">选择触发条件</p></div>
+                    <div class="line-box stepBox-4"><em class="radio "></em><span class="txt1">仅在@小助手时触发</span><em
+                            class="mark"></em><span class="txt2">默认全部触发</span></div>
+                </div>
+            </div>
+            <div class="gw-edit-edit-btn">
+                <div class="ButtonBox green" style="margin-right: 20px;">创建</div>
+                <div class="ButtonBox cancel" onclick="back_welcome()">取消</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

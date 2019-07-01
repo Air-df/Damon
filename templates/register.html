@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/common_0.css">
+    <link rel="stylesheet" href="/static/css/index_1.css">
+    <link rel="stylesheet" href="/static/css/tmIndex_11.css">
+    <link rel="stylesheet" href="/static/css/ucIndex_12.css">
+    <link rel="stylesheet" href="/static/css/pcIndex_13.css">
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <title>注册页 | 栗子云</title>
+    <link href="/static/static_inside/css/bundle.e9f3923a.css" rel="stylesheet">
+</head>
+<body>
+<div class="app" id="root">
+    <div>
+        <div>
+            <div class="saas-registerContainer saas-loginContainer"
+                 style="width: 100%; height: 967px; overflow: auto;">
+                <div class="headNav">
+                    <div class="modal"></div>
+                    <div class="cell-innerBox">
+                        <div class="logoHead"></div>
+                    </div>
+                </div>
+                <div class="formBox">
+                    <div class="innerBox">
+                        <table style="position: relative;">
+                            <tbody>
+                            <tr>
+                                <td colspan="2"><input class="formInput" type="text" placeholder="用户名" name="userName"
+                                                       id="user_name" value=""><em class="inputIcon icon-home"
+                                                                                   style="display: none;"></em></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input class="formInput" type="password" placeholder="密码"
+                                                       name="password" id="pwd" value=""><em class="inputIcon icon-home"
+                                                                                             style="display: none;"></em>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input class="formInput" type="password" placeholder="确认密码"
+                                                       name="repeatPassword" id="repwd" value=""><em
+                                        class="inputIcon icon-home" style="display: none;"></em></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input class="formInput" type="text" placeholder="手机号" name="telephone"
+                                                       id="phone" value=""><em class="inputIcon icon-home"
+                                                                               style="display: none;"></em></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!--<div class="protocolBox" style="color: rgb(181, 189, 198);"><em-->
+                                <!--class="unchecked-confirm icon-home"></em>我已阅读并接受<span-->
+                                <!--style="color: rgb(40, 139, 242); text-decoration: underline;">《栗子云服务协议》</span></div>-->
+                        <button class="registerBtn" onclick="register()">注册</button>
+                        <div class="registeredBox"><a>已拥有账户?</a><a class="loginBtn" href="/login">直接<span
+                                style="color: rgb(40, 139, 242);">登录</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function register() {
+        var user_name = document.getElementById('user_name').value;
+        var pwd = document.getElementById('pwd').value;
+        var repwd = document.getElementById('repwd').value;
+        var phone = document.getElementById('phone').value;
+        console.log(user_name, pwd, repwd, phone);
+        $.ajax({
+            url: '/register',
+            type: 'post',
+            dataType: 'json',
+            data: {
+                'user_name': user_name,
+                'pwd': pwd,
+                'repwd': repwd,
+                'phone': phone,
+            },
+            success: function (data) {
+                console.log(data);
+                is_success = data['is_success'];
+                if (is_success){
+                    window.alert(data['info']);
+                    window.location.href = 'http://{{server_host}}:{{server_port}}/u/' + user_name;
+                }
+                else {
+                    window.alert(data['info']);
+                }
+            }
+        })
+    }
+</script>
+</body>
+</html>

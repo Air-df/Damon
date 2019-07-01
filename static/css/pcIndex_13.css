@@ -1,0 +1,1236 @@
+.pc-proxy,
+.pc-basicInforWrap {
+    /* width: 100%; */
+    height: calc(100% - 60px);
+    overflow: auto;
+}
+
+.pc-proxy input::-webkit-input-placeholder {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #B5BDC6;
+}
+
+.pc-proxy input::-moz-input-placeholder {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #B5BDC6;
+}
+
+.pc-proxy input::-o-input-placeholder {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #B5BDC6;
+}
+
+.pc-proxy .inner{
+    min-width: 1080px;
+    padding: 40px;
+}
+.pc-basicInforWrap .inner {
+    min-width: 1040px;
+    padding-right: 40px;
+}
+
+.pc-proxy .title {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #344658;
+    margin-bottom: 22px;
+}
+
+.pc-proxy .tableArea {
+    background: #FFFFFF;
+    padding: 0 28px 40px;
+}
+
+.pc-proxy table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.pc-proxy .tableArea table thead tr{
+    color:#b5bdc6;
+}
+.pc-proxy table tr {
+    height: 48px;
+    border-bottom: 1px solid #E9EBEE;
+}
+
+.pc-proxy table tbody tr {
+    cursor: pointer;
+}
+
+.pc-proxy table tbody tr:last-child {
+    border: 0 none;
+}
+
+.pc-proxy table tbody tr:hover {
+    background: #F8F8F9;
+}
+
+.pc-proxy table tbody tr:hover .remark {
+    color: #288bf2;
+}
+
+.pc-proxy table th,
+.pc-proxy table td {
+    vertical-align: middle;
+}
+
+.pc-proxy table th:nth-child(6),
+.pc-proxy table td:nth-child(6) {
+    width: 10%;
+}
+
+.pc-proxy table th:nth-child(4),
+.pc-proxy table td:nth-child(4) {
+    width: 15%;
+}
+
+.pc-proxy table td .loginName {
+    width: 130px;
+    height: 48px;
+    line-height: 48px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pc-proxy .tableArea .backInfo {
+    position: relative;
+    cursor: pointer;
+}
+
+.pc-proxy .tableArea .detail {
+    position: absolute;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-20%);
+    padding: 12px 5px;
+    width: 144px;
+    background: #E9EBEE;
+    box-shadow: 0 1px 4px 0 rgba(36, 36, 36, 0.24);
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+    text-align: left;
+    z-index: 2;
+    display: none;
+}
+
+.pc-proxy .tableArea .backInfo:hover {
+    color: #288BF2;
+}
+
+.pc-proxy .tableArea .backInfo:hover .detail {
+    display: block;
+}
+
+.pc-proxy .tableArea .detail:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 25px;
+    top: -5px;
+    transform: rotate(-45deg);
+    background: #E9EBEE;
+    box-shadow: 0 1px 4px 0 rgba(36, 36, 36, 0.24);
+}
+
+.pc-proxy .tableArea .detail:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #E9EBEE;
+    border-radius: 4px;
+}
+
+.pc-proxy .tableArea .itemOprate span:first-child {
+    margin-right: 30px;
+}
+
+.pc-proxy .backBtn {
+    width: 100px;
+    height: 30px;
+    background: #58A7F8;
+    border-radius: 2px;
+    line-height: 30px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    float: right;
+    margin-top: -52px;
+    cursor: pointer;
+}
+
+.pc-proxy .backBtn:hover {
+    background: #288BF2;
+}
+
+
+/*æ“ä½œå¼¹çª—æ ·å¼  */
+
+.pc-oprateWrapper {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.pc-oprateWrapper .tipBox {
+    width: 288px;
+    height: 160px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pc-oprateWrapper .tipBox p {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #344658;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.pc-oprateWrapper .tipBox .confirmBtn {
+    width: 90px;
+    height: 36px;
+    background: #6AD298;
+    border-radius: 4px;
+    line-height: 36px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin: 18px auto 0;
+    cursor: pointer;
+}
+
+.pc-oprateWrapper .tipBox .confirmBtn:hover {
+    background: #5DC189;
+}
+
+.pc-oprateWrapper .tipBox .closeBtn {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-position: -262px -43px;
+    cursor: pointer;
+}
+
+.pc-oprateWrapper .saveArea .confirmBtn {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    float: right;
+    background: #58A7F8;
+    border-radius: 4px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.pc-oprateWrapper .saveArea .confirmBtn:hover {
+    background: #288BF2;
+}
+
+.pc-oprateWrapper .saveArea .cancelBtn {
+    width: 42px;
+    height: 18px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    float: right;
+    margin-top: 41px;
+    margin-right: 30px;
+    text-align: center;
+    cursor: pointer
+}
+
+.pc-oprateWrapper .saveArea .cancelBtn:hover {
+    color: #5D90C5;
+    text-decoration: underline;
+}
+
+.pc-oprateWrapper .closeBtn {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -10px;
+    right: -42px;
+    background-position: -410px -521px;
+    cursor: pointer;
+}
+
+.pc-oprateWrapper .backWrapper,
+.pc-oprateWrapper .checkWrapper,
+.pc-oprateWrapper .phoneWrapper {
+    width: 520px;
+    height: 240px;
+    padding: 40px;
+    background: #F8F8F9;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pc-oprateWrapper .backWrapper h3,
+.pc-oprateWrapper .checkWrapper h3,
+.pc-oprateWrapper .phoneWrapper h3 {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #485767;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.pc-oprateWrapper .phoneWrapper h3 {
+    margin: 0;
+}
+
+.pc-oprateWrapper .backWrapper span {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #143351;
+}
+
+.pc-oprateWrapper .backWrapper textarea,
+.pc-oprateWrapper .checkWrapper textarea {
+    width: 426px;
+    height: 88px;
+    background: #FFFFFF;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    vertical-align: text-top;
+    resize: none;
+    padding: 7px 10px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+    margin-left: 6px;
+    margin-bottom: 8px;
+}
+
+.pc-oprateWrapper .backWrapper p,
+.pc-oprateWrapper .checkWrapper p {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+    text-align: right;
+}
+
+
+/*selectBox æ ·å¼  */
+
+.pc-oprateWrapper .selectWrapper {
+    height: 30px;
+    width: 352px;
+    margin: 0 auto;
+}
+
+.pc-oprateWrapper .selectWrapper .selectLabel {
+    float: left;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #143351;
+    line-height: 30px;
+}
+
+.pc-oprateWrapper .selectBox {
+    position: relative;
+    width: 280px;
+    float: left;
+    margin-left: 6px;
+}
+
+.pc-oprateWrapper .selectBox .selectOption {
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+
+.pc-oprateWrapper .selectTip {
+    color: #485767;
+}
+
+.pc-oprateWrapper .selectBox .selectOption em {
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    color: #B5BDC6;
+    display: inline-block;
+    line-height: 30px;
+    font-style: normal;
+    padding-left: 12px;
+}
+
+.pc-oprateWrapper .selectBox .selectOption .selectTip {
+    color: #485767;
+}
+
+.pc-oprateWrapper .selectBox .selectOption .selIcon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-position: -183px -479px;
+    float: right;
+}
+
+.pc-oprateWrapper .selectBox .selectOption .selectArrow {
+    transform: translate(1px, 0) rotate(180deg);
+}
+
+.pc-oprateWrapper .selectBox .optionUl {
+    width: 280px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 27px;
+    left: 0px;
+    z-index: 2;
+}
+
+.pc-oprateWrapper .selectBox .optionUl ul li {
+    height: 30px;
+    line-height: 31px;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    font-size: 12px;
+    color: #485767;
+    cursor: pointer;
+}
+
+.pc-oprateWrapper .selectBox .optionUl .selected,
+.pc-oprateWrapper .selectBox .optionUl ul li:hover {
+    background: #F8F8F9;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #288BF2;
+    cursor: pointer;
+}
+
+
+/*å®¡æ ¸ç»“æžœä¸­ä¿®æ”¹å¤‡æ³¨ä¿¡æ¯  */
+
+.pc-oprateWrapper .checkWrapper {
+    height: 290px;
+}
+
+.pc-oprateWrapper .checkWrapper .backInfo {
+    width: 352px;
+    margin: 0 auto;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #143351;
+    margin-top: 20px;
+}
+
+.pc-oprateWrapper .checkWrapper textarea {
+    width: 280px;
+    height: 90px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+
+.pc-oprateWrapper .checkWrapper textarea:focus {
+    border-color: #b5bdc6;
+}
+
+
+/*ç¼–è¾‘æ‰‹æœºå·  */
+
+.pc-oprateWrapper .phoneWrapper {
+    width: 500px;
+    height: 248px;
+}
+
+.pc-oprateWrapper .phoneWrapper .tips {
+    margin: 8px 0 6px 136px;
+    height: 18px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #F75A5A;
+    position: relative;
+    text-indent: 20px;
+}
+
+.pc-oprateWrapper .phoneWrapper .tips::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/icon/iconography.png') no-repeat;
+    background-size: 600px 700px;
+    background-position: -161px -625px;
+    position: absolute;
+    left: 0;
+    top: -1px;
+}
+
+.pc-oprateWrapper .phoneWrapper .inputBox {
+    width: 340px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.pc-oprateWrapper .phoneWrapper .inputBox span {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #143351;
+    margin-right: 6px;
+}
+
+.pc-oprateWrapper .phoneWrapper .inputBox .phoneNumber {
+    width: 280px;
+    height: 42px;
+    background: #FFFFFF;
+    text-indent: 12px;
+    font-size: 13px;
+    color: #486767;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.pc-oprateWrapper .phoneWrapper .inputBox .verifyCode {
+    width: 170px;
+    height: 42px;
+    background: #FFFFFF;
+    text-indent: 12px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-size: 13px;
+    color: #486767;
+}
+
+.pc-oprateWrapper .phoneWrapper .inputBox .codeBtn {
+    display: inline-block;
+    width: 88px;
+    height: 40px;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    vertical-align: top;
+    line-height: 40px;
+    text-align: center;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #58A7F8;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.pc-oprateWrapper .phoneWrapper .inputBox .codeBtn:hover {
+    background: rgba(88, 167, 248, 0.10);
+    border: 1px solid #288BF2;
+    color: #288BF2;
+}
+
+.pc-oprateWrapper .phoneWrapper .inputBox .timeout {
+    display: inline-block;
+    width: 90px;
+    height: 42px;
+    margin-left: 20px;
+    line-height: 42px;
+    text-align: center;
+    background: #E9EBEE;
+    border-radius: 2px;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #B5BDC6;
+}
+
+
+/*ç”¨æˆ·ä¸­å¿ƒ  */
+
+.pc-basicInforWrap .basicInforBox {
+    width: 924px;
+    margin: 58px 0 60px 70px;
+}
+
+.pc-basicInforWrap .basicInforBox .basicContent {
+    background: #fff;
+    border-radius: 2px;
+    padding: 40px 68px;
+}
+
+.pc-basicInforWrap .basicInforBox h4 {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    margin-bottom: 12px;
+}
+
+.pc-basicInforWrap .basicInforBox .avatorBox {
+    width: 90px;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.pc-basicInforWrap .basicInforBox .avatorBox .modify {
+    color: #fff;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    display: none;
+    width: 66px;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    line-height: 70px;
+    text-align: center;
+    z-index: 6;
+}
+
+.pc-basicInforWrap .basicInforBox .maskAuator {
+    background: rgba(0, 0, 0, 0.45);
+    display: none;
+    width: 90px;
+    height: 90px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 5;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.pc-basicInforWrap .basicInforBox .avatorBox:hover .modify,
+.pc-basicInforWrap .basicInforBox .avatorBox:hover .maskAuator {
+    display: block;
+}
+
+.pc-basicInforWrap .basicInforBox .avatorBox .avator {
+    background-position: -315px -438px;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+}
+
+.pc-basicInforWrap .basicInforBox .avatorName {
+    font-family: PingFangSC-Regular;
+    font-size: 15px;
+    color: #143351;
+    line-height: 30px;
+    margin: 30px auto;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+}
+
+.pc-basicInforWrap .inforContent .inforList+.inforList {
+    border-top: 1px solid #E9EBEE;
+}
+
+.pc-basicInforWrap .inforContent .inforList {
+    height: 60px;
+    line-height: 60px;
+    position: relative;
+}
+
+.pc-basicInforWrap .inforContent .inforList .label {
+    float: left;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    margin-left: 10px;
+}
+
+.pc-basicInforWrap .inforContent .inforList .inforMessage {
+    float: right;
+    margin-right: 60px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #143351;
+}
+
+.pc-basicInforWrap .inforContent .inforList .btnSet {
+    float: right;
+    margin-right: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #58A7F8;
+    cursor: pointer;
+    position: relative;
+}
+
+.pc-basicInforWrap .inforContent .inforList .btnSet:hover {
+    color: #288bf2;
+}
+
+.pc-basicInforWrap .inforContent .inforList .edit {
+    width: 20px;
+    height: 20px;
+    background-position: -183px -599px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.pc-basicInforWrap .inforContent .inforList .edit:hover {
+    background-position: -183px -622px;
+}
+
+.pc-basicInforWrap .basicInforBox .recommendTip {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    margin-bottom: 12px;
+}
+
+.pc-basicInforWrap .inforContent .inforList .btnSeting {
+    height: 36px;
+    line-height: 36px;
+    float: right;
+    margin: 12px 20px 0 0;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    width: 80px;
+    background: #58A7F8;
+    border: 1px solid #58A7F8;
+    border-radius: 4px;
+    position: relative;
+}
+
+.pc-basicInforWrap .inforContent .inforList .btnSeting:hover {
+    background: #288bf2;
+    border-color: #288bf2;
+}
+
+.pc-basicInforWrap .inforContent .inforList .link {
+    float: left;
+    line-height: 16px;
+    word-wrap: break-word;
+    margin-left: 30px;
+    width: 558px;
+    padding-top: 23px;
+    box-sizing: border-box;
+}
+
+.pc-basicInforWrap .inforContent .inforList .reminder {
+    width: 8px;
+    height: 8px;
+    background: #F75A5A;
+    border-radius: 50%;
+    position: absolute;
+    right: -8px;
+    top: -5px;
+}
+
+.pc-basicInforWrap .basicContent .quickBox {
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 #B5BDC6;
+    border-radius: 6px;
+    width: 200px;
+    height: 296px;
+    position: absolute;
+    top: 54px;
+    z-index: 2;
+    right: -56px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.pc-basicInforWrap .basicContent .quickBox .triangle {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    top: -9px;
+    left: 45%;
+    z-index: 0;
+    background: #FFFFFF;
+    box-shadow: -1px -1px 6px 0 #c8ced6;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+
+.pc-basicInforWrap .basicContent .quickBox .triangle:after {
+    content: "";
+    width: 16px;
+    height: 36px;
+    transform: rotate(45deg);
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 9%;
+    z-index: 0;
+    background: #FFFFFF;
+}
+
+.pc-basicInforWrap .basicContent .quickBox .qrcodePic {
+    width: 160px;
+    height: 160px;
+}
+
+.pc-basicInforWrap .basicContent .quickBox .checkTip {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+    line-height: 16px;
+    margin: -20px 20px;
+}
+
+.pc-basicInforWrap .basicContent .quickBox .download {
+    border: 1px solid #58A7F8;
+    border-radius: 4px;
+    width: 84px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 46px;
+    text-align: center;
+    color: #58A7F8;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.pc-basicInforWrap .basicContent .quickBox .download:hover {
+    background: rgba(88, 167, 248, 0.10);
+    border: 1px solid #288BF2;
+    color: #288bf2;
+}
+
+.pc-oprateWrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background: rgba(3, 3, 3, 0.45);
+}
+
+.pc-oprateWrapper .uploadBox {
+    width: 600px;
+    height: 438px;
+    background: #F8F8F9;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    padding: 36px 40px 40px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pc-oprateWrapper .uploadBox .offBtn {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -9px;
+    right: -42px;
+    background-position: -410px -521px;
+    cursor: pointer;
+}
+
+.pc-oprateWrapper .uploadBox .btnBox {
+    margin-top: 40px;
+    width: 200px;
+    margin-left: 340px;
+}
+
+.pc-oprateWrapper .uploadBox .btnBox .cancel {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #8D969F;
+    line-height: 18px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+}
+
+.pc-oprateWrapper .uploadBox .btnBox .cancel:hover {
+    color: #288bf2;
+    text-decoration: underline #288bf2;
+}
+
+.pc-oprateWrapper .uploadBox .btnBox .sure {
+    background: #58A7F8;
+    border-radius: 4px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+
+.pc-oprateWrapper .uploadBox .btnBox .sure:hover {
+    background: #288bf2;
+}
+
+.pc-oprateWrapper .title {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #485767;
+    text-align: center;
+        margin-bottom: 30px;
+}
+
+.pc-oprateWrapper .uploadBox .avatar {
+    width: 120px;
+    height: 120px;
+    margin: 30px 202px 30px;
+    border-radius: 50%;
+}
+
+.pc-oprateWrapper .uploadBox .uploadBtn {
+    width: 110px;
+    height: 40px;
+    opacity: 0;
+    z-index: 10;
+    position: absolute;
+    top: -6px;
+    left: -5px;
+    cursor: pointer;
+}
+
+.pc-oprateWrapper .uploadBox .uploadTip {
+    width: 100px;
+    height: 30px;
+    margin: 0px auto;
+    position: relative;
+    border: 1px solid #58A7F8;
+    border-radius: 4px;
+    color: #58a7f8;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.pc-oprateWrapper .uploadBox .uploadTip:hover {
+    background: rgba(88, 167, 248, 0.10);
+    border: 1px solid #288BF2;
+    color: #288bf2;
+}
+
+.pc-oprateWrapper .inputList {
+    margin: 34px 70px;
+    position: relative;
+}
+.pc-oprateWrapper .reSetWrap .inputList{
+    margin: 20px 80px;
+}
+.pc-oprateWrapper .inputList input:-webkit-autofill {
+    -webkit-box-shadow:   0px 1000px #fff inset!important;
+    box-shadow:   0px 1000px #fff inset!important;
+}
+.pc-oprateWrapper .inputList .error {
+    position: absolute;
+    left: 72px;
+    top: -28px;
+    height: 30px;
+    vertical-align: text-top;
+    margin-right: 5px;
+    line-height: 30px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #F75A5A;
+}
+
+.pc-oprateWrapper .inputList .error .errorIcon {
+    background-position: -161px -625px;
+    width: 20px;
+    height: 20px;
+    vertical-align: inherit;
+    display: inline-block;
+}
+
+.pc-oprateWrapper .inputList .label {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #143351;
+    float: left;
+    line-height: 40px;
+}
+
+.pc-oprateWrapper .inputList .editIpt {
+    width: 280px;
+    height: 42px;
+    line-height: 42px;
+    text-indent: 10px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    background: #FFFFFF;
+    color: #485767;
+    border-radius: 2px;
+    float: left;
+    margin-left: 10px;
+    border: 1px solid transparent;
+}
+
+.pc-oprateWrapper .inputList .editIpt:focus,
+.pc-oprateWrapper .phoneWrapper .inputBox .phoneNumber:focus,
+.pc-oprateWrapper .phoneWrapper .inputBox .verifyCode:focus,
+.pc-oprateWrapper .backWrapper textarea:focus,
+.pc-oprateWrapper .checkWrapper textarea:focus {
+    border-color: #b5bdc6;
+}
+
+.pc-oprateWrapper .inputList .reserError {
+    left: 60px;
+}
+
+.pc-oprateWrapper .tipBox .closeBtn:hover {
+    background-position: -262px -67px;
+}
+
+
+/*å›¾åƒç¼–è¾‘ç»„ä»¶  */
+
+.imgEditBox {
+    width: 170px;
+    height: 170px;
+    position: relative;
+    margin: 30px auto 40px;
+}
+
+.imgEditBox canvas {
+    border-radius: 4px;
+}
+
+.imgEditBox .range {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 2px;
+}
+
+.imgEditBox .rangeBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 2px;
+    background: #FFFFFF;
+    border-radius: 100px;
+}
+
+.imgEditBox .rangeBar .circle {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #58A7F8;
+}
+
+.imgEditBox input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 2px;
+    opacity: 0;
+}
+
+.imgEditBox .smaller {
+    width: 20px;
+    height: 20px;
+    background-position: -444px -521px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -26px;
+    cursor: pointer;
+}
+
+.imgEditBox .bigger {
+    width: 20px;
+    height: 20px;
+    background-position: -464px -521px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -26px;
+    cursor: pointer;
+}
+
+
+/*æç¤ºæ¡†  */
+
+.pc-basicInforWrap .statusBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.24);
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    color: #344658;
+}
+
+.pc-basicInforWrap .innerBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    height: 230px;
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.pc-basicInforWrap .innerBox img {
+    display: block;
+    margin: 20px auto 10px;
+    width: 140px;
+    height: 140px;
+}
+
+.pc-basicInforWrap .innerBox p {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #344658;
+    text-indent: -10px;
+    padding-bottom: 26px;
+    text-align: center
+}
+
+
+/*é€‚é…*/
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    .pc-basicInforWrap .basicInforBox {
+        width: 990px;
+        margin: 58px 0 60px 90px;
+    }
+    .pc-proxy .inner {
+        padding: 40px 70px 0 40px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .pc-oprateWrapper .uploadBox {
+        width: 700px;
+    }
+    .pc-oprateWrapper .backWrapper {
+        width: 700px;
+        box-sizing: border-box;
+        height: 320px;
+    }
+    .pc-oprateWrapper .checkWrapper {
+        height: 370px;
+        width: 700px;
+    }
+    .editInfoWrap,
+    .reSetWrap,
+    .pc-oprateWrapper .phoneWrapper {
+        width: 660px!important;
+    }
+    .pc-oprateWrapper .inputList .editIpt,
+    .pc-oprateWrapper .phoneWrapper .inputBox .phoneNumber {
+        width: 360px;
+    }
+    .pc-oprateWrapper .phoneWrapper .inputBox {
+        width: 425px;
+    }
+    .pc-oprateWrapper .phoneWrapper .inputBox .verifyCode {
+        width: 250px;
+    }
+    .pc-oprateWrapper .uploadBox .avatar {
+        margin: 30px 255px 30px;
+    }
+    .pc-oprateWrapper .uploadBox .btnBox {
+        margin-left: 435px;
+    }
+    .pc-oprateWrapper .uploadBox .offBtn {
+        transform: scale(1.4, 1.4);
+        top: -6px;
+        right: -42px;
+    }
+   .pc-oprateWrapper .reSetWrap .inputList{
+    margin: 20px 70px;
+}
+
+    .pc-oprateWrapper .uploadBox .btnBox {
+        margin-left: 400px;
+    }
+    .pc-oprateWrapper .bigClose {
+        transform: scale(1.4, 1.4);
+    }
+    .pc-oprateWrapper .phoneWrapper .tips {
+        margin: 8px 0 6px 172px;
+    }
+    .pc-oprateWrapper .selectBox,
+    .pc-oprateWrapper .selectBox .selectOption,
+    .pc-oprateWrapper .selectBox .optionUl {
+        width: 360px;
+    }
+    .pc-oprateWrapper .selectWrapper,
+    .pc-oprateWrapper .checkWrapper .backInfo {
+        width: 432px;
+    }
+    .pc-oprateWrapper .checkWrapper .saveArea .confirmBtn {
+        margin-top: 100px;
+    }
+    .pc-oprateWrapper .checkWrapper .saveArea .cancelBtn {
+        margin-top: 106px;
+    }
+    .pc-oprateWrapper .checkWrapper textarea {
+        height: 104px;
+        width: 360px;
+    }
+    .pc-oprateWrapper .backWrapper textarea {
+        width: 526px;
+    }
+    .pc-basicInforWrap .basicInforBox {
+        width: 1090px;
+        margin: 58px 0 60px 120px;
+    }
+    .pc-proxy .inner {
+        padding: 40px 150px;
+    }
+}
+
+.unselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+
+    /* ä»¥ä¸‹ä¸¤ä¸ªå±žæ€§ç›®å‰å¹¶æœªæ”¯æŒï¼Œå†™åœ¨è¿™é‡Œä¸ºäº†å‡å°‘é£Žé™© */
+    -o-user-select: none;
+    user-select: none;
+}

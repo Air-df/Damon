@@ -1,0 +1,905 @@
+.gam-container {
+    overflow: auto;
+    height: calc(100% - 58px);
+    background: #F7F8F9;
+}
+
+.gam-container .searchBar {
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.gam-container .searchBar .statusBox {
+    flex: 0 none;
+    display: flex;
+    width: 260px;
+    justify-content: space-between;
+}
+
+.gam-container .searchBar .statusBox .status {
+    width: 50px;
+    height: 22px;
+    line-height: 22px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #344658;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.gam-container .searchBar .statusBox .checked {
+    background: #6AD298;
+    color: #FFFFFF;
+}
+
+.gam-container .searchBar .searchBox {
+    position: relative;
+}
+
+.gam-container .searchBar input {
+    box-sizing: border-box;
+    padding: 8px 60px 8px 12px;
+    width: 290px;
+    height: 34px;
+    background: #FFFFFF;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+}
+
+.gam-container .searchBar .searchBox .searchBtn {
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    background-position: -338px -320px;
+}
+
+.gam-container .searchBar .searchBox .searchBtn:hover {
+    background-position: -398px -320px;
+}
+
+/* åˆ—è¡¨é¡µ */
+
+.gam-container .gaList {
+    height: calc(100% - 74px);
+    overflow: auto;
+    padding: 0 32px;
+}
+
+.gam-container .gaList .addBtn {
+    width: 256px;
+    height: 290px;
+    background: #FFFFFF;
+    border: 1px solid #F0F1F3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #B5BDC6;
+    cursor: pointer;
+    margin: 0 20px 20px 0;
+}
+
+.gam-container .gaList .addBtn .icon-add {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: -402px -71px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.gam-container .gaList .card {
+    width: 256px;
+    height: 290px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    float: left;
+    margin: 0 20px 20px 0;
+    transition: all ease-in-out .2s;
+    position: relative;
+}
+
+.gam-container .gaList .card:hover {
+    box-shadow: 0 6px 13px 0 #E9EBEE;
+}
+
+.gam-container .gaList .card .codeBox {
+    width: 256px;
+    height: 290px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.gam-container .gaList .card .codeBox .inner {
+    position: absolute;
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out .3s;
+}
+
+.gam-container .gaList .card .wxCode {
+    width: 162px;
+    height: 162px;
+    display: block;
+    margin: 50px auto 20px;
+}
+
+.gam-container .gaList .card .wxNum {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #5D90C5;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.gam-container .gaList .card .detailBox {
+    width: 100%;
+    height: 100%;
+    padding: 14px 12px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    position: relative;
+}
+
+.gam-container .gaList .card .icon-code {
+    width: 50px;
+    height: 50px;
+    background-position: -339px -265px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.gam-container .gaList .card .operateArea {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+}
+
+.gam-container .gaList .card .icon-code:hover {
+    background-position: -391px -265px;
+}
+
+.gam-container .gaList .card .hoverBox {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #485767;
+    box-shadow: 0 1px 4px 0 rgba(36, 36, 36, 0.15);
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    display: none;
+}
+
+.gam-container .gaList .card .hoverBox::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px 0 rgba(36, 36, 36, 0.15);
+    background: #485767;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    top: -2px;
+}
+
+.gam-container .gaList .card .icon-code .hoverBox {
+    width: 112px;
+    height: 32px;
+    top: 35px;
+}
+
+.gam-container .gaList .card .icon-code:hover .hoverBox,
+.gam-container .gaList .card .refresh:hover .hoverBox,
+.gam-container .gaList .card .more:hover .hoverBox {
+    display: block;
+}
+
+.gam-container .gaList .card .operate {
+    float: right;
+}
+
+.gam-container .gaList .card .refresh,
+.gam-container .gaList .card .more {
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-position: -338px -8px;
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+}
+
+.gam-container .gaList .card .refresh:hover {
+    background-position: -358px -8px;
+}
+
+.gam-container .gaList .card .refresh .hoverBox {
+    width: 46px;
+    top: 20px;
+}
+
+.gam-container .gaList .card .more {
+    background-position: -338px -28px;
+}
+
+.gam-container .gaList .card .more:hover {
+    background-position: -358px -28px;
+}
+
+.gam-container .gaList .card .more .hoverBox {
+    width: 72px;
+    top: 20px;
+}
+
+.gam-container .gaList .card .more .item {
+    width: 80px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(36, 36, 36, 0.24);
+    border-radius: 4px;
+    padding: 4px 0;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #485767;
+    display: none;
+}
+
+.gam-container .gaList .card .more .item div {
+    height: 26px;
+    line-height: 26px;
+    position: relative;
+    z-index: 3;
+}
+
+.gam-container .gaList .card .more .item div:hover {
+    background: #F8F8F9;
+    color: #58A7F8;
+}
+
+.gam-container .gaList .card .more .item .cancel:hover {
+    color: #F75A5A;
+}
+
+.gam-container .gaList .card .more .item::after {
+    content: '';
+    display: block;
+    background: #FFFFFF;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0 1px 4px 0 rgba(36, 36, 36, 0.24);
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: -6px;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.gam-container .gaList .card .more .item::before {
+    content: '';
+    display: block;
+    background: #FFFFFF;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.gam-container .gaList .card .avatar {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 10px auto 0;
+}
+
+.gam-container .gaList .card .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+.gam-container .gaList .card .offline img,
+.gam-container .gaList .card .error img {
+    -webkit-filter: grayscale(1);
+    /* Webkit */
+    filter: gray;
+    /* IE6-9 */
+    filter: grayscale(1);
+    /* W3C */
+}
+
+.gam-container .gaList .card .avatar .statusDot {
+    background: #6AD298;
+    border: 2px solid #FFFFFF;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+}
+
+.gam-container .gaList .card .offline .statusDot {
+    background: #B5BDC6;
+}
+
+.gam-container .gaList .card .error .statusDot {
+    background: #F75A5A;
+}
+
+.gam-container .gaList .card .statusText {
+    margin-top: 10px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #6AD298;
+    cursor: pointer;
+}
+
+.gam-container .gaList .card .statusText.offline {
+    color: #B5BDC6;
+}
+
+.gam-container .gaList .card .statusText.error {
+    color: #F75A5A;
+}
+
+.gam-container .gaList .card .statusText:hover .hoverBox {
+    display: block;
+    text-align: left;
+}
+
+.gam-container .gaList .card .statusText .hoverBox {
+    left: 60%;
+    width: 138px;
+}
+
+.gam-container .gaList .card .statusText .hoverBox::after {
+    left: 30%;
+}
+
+.gam-container .gaList .card .name {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #344658;
+    text-align: center;
+    margin-top: 8px;
+    height: 20px;
+}
+
+.gam-container .gaList .card .line {
+    margin-top: 14px;
+    background: #F0F1F3;
+    height: 1px;
+}
+
+.gam-container .gaList .card .statusDetail {
+    display: flex;
+    align-items: center;
+    height: 112px;
+}
+
+.gam-container .gaList .card .statusDetail .item {
+    flex: auto;
+    text-align: center;
+}
+
+.gam-container .gaList .card .statusDetail .line {
+    flex: none;
+    height: 30px;
+    width: 1px;
+    margin: 0;
+}
+
+.gam-container .gaList .card .statusDetail span:first-child {
+    display: block;
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.gam-container .gaList .card .statusDetail span:last-child {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+}
+
+.gam-container .gaList .card .statusDetail .operating {
+    position: relative;
+    cursor: pointer;
+}
+
+.gam-container .gaList .card .statusDetail .operating:hover {
+    color: #6AD298;
+}
+
+.gam-container .gaList .card .statusDetail .hoverBox {
+    width: 98px;
+    top: 25px;
+    left: 100%;
+}
+
+.gam-container .gaList .card .statusDetail .hoverBox::after {
+    left: 30%;
+}
+
+.gam-container .gaList .card .statusDetail .operating:hover .hoverBox {
+    display: block;
+}
+
+.gam-container .gaList .card .statusDetail .trustBtn {
+    background: #58A7F8;
+    border-radius: 100px;
+    width: 60px;
+    height: 30px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.gam-container .gaList .card .statusDetail .trustBtn:hover {
+    background: #288BF2;
+}
+
+.gam-container .gaList .card .statusDetail .scanBtn {
+    width: 114px;
+    height: 32px;
+    border: 1px solid #58A7F8;
+    border-radius: 100px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #58A7F8;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.gam-container .gaList .card .statusDetail .scanBtn:hover {
+    background: #58A7F8;
+    color: #FFFFFF;
+}
+
+/* ç”¨æˆ·è®¾ç½® */
+
+.gam-container .modalWrapper {
+    background: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+.gam-container .modalWrapper .modalBox {
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gam-container .modalWrapper .modalBox .closeBtn {
+    width: 20px;
+    height: 20px;
+    background-position: -50px -153px;
+    position: absolute;
+    right: -30px;
+    top: 0;
+    cursor: pointer;
+}
+
+.gam-container .modalWrapper .avatarSet {
+    width: 400px;
+    height: 515px;
+}
+
+.gam-container .modalWrapper .avatarSet .title,
+.gam-container .modalWrapper .cancelModal .title,
+.gam-container .modalWrapper .loginModal .title,
+.gam-container .modalWrapper .historyBox .title {
+    height: 64px;
+    border-bottom: 1px solid #E9EBEE;
+    padding-left: 40px;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #344658;
+    line-height: 64px;
+    text-align: left;
+}
+
+.gam-container .modalWrapper .avatarSet .range {
+    width: 106px;
+    margin: 8px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gam-container .modalWrapper .avatarSet .range .smaller {
+    flex: none;
+    width: 10px;
+    height: 10px;
+    background-position: -402px -91px;
+}
+
+.gam-container .modalWrapper .avatarSet .range .bigger {
+    flex: none;
+    width: 10px;
+    height: 10px;
+    background-position: -412px -91px;
+}
+
+.gam-container .modalWrapper .avatarSet .range input {
+    width: 80px;
+    height: 2px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.gam-container .modalWrapper input[type="range"]::-moz-range-thumb {
+    -moz-appearance: none;
+    width: 6px;
+    height: 6px;
+    cursor: pointer;
+    background: #B5BDC6;
+    border: none;
+    border-radius: 50%;
+}
+
+.gam-container .modalWrapper input[type="range"]::-ms-thumb {
+    width: 6px;
+    height: 6px;
+    cursor: pointer;
+    background: #B5BDC6;
+    border: none;
+    border-radius: 50%;
+}
+
+.gam-container .modalWrapper input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 6px;
+    height: 6px;
+    cursor: pointer;
+    background: #B5BDC6;
+    border: none;
+    border-radius: 50%;
+    margin-top: -2px;
+}
+
+.gam-container .modalWrapper input[type="range"]::-moz-range-track {
+    background: #F0F1F3;
+    height: 2px;
+    cursor: pointer;
+    background: #f6f6f6;
+    border-radius: 2px;
+}
+
+.gam-container .modalWrapper input[type="range"]::-ms-track {
+    background: #F0F1F3;
+    height: 2px;
+    cursor: pointer;
+    background: #f6f6f6;
+    border-radius: 2px;
+}
+
+.gam-container .modalWrapper input[type="range"]::-webkit-slider-runnable-track {
+    background: #F0F1F3;
+    height: 2px;
+    cursor: pointer;
+    background: #f6f6f6;
+    border-radius: 2px;
+}
+
+.gam-container .modalWrapper .avatarSet .editor {
+    width: 80px;
+    margin: 0 auto;
+}
+
+.gam-container .modalWrapper .avatarSet .uploadBtn {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #5D90C5;
+    line-height: 18px;
+    width: 60px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    text-decoration: underline;
+    position: relative;
+    cursor: pointer;
+}
+
+.gam-container .modalWrapper .avatarSet .uploadBtn input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.gam-container .modalWrapper .avatarSet .row {
+    margin-top: 20px;
+    padding: 0 40px;
+}
+
+.gam-container .modalWrapper .avatarSet .row .label {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #B5BDC6;
+    line-height: 24px;
+}
+
+.gam-container .modalWrapper .avatarSet .row .content {
+    position: relative;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+}
+
+.gam-container .modalWrapper .avatarSet .row input,
+.gam-container .modalWrapper .avatarSet .row textarea {
+    width: 320px;
+    background: #FFFFFF;
+    border: 1px solid #B5BDC6;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #344658;
+    margin-top: 4px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+.gam-container .modalWrapper .avatarSet .row input {
+    height: 34px;
+    outline: 0 none;
+    text-indent: 12px;
+}
+
+.gam-container .modalWrapper .avatarSet .row textarea {
+    height: 56px;
+    padding: 7px 12px;
+}
+
+.gam-container .modalWrapper .avatarSet .row input:focus,
+.gam-container .modalWrapper .avatarSet .row textarea:focus {
+    border: 1px solid #60ABF8;
+    box-shadow: 0 0 2px 0 #5EABF9;
+}
+
+.gam-container .modalWrapper .avatarSet .row span {
+    color: #B5BDC6;
+    position: absolute;
+    right: 11px;
+    bottom: 7px;
+}
+
+.gam-container .modalWrapper .avatarSet .buttonArea,
+.gam-container .modalWrapper .cancelModal .buttonArea {
+    padding: 0 40px;
+    margin-top: 50px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    text-align: center;
+}
+
+.gam-container .modalWrapper .avatarSet .buttonArea .cancelBtn,
+.gam-container .modalWrapper .cancelModal .cancelBtn {
+    width: 138px;
+    height: 32px;
+    border: 1px solid #E9EBEE;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #B5BDC6;
+    line-height: 32px;
+    float: left;
+}
+
+.gam-container .modalWrapper .avatarSet .buttonArea .cancelBtn:hover,
+.gam-container .modalWrapper .cancelModal .cancelBtn:hover {
+    border: 1px solid #58A7F8;
+    color: #58A7F8;
+}
+
+.gam-container .modalWrapper .avatarSet .buttonArea .confirmBtn,
+.gam-container .modalWrapper .cancelModal .confirmBtn {
+    width: 140px;
+    height: 34px;
+    background: #58A7F8;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #FFFFFF;
+    line-height: 34px;
+    float: right;
+}
+
+.gam-container .modalWrapper .avatarSet .buttonArea .confirmBtn:hover,
+.gam-container .modalWrapper .cancelModal .confirmBtn:hover {
+    background: #288BF2;
+}
+
+.gam-container .modalWrapper .avatarSet .stopBtn {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #B5BDC6;
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.gam-container .modalWrapper .avatarSet .stopBtn:hover {
+    color: #F75A5A;
+}
+
+/* å–æ¶ˆæ‰˜ç®¡ */
+
+.gam-container .modalWrapper .cancelModal {
+    width: 500px;
+    height: 240px;
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+
+.gam-container .modalWrapper .cancelModal .content {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #344658;
+    margin: 30px 58px 0;
+}
+
+.gam-container .modalWrapper .cancelModal .buttonArea {
+    padding: 0 90px;
+    margin-top: 30px;
+}
+
+/* æ‰«ç ç™»å½• */
+
+.gam-container .modalWrapper .loginModal {
+    width: 400px;
+    height: 440px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #344658;
+    text-align: center;
+}
+
+.gam-container .modalWrapper .loginModal .loginBox {
+    padding-top: 20px;
+}
+
+.gam-container .modalWrapper .loginModal .loginBox .codeBox {
+    width: 162px;
+    height: 162px;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    margin: 30px auto 16px;
+    padding: 24px;
+}
+
+.gam-container .modalWrapper .loginModal .loginBox .codeBox.fail {
+    border: 1px solid rgba(247, 90, 90, 0.50);
+}
+
+.gam-container .modalWrapper .loginModal .loginBox img {
+    display: block;
+    width: 162px;
+    height: 162px;
+}
+
+.gam-container .modalWrapper .loginModal .loginBox .refreshBtn {
+    color: #58A7F8;
+    cursor: pointer;
+}
+
+.gam-container .modalWrapper .loginModal .successBox {
+    padding-top: 70px;
+}
+
+.gam-container .modalWrapper .loginModal .avatarBox {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 60px;
+    padding: 6px;
+    position: relative;
+}
+
+.gam-container .modalWrapper .loginModal .avatarBox img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.gam-container .modalWrapper .loginModal .avatarBox .loading {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* æŸ¥çœ‹æ“ä½œåŽ†å² */
+
+.gam-container .modalWrapper .historyBox {
+    width: 400px;
+    padding-bottom: 45px;
+}
+
+.gam-container .modalWrapper .historyBox ul {
+    max-height: 410px;
+    overflow: auto;
+}
+
+.gam-container .modalWrapper .historyBox li {
+    height: 50px;
+    border-bottom: 1px solid#E9EBEE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 0 30px;
+}
+
+.gam-container .modalWrapper .historyBox li:hover {
+    background: #F8F8F9;
+}
+
+.gam-container .modalWrapper .historyBox li:last-child {
+    border: 0 none
+}
+
+.gam-container .modalWrapper .historyBox .time,
+.gam-container .modalWrapper .historyBox .count {
+    flex: none;
+}
+
+.gam-container .modalWrapper .historyBox .count span:first-child {
+    margin-right: 10px;
+}

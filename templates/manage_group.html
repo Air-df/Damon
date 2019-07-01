@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <!--<link rel="icon" href="https://cloud.gemii.cc/v2/favicon.png" type="image/x-icon">-->
+    <link rel="stylesheet" href="/static/css/common_0.css">
+    <link rel="stylesheet" href="/static/css/index_1.css">
+    <link rel="stylesheet" href="/static/css/tmIndex_11.css">
+    <link rel="stylesheet" href="/static/css/ucIndex_12.css">
+    <link rel="stylesheet" href="/static/css/pcIndex_13.css">
+    <script src="/static/tj.js"></script>
+    <title>群管理 | 栗子云</title>
+    <link href="/static/static_inside/css/bundle.e9f3923a.css" rel="stylesheet">
+    <script src="/static/jquery-3.3.1.min.js"></script>
+    <link rel='stylesheet' href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href="/static/bootstrap-3.3.7-dist/css/bootstrap-select.min.css">
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap-select.min.js"></script>
+</head>
+<body>
+<div class="app" id="root">
+    <div class="mainLayout">
+        <div class="layoutHeader">
+            <div class="left">
+                <div class="icon-logo" style="background-image: url('/static/images/icon/beats-logo2.png'); margin: -15px 0px 10px 10px; width: 60px; height: 60px"></div>
+            </div>
+            <div class="center" style="float: left;"><a href="/v2/gmscope"><span class="menu active">微信群</span></a><a
+                    href="/v2/mtscope"><span class="menu">群发</span></a><a href="/v2/gbscope"><span
+                    class="menu">拉新</span></a><a href="/v2/dashboard"><span class="menu">统计</span></a><a
+                    href="/v2/mlscope"><span class="menu">素材</span></a><a href="/v2/system"><span class="menu">设置</span></a>
+            </div>
+            <div class="monitorStateWrapper">
+                <div class="stateTitle" tabindex="1">
+                    <div class="monitorStateBox" style="display: none;">
+                        <div class="exit">退出登录</div>
+                    </div>
+                </div>
+                <div class="newsBox" tabindex="1"></div>
+                <div class="helpBox"><span class="icon-home help"></span></div>
+                <div class="modalWrapper" style="display: none;">
+                    <div class="modalBox newsList">
+                        <div class="item-title">消息通知<span class="closeBtn"></span></div>
+                        <div style="overflow: auto; height: calc(100% - 66px);">
+                            <ul style="margin: 0px;">
+                                <li class="item"><p class="title"><span>还有4天的免费试用期</span><span class="time">2019-06-05 06:00:01</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有4天的免费试用期</span><span class="time">2019-06-04 06:00:01</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有4天的免费试用期</span><span class="time">2019-06-03 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有5天的免费试用期</span><span class="time">2019-06-02 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有6天的免费试用期</span><span class="time">2019-05-30 06:00:01</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>还有7天的免费试用期</span><span class="time">2019-05-29 06:00:00</span>
+                                </p>
+                                    <p class="content">你的试用版即将到期，请及时联系客服购买栗子云。</p></li>
+                                <li class="item"><p class="title"><span>导入群成功</span><span class="time">2019-05-28 17:42:57</span>
+                                </p>
+                                    <p class="content">群【未命名(待修改)】于"2019-05-28 17:42:56"导入系统成功！</p></li>
+                                <li class="item"><p class="title"><span>绑定栗子云用户成功</span><span class="time">2019-05-28 17:40:46</span>
+                                </p>
+                                    <p class="content">微信用户【个儿】于"2019-05-28 17:40:45"绑定栗子云账号成功！</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layoutSideNavi">
+            <div class="menuHeader"></div>
+            <div class="menuList"><a href="/u/{{user_name}}/control"><span class="menu"><span
+                    class="icon-menu gmscope"></span>群消息</span></a><a href="/u/{{user_name}}/manage_group"><span
+                    class="menu active"><span class="icon-menu giscope"></span>群管理</span></a><a
+                    href="/u/{{user_name}}/welcome"><span class="menu"><span class="icon-menu welcome"></span>入群欢迎</span></a><a
+                    href="/u/{{user_name}}/auto_response"><span class="menu"><span class="icon-menu arscope"></span>自动回复</span></a><a
+                    href="/u/{{user_name}}/protect"><span class="menu"><span class="icon-menu protect"></span>违规监测</span></a>
+            </div>
+        </div>
+        <div class="layoutContent">
+            <div class="gi-container">
+                <div class="searchBox">
+                    <div>
+                        <div class="ButtonBox green" style="float: left;">导入微信群</div>
+                    </div>
+                    <div class="searchInput">
+                        <div class="selectWrappers" tabindex="1">
+                            <div class="selectBoxs" style="width: 100px;">
+                                <div class="selectOption" id="" style="border: 1px solid transparent; width: 100px;"><em
+                                        class="selectTip">群名称</em><span class="selIcon"></span></div>
+                                <div class="optionUl"
+                                     style="display: none; transition: all 0.4s ease 0s; width: 100px;">
+                                    <ul>
+                                        <li class="" style="display: none;">全部</li>
+                                        <li class="selected"> 群名称</li>
+                                        <li class=""> 群标签</li>
+                                        <li class=""> 管理员</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inputArea"><input class="textInput" type="text" placeholder="请输入你要搜索的内容" value="">
+                            <div class="clear" style="display: none;"></div>
+                            <div class="searchBtn">
+                                <div class="search-icon"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <!--<div class="groupsBox">-->
+                        <!--&lt;!&ndash;<div class="groupsListBox">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="allGroup active"><span class="text">全部（1）</span></div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="groups">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="text"><span style="display: flex; width: 177px;"><span title="未分组"&ndash;&gt;-->
+                                                                                                   <!--&lt;!&ndash;style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;">未分组</span><span>（1）</span></span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="groups">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="text"><span class="deleteBtn"><span class="icon-delete"></span><span&ndash;&gt;-->
+                                        <!--&lt;!&ndash;class="icon-text">删除</span></span><span class="editBtn"><span&ndash;&gt;-->
+                                        <!--&lt;!&ndash;class="icon-edit"></span><span class="icon-text">编辑</span></span><span&ndash;&gt;-->
+                                        <!--&lt;!&ndash;style="display: flex; width: 177px;"><span title="1"&ndash;&gt;-->
+                                                                                   <!--&lt;!&ndash;style="white-space: nowrap; text-overflow: ellipsis; overflow: hidden;">1</span><span>（0）</span></span>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="addBtn"><span class="add-icon"></span>添加分组</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--<div class="helpBtn">-->
+                            <!--<div class="help-icon"></div>-->
+                            <!--<span>分组示例</span>-->
+                            <!--<div class="gi-tipBox" style="left: 0px; top: -386px; display: none; z-index: 10;"><img-->
+                                    <!--class="tipImg" src="https://cloud.gemii.cc/v2/images/iconV3/gi-help.png" alt="">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="groupListBox">
+                        <div class="lzc-table">
+                            <div class="ant-table-wrapper">
+                                <div class="ant-spin-nested-loading tableLoading">
+                                    <div class="ant-spin-container">
+                                        <div class="ant-table ant-table-default ant-table-scroll-position-left">
+                                            <div class="ant-table-content">
+                                                <div class="ant-table-body">
+                                                    <table class="">
+                                                        <colgroup>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                        </colgroup>
+                                                        <thead class="ant-table-thead">
+                                                        <tr>
+                                                            <th class="ant-table-selection-column"><span><div
+                                                                    class="ant-table-selection"><label
+                                                                    class="ant-checkbox-wrapper"><span
+                                                                    class="ant-checkbox"><input type="checkbox"
+                                                                                                class="ant-checkbox-input"
+                                                                                                value=""><span
+                                                                    class="ant-checkbox-inner"></span></span></label></div></span>
+                                                            </th>
+                                                            <th class=""><span>群名称</span></th>
+                                                            <th class=""><span>活跃状态</span></th>
+                                                            <th class=""><span>群人数</span></th>
+                                                            <th class=""><span>操作</span></th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody class="ant-table-tbody">
+                                                        <tr class="ant-table-row  ant-table-row-level-0"
+                                                            data-row-key="f1da817c-5a43-46ad-a0ea-178a11e04d2c">
+                                                            <td class="ant-table-selection-column"><span><label
+                                                                    class="ant-checkbox-wrapper"><span
+                                                                    class="ant-checkbox"><input type="checkbox"
+                                                                                                class="ant-checkbox-input"
+                                                                                                value=""><span
+                                                                    class="ant-checkbox-inner"></span></span></label></span>
+                                                            </td>
+                                                            <td class=""><span
+                                                                    class="ant-table-row-indent indent-level-0"
+                                                                    style="padding-left: 0px;"></span>测试
+                                                            </td>
+                                                            <td class="">
+                                                                <div class="stateItem"><span
+                                                                        class="actDegree lower"><span class="icon-text">活跃度 0%</span></span>低
+                                                                </div>
+                                                            </td>
+                                                            <td class="">2</td>
+                                                            <td class="">
+                                                                <div class="operate"><span class="edit"
+                                                                                           onclick="modal_show()">编辑</span><span
+                                                                        class="line"></span><span class="moreBox"
+                                                                                                  tabindex="1"><span
+                                                                        class="icon-more edit">...</span><span
+                                                                        class="moreOptions" style="display: none;"><span
+                                                                        class="option">查看群成员</span><span class="option">下载二维码</span><span
+                                                                        class="option">小助手退群</span></span></span></div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pageFooter">
+                            <ul class="ant-pagination " unselectable="unselectable">
+                                <li title="上一页" class="ant-pagination-disabled ant-pagination-prev"
+                                    aria-disabled="true"><a class="ant-pagination-item-link"></a></li>
+                                <li title="1"
+                                    class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+                                    tabindex="0"><a>1</a></li>
+                                <li title="下一页" class="ant-pagination-disabled ant-pagination-next"
+                                    aria-disabled="true"><a class="ant-pagination-item-link"></a></li>
+                                <li class="ant-pagination-options">
+                                    <div class="ant-pagination-options-size-changer ant-select ant-select-enabled">
+                                        <div class="ant-select-selection
+            ant-select-selection--single" role="combobox" aria-autocomplete="list" aria-haspopup="true"
+                                             aria-expanded="false" tabindex="0">
+                                            <div class="ant-select-selection__rendered">
+                                                <div class="ant-select-selection-selected-value" title="50 条/页"
+                                                     style="display: block; opacity: 1;">50 条/页
+                                                </div>
+                                            </div>
+                                            <span class="ant-select-arrow" unselectable="on" style="user-select: none;"><b></b></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="dragTip">
+                            <div class="icon-arrow"></div>
+                            <span class="dragTipTxt">移动1个群</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="app" id="modal-root">
+    <div></div>
+    <div></div>
+</div>
+<div class="app" id="msg-root">
+    <div class="msg-modal">
+        <div class="msg-list"></div>
+    </div>
+</div>
+<div id="qb-sougou-search" style="display: none; opacity: 0;"><p>搜索</p>
+    <p class="last-btn">复制</p>
+    <iframe src=""></iframe>
+</div>
+
+<div class="modal fade" style="top: 25%" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document" style="width: 400px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">编辑群信息</h4>
+            </div>
+            <div class="modal-body" style="height: 150px;">
+                <div>
+                    <div style="padding: 10px">
+                        <span style="width: 30%; text-align: right; display: inline-block; font-family: 'PingFang SC'" id="group_name">群名称：</span>
+                        <div class="input-group input-group-sm" style="float: right; right: 20%; clear: both">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div style="padding: 10px">
+                        <span style="width: 30%; text-align: right; display: inline-block; font-family: 'PingFang SC'"
+                              id="robot_nick_name">助手昵称：</span>
+                        <div class="input-group input-group-sm" style="float: right; right: 20%; clear:both;">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确认</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</body>
+<script>
+    function modal_show() {
+        $('#Modal').modal('show')
+    }
+
+</script>
+</html>

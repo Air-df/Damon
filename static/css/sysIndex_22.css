@@ -1,0 +1,568 @@
+.sys-wallWrapper{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+.sys-wallWrapper .editContainer{
+  margin-left: 100px;
+  width: 966px;
+  height: 100%;
+  overflow: hidden;
+}
+.sys-wallWrapper .editContainer .titleBox{
+  width: 100%;
+  height: 82px;
+  border-bottom: 1px dashed #E9EBEE;
+}
+.editContainer .titleBox .titleEdit{
+  margin-top: 30px;
+  width: 100%;
+  height: 22px;
+}
+.editContainer .titleEdit input{
+  float: left;
+  width: 900px;
+  height: 22px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #344658;
+}
+.editContainer .titleEdit .countBox{
+  float: right;
+  width: 50px;
+  height: 22px;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+  color: #B5BDC6;
+}
+
+.editContainer .sendDateBox{
+  clear: both;
+  margin-top: 10px;
+  margin-left: -1px;
+}
+
+.editContainer .sendDateBox .sendDateInput{
+  text-indent: 28px;
+  border: none!important
+}
+.editContainer .sendDateBox .sendDateInput:before{
+  top: 5px;
+  left: 0px;
+}
+.editContainer .sendDateBox .datePickerBox{
+  border-left: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 1px 2px 9px 0px rgba(105, 93, 93, 0.24);
+}
+
+.editContainer .editInnerWrapper{
+  padding-top: 20px;
+  width: 100%;
+  height: 400px;
+  overflow-y: auto;
+}
+.richText-editWrapper{
+  width: 100%;
+  height: 100%;
+}
+.richText-editToolBar{
+  padding: 20px 30px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: #FFFFFF;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.04);
+}
+
+@media screen and (max-width: 1079px) {
+    .richText-editToolBar{
+      padding: 34px 30px;
+      padding-bottom: 16px;
+    }
+}
+.rdw-inline-wrapper{
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.rdw-text-align-wrapper{
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.rdw-list-wrapper{
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.rdw-format-wrapper{
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.rdw-block-wrapper{
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.rdw-option-wrapper{
+    position: relative;
+    width: 26px;
+    height: 26px;
+    border-radius: 2px;
+    margin: 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    background-position: -283px -9px
+}
+.rdw-option-separator{
+  position: relative;
+  width: 1px;
+  height: 26px;
+  border-radius: 2px;
+  margin: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  background: #E9EBEE;
+}
+
+
+.rdw-option-wrapper .tip{
+  position: absolute;
+  display: none;
+  top: -34px;
+  min-width: 40px;
+  min-height: 30px;
+  line-height: 30px;
+  background: #485767;
+  box-shadow: 0 1px 4px 0 rgba(36,36,36,0.15);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+.rdw-option-wrapper .tip:before{
+  content: '';
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #485767;
+  border-radius: -1px;
+  position: absolute;
+  top: 30px;
+  left: 15px;
+}
+
+.rdw-option-wrapper:hover{
+  background-color: #F0F1F3;
+}
+
+.rdw-option-wrapper:hover .tip{
+  display: block;
+}
+
+.rdw-inline-wrapper .bold{
+  background-position: -283px -9px
+}
+.rdw-inline-wrapper .bold-active{
+  background-position: -309px -9px
+}
+.rdw-inline-wrapper .italic{
+  background-position: -281px -35px
+}
+.rdw-inline-wrapper .italic-active{
+  background-position: -307px -35px
+}
+.rdw-inline-wrapper .underline{
+  background-position: -282px -60px;
+}
+.rdw-inline-wrapper .underline-active{
+  background-position: -308px -60px;
+}
+.rdw-inline-wrapper .strikethrough{
+  background-position: -282px -87px;
+}
+.rdw-inline-wrapper .strikethrough-active{
+  background-position: -308px -87px;
+}
+.rdw-inline-wrapper .fontColor{
+  width: 100%;
+  height: 18px;
+  background-position: -283px -298px;
+}
+.rdw-inline-wrapper .fontBackground{
+  width: 100%;
+  height: 18px;
+  background-position: -284px -325px;
+}
+.rdw-inline-wrapper  .color-line{
+  width: 67%;
+  position: absolute;
+  height: 2px;
+  bottom: 4px;
+  left: 6px;
+}
+.rdw-inline-wrapper .selfColor{
+  display: none;
+  position: fixed;
+  z-index: 4;
+  top: 135px;
+  margin-left: -100px;
+  width: 256px;
+  min-height: 268px;
+  background: #FFFFFF;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.10);
+  cursor: default;
+}
+.rdw-inline-wrapper .selfColor .recentPick{
+  padding: 20px 20px;
+  width: 216px;
+  height: 25px;
+}
+.rdw-inline-wrapper .selfColor .recentPick .cleanColor{
+  position: absolute;
+  left: 10px;
+  width: 1px;
+  height: 29px;
+  top: -5px;
+  background: #F45C43;
+  transform-origin: center;
+  transform: rotate(45deg)
+}
+
+.rdw-inline-wrapper .selfColor .colorBox{
+  position: relative;
+  float: left;
+  margin-top: 8px;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.rdw-inline-wrapper .selfColor .tabBar{
+  padding: 0px 20px;
+  width: 216px;
+  height: 28px;
+}
+.rdw-inline-wrapper .selfColor .tabBar-item{
+  float: left;
+  width: 58px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  color: #344658;
+  text-align: center;
+  cursor: pointer;
+}
+.rdw-inline-wrapper .selfColor .tabBar-line{
+  float: left;
+  margin: 0 8px;
+  width: 1px;
+  height: 20px;
+  background: #E9EBEE;
+}
+.rdw-inline-wrapper .selfColor .color-container{
+  padding: 0px 20px;
+  width: 230px;
+}
+.richText-editWrapper .setItem{
+  position: absolute;
+  right: -6px;
+  top: 0px;
+  width: 10px;
+  height: 26px;
+  background-position: -308px -293px;
+}
+.richText-editWrapper .setItem:hover{
+  background-color: #F0F1F3;
+}
+
+.rdw-text-align-wrapper .left{
+  background-position: -282px -112px;
+}
+.rdw-text-align-wrapper .left-active{
+  background-position: -308px -112px;
+}
+.rdw-text-align-wrapper .center{
+  background-position: -282px -138px;
+}
+.rdw-text-align-wrapper .center-active{
+  background-position: -308px -138px;
+}
+.rdw-text-align-wrapper .right{
+  background-position: -282px -164px;
+}
+.rdw-text-align-wrapper .right-active{
+  background-position: -308px -164px;
+}
+.rdw-text-align-wrapper .justify{
+  background-position: -282px -190px;
+}
+.rdw-text-align-wrapper .justify-active{
+  background-position: -308px -190px;
+}
+.rdw-text-align-wrapper .justify .tip{
+  width: 70px;
+}
+.justify .tip:before{
+  left: 30px;
+}
+.rdw-text-align-wrapper .justify-active .tip{
+  width: 70px;
+}
+.justify-active .tip:before{
+  left: 30px;
+}
+
+.rdw-list-wrapper .unordered{
+  width: 100%;
+  height: 18px;
+  background-position: -284px -350px;
+}
+.rdw-list-wrapper .ordered{
+  width: 100%;
+  height: 18px;
+  background-position: -284px -376px;
+}
+.rdw-list-wrapper .tip {
+  width: 70px;
+}
+.rdw-list-wrapper .tip:before{
+  left: 30px;
+}
+
+.rdw-format-wrapper .format{
+  background-position: -283px -243px;
+}
+
+.rdw-format-wrapper .format .tip{
+  width: 70px;
+}
+.rdw-format-wrapper .format .tip:before{
+  left: 30px;
+}
+
+.rdw-format-wrapper .quote{
+  background-position: -283px -216px;
+}
+.rdw-format-wrapper .quote-active{
+  background-position: -309px -216px;
+}
+
+.listBox{
+  display: none;
+  position: fixed;
+  padding: 5px 0px;
+  top: 116px;
+  margin-left: -21px;
+  width: 130px;
+  min-height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,0.10);
+  border-radius: 2px;
+}
+.listBox li{
+  width: 100%;
+  height: 28px;
+}
+.listBox .pickBox{
+  float:left;
+  width: 28px;
+  height: 28px;
+}
+.listBox .content{
+  float:right;
+  width: 101px;
+  height: 28px;
+  cursor: pointer;
+}
+.listBox .content:hover{
+  color: #58A7F8 ;
+  background: #F8F9F9;
+}
+.listBox .picked {
+
+}
+
+.rdw-option-paragraph{
+  position: relative;
+  width: 150px;
+  height: 26px;
+}
+.rdw-option-paragraph .selectWrapper{
+  float: left;
+  width: 130px;
+  margin-top: 2px;
+  margin-left: 10px;
+  position: relative;
+}
+.rdw-option-paragraph .selectWrapper .selectBox{
+  width: 130px;
+  height: 22px;
+}
+
+.rdw-option-paragraph .selectWrapper .selectOption{
+  position: relative;
+  background: #FFFFFF;
+  width: 130px;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #DADEE2;
+  border-radius: 2px;
+}
+.rdw-option-paragraph .selectWrapper .selectBox .selectOption em {
+    font-size: 12px;
+    font-weight: 400;
+    color: #344658;
+    display: inline-block;
+    line-height: 22px;
+    padding-left: 12px;
+}
+
+.rdw-option-paragraph .selectWrapper .selectOption .selIcon{
+  background-position: -205px -674px;
+}
+.rdw-option-paragraph .selectWrapper .selectOption .selIcon-active{
+  position: absolute;
+  top: 0;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+  margin: 6px 4px;
+  float: right;
+  background-position: -205px -606px;
+}
+
+
+.rdw-option-paragraph .selectWrapper .optionUl {
+    position: absolute;
+    z-index: 3;
+    overflow-y: auto;
+    width: 130px;
+    height: 110px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    top: 24px;
+    left: 2px;
+}
+
+.rdw-option-paragraph .selectWrapper .optionUl ul li {
+    height: 22px;
+    line-height: 31px;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    font-size: 12px;
+    color: #485767;
+}
+
+.rdw-option-paragraph .selectWrapper  .optionUl ul li:hover {
+    background: #F8F8F9;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #288BF2;
+    cursor: pointer;
+}
+
+.sys-wallWrapper .bottomWrapper{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  background: #FFFFFF;
+  border-top: 1px solid #E9EBEE;
+}
+.sys-wallWrapper .bottomWrapper .backButt{
+  margin-top: 26px;
+  margin-right: 20px;
+  float: right;
+  width: 112px;
+  height: 30px;
+  font-size: 13px;
+  color: #58A7F8;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+.sys-wallWrapper .bottomWrapper .backButt:hover {
+  color: #288BF2;
+  text-decoration: underline;
+}
+
+.sys-wallWrapper .bottomWrapper .editButt {
+    margin-top: 26px;
+    margin-right: 160px;
+    float: right;
+    width: 112px;
+    height: 30px;
+    background: #288BF2;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.sys-wallWrapper .bottomWrapper .editButt :hover{
+  background: #58A7F8;
+}
+.sys-wallWrapper .bottomWrapper .editButt :active{
+  background: #288BF2;
+}
+
+.previewWrapper .editContainer{
+  position: absolute;
+  width: calc(100% - 190px);
+  margin: 35px 35px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.previewWrapper .infoBox{
+  margin-top: 15px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #344658;
+}
+.previewWrapper .infoBox .infoItem{
+  float: left;
+  width: 208px;
+  height: 20px;
+}
+
+.sys-wallWrapper .mt-loadingBox{
+  margin: 0 auto;
+  width: 100px;
+}
+
+.system-itemWrap .itemDel{
+  float: right;
+  width: 60px;
+  height: 30px!important;
+  line-height: 30px!important;
+  z-index: 0!important;
+}
+
+.system-itemWrap .itemSend:hover{
+  color: #58A7F8;
+/*   height: 28px!important;
+width: 58px!important;
+border: 1px solid #58A7F8;
+border-radius: 2px; */
+}

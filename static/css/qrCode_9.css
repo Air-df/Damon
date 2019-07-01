@@ -1,0 +1,885 @@
+/*äºŒç»´ç æŸ¥è¯¢*/
+
+.qr-container h2 {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #344658;
+}
+
+.qr-container .qrHistoryList {
+    width: 1042px;
+    margin: 40px auto 20px;
+}
+
+.qr-container .qrTableAreaWrap {
+    margin-top: 20px;
+}
+
+.qr-container .qrTableAreaWrap .qrTableArea {
+    background: #fff;
+    width: 100%;
+    max-height: 540px;
+    overflow: auto;
+    padding-bottom: 20px;
+    border-radius: 2px;
+    margin-bottom: 24px;
+}
+
+.qr-container .qrTableArea .tableList {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.qr-container .qrTableArea .tableList tbody {
+    border-bottom: none;
+}
+
+.qr-container .qrTableArea .tableList tbody tr {
+    height: 48px;
+    line-height: 48px;
+    color: #344658;
+    border-top: 1px solid #E9EBEE;
+}
+
+.qr-container .qrTableArea .tableList .tableTitle {
+    height: 48px;
+    line-height: 48px;
+    color: #B5BDC6;
+    line-height: 60px;
+    font-family: PingFangSC-Light;
+}
+
+.qr-container .qrTableArea .tableList .tableTitle th {
+    font-weight: lighter;
+}
+
+.qr-container .qrTableArea .tableList .tableTitle,
+.qr-container .qrTableArea .tableList tbody tr {
+    width: 100%;
+    display: flex;
+}
+
+.qr-container .qrTableArea .tableList tbody tr:hover {
+    cursor: pointer;
+    background: #F8F8F9;
+}
+
+.qr-container .qrTableArea .tableList tbody tr:hover .qrControl {
+    color: #288BF2;
+}
+
+.qr-container .qrTableArea .tableList .tableTitle th:nth-child(1),
+.qr-container .qrTableArea .tableList tbody tr td:nth-child(1) {
+    width: 10%;
+}
+
+.qr-container .qrTableArea .tableList .tableTitle th:nth-child(2),
+.qr-container .qrTableArea .tableList tbody tr td:nth-child(2),
+.qr-container .qrTableArea .tableList .tableTitle th:nth-child(3),
+.qr-container .qrTableArea .tableList tbody tr td:nth-child(3),
+.qr-container .qrTableArea .tableList .tableTitle th:nth-child(4),
+.qr-container .qrTableArea .tableList tbody tr td:nth-child(4) {
+    width: 20%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.qr-container .qrTableArea .tableList .tableTitle th:nth-child(5),
+.qr-container .qrTableArea .tableList tbody tr td:nth-child(5) {
+    width: 30%;
+}
+
+.qr-container .qrTableArea .tableList .tableTitle th:nth-child(6),
+.qr-container .qrTableArea .tableList tbody tr td:nth-child(6) {
+    width: 10%;
+}
+
+.qr-container .qrTableArea .tableList .tableTitle {
+    border-top: 1px solid transparent;
+}
+
+.qr-container .qrTableArea .tableList tbody tr:last-child {
+    border-bottom: 1px solid #e9ebee;
+}
+
+.qr-container .qrTableArea .tableList tbody tr:last-child:hover {
+    border-bottom: 1px solid #E9EBEE;
+}
+
+.qr-container .qrBtnBox .returnBtn {
+    background: #58A7F8;
+    border-radius: 2px;
+    color: #fff;
+    width: 125px;
+    height: 30px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    float: right;
+    line-height: 30px;
+}
+
+.qr-container .qrBtnBox .return {
+    color: #B5BDC6;
+    font-size: 13px;
+    float: right;
+    cursor: pointer;
+    line-height: 30px;
+    margin-right: 36px;
+}
+
+.qr-container .qrBtnBox .returnBtn:hover {
+    background: #288bf2;
+}
+
+.qr-container .qrBtnBox .return:hover {
+    color: #288bf2;
+    text-decoration: underline #288bf2;
+}
+
+.codeMaskWrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background: rgba(3, 3, 3, 0.45);
+}
+
+.codeMaskWrap .codeMaskBox {
+    width: 240px;
+    height: 331px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.codeMaskWrap .codeMaskBox .maskTitle {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #485767;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.codeMaskWrap .codeMaskBox .codePic {
+    width: 140px;
+    height: 140px;
+    border-radius: 1px;
+    margin: 0 auto 6px;
+}
+
+.codeMaskWrap .codeMaskBox .codeName {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+    padding: 0 10px;
+}
+
+.codeMaskWrap .codeMaskBox .downLoad {
+    background: #6AD298;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 90px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+}
+
+.codeMaskWrap .codeMaskBox .downLoad:hover {
+    background: #5DC189;
+}
+
+.codeMaskWrap .add-field-off {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -9px;
+    right: -42px;
+    background-position: -410px -521px;
+    cursor: pointer;
+}
+
+.qr-container .creatQrCodeWrap {
+    width: 924px;
+    margin: 57px 0 0 70px;
+}
+
+.qr-container .creatQrCodeWrap .creatQrCode {
+    background: #FFFFFF;
+    border-radius: 2px;
+    position: relative;
+    margin-bottom: 40px;
+    height: 358px;
+    padding: 20px 0 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.qr-container .creatQrCodeWrap .creatQrCode .innerTip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 13px;
+    color: #B5BDC6;
+}
+
+.qr-container .templateWrap {
+    width: 1120px;
+    margin: 58px 42px 0;
+}
+
+.qr-container .templateWrap .checkCodeBox .checkCode {
+    background: #58A7F8;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+    float: left;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.qr-container .templateWrap .checkCodeBox .checkCode:hover {
+    background: #288bf2;
+    border-color: #288bf2;
+    transition:  all .2s;
+    
+}
+
+.qr-container .templateWrap .qrTemplateList {
+    float: left;
+    width: 234px;
+    height: 212px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 3px 0 #DADEE2;
+    border-radius: 6px;
+    margin: 0 46px 42px 0;
+}
+
+.qr-container .templateWrap .qrTemplateList .modalTitle {
+    background: #B5BDC6;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 6px 6px 0 0;
+    color: #fff;
+}
+
+.qr-container .templateWrap .qrTemplateList .innerBox {
+    border-bottom: 1px dashed #DADEE2;
+    margin: 20px;
+    padding-bottom: 18px;
+    font-size: 13px;
+}
+
+.qr-container .templateWrap .qrTemplateList .innerBox .modalList {
+    height: 30px;
+    line-height: 30px;
+}
+
+.qr-container .templateWrap .qrTemplateList .innerBox .modalLabel {
+    float: left;
+    color: #B5BDC6;
+}
+
+.qr-container .templateWrap .qrTemplateList .innerBox .modalContent {
+    color: #485767;
+    float: left;
+    margin-left: 10px;
+}
+
+.qr-container .templateWrap .qrTemplateList .codeSet {
+    border: 1px solid #B5BDC6;
+    border-radius: 4px;
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    color: #B5BDC6;
+    margin: 0 47px;
+}
+
+.qr-container .templateWrap .qrTemplateList:hover {
+    box-shadow: 0 4px 10px 0 #B5BDC6;
+    transition:  all .2s;
+}
+
+.qr-container .templateWrap .qrTemplateList:hover .modalTitle {
+    background: #6AD298;
+    transition:  all .2s;
+
+}
+
+.qr-container .templateWrap .qrTemplateList:hover .codeSet {
+    border: 1px solid #6AD298;
+    color: #6AD298;
+    transition:  all .2s;
+
+}
+
+.qr-container .templateWrap .qrTemplateList .codeSet:hover {
+    background: #6AD298;
+    color: #fff;
+    transition:  all .2s;
+
+}
+
+.qr-container .templateWrap .qrTemplateList .ruleType {
+    width: 60px;
+}
+
+.qr-container .templateRuleWrap {
+    margin: 8px 42px 0;
+}
+
+.qr-container .templateRuleWrap .qrTemplateList {
+    height: 264px;
+    margin: 42px 46px 0px 0;
+}
+
+.qr-container .templateRuleWrap .qrTemplateList .innerBox .modalList {
+    height: auto;
+    line-height: 30px;
+}
+
+.qr-container .templateRuleWrap .qrTemplateList .innerBox {
+    height: 114px;
+}
+
+.qr-container .templateRuleWrap .returnBtnWrap button {
+    border: 1px solid #288BF2;
+    border-radius: 2px;
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #288bf2;
+    margin-left: 965px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.qr-container .templateRuleWrap .returnBtnWrap button:hover {
+    background: #288BF2;
+    border: 1px solid #288BF2;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.qr-container .qrBtnBox {
+    margin-bottom: 20px;
+    margin-top: 32px;
+}
+
+.qr-container .creatQrCodeWrap .selectWrap {
+    float: left;
+    margin: 0px 45px 20px 0px;
+    /*width: 280px;*/
+}
+
+
+.qr-container .creatQrCodeWrap .selectBox .label {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    margin-right: 12px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.qr-container .creatQrCodeWrap .code {
+    width: 210px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    color: #485767;
+    text-indent: 12px;
+    font-size: 13px;
+}
+
+.qr-container .creatQrCodeWrap input:focus {
+    border-color: #b5bdc6;
+}
+
+
+
+
+/*ç”ŸæˆäºŒç»´ç */
+
+.join-group-qrcode {
+    /*padding: 56px 0 0 70px;*/
+    height: 360px;
+}
+
+.join-group-qrcode .city-hospital-list {
+    padding: 24px 20px 24px 24px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: #ffffff;
+    /*overflow: hidden;*/
+}
+
+.join-group-qrcode .city-hospital-list .list {
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    max-height: 310px;
+    width: 220px;
+    height: 310px;
+    overflow: scroll;
+    margin-right: 50px;
+    float: left;
+}
+
+.join-group-qrcode .city-hospital-list .list em {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.join-group-qrcode .city-hospital-list .list>ul>li>ul>li {
+    position: relative;
+}
+
+.join-group-qrcode .city-hospital-list .list i {
+    right: 6px;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+
+.join-group-qrcode .city-hospital-list .list:nth-child(2) ul {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #383E46;
+    letter-spacing: 0;
+}
+
+.join-group-qrcode .city-hospital-list .list>p i {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: -1px;
+}
+
+.join-group-qrcode .city-hospital-list .list .unchecked {
+    background-position: -242px -303px;
+}
+
+.join-group-qrcode .city-hospital-list .list .checked {
+    background-position: -242px -323px;
+}
+
+.join-group-qrcode .city-hospital-list .list .open {
+    background-position: -165px -649px;
+}
+
+.join-group-qrcode .city-hospital-list .list .close {
+    background-position: -165px -669px;
+}
+
+.join-group-qrcode .city-hospital-list .list>p {
+    height: 33px;
+    border-bottom: 1px solid #DADEE2;
+    font-size: 13px;
+    color: #383E46;
+    letter-spacing: 0;
+    font-family: PingFangSC-Medium;
+    line-height: 33px;
+    padding: 0 8px;
+}
+
+.join-group-qrcode .city-hospital-list .list a {
+    color: #485767;
+    display: block;
+    width: 94%;
+    padding: 0 3%;
+    position: relative;
+}
+
+.join-group-qrcode .city-hospital-list .list>p span:nth-child(2) {
+    font-family: PingFangSC-Regular;
+    float: right;
+    margin-right: 21px;
+    position: relative;
+    cursor: pointer;
+}
+
+.join-group-qrcode .city-hospital-list .list>p span:nth-child(2) i {
+    right: -22px;
+    top: -2px;
+}
+
+.join-group-qrcode .city-hospital-list .list>ul>li {
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.join-group-qrcode .city-hospital-list .list>ul>li:hover a {
+    background: #F8F8F9;
+}
+
+.join-group-qrcode .city-hospital-list .list>ul>li>ul {
+    text-indent: 30px;
+    width: 100%;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #383E46;
+    letter-spacing: 0;
+    display: none;
+}
+
+.join-group-qrcode .city-hospital-list .list>ul>li>ul>li:hover {
+    background: #F8F8F9;
+}
+
+.city-hospital-list p .recommend {
+    width: 62px;
+    margin-right: 3px;
+    text-align: left;
+    display: inline-block;
+}
+
+.qr-container .pageFooter .prevPage:hover {
+    color: #288bf2;
+}
+
+
+
+/*æ‰€å±žéƒ¨é—¨*/
+
+.creatQrCodeWrap .selectWrapper .qrSelectBox {
+    float: left;
+    width: 210px;
+    height: 30px;
+    position: relative;
+}
+
+.creatQrCodeWrap .selectWrapper {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.creatQrCodeWrap .selectWrapper .selectLabel {
+    float: left;
+    height: 30px;
+    margin-right: 10px;
+    line-height: 30px;
+}
+
+.creatQrCodeWrap .selectWrapper .qrSelectBox .selectOption {
+    border-radius: 2px;
+    background: #FFFFFF;
+    width: 210px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #DADEE2 !important;
+}
+
+.creatQrCodeWrap .selectWrapper .qrSelectBox em {
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    color: #B5BDC6;
+    text-indent: 12px;
+}
+
+.creatQrCodeWrap .selectWrapper .qrSelectBox .selectTip {
+    color: #485767;
+}
+
+.creatQrCodeWrap .selectWrapper .qrSelectBox .optionUl {
+    width: 212px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    max-height: 165px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    z-index: 2;
+}
+
+.qr-container .qrSelectBox .optionUl .selected,
+.qrSelectBox .optionUl ul li>li:hover {
+    background: #F0F1F3;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #288BF2;
+    cursor: pointer;
+}
+
+.qrSelectBox .selectOption .selectArrow {
+    transform: rotate(180deg);
+}
+
+.qrSelectBox .selectOption .selIcon {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-position: -183px -478px;
+    float: right;
+}
+
+.qrSelectBox .optionUl ul li,
+.qrSelectBox .optionUl ul li span {
+    height: 30px;
+    line-height: 30px;
+    font-family: PingFangSC-Medium;
+    text-indent: 30px;
+    font-size: 12px;
+    color: #485767;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.qrSelectBox .optionUl ul .optionLi .openIcon:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon/iconography.png)no-repeat;
+    background-size: 600px 700px;
+    left: 11px;
+    top: 9px;
+    position: absolute;
+    display: inline-block;
+    background-position: -163px -668px;
+}
+
+.qrSelectBox .optionUl ul .optionLi .closeIcon:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../images/icon/iconography.png)no-repeat;
+    background-size: 600px 700px;
+    left: 11px;
+    top: 9px;
+    position: absolute;
+    display: inline-block;
+    background-position: -163px -648px;
+}
+
+.qrSelectBox .optionUl ul li>ul>li {
+    text-indent: 35px;
+    font-family: PingFangSC-Regular;
+}
+
+.qrSelectBox .optionUl .selected,
+.qrSelectBox .optionUl ul .optionLi>span:hover,
+.qrSelectBox .optionUl .selected,
+.qrSelectBox .optionUl ul>li>ul>li :hover {
+    background: #F0F1F3;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #288BF2;
+    cursor: pointer;
+    text-decoration: none;
+}
+@media screen and (max-width: 1279px){
+    .qr-container .templateWrap{
+        width:95%;
+    }
+    .qr-container .templateRuleWrap .returnBtnWrap button{
+    margin-right: 40px;
+    float: right;
+    margin-left: 0;
+    }
+    .qr-container .creatQrCodeWrap{
+        width: 652px;
+    }
+    .join-group-qrcode .city-hospital-list .list{
+        margin-bottom: 30px;
+    }
+    .join-group-qrcode{
+        height: 420px;
+    }
+    .qr-container .qrHistoryList{
+        width: 90%;
+    }
+    .qr-container .qr-cardEditWrapper .rightBox,.qr-container .qr-cardEditWrapper .leftBox{
+        margin-left: 30px;
+    }
+}
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    .qr-container .templateWrap .qrTemplateList {
+        width: 258px;
+        margin: 0 54px 42px 0;
+    }
+    .qr-container .templateWrap {
+        /*width: 1292px;
+        margin: 58px 50px 0 64px;*/
+        width: 1249px;
+        margin: 58px 0px 0 0px;
+        padding-left: 64px;
+    }
+    .qr-container .templateRuleWrap .returnBtnWrap button {
+        margin-left: 1084px;
+    }
+    .qr-container .checkCodeWrap .qrTemplateList {
+        height: 232px;
+    }
+    .qr-container .templateWrap .qrTemplateList .codeSet {
+        margin: 0 58px;
+    }
+    .qr-container .checkCodeWrap .qrTemplateList .innerBox {
+        margin: 20px 20px 30px 20px;
+    }
+    .qr-container .templateRuleWrap .qrTemplateList .codeSet {
+        margin: 0 60px;
+    }
+    .qr-container .qrHistoryList {
+        width: 1088px;
+        margin: 40px 80px 20px;
+    }
+    .qr-container .creatQrCodeWrap {
+        width: 1030px;
+        margin: 80px 0 0 90px;
+    }
+    .qr-container .creatQrCodeWrap .creatQrCode {
+        height: 378px;
+    }
+    .qr-container .templateRuleWrap {
+        margin: 8px 50px 0 64px;
+    }
+    .qr-container .templateRuleWrap .qrTemplateList {
+        margin: 42px 54px 0px 0;
+    }
+    .join-group-qrcode {
+        height: 378px;
+    }
+    .join-group-qrcode .city-hospital-list {
+        padding: 32px 114px 24px 34px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .join-group-qrcode {
+        height: 398px;
+    }
+    .qr-container .templateWrap .qrTemplateList {
+        width: 258px;
+        margin: 0 54px 42px 0;
+    }
+    .qr-container .templateWrap {
+        width: 1570px;
+        margin: 58px 100px 0;
+    }
+    .qr-container .templateRuleWrap .returnBtnWrap button {
+        margin-left: 1398px;
+    }
+    .qr-container .checkCodeWrap .qrTemplateList {
+        height: 232px;
+    }
+    .qr-container .checkCodeWrap .qrTemplateList .innerBox {
+        margin: 20px 20px 30px 20px;
+    }
+    .qr-container .templateRuleWrap .qrTemplateList .codeSet {
+        margin: 0 60px;
+    }
+    .qr-container .qrHistoryList {
+        width: 1238px;
+        margin: 40px 120px 0;
+    }
+    .qr-container .creatQrCodeWrap {
+        width: 1110px;
+        margin: 80px 0 0 120px;
+    }
+    .qr-container .creatQrCodeWrap .creatQrCode {
+        height: 398px;
+    }
+    .qr-container .templateRuleWrap {
+        margin: 8px 50px 0 64px;
+    }
+    .qr-container .templateRuleWrap .qrTemplateList {
+        margin: 42px 54px 0px 0;
+    }
+    .join-group-qrcode .city-hospital-list {
+        padding: 43px 184px 24px 44px;
+    }
+    .qr-container .templateWrap .qrTemplateList .codeSet {
+        margin: 0 58px;
+    }
+}
+
+.qr-container .down_all {
+    float: right;
+    height: 20px;
+    width: 76px;
+    border: 1px solid #6AD298;
+    border-radius: 2px;
+    color: #6AD298;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #6AD298;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.qr-container .down_all:hover {
+    background: #6AD298;
+    color: #fff;
+}
+
+/*æŸ¥çœ‹äºŒç»´ç æ¨¡ç³ŠæŸ¥è¯¢*/
+.qrHistoryList .searchQrcode{
+    display: inline-block;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    line-height: 30px;
+    background: #58A7F8;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-left: 20px;
+}
+.qrHistoryList .searchQrcode:hover{
+    background: #288BF2;;
+}
+.companyName{
+    float: left;
+}
+.companyName #searchQrcode{
+    height: 18px;
+    width: 216px;
+    padding: 6px 12px;
+    background: #FFFFFF;
+    border-radius: 2px;
+}

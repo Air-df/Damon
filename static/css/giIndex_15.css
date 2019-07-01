@@ -1,0 +1,1309 @@
+/*ç¾¤ç”¨æˆ·ç®¡ç†é»˜è®¤ç•Œé¢  */
+
+.gi-tablePage {
+    height: 100%;
+    width: 100%;
+    background: #F8F8F9;
+    overflow: auto;
+}
+
+.gi-singleOperate input::-webkit-outer-spin-button,
+.gi-singleOperate input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+   }
+.gi-singleOperate input[type="number"]{
+       -moz-appearance: textfield;
+   }
+
+.gi-batchOprate input::-webkit-outer-spin-button,
+.gi-batchOprate input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+}
+.gi-batchOprate input[type="number"]{
+          -moz-appearance: textfield;
+}
+.gi-tablePage .gi-filterWrapper {
+    height: 100px;
+    width: 1033px;
+    float: left;
+    padding-right: 87px;
+    padding-left: 40px;
+    background: #F8F8F9;
+}
+
+.gi-tablePage .selectWrapper {
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 12px;
+    height: 30px;
+    max-width: 270px;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .selectLabel,
+.gi-batchOprate .selectWrapper .selectLabel,
+.gi-singleOperate .selectWrapper .selectLabel {
+    float: left;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    line-height: 30px;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .titleInput,
+.gi-batchOprate .selectWrapper .titleInput,
+.gi-singleOperate .selectWrapper .titleInput {
+    border: 1px solid transparent;
+    height: 30px;
+    color: #485767;
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    line-height: 28px;
+    text-indent: 12px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    width: 210px;
+    margin-left: 6px;
+    box-sizing: border-box;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .titleInput:focus,
+.gi-batchOprate .selectWrapper .titleInput:focus,
+.gi-singleOperate .selectWrapper .titleInput:focus {
+    border: 1px solid #B5BDC6;
+}
+
+.gi-tablePage .gi-filterWrapper .selectBox,
+.gi-batchOprate .selectBox,
+.gi-singleOperate .selectBox {
+    position: relative;
+    width: 210px;
+    float: left;
+    margin-left: 6px;
+}
+
+/*.gi-tablePage .gi-filterWrapper .selectWrapper:nth-child(4) .selectBox{*/
+/*width: 150px;*/
+/*}*/
+.gi-tablePage .gi-filterWrapper .selectBox .selectOption,
+.gi-batchOprate .selectBox .selectOption,
+.gi-singleOperate .selectBox .selectOption {
+    background: #FFFFFF;
+    border-radius: 2px;
+    height: 30px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+
+.gi-tablePage .gi-filterWrapper .selectBox .selectOption em,
+.gi-batchOprate .selectBox .selectOption em,
+.gi-singleOperate .selectBox .selectOption em {
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    color: #B5BDC6;
+    display: inline-block;
+    line-height: 30px;
+    font-style: normal;
+    padding-left: 12px;
+}
+
+.gi-tablePage .gi-filterWrapper .selectBox .selectOption .selIcon,
+.gi-batchOprate .selectBox .selectOption .selIcon,
+.gi-singleOperate .selectBox .selectOption .selIcon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-position: -183px -479px;
+    float: right;
+}
+
+.gi-tablePage .gi-filterWrapper .selectBox .optionUl,
+.gi-batchOprate .selectBox .optionUl,
+.gi-singleOperate .selectBox .optionUl {
+    width: 210px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    z-index: 2;
+    max-height: 186px;
+    overflow: auto;
+}
+
+.gi-tablePage .gi-filterWrapper .selectBox .optionUl ul li,
+.gi-batchOprate .selectBox .optionUl ul li,
+.gi-singleOperate .selectBox .optionUl ul li {
+    height: 30px;
+    line-height: 30px;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    font-size: 12px;
+    color: #485767;
+}
+
+.gi-tablePage .gi-filterWrapper .selectBox .optionUl ul .selected,
+.gi-batchOprate .selectBox .optionUl ul .selected,
+.gi-singleOperate .selectBox .optionUl ul .selected {
+    background: #F0F1F3;
+    font-size: 12px;
+    color: #288BF2;
+}
+
+.gi-tablePage .gi-filterWrapper .selectBox .optionUl ul li:hover,
+.gi-batchOprate .selectBox .optionUl ul li:hover,
+.gi-singleOperate .selectBox .optionUl ul li:hover {
+    background: #F8F8F9;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #288BF2;
+    cursor: pointer;
+}
+
+.gi-tablePage .gi-filterWrapper .selectBox .optionUl ul li:first-child,
+.gi-batchOprate .selectBox .optionUl ul li:first-child,
+.gi-singleOperate .selectBox .optionUl ul li:first-child {
+    border-top: 1px solid transparent;
+}
+
+.gi-tablePage .gi-filterWrapper .selectBox .selectOption .selectTip,
+.gi-batchOprate .selectBox .selectOption .selectTip,
+.gi-singleOperate .selectBox .selectOption .selectTip {
+    color: #485767;
+}
+
+.gi-tablePage .gi-filterWrapper .searchBtn {
+    background: #58A7F8;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    height: 31px;
+    width: 110px;
+    text-align: center;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+.gi-tablePage .gi-filterWrapper .searchBtn:hover {
+    background: #288bf2;
+    border: 1px solid #288bf2;
+}
+
+.gi-tablePage .groupLstBox,
+.gi-singleOperate .groupLstBox,
+.gi-batchOprate .groupLstBox {
+    width: 210px;
+    max-height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+.gi-batchOprate .groupLstBox {
+    width: 250px;
+    left: 86px;
+    top: 28px;
+}
+
+.gi-tablePage .groupLstBox ul li,
+.gi-singleOperate .groupLstBox ul li,
+.gi-batchOprate .groupLstBox ul li {
+    height: 30px;
+    text-align: left;
+    text-indent: 14px;
+    line-height: 31px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #485767;
+    cursor: pointer;
+}
+
+.gi-tablePage .groupLstBox ul li:hover,
+.gi-singleOperate .groupLstBox ul li:hover,
+.gi-batchOprate .groupLstBox ul li:hover {
+    background: #F8F8F9;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #288BF2;
+    cursor: pointer;
+}
+
+.gi-tablePage .gi-filterWrapper .userType .selectBox,
+.gi-tablePage .gi-filterWrapper .userType .selectBox .optionUl {
+    width: 150px;
+}
+
+.gi-tablePage .gi-filterWrapper .userType .selectWrapper {
+    margin-right: 0;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .phoneBox {
+    width: 343px;
+    float: left;
+    height: 30px;
+    background: #FFFFFF;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    padding-left: 10px;
+    box-sizing: border-box;
+    overflow-x: auto;
+    margin-left: 6px;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .phoneBox span {
+    background: #F0F1F3;
+    border-radius: 4px;
+    text-indent: 8px;
+    width: 100px;
+    height: 17px;
+    line-height: 17px;
+    float: left;
+    font-size: 12px;
+    margin-right: 6px;
+    position: relative;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .phoneBox span em {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    right: 0px;
+    background-position: -274px -139px;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .phoneBox input {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #485767;
+    width: 100px;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .phoneBox .innerBox {
+    padding-top: 6px;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .phoneBox::-webkit-scrollbar {
+    width: 6px;
+    height: 2px;
+    display: none;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .phoneBox:hover::-webkit-scrollbar {
+    display: block;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .phoneBox::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 4px;
+    background-color: #B5BDC6;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .phoneBox::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .phoneBox::-moz-scrollbar-thumb {
+    background-color: #B5BDC6;
+}
+
+.gi-tablePage .gi-filterWrapper .selectWrapper .phoneBox::-o-scrollbar-thumb {
+    background-color: #B5BDC6;
+}
+
+.gi-tablePage .gi-filterWrapper .searchBtn {
+    width: 150px;
+    height: 30px;
+    background: #58A7F8;
+    border: 1px solid #58A7F8;
+    border-radius: 2px;
+    text-align: center;
+    float: right;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    line-height: 30px;
+    margin-top: 12px;
+}
+
+/*é»˜è®¤åˆ—è¡¨  */
+
+.gi-tablePage .gi-userList {
+    float: left;
+    background: #FFFFFF;
+    width: 100%;
+    min-width: 1160px;
+    /* box-sizing: border-box; */
+    height: calc(100% - 100px);
+    overflow: auto;
+}
+
+.gi-tablePage .gi-userList .tableArea {
+    width: 1067px;
+    float: left;
+    margin: 10px 0 0 35px;
+}
+
+.gi-tablePage .gi-userList .operateArea {
+    margin-top: 15px;
+    height: 18px;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #58A7F8;
+    width: 1090px;
+    margin-left: 46px;
+}
+
+.gi-tablePage .gi-userList .operateArea .sizeChange {
+    float: left;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+    margin-left: 8px;
+}
+
+.gi-tablePage .gi-userList .operateArea .sizeChange span {
+    cursor: pointer;
+}
+
+.gi-tablePage .gi-userList .operateArea .operate,
+.gi-tablePage .gi-userList .operateArea .export {
+    float: right;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    cursor: pointer;
+    margin-right: 40px;
+    position: relative;
+}
+
+.gi-tablePage .gi-userList .operateArea .operate::before,
+.gi-tablePage .gi-userList .operateArea .export::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/icon/iconography.png') no-repeat;
+    background-size: 600px 700px;
+    background-position: -300px -267px;
+    position: absolute;
+    left: -24px;
+    top: 0px;
+}
+
+.gi-tablePage .gi-userList .operateArea .export::before {
+    background-position: -229px -625px;
+    left: -27px;
+    top: -1px;
+}
+
+.gi-tablePage .gi-userList .operateArea .operate:hover {
+    color: #288BF2;
+}
+
+.gi-tablePage .gi-userList .operateArea .export {
+    margin-right: 44px;
+    color: #6AD298;
+}
+
+.gi-tablePage .gi-userList .operateArea .export:hover {
+    color: #5DC189;
+}
+
+.gi-tablePage .gi-userList .tableArea table {
+    width: 100%;
+    border-top: 1px solid #E9EBEE;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.gi-tablePage .gi-userList .tableArea table tbody tr {
+    cursor: pointer;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+}
+
+.gi-tablePage .gi-userList .tableArea table tbody tr:hover {
+    background: #F8F8F9;
+}
+
+.gi-tablePage .gi-userList .tableArea table td {
+    border-bottom: 1px solid #E9EBEE;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.gi-tablePage .gi-userList .tableArea table td:last-child:hover{
+    color: #288BF2;
+}
+
+.gi-tablePage .gi-userList .tableArea table td:first-child {
+    width: 70px;
+}
+
+.gi-tablePage .gi-userList .tableArea table thead td {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+}
+
+.gi-tablePage .gi-userList .tableArea table td .number {
+    position: relative;
+    padding-left: 26px;
+}
+
+.gi-tablePage .gi-userList .tableArea .checkBox {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background-position: -265px -306px;
+    top: 1px;
+    left: 8px;
+    display: none;
+}
+.gi-tablePage .gi-userList .tableArea tr:hover .checkBox{
+    display: block;
+}
+.gi-tablePage .gi-userList .tableArea .checked {
+    background-position: -265px -326px;
+    display: block;
+}
+
+.gi-tablePage .gi-userList .tableArea .detailBox {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.gi-tablePage .gi-userList .tableArea .detail {
+    position: absolute;
+    left: -25%;
+    top: 38px;
+    padding: 10px 14px;
+    background: #485767;
+    box-shadow: 0 1px 4px 0 rgba(36, 36, 36, 0.24);
+    border-radius: 4px;
+    width: 72px;
+    text-align: left;
+    z-index: 2;
+    color: #FFFFFF;
+}
+
+.gi-tablePage .gi-userList .tableArea .detail::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 34%;
+    top: -5px;
+    transform: translateX(-50%) rotate(-45deg);
+    background: #485767;
+    box-shadow: 0 1px 4px 0 rgba(36, 36, 36, 0.24);
+    border-radius: 2px;
+}
+
+.gi-tablePage .gi-userList .tableArea .detail::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #485767;
+    border-radius: 4px;
+}
+
+/*æ‰¹é‡æ“ä½œç¾¤ç”¨æˆ·åˆ—è¡¨  */
+
+.gi-batchOprate {
+    height: 100%;
+    overflow: auto;
+}
+
+.gi-batchOprate .inner {
+    width: 990px;
+    margin: 40px 0 0 70px;
+}
+
+.gi-batchOprate .inner p {
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #344658;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.gi-batchOprate .editWrapper {
+    width: 100%;
+    height: 550px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    padding: 24px 0px 0 28px;
+    box-sizing: border-box;
+}
+.gi-batchOprate .taskComInfoWrapper span{
+  float: left;
+  display: block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.gi-batchOprate .taskComInfoWrapper :last-child{
+  width: 136px;
+}
+.gi-batchOprate .taskComInfoWrapper .title{
+
+}
+.gi-batchOprate .editWrapper .welcomeSet{
+  margin-left: 8px;
+  float: left;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #5D90C5;
+  cursor: pointer;
+}
+
+.gi-batchOprate .editWrapper .welcomeSet:hover{
+  text-decoration: underline;
+}
+
+.gi-batchOprate .groupList {
+    width: 100%;
+    height: 420px;
+    overflow-y: auto;
+    background: #FFFFFF;
+    border-radius: 2px;
+    padding: 0 26px;
+    box-sizing: border-box;
+}
+
+.gi-batchOprate .groupList table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.gi-batchOprate .groupList table td {
+    height: 39px;
+    vertical-align: middle;
+    border-bottom: 1px solid #E9EBEE;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #B5BDC6;
+}
+
+.gi-batchOprate .groupList table tbody td {
+    height: 35px;
+    color: #344658;
+}
+
+.gi-batchOprate .groupList table .remove {
+    cursor: pointer;
+}
+
+.gi-batchOprate .groupList table .remove:hover {
+    color: #F75A5A;
+}
+
+.gi-batchOprate .editWrapper .icon-edit,
+.gi-singleOperate .editWrapper .icon-edit {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-position: -183px -599px;
+    right: 10px;
+    top: 6px;
+}
+
+.gi-batchOprate .editWrapper .tip {
+    color: #F75A5A;
+    position: absolute;
+    left: 88px;
+    top: -22px;
+}
+
+/* æ‰¹é‡ç¼–è¾‘é€‰æ‹©æ¡† */
+.gi-batchOprate .leftBox {
+    width: 480px;
+    /* height: 48%; */
+    float: left;
+}
+.gi-batchOprate .bubbleArea .bubbleBox{
+    width: 480px;
+    float: left;
+}
+/* .gi-batchOprate .bubbleArea .leftBox:nth-child(2){
+    width: 480px;
+    height: 48%;
+    float: left;
+    clear: both;
+}
+.gi-batchOprate .lastLeftBox {
+    width: 50%;
+    height: 50%;
+    float: left;
+    margin-top: -170px;
+} */
+
+.gi-batchOprate .rightBox {
+    width: 50%;
+    float: right;
+}
+
+.gi-batchOprate .selectWrapper,
+.gi-singleOperate .selectWrapper {
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gi-batchOprate .selectWrapper {
+    clear: left;
+}
+
+.gi-batchOprate .selectWrapper .selectLabel,
+.gi-singleOperate .selectWrapper .selectLabel {
+    width: 66px;
+    margin-right: 13px;
+    text-align: right;
+}
+
+.gi-batchOprate .selectWrapper .titleInput,
+.gi-singleOperate .selectWrapper .titleInput {
+    padding-right: 30px;
+    border: 1px solid rgb(218, 222, 226);
+}
+
+.gi-batchOprate .confirmBtn,
+.gi-singleOperate .confirmBtn {
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    float: right;
+    background: #58A7F8;
+    border-radius: 4px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.gi-batchOprate .confirmBtn:hover,
+.gi-singleOperate .confirmBtn:hover {
+    background: #288BF2;
+}
+
+.gi-batchOprate .cancelBtn,
+.gi-singleOperate .cancelBtn {
+    width: 42px;
+    height: 18px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    float: right;
+    margin-top: 46px;
+    margin-right: 30px;
+    text-align: center;
+    cursor: pointer
+}
+
+.gi-batchOprate .cancelBtn:hover,
+.gi-singleOperate .cancelBtn:hover {
+    color: #5D90C5;
+    text-decoration: underline;
+}
+
+/*å•ä¸ªç”¨æˆ·ç¼–è¾‘  */
+
+.gi-singleOperate {
+    height: 100%;
+    background: #F8F8F9;
+    min-height: 550px;
+    overflow-x: auto;
+}
+
+.gi-singleOperate .userEditBox {
+    width: 940px;
+    margin-top: 40px;
+    margin-left: 110px;
+    float: left;
+}
+
+.gi-singleOperate .userInfo {
+    width: 100%;
+    height: 400px;
+    background: #FFFFFF;
+    border-radius: 2px;
+}
+
+.gi-singleOperate .userInfo .userName {
+    background: #E9EBEE;
+    border-radius: 4px 4px 0 0;
+    height: 42px;
+    position: relative;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #485767;
+    text-indent: 50px;
+    line-height: 42px;
+}
+
+.gi-singleOperate .userInfo .removeUser {
+    width: 64px;
+    height: 20px;
+    border: 1px solid #F75A5A;
+    border-radius: 4px;
+    float: right;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #F75A5A;
+    text-indent: 0;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.gi-singleOperate .userInfo .removeUser:hover {
+    color: #FFFFFF;
+    background: #F75A5A;
+}
+
+/*selectBox style æ›´æ”¹  */
+
+.gi-singleOperate .selectWrapper {
+    margin-bottom: 20px;
+}
+
+.gi-singleOperate .selectWrapper .selectLabel {
+    width: 86px;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #344658;
+}
+
+.gi-singleOperate .selectBox .selectOption {
+    border: 1px solid #DADEE2 !important;
+}
+
+/*æç¤ºä¿¡æ¯  */
+
+.tipWrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.tipWrapper .tipBox {
+    padding: 0 40px;
+    height: 160px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tipWrapper .tipBox p {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #344658;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.tipWrapper .tipBox .confirmBtn {
+    width: 90px;
+    height: 36px;
+    background: #6AD298;
+    border-radius: 4px;
+    line-height: 36px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin: 18px auto 0;
+    cursor: pointer;
+}
+
+.tipWrapper .tipBox .confirmBtn:hover {
+    background: #5DC189;
+}
+
+.tipWrapper .tipBox .closeBtn {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background-position: -262px -43px;
+    cursor: pointer;
+}
+
+/***jiayi's css***/
+.gi-singleOperate .inner {
+    width: 965px;
+    margin: 50px 80px;
+}
+
+.gi-singleOperate .editWrapper {
+    width: 100%;
+    /* height: 860px; */
+    background: #FFFFFF;
+}
+
+.gi-singleOperate .editWrapper .leftArea {
+    width: 350px;
+    float: left;
+    margin: 30px 0 0 20px;
+}
+
+.gi-singleOperate .selectWrapper .numItem {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 6px;
+}
+
+.gi-singleOperate .selectWrapper .textItem {
+    float: left;
+    width: 170px;
+    /*min-height: 30px;*/
+    max-height: 140px;
+    background: #F8F8F9;
+    border-radius: 2px;
+    margin-left: 6px;
+    overflow: auto;
+    padding: 20px;
+}
+
+.gi-singleOperate .selectWrapper .textItem .innerTip .tipLabel {
+    display: inline-block;
+    vertical-align: top;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #344658;
+    letter-spacing: 0;
+}
+
+.gi-singleOperate .selectWrapper .textItem .innerTip .tipMessage {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.gi-singleOperate .selectWrapper .textItem .innerTip .tipMessage ul li {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+    letter-spacing: 0;
+}
+
+.gi-singleOperate .editWrapper .rightArea {
+    width: 423px;
+    float: left;
+    margin: 30px 0 0 92px;
+}
+
+/* æ–°å¢žtag */
+.gi-singleOperate .bubbleBox .bubbleLabel,
+.gi-batchOprate .bubbleBox .bubbleLabel {
+    width: 86px;
+    line-height: 30px;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #344658;
+    float: left;
+    text-align: right;
+}
+
+.gi-batchOprate .bubbleBox .bubbleLabel {
+    width: 66px;
+}
+
+.gi-singleOperate .bubbleBox .addInput,
+.gi-batchOprate .bubbleBox .addInput {
+    height: 30px;
+    color: #485767;
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    line-height: 30px;
+    text-indent: 12px;
+    border-radius: 2px;
+    width: 250px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #DADEE2;
+    border-right: none;
+    float: left;
+}
+
+.gi-singleOperate .bubbleBox .addInput:focus,
+.gi-batchOprate .bubbleBox .addInput:focus {
+    border: 1px solid #B5BDC6;
+    border-right: none;
+}
+
+.gi-singleOperate .bubbleBox .addBtn,
+.gi-batchOprate .bubbleBox .addBtn {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    background: #DADEE2;
+    border-radius: 0 2px 2px 0;
+    float: left;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.gi-singleOperate .bubbleBox .addBtn:hover,
+.gi-batchOprate .bubbleBox .addBtn:hover {
+    background: #58A7F8;
+}
+
+.gi-singleOperate .bubbleBox .itemsBox,
+.gi-batchOprate .bubbleBox .itemsBox {
+    float: left;
+    width: 276px;
+    margin: 0 0 20px 106px;
+}
+
+.gi-singleOperate .bubbleBox .itemsTip,
+.gi-batchOprate .bubbleBox .itemsTip {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #F75A5A;
+    height: 20px;
+    line-height: 20px;
+}
+
+.gi-singleOperate .bubbleBox .innerBox,
+.gi-batchOprate .bubbleBox .innerBox {
+    width: 100%;
+    height: 76px;
+    background: #FFFFFF;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    padding: 12px;
+    overflow-y: auto;
+}
+
+.gi-batchOprate .bubbleBox .itemsBox {
+    margin: 0px 0 20px 86px;
+}
+
+.gi-singleOperate .bubbleBox .itemsBox .blueItem,
+.gi-batchOprate .bubbleBox .itemsBox .blueItem {
+    height: 20px;
+    border: 1px solid #D8E7F9;
+    border-radius: 100px;
+    color: #58A7F8;
+    float: left;
+    margin: 2px 20px 0 0;
+    padding: 0 5px 0 10px;
+    text-align: center;
+}
+
+.gi-singleOperate .bubbleBox .itemsBox .redItem,
+.gi-batchOprate .bubbleBox .itemsBox .redItem {
+    height: 20px;
+    border: 1px solid #F0F1F3;
+    border-radius: 100px;
+    color: #F75A5A;
+    float: left;
+    margin: 2px 20px 0 0;
+    padding: 0 5px 0 10px;
+    text-align: center;
+}
+
+.gi-singleOperate .bubbleBox .itemsBox .icon-blueDelete,
+.gi-batchOprate .bubbleBox .itemsBox .icon-blueDelete {
+    width: 16px;
+    height: 16px;
+    background-position: -229px -665px;
+    margin-top: 2px;
+    float: right;
+    cursor: pointer;
+}
+
+.gi-singleOperate .bubbleBox .itemsBox .icon-redDelete,
+.gi-batchOprate .bubbleBox .itemsBox .icon-redDelete {
+    width: 16px;
+    height: 16px;
+    background-position: -229px -681px;
+    margin-top: 2px;
+    float: right;
+    cursor: pointer;
+}
+
+/***å±å¹•é€‚é…***/
+@media screen and (min-width: 1280px) {
+    .gi-tablePage .gi-userList .tableArea {
+        width: 92%;
+        float: left;
+        margin: 10px 0 0 3%;
+    }
+
+    .gi-tablePage .gi-userList .operateArea {
+        margin-top: 15px;
+        height: 18px;
+        font-family: PingFangSC-Medium;
+        font-size: 13px;
+        color: #58A7F8;
+        width: 92%;
+        margin-left: 4%;
+    }
+
+    .gi-tablePage .gi-filterWrapper {
+         height: 100px;
+         width: 90%;
+         float: left;
+         padding: 0 7% 0 3%;
+         background: #F8F8F9;
+    }
+
+    .gi-tablePage .gi-filterWrapper {
+        height: 100px;
+        width: 89.1%;
+        float: left;
+        padding: 0 7.5% 0 3.5%;
+        background: #F8F8F9;
+    }
+    .gi-singleOperate .inner{
+        width: 83.2%;
+        margin:50px 7%;
+    }
+    .gi-singleOperate .editWrapper .leftArea{
+        width: 350px;
+        float: left;
+        margin:30px 0 0 2%;
+    }
+    .gi-singleOperate .editWrapper .rightArea{
+        width: 423px;
+        float: left;
+        margin: 30px 0 0 9.6%;
+    }
+    .gi-batchOprate .inner{
+        width: 86.4%;
+        margin:40px 0 0 6%;
+    }
+}
+
+
+.gi-singleOperate .mt-edit-step,.gi-batchOprate .mt-edit-step{
+  text-align: left;
+  line-height: 64px;
+  text-indent: 60px;
+}
+
+.gi-singleOperate .taskComInfoWrapper span{
+  float: left;
+  display: block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.gi-singleOperate .taskComInfoWrapper :last-child{
+  width: 136px;
+}
+.gi-singleOperate .leftArea .welcomeSet{
+  margin-right: -5px;
+  float: right;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #5D90C5;
+  cursor: pointer;
+}
+.gi-singleOperate .leftArea .welcomeSet:hover{
+  text-decoration: underline;
+}
+
+.gi-singleOperate .taskInnerBox .tipBox{
+  margin-top: 10px;
+  width: 100%;
+  height: 18px;
+  text-align: right;
+  font-size: 14px;
+  color: #B5BDC6;
+}
+.gi-batchOprate .taskInnerBox .tipBox{
+  margin-top: 10px;
+  width: 100%;
+  height: 18px;
+  text-align: right;
+  font-size: 14px;
+  color: #B5BDC6;
+}
+
+/* å•ä¸ªç¼–è¾‘æ–°å¢žç¾¤å…¬å‘Š */
+/* å›¾æ–‡ç¼–è¾‘ä¸­çš„æ–‡æœ¬ç¼–è¾‘ */
+
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    color: #B5BDC6;
+    display: block;
+}
+
+.gi-singleOperate .rightArea .gi-activeContent:focus,
+.gi-batchOprate .leftBox .gi-activeContent:focus{
+    border-color: #b5bdc6!important;
+}
+
+.gi-singleOperate .rightArea .gi-activeContent,
+.gi-batchOprate .leftBox .gi-activeContent {
+    position: relative;
+    margin-left: 106px;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    width: 300px;
+    height: 100px;
+    background: white;
+}
+
+.gi-batchOprate .leftBox .gi-activeContent{
+    margin-left: 85px;
+}
+
+.gi-singleOperate .rightArea .gi-activeContent pre,
+.gi-batchOprate .leftBox .gi-activeContent pre {
+    padding-top: 10px;
+    margin-left: 11px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-wrap: break-word;
+    word-break: normal;
+    white-space: normal;
+    font-size: 13px;
+    width: 280px;
+    color: #485767;
+    height: 68px;
+}
+
+.gi-singleOperate .rightArea .gi-activeContent .qqfaceBox,
+.gi-batchOprate .leftBox .gi-activeContent .qqfaceBox{
+    display: block !important;
+    width: 290px !important;
+    height: 20px !important;
+    position: absolute !important;
+    z-index: 4 !important;
+    right: 10px !important;
+    bottom: 0px !important;
+}
+
+.gi-singleOperate .rightArea .gi-activeContent .counter,
+.gi-batchOprate .leftBox .gi-activeContent .counter {
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    text-align: right;
+    font-size: 13px;
+    color: #B5BDC6;
+    width: 54px;
+    height: 18px;
+}
+
+.gi-singleOperate .rightArea .gi-activeContent .gi-faceBox,
+.gi-batchOprate .leftBox .gi-activeContent .gi-faceBox {
+    position: absolute;
+    display: none;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: 2;
+    left: -110px;
+    top: -13px;
+    background-color: white;
+    width: 474px;
+    height: 232px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .4s;
+    transform: scale(0.7);
+}
+
+.gi-singleOperate .rightArea .gi-activeContent .gi-faceBox::before,
+.gi-batchOprate .leftBox .gi-activeContent .gi-faceBox::before {
+    width: 14px;
+    height: 14px;
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    box-shadow: -2px -2px 3px rgba(230, 230, 230, 0.87);
+    position: absolute;
+    z-index: 0;
+    top: -7px;
+    right: 11.5%;
+    background: #fff;
+    content: "";
+    border-radius: 2px;
+}
+
+.gi-singleOperate .rightArea .gi-activeContent .toolBtn,
+.gi-batchOprate .leftBox .gi-activeContent .toolBtn {
+    z-index: 4;
+    width: 20px;
+    height: 20px;
+    float: left;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.gi-singleOperate .rightArea .gi-activeContent .toolBtn,
+.gi-batchOprate .leftBox .gi-activeContent .toolBtn {
+    background-position: -262px -343px;
+}
+
+.gi-singleOperate .rightArea .gi-activeContent .toolBtn:hover,
+.gi-batchOprate .leftBox .gi-activeContent .toolBtn:hover {
+    background-position: -262px -363px;
+}
+
+
+/* æ–°å¢žé”™è¯¯æç¤ºstyle */
+.gi-singleOperate .error{
+  position: absolute;
+  left: 353px;
+  top: 5px;
+  width: 148px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #F75A5A;
+}
+
+.gi-singleOperate .error .icon{
+  margin-top: -7px;
+  float: left;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: -161px -625px;
+  transform: translateY(5px);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="/static/css/common_0.css">
+    <link rel="stylesheet" href="/static/css/index_1.css">
+    <link rel="stylesheet" href="/static/css/tmIndex_11.css">
+    <link rel="stylesheet" href="/static/css/ucIndex_12.css">
+    <link rel="stylesheet" href="/static/css/pcIndex_13.css">
+    <title>登录页 | 栗子云</title>
+    <link href="/static/static_inside/css/bundle.e9f3923a.css" rel="stylesheet">
+</head>
+<body>
+<div class="app" id="root">
+    <div class="mainLayout">
+        <div style="height: 100%;">
+            <div style="height: 100%;">
+                <div class="InitMain-box"><em class="logo"></em>
+                    <p class="title">欢迎使用栗子云</p>
+                    <div class="initStep-box">
+                        <div class="initStep-title-box">
+                            <div class="init-step"><p class="step-icon">1</p>
+                                <p class="step-txt">加小助手为好友</p></div>
+                            <em></em>
+                            <div class="init-step"><p class="step-icon gray">2</p>
+                                <p class="step-txt gray">邀请小助手进群</p></div>
+                        </div>
+                        <div class="lzc-nodata-share ">
+                            <div class="lzc-prompt-box guide-msg-box">
+                                <div class="lzc-flex-box"><em></em>
+                                    <div class="txtBox"><p class="contentTxt">使用栗子云管理你的微信群前，请先邀请小助手进入你的微信群，<span
+                                            class="green">扫描下方二维码</span>，获取你的小助手并按照提示私聊发送验证码。</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="qrcode-box"><img alt=""
+                                                     src="{{qrc_path}}">
+                        </div>
+                        <p class="verificationCode">验证码：<span>{{captcha_num}}</span></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="app" id="modal-root"></div>
+<div class="app" id="msg-root">
+    <div class="msg-modal">
+        <div class="msg-list"></div>
+    </div>
+</div>
+<div id="qb-sougou-search" style="display: none; opacity: 0;"><p>搜索</p>
+    <p class="last-btn">复制</p>
+</div>
+<script>
+    var user_name = window.location.href.split('/')[4];
+    var ws = new WebSocket('{{websocket_host}}');
+    var info_dct = {'from_user': user_name, 'msg_type': 1};
+
+    ws.onmessage = function (event) {
+        var dct = JSON.parse(event.data);//序列化
+        var is_success = dct.is_success;
+        var msg = dct.msg;
+        console.log(is_success);
+        console.log(user_name);
+
+        if (is_success==1){
+            window.alert(msg);
+            window.location.href = window.location.href + '/control'
+        }
+    };
+    ws.onopen = function(){
+        ws.send(JSON.stringify(info_dct));
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,442 @@
+.user-list-content{
+    background: #F8F8F9;
+    height: calc(100% - 60px);
+    width: 100%;
+    overflow: auto;
+}
+.user-list-content .user-list{
+    padding-top: 51px;
+    padding-left: 156px;
+    padding-right: 40px;
+    width: 850px;
+}
+.user-list-content .user-list>a{
+    display: block;
+    height: 28px;
+    width: 80px;
+    line-height: 28px;
+    text-align: center;
+    background: #6AD298;
+    border-radius: 2px;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-bottom: 11px;
+}
+.user-list-content .user-list>a:hover{
+    background: #5DC189;
+}
+.user-list-content .user-list .user-list-table{
+    background: #ffffff;
+    border-radius: 2px;
+    padding: 10px 26px 30px 26px;
+}
+.user-list-content .user-list .user-list-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.user-list .user-list-table table th{
+    height: 48px;
+    line-height: 48px;
+    font-family: PingFangSC-Regular;
+        font-weight: 500;
+    font-size: 13px;
+    color: #B5BDC6;
+    letter-spacing: 0;
+    text-align: center;
+}
+.user-list .user-list-table table td{
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+    letter-spacing: 0;
+}
+.user-list .user-list-table table tbody tr{
+    border-top: 1px solid #E9EBEE;;
+    width: 100%;
+    cursor: pointer;
+}
+
+.user-list .user-list-table tbody tr td>span{
+    /*float: left;*/
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+}
+.user-list .user-list-table tbody tr:hover{
+    background: #F8F8F9;
+}
+
+/*.user-list .user-list-table table tr:last-child:hover{
+    border-bottom: 1px solid #E9EBEE;
+}*/
+
+.user-list .user-list-table tbody tr td>span:nth-child(1):hover{
+    color: #288bf2;
+}
+.user-list .user-list-table tbody tr:hover .edit{
+color: #288bf2;
+}
+.user-list .user-list-table tbody .stopUse:hover{
+    color: #F75A5A;
+}
+.user-list .user-list-table tbody .startUse:hover{
+    color: #6AD298;
+}
+/*è§’è‰²æƒé™*/
+.user-power-list{
+    background: #F8F8F9;
+    height: calc(100% - 60px);
+    padding-left: 70px;
+    padding-top: 31px;
+}
+.user-power-list>.userNameSet{
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+.user-power-list .userNameSet p{
+    float: left;
+    margin-right: 50px;
+}
+.user-power-list .userNameSet .clearFloat{
+    clear: both;
+}
+.user-power-list .userNameSet p>input{
+    background: #ffffff;
+    height: 28px;
+    font-size: 13px;
+    width: 210px;
+        color: #485767;
+    padding-left: 12px;
+    border:1px solid #ffffff;
+    border-radius: 2px;
+}
+.user-power-list .userNameSet p>input:focus{
+    border:1px solid #b5bdc6;
+}
+.user-power-list>.userNameSet p>input::placeholder{
+    color: #B5BDC6;
+}
+.user-power-list .user-power-set>.userNameSet{
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    letter-spacing: 0;
+    margin-bottom: 12px;
+}
+.user-power-list .user-power-set .userPower{
+    width: 924px;
+    margin-top: 12px;
+}
+.user-power-set p{
+    color: #485767;
+}
+.user-power-set .set-power{
+    width: 874px;
+    height: 340px ;
+    background: #ffffff;
+    padding: 30px 0 50px 50px;
+}
+.user-power-set .set-power ul li{
+    cursor: pointer;
+}
+.user-power-set .set-power>ul>li>span{
+    display: block;
+    position: relative;
+    font-family: PingFangSC-Medium;
+    font-size: 12px;
+    color: #485767;
+    letter-spacing: 0;
+    height: 28px;
+    line-height: 28px;
+}
+.user-power-set .set-power>ul>li i{
+    position: relative;
+    float: left;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 4px;
+}
+.user-power-set .set-power>ul>li .open{
+    background-position: -183px -123px;
+}
+.user-power-set .set-power>ul>li .close{
+    background-position: -183px -123px;
+    transform: rotate(-90deg);
+}
+.user-power-set .set-power>ul>li>span:hover{
+    background: #F8F8F9;
+    color: #288bf2;
+}
+.user-power-set .set-power .set-power-detail span{
+    display: block;
+    padding-left: 10px;
+}
+.user-power-set .set-power .set-power-detail li>span:hover {
+    background: #F8F8F9;
+}
+.user-power-set .set-power>ul{
+    padding-top: 5px;
+    height: 335px;
+    width: 240px;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    overflow-y:auto;
+}
+.user-power-set .set-power .set-power-detail li{
+    line-height: 24px;
+}
+.user-power-set .set-power .set-power-detail .lastDetail li{
+    padding-left: 40px;
+}
+.user-power-set .set-power .set-power-detail .lastDetail li:hover{
+    background: #F8F8F9;
+}
+.user-power-set .set-power>ul>li em{
+    position: absolute;
+    right:12px;
+    top:0;
+    width: 20px;
+    height: 20px;
+    background-position: -242px -303px;
+}
+.user-power-set .set-power>ul>li>span>em{
+    top: 4px;
+}
+.user-power-set .set-power .set-power-detail li>em{
+    top: 2px;
+}
+.user-power-set .set-power>ul>li .checked{
+    background-position: -242px -323px;
+}
+.user-power-list .user-power-set .userPowerBottom{
+    padding-top: 56px;
+}
+.user-power-list .user-power-set .userPowerBottom a{
+    float: right;
+}
+.user-power-list .user-power-set .userPowerBottom button{
+    float: right;
+    cursor: pointer;
+}
+.user-power-list .user-power-set .userPowerBottom .saveList{
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    background: #58A7F8;
+    border-radius: 4px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+}
+.user-power-list .user-power-set .userPowerBottom .saveList:hover{
+    background: #288bf2;
+    border-color: #288bf2;
+}
+.user-power-list .user-power-set .userPowerBottom .cancelList{
+    height: 30px;
+    width: 100px;
+    line-height: 30px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    letter-spacing: 0;
+    text-align: center;
+}
+.user-power-list .user-power-set .userPowerBottom .cancelList:hover{
+    color: #288bf2;
+    text-decoration: underline #288bf2;
+}
+.user-power-list .selectWrapper {
+    float: left;
+    margin-bottom: 20px;
+}
+.user-power-list.selectWrapper:nth-child(2n) {
+    margin-left: 50px;
+}
+.user-power-list .selectWrapper:nth-child(6) {
+    margin-left: 0;
+    clear: both;
+}
+.user-power-list .selectWrapper .selectLabel {
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #485767;
+    height: 30px;
+    line-height: 30px;
+    width: 60px;
+    float: left;
+}
+.user-power-list .selectWrapper .titleInput {
+    border: 1px solid transparent;
+    height: 28px;
+    color: #485767;
+    font-family: PingFangSC-Light;
+    font-size: 13px;
+    line-height: 28px;
+    text-indent: 12px;
+    background: #FFFFFF;
+    width: 208px;
+    float: left;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+}
+.user-power-list .selectWrapper .selectBox {
+    float: left;
+    width: 210px;
+    height: 30px;
+    position: relative;
+}
+.user-power-list .selectWrapper .selectBox .selectOption {
+    border-radius: 2px;
+    background: #FFFFFF;
+    width: 208px;
+    height: 28px;
+    line-height: 28px;
+    /*border: 1px solid #DADEE2 !important;*/
+}
+.user-power-list .selectWrapper .selectBox em {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #B5BDC6;
+    text-indent: 12px;
+}
+.user-power-list .selectWrapper .selectBox .selectTip {
+    color: #485767;
+}
+.user-power-list .selectWrapper .selectBox .optionUl {
+    width: 210px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    transition: all .3s;
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    z-index: 2;
+    max-height: 166px;
+    overflow: auto;
+}
+.user-power-list .selectWrapper .selectBox #fail {
+    border: 1px solid #F75A5A !important;
+}
+.user-power-list .userNameSet #fail{
+    border: 1px solid #F75A5A !important;
+}
+.user-power-list .selectWrapper .roleWord {
+    float: left;
+    width: 210px;
+    min-height: 30px;
+    background: #F0F1F3;
+    border-radius: 2px;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    font-family: PingFangSC-Medium;
+    font-size: 13px;
+    color: #B5BDC6;
+}
+.user-power-list .selectWrapper .roleWord div {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #344658;
+    margin: 4px 0;
+}
+.user-power-list .selectWrapper textArea {
+    width: 540px;
+    height: 88px;
+    border: 1px solid #DADEE2;
+    border-radius: 2px;
+    resize: none;
+}
+.sureMask{
+    position: absolute;
+    background: rgba(0,0,0,0.45);
+    left:0;
+    top:0;
+    z-index: 999;
+}
+.sureMask .sureStop{
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px 0 rgba(0,0,0,0.24);
+    border-radius: 2px;
+    width: 210px;
+    height: 160px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.sureMask .sureStop em{
+    position: absolute;
+    right:0;
+    height: 24px;
+    width: 24px;
+    background-position: -262px -43px;
+    cursor: pointer;
+}
+.sureMask .sureStop span{
+    display: inline-block;
+    background: #6AD298;
+    border-radius: 4px;
+    height: 36px;
+    width: 90px;
+    text-align: center;
+    line-height: 36px;
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.sureMask .sureStop .sureDec p{
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #344658;
+    letter-spacing: 0;
+    text-align: center;
+}
+.sureMask .sureStop .sureDec{
+    padding-top: 46px;
+    text-align: center;
+}
+@media screen and (max-width: 1279px){
+    .user-power-list .user-power-set .userPower{
+        width: 824px;
+    }
+    .user-power-set .set-power{
+        width: 770px;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1920px){
+    .user-list-content .user-list{
+        width: 920px;
+    }
+    .user-power-set .set-power{
+        width: 944px;
+    }
+    .user-power-list .user-power-set .userPower{
+        width: 994px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .user-list-content .user-list{
+        width: 1220px;
+    }
+    .user-power-list .user-power-set .userPower{
+        width:1100px;
+    }
+    .user-power-set .set-power{
+        width: 1050px;
+    }
+}

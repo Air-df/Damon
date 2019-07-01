@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="Cache" content="no-cache">
+    <link rel="icon" href="images/logo_lizicloud_web.png" type="image/x-icon">
+    <script src="../tj.js"></script>
+    <script>var G_SDK = new SDK("prod", "lizicloud");
+    G_SDK.loading(), window.onload = function () {
+        G_SDK.loaded()
+    }</script>
+    <link rel="stylesheet" href="../css/index_1.css">
+    <link rel="stylesheet" href="../css/cwIndex_2.css">
+    <link rel="stylesheet" href="../css/gcIndex_3.css">
+    <link rel="stylesheet" href="../css/mtIndex_4.css">
+    <link rel="stylesheet" href="../css/jmIndex_5.css">
+    <link rel="stylesheet" href="../css/jmEnter_6.css">
+    <link rel="stylesheet" href="../css/jrIndex_7.css">
+    <link rel="stylesheet" href="../css/qrIndex_8.css">
+    <link rel="stylesheet" href="../css/bgIndex_9.css">
+    <link rel="stylesheet" href="../css/qrCode_9.css">
+    <link rel="stylesheet" href="../css/umIndex_10.css">
+    <link rel="stylesheet" href="../css/tmIndex_11.css">
+    <link rel="stylesheet" href="../css/ucIndex_12.css">
+    <link rel="stylesheet" href="../css/pcIndex_13.css">
+    <link rel="stylesheet" href="../css/rmIndex_14.css">
+    <link rel="stylesheet" href="../css/giIndex_15.css">
+    <link rel="stylesheet" href="../css/qqFace_16.css">
+    <link rel="stylesheet" href="../css/emojj_17.css">
+    <link rel="stylesheet" href="../css/animate_18.css">
+    <link rel="stylesheet" href="../css/register_19.css">
+    <link rel="stylesheet" href="../css/ghwIndex_20.css">
+    <link rel="stylesheet" href="../css/nrjmIndex_21.css">
+    <link rel="stylesheet" href="../css/sysIndex_22.css">
+    <link rel="stylesheet" href="../css/home_23.css">
+    <link rel="stylesheet" href="../css/kyIndex_24.css">
+    <link rel="stylesheet" href="../css/gamIndex_25.css">
+    <title>群消息 | 栗子云</title>
+    <link href="/static/css/main.a2de503f.css" rel="stylesheet">
+    <style></style>
+</head>
+<body>
+<div class="app" id="root">
+    <div>
+        <div class="saas-container">
+            <div class="navBarWrapper">
+                <div class="nav-avtarBox">
+                    <div class="icon-background3 nav-avatar"></div>
+                </div>
+                <div class="navBarTunnelBox">
+                    <div class="swiperBoard" style="display: block; margin-top: 96px;">
+                        <div class="lightBar"></div>
+                    </div>
+                </div>
+                <div class="navBarBox">
+                    <div class="nav-arrowBox ">
+                        <div class="nav-arrow icon-background" style="visibility: hidden;"></div>
+                    </div>
+                    <ul>
+                        <div>
+                            <li class="home">
+                                <div>
+                                    <div class="nav-item nav-item-unactive">
+                                        <div class="nav-icon icon-background"></div>
+                                        <div class="nav-textBox"><span>首页</span></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="gmScope">
+                                <div>
+                                    <div class="nav-item nav-item-active">
+                                        <div class="nav-icon icon-background"></div>
+                                        <div class="nav-textBox"><span>群消息</span></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="mtScope">
+                                <div>
+                                    <div class="nav-item nav-item-unactive">
+                                        <div class="nav-icon icon-background"></div>
+                                        <div class="nav-textBox"><span>群投放</span></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="gaScope">
+                                <div>
+                                    <div class="nav-item nav-item-unactive">
+                                        <div class="nav-icon icon-background"></div>
+                                        <div class="nav-textBox"><span>群管理</span></div>
+                                        <div class="icon-background3 arrowUp"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <ul style="overflow: hidden; height: 0px; transition: all 0.3s ease-in-out;">
+                                <li class="rmScope">
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>导入群</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>群用户</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>关键词</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>群托管</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <li class="aiScope">
+                                <div>
+                                    <div class="nav-item nav-item-unactive">
+                                        <div class="nav-icon icon-background"></div>
+                                        <div class="nav-textBox"><span>智能入群</span></div>
+                                        <div class="icon-background3 arrowUp"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <ul style="overflow: hidden; height: 0px; transition: all 0.3s ease-in-out;">
+                                <li>
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>入群模版</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>智能建群</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>入群规则</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ecScope">
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>卡券管理</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="qrScope">
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>入群码</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <li class="gdScope">
+                                <div>
+                                    <div class="nav-item nav-item-unactive">
+                                        <div class="nav-icon icon-background"></div>
+                                        <div class="nav-textBox"><span>群数据</span></div>
+                                        <div class="icon-background3 arrowUp"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <ul style="overflow: hidden; height: 0px; transition: all 0.3s ease-in-out;">
+                                <li>
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>群词云</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="cwScope">
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>内容库</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <li class="sysScope">
+                                <div>
+                                    <div class="nav-item nav-item-unactive">
+                                        <div class="nav-icon icon-background"></div>
+                                        <div class="nav-textBox"><span>系统设置</span></div>
+                                        <div class="icon-background3 arrowUp"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <ul style="overflow: hidden; height: 0px; transition: all 0.3s ease-in-out;">
+                                <li class="tmScope">
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>用户管理</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>用户组</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>个人设置</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="nav-item nav-item-unactive"
+                                             style="height: 0px; transition: all 1s ease-in-out;">
+                                            <div class="nav-icon "></div>
+                                            <div class="nav-textBox" style="text-indent: 2px;"><span>资讯发布</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div style="height: 100%;">
+                <div style="height: 100%;">
+                    <div class="gm-container" style="width: calc(100% - 134px);">
+                        <div class="gm-goupWrapper">
+                            <div class="searchWrapper "><em class="searchInIcon"></em><input id="searchInput"
+                                                                                             type="text"
+                                                                                             placeholder="搜索"
+                                                                                             class="blurInput" value="">
+                            </div>
+                            <div class="groupList">
+                                <div class="itemBox" id="f1da817c-5a43-46ad-a0ea-178a11e04d2c"
+                                     style="background: rgb(255, 255, 255);">
+                                    <li>
+                                        <div class="keywordNumber" style="display: none;"><span
+                                                style="width: 18px;">0</span></div>
+                                        <div class="profile"><img
+                                                src="../v2/images/group/group9.png"></div>
+                                        <div class="name"><span title="测试">测试</span></div>
+                                        <div class="handle">
+                                            <div class="time">22:50</div>
+                                            <div class="control icon-background"></div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gm-msgWrapper">
+                            <div class="gm-crumbsBox" style="width: 1110px;">
+                                <div class="groupCrumb" style="display: none; background-color: rgb(248, 248, 249);">
+                                    <span style="padding-left: 23px;"></span><span>(0)</span></div>
+                                <div class="memberCrumb" style="display: none; background-color: rgb(248, 248, 249);">
+                                    <span style="padding-left: 23px;"></span></div>
+                                <div class="memberCrumb" style="display: none; background-color: rgb(248, 248, 249);">
+                                    <span style="padding-left: 23px;">关键字消息</span></div>
+                                <div class="groupMsgCrumb" style="display: none;">群发消息</div>
+                                <div class="monitorStateWrapper" tabindex="1">
+                                    <div class="stateTitle">我的账户</div>
+                                    <div class="monitorStateBox" style="display: none;">
+                                        <div class="exit">个人中心</div>
+                                        <div class="exit">退出</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="msgFlowWrapper">
+                                <div class="innerContainer" style="width: 811px; left: 433px;">
+                                    <div class="msgFlowInner" style="width: 546px;">
+                                        <div class="bgFlowBox" style="display: block; height: calc(100% - 240px);">
+                                            <div class="innerBox"><img src="./images/icon/roomBg.png" alt="">
+                                                <p>进入群内查看未读消息吧~</p></div>
+                                        </div>
+                                        <div class="newMsgTipBox" style="display: none;">
+                                            <div class="newMsgTip">
+                                                <div class="downArrow icon-background"></div>
+                                                <div class="newMsgContent">点击查看新消息</div>
+                                            </div>
+                                        </div>
+                                        <div id="groupRoom" class="msgFlowBox"
+                                             style="display: none; height: calc(100% - 240px);">
+                                            <div style="display: none; padding: 10px 0px 0px; text-align: center; font-size: 26px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="22px"
+                                                     height="22px" viewBox="0 0 128 128">
+                                                    <rect x="0" y="0" width="100%" height="100%" fill="#F8F9F9"></rect>
+                                                    <g transform="rotate(90 64 64)">
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#000000"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(30 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(60 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(90 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(120 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#b2b2b2"
+                                                              transform="rotate(150 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#999999"
+                                                              transform="rotate(180 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#7f7f7f"
+                                                              transform="rotate(210 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#666666"
+                                                              transform="rotate(240 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#4c4c4c"
+                                                              transform="rotate(270 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#333333"
+                                                              transform="rotate(300 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#191919"
+                                                              transform="rotate(330 64 64)"></path>
+                                                        <animateTransform attributeName="transform" type="rotate"
+                                                                          values="0 64 64;30 64 64;60 64 64;90 64 64;120 64 64;150 64 64;180 64 64;210 64 64;240 64 64;270 64 64;300 64 64;330 64 64"
+                                                                          calcMode="discrete" dur="1080ms"
+                                                                          repeatCount="indefinite"></animateTransform>
+                                                    </g>
+                                                </svg>
+                                                <p style="display: none; font-size: 12px;">没有更早的消息啦！</p></div>
+                                            <div style="width: 100%; height: 20px;"></div>
+                                            <div style="display: none; padding: 10px 0px; text-align: center; font-size: 26px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="22px"
+                                                     height="22px" viewBox="0 0 128 128">
+                                                    <rect x="0" y="0" width="100%" height="100%" fill="#F8F9F9"></rect>
+                                                    <g transform="rotate(90 64 64)">
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#000000"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(30 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(60 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(90 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(120 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#b2b2b2"
+                                                              transform="rotate(150 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#999999"
+                                                              transform="rotate(180 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#7f7f7f"
+                                                              transform="rotate(210 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#666666"
+                                                              transform="rotate(240 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#4c4c4c"
+                                                              transform="rotate(270 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#333333"
+                                                              transform="rotate(300 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#191919"
+                                                              transform="rotate(330 64 64)"></path>
+                                                        <animateTransform attributeName="transform" type="rotate"
+                                                                          values="0 64 64;30 64 64;60 64 64;90 64 64;120 64 64;150 64 64;180 64 64;210 64 64;240 64 64;270 64 64;300 64 64;330 64 64"
+                                                                          calcMode="discrete" dur="1080ms"
+                                                                          repeatCount="indefinite"></animateTransform>
+                                                    </g>
+                                                </svg>
+                                                <p style="display: none; font-size: 12px;">已经到达最新的消息啦！</p></div>
+                                            <div class="quickSearch icon-background" tabindex="2"
+                                                 style="display: none; left: 0px; top: 0px;"></div>
+                                            <div class="quickAnswer" style="left: 0px; bottom: 0px;">
+                                                <div class="inner"><p>快速回复</p>
+                                                    <div class="content"></div>
+                                                    <div class="moreBtn">搜索更多</div>
+                                                </div>
+                                            </div>
+                                            <div class="gm-userOperate" style="left: 0px; top: 0px;">
+                                                <div class="baseInfo">
+                                                    <div class="avatar"><img src=""></div>
+                                                    <div class="nickName"></div>
+                                                    <div class="authorization"><span></span></div>
+                                                </div>
+                                                <div class="alertBox">
+                                                    <div class="alert">警告用户</div>
+                                                    <div class="warningBox" style="display: none;">
+                                                        <ul class="warnDisc">
+                                                            <li title="请勿在群内发送敏感语句，下次将会被移除出群哦～" class="innerTip">
+                                                                请勿在群内发送敏感语句，下次将会被移除出群哦～
+                                                            </li>
+                                                            <li title="请勿私拉其他用户入群，下次将会被移除入群哦～" class="innerTip">
+                                                                请勿私拉其他用户入群，下次将会被移除入群哦～
+                                                            </li>
+                                                            <li title="请勿在群内发送广告，下次将会被移除出群哦～" class="innerTip">
+                                                                请勿在群内发送广告，下次将会被移除出群哦～
+                                                            </li>
+                                                            <li title="为了避免网络风险，请不要在群内发送与本群无关的二维码及链接。我们交流、讨论的话可以发截图，有需要的宝妈们自己搜索下。"
+                                                                class="innerTip">
+                                                                为了避免网络风险，请不要在群内发送与本群无关的二维码及链接。我们交流、讨论的话可以发截图，有需要的宝妈们自己搜索下。<img
+                                                                    class="qqemoji qqemoji81" text="[Shake]"
+                                                                    src="images/icon/spacer.png"></li>
+                                                            <li title="宝妈们都有各自的观点，大家来这个群里都是为了学习更多的育儿方法，我们要做一个安静的美少女呢"
+                                                                class="innerTip">
+                                                                宝妈们都有各自的观点，大家来这个群里都是为了学习更多的育儿方法，我们要做一个安静的美少女呢<img
+                                                                    class="qqemoji qqemoji6" text="[Shy]"
+                                                                    src="images/icon/spacer.png"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="removeUser">移除用户</div>
+                                                <div class="moreBox">
+                                                    <div class="altUser icon-background"></div>
+                                                    <div class="history icon-background"></div>
+                                                    <div class="modifyAuth icon-background">
+                                                        <div class="authList" style="display: block;">
+                                                            <ul>
+                                                                <li></li>
+                                                                <li>赋予拉人权限</li>
+                                                                <li>赋予踢人权限</li>
+                                                                <li>加入黑名单</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tipWrapper" style="display: none;">
+                                                <div class="tipBox"><p></p>
+                                                    <div class="confirmBtn">确定</div>
+                                                    <div class="closeBtn icon-background"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="memberRoom" class="msgFlowBox"
+                                             style="display: none; height: calc(100% - 240px);">
+                                            <div style="display: none; padding: 10px 0px 0px; text-align: center; font-size: 26px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="22px"
+                                                     height="22px" viewBox="0 0 128 128">
+                                                    <rect x="0" y="0" width="100%" height="100%" fill="#F8F9F9"></rect>
+                                                    <g transform="rotate(90 64 64)">
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#000000"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(30 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(60 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(90 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(120 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#b2b2b2"
+                                                              transform="rotate(150 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#999999"
+                                                              transform="rotate(180 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#7f7f7f"
+                                                              transform="rotate(210 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#666666"
+                                                              transform="rotate(240 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#4c4c4c"
+                                                              transform="rotate(270 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#333333"
+                                                              transform="rotate(300 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#191919"
+                                                              transform="rotate(330 64 64)"></path>
+                                                        <animateTransform attributeName="transform" type="rotate"
+                                                                          values="0 64 64;30 64 64;60 64 64;90 64 64;120 64 64;150 64 64;180 64 64;210 64 64;240 64 64;270 64 64;300 64 64;330 64 64"
+                                                                          calcMode="discrete" dur="1080ms"
+                                                                          repeatCount="indefinite"></animateTransform>
+                                                    </g>
+                                                </svg>
+                                                <p style="display: none; font-size: 12px;">没有更早的消息啦！</p></div>
+                                            <div style="width: 100%; height: 20px;"></div>
+                                            <div style="display: none; padding: 10px 0px; text-align: center; font-size: 26px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="22px"
+                                                     height="22px" viewBox="0 0 128 128">
+                                                    <rect x="0" y="0" width="100%" height="100%" fill="#F8F9F9"></rect>
+                                                    <g transform="rotate(90 64 64)">
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#000000"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(30 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(60 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(90 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(120 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#b2b2b2"
+                                                              transform="rotate(150 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#999999"
+                                                              transform="rotate(180 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#7f7f7f"
+                                                              transform="rotate(210 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#666666"
+                                                              transform="rotate(240 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#4c4c4c"
+                                                              transform="rotate(270 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#333333"
+                                                              transform="rotate(300 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#191919"
+                                                              transform="rotate(330 64 64)"></path>
+                                                        <animateTransform attributeName="transform" type="rotate"
+                                                                          values="0 64 64;30 64 64;60 64 64;90 64 64;120 64 64;150 64 64;180 64 64;210 64 64;240 64 64;270 64 64;300 64 64;330 64 64"
+                                                                          calcMode="discrete" dur="1080ms"
+                                                                          repeatCount="indefinite"></animateTransform>
+                                                    </g>
+                                                </svg>
+                                                <p style="display: none; font-size: 12px;">已经到达最新的消息啦！</p></div>
+                                        </div>
+                                        <div id="keywordsRoom" class="msgFlowBox"
+                                             style="display: none; height: calc(100% - 240px);">
+                                            <div style="display: none; padding: 10px 0px 0px; text-align: center; font-size: 26px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="22px"
+                                                     height="22px" viewBox="0 0 128 128">
+                                                    <rect x="0" y="0" width="100%" height="100%" fill="#F8F9F9"></rect>
+                                                    <g transform="rotate(90 64 64)">
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#000000"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(30 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(60 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(90 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(120 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#b2b2b2"
+                                                              transform="rotate(150 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#999999"
+                                                              transform="rotate(180 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#7f7f7f"
+                                                              transform="rotate(210 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#666666"
+                                                              transform="rotate(240 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#4c4c4c"
+                                                              transform="rotate(270 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#333333"
+                                                              transform="rotate(300 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#191919"
+                                                              transform="rotate(330 64 64)"></path>
+                                                        <animateTransform attributeName="transform" type="rotate"
+                                                                          values="0 64 64;30 64 64;60 64 64;90 64 64;120 64 64;150 64 64;180 64 64;210 64 64;240 64 64;270 64 64;300 64 64;330 64 64"
+                                                                          calcMode="discrete" dur="1080ms"
+                                                                          repeatCount="indefinite"></animateTransform>
+                                                    </g>
+                                                </svg>
+                                                <p style="display: none; font-size: 12px;">没有更早的消息啦！</p></div>
+                                            <div style="width: 100%; height: 20px;"></div>
+                                            <div style="display: none; padding: 10px 0px; text-align: center; font-size: 26px;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="22px"
+                                                     height="22px" viewBox="0 0 128 128">
+                                                    <rect x="0" y="0" width="100%" height="100%" fill="#F8F9F9"></rect>
+                                                    <g transform="rotate(90 64 64)">
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#000000"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(30 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(60 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(90 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#cccccc"
+                                                              transform="rotate(120 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#b2b2b2"
+                                                              transform="rotate(150 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#999999"
+                                                              transform="rotate(180 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#7f7f7f"
+                                                              transform="rotate(210 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#666666"
+                                                              transform="rotate(240 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#4c4c4c"
+                                                              transform="rotate(270 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#333333"
+                                                              transform="rotate(300 64 64)"></path>
+                                                        <path d="M59.6 0h8v32h-8V0z" fill="#191919"
+                                                              transform="rotate(330 64 64)"></path>
+                                                        <animateTransform attributeName="transform" type="rotate"
+                                                                          values="0 64 64;30 64 64;60 64 64;90 64 64;120 64 64;150 64 64;180 64 64;210 64 64;240 64 64;270 64 64;300 64 64;330 64 64"
+                                                                          calcMode="discrete" dur="1080ms"
+                                                                          repeatCount="indefinite"></animateTransform>
+                                                    </g>
+                                                </svg>
+                                                <p style="display: none; font-size: 12px;">已经到达最新的消息啦！</p></div>
+                                        </div>
+                                        <div class="sendMsBox" style="height: 220px;">
+                                            <div class="moveDrag"></div>
+                                            <div class="gm-msgSendBox" style="height: 240px;">
+                                                <div class="toolBar">
+                                                    <div class="toolBtn emojiBtn icon-background">
+                                                        <div class="faceBox">
+                                                            <div class="exp_cont">
+                                                                <div class="qq_face"><a class="faceStle qqface0"><img
+                                                                        src="#"
+                                                                        style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface1"><img src="#"
+                                                                                                      style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface2"><img src="#"
+                                                                                                      style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface3"><img src="#"
+                                                                                                      style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface4"><img src="#"
+                                                                                                      style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface5"><img src="#"
+                                                                                                      style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface6"><img src="#"
+                                                                                                      style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface7"><img src="#"
+                                                                                                      style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface8"><img src="#"
+                                                                                                      style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface9"><img src="#"
+                                                                                                      style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface10"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface11"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface12"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface13"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface14"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface15"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface16"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface17"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface18"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface19"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface20"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface21"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface22"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface23"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface24"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface25"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface26"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface27"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface28"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface29"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface30"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface31"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface32"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface33"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface34"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface35"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface36"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface37"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface38"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface39"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface40"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface41"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface42"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface43"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface44"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface45"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface46"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface47"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface48"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface49"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface50"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface51"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface52"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface53"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface54"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface55"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface56"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface57"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface58"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface59"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface60"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface61"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface62"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface63"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface64"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface65"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface66"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface67"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface68"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface69"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface70"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface71"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface72"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface73"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface74"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface75"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface76"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface77"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface78"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface79"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface80"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface81"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface82"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface83"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface84"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface85"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface86"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface87"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface88"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface89"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface90"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface91"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface92"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface93"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface94"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface95"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface96"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface97"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface98"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface99"><img src="#"
+                                                                                                       style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface100"><img src="#"
+                                                                                                        style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface101"><img src="#"
+                                                                                                        style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface102"><img src="#"
+                                                                                                        style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface103"><img src="#"
+                                                                                                        style="opacity: 0; width: 28px; height: 28px;"></a><a
+                                                                        class="faceStle qqface104"><img src="#"
+                                                                                                        style="opacity: 0; width: 28px; height: 28px;"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="toolBtn uploadBtn icon-background"><input id="imgFile"
+                                                                                                          type="file"
+                                                                                                          style="width: 40px; height: 40px; overflow: hidden; opacity: 0; cursor: pointer;">
+                                                    </div>
+                                                    <div class="toolBtn altBtn icon-background">
+                                                        <div class="userBubble" style="display: none;">
+                                                            <div></div>
+                                                        </div>
+                                                        <div class="gm-box-altMember ">
+                                                            <ul class="memberBox">
+                                                                <li>
+                                                                    <div class="altAll">
+                                                                        <div class="selected unselected"></div>
+                                                                        <span>@所有人</span></div>
+                                                                </li>
+                                                            </ul>
+                                                            <div class="searchWrapper"><input id="searchInput" class=""
+                                                                                              type="text"
+                                                                                              placeholder="搜索用户名">
+                                                                <div class="userListBox" style="display: none;">
+                                                                    <ul></ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="toolBtn groupSendbtn icon-background">
+                                                        <div class="gm-box-groupSend">
+                                                            <div class="searchWrapper"><input id="searchInput"
+                                                                                              type="text"
+                                                                                              placeholder="搜索群名/#标签">
+                                                            </div>
+                                                            <div class="groupListBox">
+                                                                <ul>
+                                                                    <li>
+                                                                        <div class="allGroup">
+                                                                            <div class="selected unselected "></div>
+                                                                            <span>所有群</span></div>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="member">
+                                                                            <div class="selected unselected"
+                                                                                 id="f1da817c-5a43-46ad-a0ea-178a11e04d2c"></div>
+                                                                            <span>测试</span></div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="confirmBtn">确定</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <pre contenteditable="true" id="msg_context" class="gm-editBox"
+                                                         style="height: 80px;"></pre>
+                                                    <div class="msgSendBox">
+                                                        <div class="sendBtn">发送</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="handleInner">
+                                        <div class="drawerBar"><span class="arrow-o icon-background"></span></div>
+                                        <div class="naviHandle">
+                                            <div class="navWrapper">
+                                                <div class="menuWrapper" id="menuWrapper0">
+                                                    <div class="menuIcon icon-background "></div>
+                                                    <div class="menuTitle menuTitle-active">群投放</div>
+                                                </div>
+                                                <div class="menuWrapper" id="menuWrapper1">
+                                                    <div class="unactiveMenu menuIcon menuIcons icon-background"></div>
+                                                    <div class="menuTitle ">内容库</div>
+                                                </div>
+                                                <div class="menuWrapper" id="menuWrapper2">
+                                                    <div class="unactiveMenu menuIcon menuIcons icon-background"></div>
+                                                    <div class="menuTitle ">群用户</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="gm-memberWrapper">
+                                            <div class="searchWrapper "><em class="searchInIcon"></em><input
+                                                    id="searchInput" type="text" placeholder="搜索" class="blurInput"
+                                                    value=""></div>
+                                            <div class="rightBox">
+                                                <div class="titleBox clearfix">
+                                                    <div class="icon iconPosition icon-background"></div>
+                                                    <div class="title">所有群投放</div>
+                                                </div>
+                                                <div class="emptyTask"><img src="./images/icon/microTaskIcon.png"
+                                                                            alt="">
+                                                    <p>查看所有群投放~</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <audio id="voiceMsgPlayer" preload="metaData" src=""></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../static_inside/js/main.8e82a75b.js"></script>
+<div id="qb-sougou-search" style="display: none; opacity: 0;"><p>搜索</p>
+    <p class="last-btn">复制</p>
+    <iframe src=""></iframe>
+</div>
+</body>
+</html>
