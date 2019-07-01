@@ -1,0 +1,8 @@
+module.exports = G_SDK;
+
+
+//////////////////
+// WEBPACK FOOTER
+// external "G_SDK"
+// module id = 829
+// module chunks = 0
